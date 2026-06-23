@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CIF_JOB_DETAIL" lang="ko">
+  <code key="" order="0"><![CDATA[선택]]></code>
+  <code key="RS03" order="1"><![CDATA[금융기관종사, 법률, 회계&신탁]]></code>
+  <code key="RS13" order="2"><![CDATA[비영리, 외국정부관련업무/정치, 부동산관리 및 중개]]></code>
+  <code key="RS09" order="3"><![CDATA[여행사, 요식업, 벌목업, 석유, 가스&광업]]></code>
+  <code key="RS01" order="4"><![CDATA[예술분야, 접대, 관광, 마케팅, 노무제공(일용직)]]></code>
+  <code key="RS07" order="5"><![CDATA[건설, 제조, 화학, 임업, 운수업, 노점]]></code>
+  <code key="RS15" order="6"><![CDATA[정부관련, IT, 통신, 직업소개소]]></code>
+  <code key="RS19" order="7"><![CDATA[제조업, 산업, 농업, 어업]]></code>
+  <code key="RS10" order="8"><![CDATA[교육, 미디어]]></code>
+  <code key="RS24" order="9"><![CDATA[의료]]></code>
+  <code key="RS02" order="10"><![CDATA[환전상, 대부업자, 귀금속상, 카지노업자, 무기상]]></code>
+</category>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-time-definition>
+  <service-time-list group="message">
+    <service-time code="TI1TBS03H211" checkYn="Y" description="이체_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS03D211" checkYn="Y" description="이체_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS03H221" checkYn="Y" description="예약이체_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS03D221" checkYn="Y" description="예약이체_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS07H591" checkYn="Y" description="국세이체_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS07D552" checkYn="Y" description="국세이체_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03H216" checkYn="Y" description="키보드뱅킹_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS03D216" checkYn="Y" description="키보드뱅킹_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS07H421" checkYn="N" description="자동이체등록_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS07D421" checkYn="N" description="자동이체등록_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS07H422" checkYn="Y" description="자동이체등록조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBK01H292" checkYn="Y" description="예약이체조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBK01H229" checkYn="Y" description="예약이체조회_상세" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBK01D229" checkYn="Y" description="예약이체해지_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBK01D228" checkYn="Y" description="예약이체변경_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1TBS03H596" checkYn="N" description="계좌이동제 &gt; 자동납부 계좌변경 &gt; 등록조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1TBS03H597" checkYn="N" description="계좌이동제 &gt; 자동납부 계좌변경 &gt; 등록조회 &gt; 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1TBS03D597" checkYn="N" description="계좌이동제 &gt; 자동납부 계좌변경 &gt; 등록조회 &gt; 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK01H493" checkYn="N" description="계좌이동제 &gt; 자동납부 등록조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2240]]></service-time>
+    <service-time code="TI1IBK01H492" checkYn="N" description="계좌이동제 &gt; 자동납부 등록조회_상세" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2240]]></service-time>
+    <service-time code="TI1IBK01D492" checkYn="N" description="계좌이동제 &gt; 자동납부 등록조회_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2240]]></service-time>
+    <service-time code="TI1TBS07H598" checkYn="N" description="계좌이동제 &gt; 자동송금 계좌변경 &gt; 등록조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2200]]></service-time>
+    <service-time code="TI1TBS07D599" checkYn="N" description="계좌이동제 &gt; 자동송금 계좌변경 &gt; 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK01H93L" checkYn="Y" description="키보드뱅킹 서비스" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1TBS07H593" checkYn="Y" description="국세납부조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK03H036" checkYn="Y" description="키보드뱅킹로그인" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK03H039" checkYn="Y" description="전계좌 잔액 ReFresh거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="IB_YNL01_013" checkYn="N" description="사전승인 추천상품조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1IBK01H237" checkYn="N" description="대출고객번호조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="IB_YNL01_002" checkYn="N" description="무서류 인터넷 신청등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1IBK01H234" checkYn="N" description="인지세 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="IB_YNL01_004" checkYn="N" description="무서류 인터넷 실행등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H905" checkYn="Y" description="My Card조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2350]]></service-time>
+    <service-time code="TI1TBS07H471" checkYn="Y" description="이용한도조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1TBS07D906" checkYn="N" description="이용한도조회/변경" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2300]]></service-time>
+    <service-time code="TI1TBS07H908" checkYn="Y" description="한도상향가능안내 서비스 신청_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07D908" checkYn="Y" description="한도상향가능안내 서비스 신청_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H452" checkYn="Y" description="이용대금명세서조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07N475" checkYn="Y" description="결제예상금액조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H472" checkYn="Y" description="카드선결제내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07D473" checkYn="Y" description="카드선결제 본처리(당행)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07D47S" checkYn="Y" description="카드선결제 본처리(타행)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H45X" checkYn="Y" description="결제출금내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1TBS07H451" checkYn="Y" description="단기카드대출신청 예비처리(당행)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2350]]></service-time>
+    <service-time code="TI1TBS07N451" checkYn="Y" description="단기카드대출신청 본처리(당행)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2350]]></service-time>
+    <service-time code="TI1CCB01H081" checkYn="Y" description="단기카드대출신청 예비처리(타행)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2350]]></service-time>
+    <service-time code="TI1CCB01D081" checkYn="Y" description="단기카드대출신청 본처리(타행)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2350]]></service-time>
+    <service-time code="TI1TBS07H453" checkYn="Y" description="단기카드대출 잔액및이용내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2330]]></service-time>
+    <service-time code="TI1TBS07H749" checkYn="N" description="장기카드대출신청 카드론검증" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H748" checkYn="N" description="장기카드대출신청 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07D748" checkYn="N" description="장기카드대출신청 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1IBK01H151" checkYn="Y" description="장기카드대출조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1TBS07H907" checkYn="Y" description="장기카드대출이용동의" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H474" checkYn="Y" description="일부결제이월약정(리볼빙)신청,해지" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H455" checkYn="Y" description="일부결제이월약정(리볼빙)변경_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07N455" checkYn="Y" description="일부결제이월약정(리볼빙)변경_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS07H895" checkYn="Y" description="단기카드대출 이용동의 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2350]]></service-time>
+    <service-time code="TI1TBS07D895" checkYn="Y" description="단기카드대출 이용동의 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2350]]></service-time>
+    <service-time code="TI1TBS07H476" checkYn="Y" description="BC카드해지_예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1TBS07D476" checkYn="Y" description="BC카드해지_본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1TBS07D412" checkYn="Y" description="현대카드금융바우처_사용처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2300]]></service-time>
+    <service-time code="TI1TBS07D41F" checkYn="Y" description="현대카드금융바우처_사용취소처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2300]]></service-time>
+    <service-time code="TI1TBS07H413" checkYn="Y" description="현대카드금융바우처_사용조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2300]]></service-time>
+    <service-time code="TI1TBS07H415" checkYn="Y" description="현대카드금융바우처_사용계좌조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2300]]></service-time>
+    <service-time code="TI1IBK01D763" checkYn="N" description="현대카드마케팅동의변경" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1IBF01H524" checkYn="Y" description="실시간매매 원화팔고 외화사기 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0000,2340]]></service-time>
+    <service-time code="TI1IBF01D524" checkYn="Y" description="실시간매매 원화팔고 외화사기 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0000,2340]]></service-time>
+    <service-time code="TI1IBF01H525" checkYn="Y" description="실시간매매 외화팔고 원화사기 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0000,2340]]></service-time>
+    <service-time code="TI1IBF01D525" checkYn="Y" description="실시간매매 외화팔고 원화사기 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0000,2340]]></service-time>
+    <service-time code="TI1IBF01H653" checkYn="N" description="목표환율매매 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBF01H102" checkYn="N" description="목표환율매매 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBF01H103" checkYn="N" description="목표환율매매 내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBF01H521" checkYn="N" description="간편 해외송금 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBF01D521" checkYn="N" description="간편 해외송금 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBF01H522" checkYn="N" description="보내신 송금내역 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="FXP_NEGO_014" checkYn="N" description="체제자(유학생) 연간송금내역 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBF01H511" checkYn="N" description="현찰환전신청 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBF01D511" checkYn="N" description="현찰환전신청 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBF01D106" checkYn="N" description="통화별 보유 영업점 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBK01H92C" checkYn="Y" description="금융상품몰_고객정보조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01H866" checkYn="Y" description="금융상품몰_보유계좌조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01H920" checkYn="Y" description="금융상품몰_고객정보조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01D92C" checkYn="Y" description="금융상품몰_고객정보등록변경" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01D92F" checkYn="Y" description="금융상품몰_외화고객정보조회등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01D894" checkYn="Y" description="금융상품몰_파기대상고객해제 및 국가코드등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01H893" checkYn="Y" description="금융상품몰_FATCA조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBK01D893" checkYn="Y" description="금융상품몰_FATCA등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1TBS03D271" checkYn="Y" description="금융상품몰_역송금발송" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="TI1IBF01D528" checkYn="Y" description="금융상품몰_외화보통예금개설 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2100]]></service-time>
+    <service-time code="TI1TBS03H861" checkYn="Y" description="금융상품몰_입출금개설 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03D863" checkYn="Y" description="금융상품몰_입출금개설 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03H872" checkYn="Y" description="금융상품몰_예금 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03D872" checkYn="Y" description="금융상품몰_예금 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03H875" checkYn="Y" description="금융상품몰_적금 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03D875" checkYn="Y" description="금융상품몰_적금 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1IBF01H531" checkYn="N" description="금융상품몰_외화정기예금 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBF01D531" checkYn="N" description="금융상품몰_외화정기예금 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBK01H445" checkYn="N" description="펀드SA분석" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03H441" checkYn="N" description="역내펀드 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1TBS03D441" checkYn="N" description="역내펀드 본처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBF01H441" checkYn="N" description="역외펀드 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[1000,1500]]></service-time>
+    <service-time code="TI1IBF01D441" checkYn="N" description="역외펀드 예비처리" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[1000,1500]]></service-time>
+    <service-time code="TI1IBK01_H114_05" checkYn="Y" description="잔액조회(수익증권)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H334" checkYn="N" description="투자성향분석" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D333" checkYn="N" description="투자성향분석 평가등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1IBK01D33A" checkYn="N" description="투자성향분석 평가등록수정" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1TBS03H321" checkYn="N" description="펀드 원화 추가납입 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2230]]></service-time>
+    <service-time code="TI1TBS03D321" checkYn="N" description="펀드 원화 추가납입 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2230]]></service-time>
+    <service-time code="TI1IBF01H442" checkYn="N" description="펀드 외화 추가납입 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[1000,2200]]></service-time>
+    <service-time code="TI1IBF01D442" checkYn="N" description="펀드 외화 추가납입 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[1000,2200]]></service-time>
+    <service-time code="TI1TBS03D442" checkYn="N" description="펀드 환매신청 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1630]]></service-time>
+    <service-time code="TI1IBK01H11405" checkYn="Y" description="잔액조회(수익증권)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MCI_FUND_067" checkYn="N" description="실질투자수익률보고서조회" nextPage="" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H438" checkYn="N" description="가입상품조회해지_입출금 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK01D438" checkYn="N" description="가입상품조회해지_입출금 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK03H437" checkYn="N" description="가입상품조회해지_예적금 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK03D437" checkYn="N" description="가입상품조회해지_예적금 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBF01H532" checkYn="N" description="가입상품조회해지_외화정기예금 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0930,1630]]></service-time>
+    <service-time code="TI1IBF01D532" checkYn="N" description="가입상품조회해지_외화정기예금 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0930,1630]]></service-time>
+    <service-time code="IB_ISA_012" checkYn="N" description="ETF/ETN 해지 신청 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2115]]></service-time>
+    <service-time code="TI1IBK01H44L" checkYn="N" description="ETF/ETN 해지 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2115]]></service-time>
+    <service-time code="TI1IBK01H44K" checkYn="N" description="자동입금계좌변경 연결계좌조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D421" checkYn="N" description="자동입금계좌변경 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1730]]></service-time>
+    <service-time code="TI1IBK01H44J" checkYn="N" description="미운용자산매수 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1730]]></service-time>
+    <service-time code="IB_ISA_004" checkYn="N" description="미운용자산매수 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1730]]></service-time>
+    <service-time code="IB_ISA_008" checkYn="Y" description="보유자산매도 매도자산조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2355]]></service-time>
+    <service-time code="IB_ISA_006" checkYn="N" description="보유자산매도 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1730]]></service-time>
+    <service-time code="IB_ISA_005" checkYn="Y" description="미운용 자산 금액 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="IB_ISA_009" checkYn="Y" description="ISA 자산 보유 현황 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="IB_ISA_007" checkYn="N" description="운용지시조회/취소 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1730]]></service-time>
+    <service-time code="IB_ISA_011" checkYn="N" description="자동운용등록/해지 조회,본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,1730]]></service-time>
+    <service-time code="IB_MTS_022" checkYn="Y" description="신탁 (MTS) 자산 보유 현황 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBSO3H293" checkYn="Y" description="출금내역조회상세" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03H291" checkYn="Y" description="출금내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H296" checkYn="Y" description="출금통장등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="TI1IBK01H930" checkYn="Y" description="사고신고 &gt; 통장인감 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D930" checkYn="Y" description="사고신고 &gt; 통장인감 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS07H015" checkYn="Y" description="사고신고 &gt; 신용카드 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS07D932" checkYn="Y" description="사고신고 &gt; 신용카드 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H931" checkYn="Y" description="사고신고 &gt; 직불/현금카드 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D931" checkYn="Y" description="사고신고 &gt; 직불/현금카드 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H934" checkYn="Y" description="사고신고 &gt; 자기앞수표 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D934" checkYn="Y" description="사고신고 &gt; 자기앞수표 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03H933" checkYn="Y" description="사고신고 &gt; OTP/보안카드 거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03H902" checkYn="Y" description="사고신고 &gt; OTP분실신고 해제 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03D902" checkYn="Y" description="사고신고 &gt; OTP분실신고 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS07D93D" checkYn="Y" description="사고신고 &gt; 신용체크카드 일괄신고 거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03H121" checkYn="Y" description="고객센터 &gt; 자기앞수표조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H114" checkYn="Y" description="대출 &gt; 대출원금/이자내기 계좌비밀번호 확인" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H232" checkYn="Y" description="대출 &gt; 대출원금/원리금 상환" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2330]]></service-time>
+    <service-time code="TI1IBK01D232" checkYn="Y" description="대출 &gt; 대출원금/원리금 상환 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2330]]></service-time>
+    <service-time code="TI1IBK01H231" checkYn="Y" description="대출 &gt; 대출금이자 상환" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2330]]></service-time>
+    <service-time code="TI1IBK01D231" checkYn="Y" description="대출 &gt; 대출금이자 상환 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2330]]></service-time>
+    <service-time code="TI1IBK01H240" checkYn="N" description="대출 &gt; 대출기일연기 계좌조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK01D240" checkYn="N" description="대출 &gt; 대출기일연기 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK01H151" checkYn="Y" description="대출 &gt; 대출한도해지/감액 계좌조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03H161" checkYn="Y" description="대출 &gt; 대출한도해지/감액 한도대출 감액" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS03D161" checkYn="Y" description="대출 &gt; 대출한도해지/감액 한도대출 감액 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MIS_T_CLCL28" checkYn="Y" description="대출 &gt; 신용대출 전자서명" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2100]]></service-time>
+    <service-time code="TI1IBK01D239" checkYn="N" description="대출 &gt; 펀드담보대출, 예적금담보대출 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2200]]></service-time>
+    <service-time code="TI1IBK01H152" checkYn="Y" description="조회 &gt; 대출상세조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H153" checkYn="Y" description="조회 &gt; 대출거래내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H722" checkYn="Y" description="조회 &gt; 펀드상세조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H11103" checkYn="Y" description="조회 &gt; 펀드거래내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS07H750" checkYn="Y" description="조회 &gt; 카드 &gt; 실적충족현황" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2200]]></service-time>
+    <service-time code="TI1TBS07H752" checkYn="Y" description="조회 &gt; 카드 &gt; 승인내역조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1TBS07H45R" checkYn="Y" description="조회 &gt; 카드 &gt; 이용현황분석조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1IBK01H755" checkYn="N" description="인터넷담보대출 허용 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1IBK01HD55" checkYn="N" description="인터넷담보대출 허용 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2200]]></service-time>
+    <service-time code="TI1TBS03H876" checkYn="Y" description="SC증권 연계계좌 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H920" checkYn="Y" description="내정보저장 예비거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D920" checkYn="Y" description="내정보저장 본거래" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H926" checkYn="N" description="퍼스트알림 대상 확인" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS07H751" checkYn="Y" description="마일리지" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0800,2300]]></service-time>
+    <service-time code="TM1517020007" checkYn="Y" description="비대면한도제한해지" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1TBS07H968" checkYn="Y" description="어카운트인포 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1TBS07H976" checkYn="Y" description="전체금융기관어카운트인포 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2350]]></service-time>
+    <service-time code="TI1TBS03D842" checkYn="Y" description="OTP/보안카드 오류해제" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D844" checkYn="Y" description="계좌비밀번호 재설정" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2100]]></service-time>
+    <service-time code="TI1IBK01D84A" checkYn="Y" description="계좌비밀번호 오류해제" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D845" checkYn="N" description="휴면계좌 활성화" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0900,2100]]></service-time>
+    <service-time code="TI1TBS03H938" checkYn="Y" description="장기이체미사용 해제 " nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2330]]></service-time>
+    <service-time code="TI1IBK01H381" checkYn="Y" description="여신 계약서 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H382" checkYn="Y" description="적합성.적정성 조회(여신계HOST)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H383" checkYn="Y" description="신탁.펀드 계약서 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H384" checkYn="Y" description="카드 계약서 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H385" checkYn="Y" description="예적금 계약서 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H386" checkYn="Y" description="외화 계약서 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D382" checkYn="Y" description="장기이체미사용 해제 " nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H401" checkYn="N" description="당일(계약당시날짜)여신 계좌리스트 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01H768" checkYn="N" description="만기자동입금/재예치 조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="TI1IBK01D768" checkYn="N" description="만기자동입금/재예치 신청" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+  </service-time-list>
+</service-time-definition>

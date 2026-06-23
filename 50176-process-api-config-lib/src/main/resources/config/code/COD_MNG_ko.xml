@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MNG" lang="ko">
+  <code key="MNG009001" order="0"><![CDATA[간편번호인증]]></code>
+  <code key="MNG009002" order="1"><![CDATA[지문인증]]></code>
+  <code key="MNG009003" order="2"><![CDATA[홍채인증]]></code>
+  <code key="MNG009004" order="3"><![CDATA[Face ID인증]]></code>
+  <code key="MNG009005" order="4"><![CDATA[~~CustName~~님 디지털인증서 발급완료. 본인요청 아닐 시 신고요망]]></code>
+  <code key="MNG009006" order="5"><![CDATA[~~CustName~~님 디지털인증서 해지완료. 본인요청 아닐 시 신고요망]]></code>
+</category>

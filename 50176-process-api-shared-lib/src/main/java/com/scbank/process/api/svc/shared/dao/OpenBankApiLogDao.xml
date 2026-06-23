@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scbank.process.api.svc.shared.dao.OpenBankApiLogDao">
+
+	<!-- KFTC 통신로그 -->
+	<insert id="insertLog" parameterType="com.scbank.process.api.svc.shared.dao.dto.OpenBankApiLogInsertLogParameter" >
+		INSERT 
+		  INTO MA3_OPEN_BANK_API_LOG (
+		      TRAD_DATE
+    		, USER_ID
+    		, USER_CIF_NO
+    		, TRAD_CLS
+    		, BANK_TRAD_ID
+    		, API_TRAD_ID
+    		, TRAD_SEQ
+    		, CHNL_GB
+    		, API_URL
+    		, DATA
+    		, REGISTTIME
+    		, API_DETAIL_CLS
+    		, RES_CODE
+    		, BANK_RSP_CODE
+		) VALUES (
+		 	  VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDD')
+			, #{userId}
+			, #{userCifNo}
+			, #{tradCls}
+			, #{bankTradId}
+			, #{apiTradId}
+			, #{tradSeq}
+			, #{chnlGb}
+			, #{apiUrl}
+			, #{data}
+			, CURRENT TIMESTAMP
+			, #{apiDetailCls}
+			, #{resCode}
+			, #{bankRspCode}
+		)
+	</insert>
+</mapper>

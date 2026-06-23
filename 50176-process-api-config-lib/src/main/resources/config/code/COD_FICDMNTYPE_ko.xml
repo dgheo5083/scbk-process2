@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FICDMNTYPE" lang="ko">
+  <code key="001" order="1"><![CDATA[기 대출 상환자금]]></code>
+  <code key="002" order="2"><![CDATA[내구 소비재 수입]]></code>
+  <code key="003" order="3"><![CDATA[부동산구입]]></code>
+  <code key="004" order="4"><![CDATA[투자자금]]></code>
+  <code key="005" order="5"><![CDATA[공과금 또는 세금 납부]]></code>
+  <code key="006" order="6"><![CDATA[전월세자금 반환용]]></code>
+  <code key="007" order="7"><![CDATA[생계자금]]></code>
+  <code key="008" order="8"><![CDATA[주택임차(전월세)]]></code>
+  <code key="009" order="9"><![CDATA[주택신축 및 개량]]></code>
+  <code key="010" order="10"><![CDATA[학자금]]></code>
+  <code key="011" order="11"><![CDATA[사업 또는 부업 자금]]></code>
+  <code key="012" order="12"><![CDATA[결혼자금]]></code>
+  <code key="013" order="13"><![CDATA[의료비]]></code>
+  <code key="014" order="14"><![CDATA[기타]]></code>
+</category>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FDS_CHECK_TRAN_CODE">
+  <code key="TRAN_CODE01" order="0"><![CDATA[D211]]></code>
+  <code key="TRAN_CODE02" order="0"><![CDATA[D221]]></code>
+  <code key="TRAN_CODE03" order="0"><![CDATA[D215]]></code>
+  <code key="TRAN_CODE04" order="0"><![CDATA[D225]]></code>
+</category>

@@ -1,0 +1,11 @@
+spring:
+  banner:
+    location: classpath:banner/banner.txt
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: BASIC
+      okhttp:
+        enabled: "true"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="JOB2" lang="ko">
+  <code key="10" order="0"><![CDATA[공무원]]></code>
+  <code key="20" order="1"><![CDATA[교육기관]]></code>
+  <code key="21" order="2"><![CDATA[교수]]></code>
+  <code key="30" order="3"><![CDATA[군인]]></code>
+  <code key="40" order="4"><![CDATA[공공기관]]></code>
+  <code key="50" order="5"><![CDATA[금융기관]]></code>
+  <code key="60" order="6"><![CDATA[회사원]]></code>
+  <code key="61" order="7"><![CDATA[정치인]]></code>
+  <code key="62" order="8"><![CDATA[언론인]]></code>
+  <code key="72" order="9"><![CDATA[회계사]]></code>
+  <code key="73" order="10"><![CDATA[세무사]]></code>
+  <code key="74" order="11"><![CDATA[법무사]]></code>
+  <code key="75" order="12"><![CDATA[변리사]]></code>
+  <code key="76" order="13"><![CDATA[의사]]></code>
+  <code key="77" order="14"><![CDATA[약사]]></code>
+</category>

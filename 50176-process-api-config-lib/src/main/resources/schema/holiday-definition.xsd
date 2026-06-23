@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- 루트: holiday-definition -->
+  <xs:element name="holiday-definition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="holiday" type="HolidayType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="year" type="xs:string" use="required"/>
+      <xs:attribute name="useYn" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- holiday 항목 -->
+  <xs:complexType name="HolidayType">
+    <xs:attribute name="date" type="xs:string" use="required"/>
+    <xs:attribute name="description" type="xs:string" use="required"/>
+  </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MNG" lang="en">
+  <code key="MNG009001" order="0"><![CDATA[Simple Number]]></code>
+  <code key="MNG009002" order="1"><![CDATA[FingerPrint]]></code>
+  <code key="MNG009003" order="2"><![CDATA[Iris]]></code>
+  <code key="MNG009004" order="3"><![CDATA[Face ID]]></code>
+  <code key="MNG009005" order="4"><![CDATA[~~CustName~~님 디지털인증서 발급완료. 발급사실없으면 118번신고]]></code>
+  <code key="MNG009006" order="5"><![CDATA[~~CustName~~님 디지털인증서 해지완료. 해지사실없으면 118번신고]]></code>
+  <code key="MNG009007" order="6"><![CDATA[~~CustName~~님 금융인증서 발급완료. 발급사실없으면 118번신고]]></code>
+  <code key="MNG009008" order="7"><![CDATA[~~CustName~~님 금융인증서 해지완료. 해지사실없으면 118번신고]]></code>
+</category>

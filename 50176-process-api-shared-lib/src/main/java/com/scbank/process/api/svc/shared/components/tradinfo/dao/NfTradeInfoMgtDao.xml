@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.NfTradeInfoMgtDao">
+
+	<!--MS PHM SP40 진행상태 테이블 고객번호 & 거래번호 조회  (asis : NF_TRADINFO_MGT_S_05)-->
+    <select id="selectTradeInfoAndCustomerSsn" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.TradeInfoInquiryParameter" 
+    		resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.TradeInfoInquiryResult">	 
+        SELECT 
+			A.INIT_REGIST_DT,       <!-- 최초등록일 -->
+			A.CUST_NO,              <!-- 고객번호 -->
+			A.TRAD_NO,              <!-- 거래번호 -->
+			A.BIZ_TYPE,             <!-- business유형 -->
+			A.PRDCT_ID,             <!-- 상품ID -->
+			A.PRDCT_CD,             <!-- 상품코드 -->
+			A.PRDCT_NM,             <!-- 상품명 -->
+			A.CALL_CNTR_STS_CD,     <!-- 콜센터상태코드 -->
+			A.PRGRSS_STS_CD,        <!-- 진행상태코드 -->
+			A.RJCTN_CD,             <!-- 거절코드 -->
+			A.RJCTN_MSG,            <!-- 거절메시지 -->
+			A.CDD_REQ_CD,           <!-- CDD요청여부 -->
+			A.ID_CARD_CD,           <!-- 신분증 코드 -->
+			A.AUTHNT_IND_CD,        <!-- 인증유형 여부 -->
+			A.NEW_USER_FLG,         <!-- 신규고객여부 -->
+			A.CMPLTN_DT,            <!-- 완료일자 -->
+			A.CNCL_DT,              <!-- 취소일자 -->
+			A.BRNCH_NO,             <!-- 점번호 -->
+			A.REQ_AMT,              <!-- 신청금액 -->
+			A.AUTHNT_IND,           <!-- 인증유형 -->
+			A.LST_CHNG_DT,          <!-- 최종변경일 -->
+			A.KFB_ACCT_NO,          <!-- 당행계좌 -->
+			A.ALLIANC_CD,           <!-- 제휴코드 -->
+			A.EFFCTV_INT,           <!-- 적용금리 -->
+			A.LOAN_PRD,             <!-- 대출기간 -->
+			A.RDMPTN_MTHD,          <!-- 상환방법 -->
+			A.EXEC_DT,              <!-- 실행일자 -->
+			A.RDMPTN_DT,            <!-- 상환기일 -->
+			A.LOAN_REQ_NO,          <!-- 대출신청번호 -->
+			A.EMAIL_ADDR,           <!-- 이메일주소 -->
+			A.ERR_CD,               <!-- 에러코드 -->
+			A.ERR_MSG,              <!-- 에러메시지 -->
+			A.KFB_MGT_NO,           <!-- SC제일은행 관리번호 -->
+			A.KTNET_MGT_NO,         <!-- KTNET 관리번호 -->
+			A.INT_TYPE,             <!-- 금리유형 -->
+			A.COPL_CMMN_CLLTRL_IND, <!-- 부부공동담보여부 -->
+			A.LOAN_ACCPT_NO,        <!-- 대출접수번호 -->
+			A.CURRENCY_CODE,        <!-- 통화코드 -->
+			B.SSN        			<!-- 주민번호 -->
+		FROM
+			NF_TRADINFO_MGT A, NF_CUST_MGT B
+		WHERE
+			A.CUST_NO = B.CUST_NO
+			AND A.CUST_NO = #{custNo}
+			AND A.TRAD_NO = #{tradNo}
+ 		WITH UR
+	</select>
+
+	<!-- 진행중인 업무 조회 (asis : NF_TRADINFO_MGT_S_02) -->
+	<select id="selectOngoingTradeInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.OngoingTradeInfoInquiryParameter" 
+			resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.OngoingTradeInfoInquiryResult" >
+		SELECT 
+			TRAD_NO,
+			CUST_NO,
+			BIZ_TYPE,
+			PRDCT_CD,
+			PRDCT_ID,
+			PRDCT_NM,
+			PRGRSS_STS_CD,
+			ALLIANC_CD,
+			APPRVER_CLERK_NO,
+			APPRVL_DT,
+			AUTHNT_IND,
+			AUTHNT_IND_CD,
+			AUTHNT_REQ_CMPLTN_DT,
+			AUTHNT_REQ_DT,
+			AUTHNT_REQ_EXPIRE_DT,
+			BLK_CLERK_NO,
+			BRNCH_NO,
+			CALL_CNTR_STS_CD,
+			CDD_CNFRM_DT,
+			CDD_REQ_CD,
+			CLERK_NO,
+			CMPLTN_DT,
+			CNCL_DT,
+			CNNCTN_WAY,
+			DEL_OBJ_FLG,
+			ID_CARD_CD,
+			ID_CARD_CMPLTN_DT,
+			ID_CARD_CNT,
+			ID_CARD_REQ_DT,
+			INIT_REGIST_DT,
+			KFB_ACCT_NO,
+			VARCHAR_FORMAT(LST_CHNG_DT, 'YYYY-MM-DD HH24:MI:SS') LST_CHNG_DT,
+			NEW_USER_FLG,
+			REQ_AMT,
+			REA_CD,
+			INTEGRATED_CONSELING_YN
+		FROM
+			NF_TRADINFO_MGT
+		WHERE
+			CUST_NO = #{custNo} 
+			AND BIZ_TYPE = #{bizType}
+			AND PRGRSS_STS_CD = 'PRGS'
+			AND TRAD_REG_GB = #{tradRegGb} <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+			<if test='integratedConselingYn != null and integratedConselingYn != ""'>
+				AND INTEGRATED_CONSELING_YN = #{integratedConselingYn}
+			</if>
+		ORDER BY INIT_REGIST_DT DESC 
+		FETCH FIRST 1 ROWS ONLY 
+		WITH UR
+	</select>
+ 	
+ 	<!-- 진행중인 업무 목록 조회 (asis : NF_TRADINFO_MGT_S_03)-->
+    <select id="selectOngoingTradeInfoList" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.OngoingTradeInfoInquiryParameter" 
+    	resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.CheckOngoingTradeInfoInquiryResult">	 
+        SELECT 
+			CM.CUST_NO, 
+			TM.TRAD_NO,
+			TM.BIZ_TYPE,
+			TM.PRDCT_CD,
+			TM.PRDCT_ID,
+			TM.PRDCT_NM,
+			TM.PRGRSS_STS_CD,
+			TM.ALLIANC_CD,
+			TM.APPRVER_CLERK_NO,
+			VARCHAR_FORMAT(TM.APPRVL_DT, 'YYYY-MM-DD HH24:MI:SS') APPRVL_DT,
+			TM.AUTHNT_IND,
+			TM.AUTHNT_IND_CD,
+			VARCHAR_FORMAT(TM.AUTHNT_REQ_CMPLTN_DT, 'YYYY-MM-DD HH24:MI:SS') AUTHNT_REQ_CMPLTN_DT,
+			VARCHAR_FORMAT(TM.AUTHNT_REQ_DT, 'YYYY-MM-DD HH24:MI:SS') AUTHNT_REQ_DT,
+			VARCHAR_FORMAT(TM.AUTHNT_REQ_EXPIRE_DT, 'YYYY-MM-DD HH24:MI:SS') AUTHNT_REQ_EXPIRE_DT,
+			TM.BLK_CLERK_NO,
+			TM.BRNCH_NO,
+			TM.CALL_CNTR_STS_CD,
+			VARCHAR_FORMAT(TM.CDD_CNFRM_DT, 'YYYY-MM-DD HH24:MI:SS') CDD_CNFRM_DT,
+			TM.CDD_REQ_CD,
+			TM.CLERK_NO,
+			VARCHAR_FORMAT(TM.CMPLTN_DT, 'YYYY-MM-DD HH24:MI:SS') CMPLTN_DT,
+			VARCHAR_FORMAT(TM.CNCL_DT, 'YYYY-MM-DD HH24:MI:SS') CNCL_DT,
+			TM.CNNCTN_WAY,
+			TM.COPL_CMMN_CLLTRL_IND,  
+			TM.DEL_OBJ_FLG,
+			TM.EFFCTV_INT,
+			TM.ELCTRNC_SIGNTR_FLG,
+			TM.EMAIL_ADDR,
+			TM.ERR_CD,
+			TM.ERR_MSG,
+			VARCHAR_FORMAT(TM.EXEC_DT, 'YYYY-MM-DD HH24:MI:SS') EXEC_DT,
+			TM.ID_CARD_CD,
+			VARCHAR_FORMAT(TM.ID_CARD_CMPLTN_DT, 'YYYY-MM-DD HH24:MI:SS') ID_CARD_CMPLTN_DT,
+			TM.ID_CARD_CNT,
+			VARCHAR_FORMAT(TM.ID_CARD_REQ_DT, 'YYYY-MM-DD HH24:MI:SS') ID_CARD_REQ_DT,
+			VARCHAR_FORMAT(TM.INIT_REGIST_DT, 'YYYY-MM-DD HH24:MI:SS') INIT_REGIST_DT,
+			TM.INT_TYPE,
+			TM.KFB_ACCT_NO,
+			TM.KFB_MGT_NO,
+			TM.KTNET_MGT_NO,
+			TM.LOAN_ACCPT_NO,
+			VARCHAR_FORMAT(TM.LOAN_HOPE_DT, 'YYYY-MM-DD HH24:MI:SS') LOAN_HOPE_DT,
+			TM.LOAN_PRD,
+			TM.LOAN_REQ_NO,
+			TM.NEW_USER_FLG,  
+			TM.PRVSN_REGIST_FLG,
+			VARCHAR_FORMAT(TM.RDMPTN_DT, 'YYYY-MM-DD HH24:MI:SS') RDMPTN_DT,
+			TM.RDMPTN_MTHD,
+			TM.REQ_AMT,
+			TM.RJCTN_CD,
+			TM.RJCTN_MSG,
+			TM.SEQ_NO,
+			VARCHAR_FORMAT(TM.LST_CHNG_DT, 'YYYY-MM-DD HH24:MI:SS') LST_CHNG_DT,
+			TM.REA_CD,
+			TM.INTEGRATED_CONSELING_YN,
+			TM.OPL_CNSLT_YN
+		FROM
+			NF_CUST_MGT CM,
+			NF_TRADINFO_MGT TM
+		WHERE
+			TM.CUST_NO = CM.CUST_NO
+			AND TM.PRGRSS_STS_CD = 'PRGS'
+			AND CM.CUST_NO = #{custNo}
+			AND TM.TRAD_REG_GB = #{tradRegGb} <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+			<if test='bizType != null and bizType != ""'>
+				AND TM.BIZ_TYPE = #{bizType}
+			</if>
+		ORDER BY TM.BIZ_TYPE, TM.TRAD_NO
+		WITH UR
+	</select>
+
+	<!-- 진행중인 상품 목록 조회 (asis : NF_TRADINFO_MGT_S_04)-->
+    <select id="selectOngoingProductInfoList" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.OngoingTradeInfoInquiryParameter" 
+    	resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.OngoingProductInfoInquiryResult">	 
+        SELECT 
+			INIT_REGIST_DT,
+			CUST_NO,
+			TRAD_NO,
+			BIZ_TYPE,
+			PRDCT_ID,
+			PRDCT_CD,
+			PRDCT_NM,
+			CALL_CNTR_STS_CD,
+			PRGRSS_STS_CD,
+			CDD_REQ_CD,
+			ID_CARD_CD,
+			AUTHNT_IND_CD,
+			VARCHAR_FORMAT(LST_CHNG_DT, 'YYYY-MM-DD HH24:MI:SS') LST_CHNG_DT,
+			VARCHAR_FORMAT(AUTHNT_REQ_CMPLTN_DT, 'YYYY-MM-DD HH24:MI:SS') AUTHNT_REQ_CMPLTN_DT,
+			AUTHNT_IND
+		FROM
+			NF_TRADINFO_MGT 
+		WHERE
+			PRGRSS_STS_CD = 'PRGS' 
+			AND CUST_NO = #{custNo} 
+			AND TRAD_REG_GB = #{tradRegGb} <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+		ORDER BY TRAD_NO DESC 
+		WITH UR
+	</select>
+	
+ 	<!-- 진행상태 심플정보 등록 (asis : NF_TRADINFO_MGT_I_01)-->
+ 	<insert id="insertOngoingTradeSimpleInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.RegisterOngoingTradeInfoParameter" >
+	 	INSERT INTO NF_TRADINFO_MGT
+		(
+			INIT_REGIST_DT,
+			CUST_NO, 
+			TRAD_NO, 
+			PRDCT_CD, 
+			PRDCT_NM, 
+			CALL_CNTR_STS_CD, 
+			PRGRSS_STS_CD, 
+			CLERK_NO, 
+			CNNCTN_WAY, 
+			LST_CHNG_DT,
+			TRAD_REG_GB,<!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+			REA_CD,
+			CHANNEL_TYPE
+		) VALUES (
+			CURRENT TIMESTAMP,
+			#{custNo}, 
+			NEXTVAL FOR NF_TRADINFO_MGT_TRAD_NO_SQ,
+			#{prdctCd}, 
+			#{prdctNm}, 
+			#{callCntrStsCd}, 
+			#{prgrssStsCd}, 
+			#{clerkNo}, 
+			#{cnnctnWay}, 
+			CURRENT TIMESTAMP,
+			(CASE #{tradRegGb} WHEN '1' THEN '1' ELSE '0' END), <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+			#{reaCd}, 
+			'MB'
+		)
+ 	</insert>
+ 	
+ 	<!-- 진행상태 등록 (asis : NF_TRADINFO_MGT_I_02) -->
+	<insert id="insertOngoingTradeInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.RegisterOngoingTradeInfoParameter" >
+		<selectKey keyProperty="tradNo" resultType="string" order="BEFORE">
+			SELECT NEXTVAL FOR NF_TRADINFO_MGT_TRAD_NO_SQ FROM SYSIBM.SYSDUMMY1
+		</selectKey>
+		INSERT INTO NF_TRADINFO_MGT (
+			INIT_REGIST_DT,
+			CUST_NO,
+			TRAD_NO,
+			BIZ_TYPE,
+			PRDCT_ID,
+			PRDCT_CD,
+			PRDCT_NM,
+			CALL_CNTR_STS_CD,
+			PRGRSS_STS_CD,
+			CNNCTN_WAY,
+			CLERK_NO,
+			JOB_DETAIL_CD,
+			CDD_REQ_CD,
+			CDD_CNFRM_DT,
+			ID_CARD_CD,
+			ID_CARD_CNT,
+			NEW_USER_FLG,
+			DEL_OBJ_FLG,
+			BRNCH_NO,
+			ERR_CD,
+			ERR_MSG,
+			LST_CHNG_DT,
+			PER_PART,
+			DOC_EVDC_CD,
+			TRAD_REG_GB, <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+			HL_PRSN_CD,
+			AD_SBST_CD,
+			KW_INSR_CD,
+			REA_CD,
+			CHANNEL_TYPE
+			<if test='integratedConselingYn != null and integratedConselingYn != ""'>, INTEGRATED_CONSELING_YN</if>		<!-- 접속방식 -->
+			<if test='preLoanMoveYn != null and preLoanMoveYn != ""'>, PRE_LOAN_MOVE_YN</if>							<!-- 대출이동여부(상담) -->
+			<if test='realLoanMoveYn != null and realLoanMoveYn != ""'>, REAL_LOAN_MOVE_YN</if>							<!-- 대출이동여부(실행) -->
+			<if test='hqPrimeRateApplyYn != null and hqPrimeRateApplyYn != ""'>, HQ_PRIME_RATE_APPLY_YN</if>			<!-- 본부우대금리적용여부 -->
+			<if test='hqPrimeRate != null and hqPrimeRate != ""'>, HQ_PRIME_RATE</if>									<!-- 본부우대금리 -->
+			<if test='govmDataType != null and govmDataType != ""'>, GOVM_DATA_TYPE</if>								<!-- 스크래핑타입 G:공공데이터, S:스크래핑 -->
+		    <if test='govmSignType != null and govmSignType != ""'>, GOVM_SIGN_TYPE</if>								<!-- 서명타입 1:공동, B:금융 pin, C:금융생체, 9:디지털 -->
+		    <if test='govmSignErr != null and govmSignErr != ""'>, GOVM_SIGN_ERR</if>									<!-- 서명오류 -->
+		    <if test='loanPurpose != null and loanPurpose != ""'>, LOAN_PURPOSE</if>									<!-- 대출목적 -->
+			<if test='collateralType != null and collateralType != ""'>, COLLATERAL_TYPE</if>							<!-- 담보유형 -->
+			<if test='oplCnsltYn != null and oplCnsltYn != ""'>, OPL_CNSLT_YN</if>										<!-- OPL여부 -->
+		) VALUES (
+		  CURRENT TIMESTAMP,
+		  #{custNo},
+		  #{tradNo}, <!--NEXTVAL FOR NF_TRADINFO_MGT_TRAD_NO_SQ,-->
+		  #{bizType},
+		  #{prdctId},
+		  #{prdctCd},
+		  #{prdctNm},
+		  #{callCntrStsCd},
+		  'PRGS',
+		  #{cnnctnWay},
+		  #{clerkNo},
+		  #{jobDetailCd},
+		  (CASE #{cddReqCd} WHEN 'Y' THEN NULL WHEN '' THEN NULL ELSE 'N' END),
+		  CURRENT TIMESTAMP,
+		  (CASE #{idCardCd} WHEN 'Y' THEN NULL WHEN '' THEN NULL ELSE 'N' END),
+		  0,
+		  #{newUserFlg},
+		  #{delObjFlg},
+		  #{brnchNo},
+		  #{errCd},
+		  #{errMsg},
+		  CURRENT TIMESTAMP,
+		  #{perPart},
+		  #{docEvdcCd},
+		  (CASE #{tradRegGb} WHEN '1' THEN '1' ELSE '0' END), <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+		  #{hlPrsnCd},
+		  #{adSbstCd},
+		  #{kwInsrCd},
+		  #{reaCd},
+		  'MB'
+		  <if test='integratedConselingYn != null and integratedConselingYn != ""'>, #{integratedConselingYn}</if>	<!-- 접속방식 -->
+		  <if test='preLoanMoveYn != null and preLoanMoveYn != ""'>, #{preLoanMoveYn}</if>							<!-- 대출이동여부(상담) -->
+		  <if test='realLoanMoveYn != null and realLoanMoveYn != ""'>, #{realLoanMoveYn}</if>						<!-- 대출이동여부(실행) -->
+		  <if test='hqPrimeRateApplyYn != null and hqPrimeRateApplyYn != ""'>, #{hqPrimeRateApplyYn}</if>			<!-- 본부우대금리적용여부 -->
+		  <if test='hqPrimeRate != null and hqPrimeRate != ""'>, #{hqPrimeRate}</if>								<!-- 본부우대금리 -->
+		  <if test='govmDataType != null and govmDataType != ""'>, #{govmDataType}</if>								<!-- 스크래핑타입 G:공공데이터, S:스크래핑 -->
+		  <if test='govmSignType != null and govmSignType != ""'>, #{govmSignType}</if>								<!-- 서명타입 1:공동, B:금융 pin, C:금융생체, 9:디지털 -->
+		  <if test='govmSignErr != null and govmSignErr != ""'>, #{govmSignErr}</if>								<!-- 서명오류 -->
+		  <if test='loanPurpose != null and loanPurpose != ""'>, #{loanPurpose}</if>								<!-- 대출목적 -->
+		  <if test='collateralType != null and collateralType != ""'>, #{collateralType}</if>						<!-- 담보유형 -->
+		  <if test='oplCnsltYn != null and oplCnsltYn != ""'>, #{oplCnsltYn}</if>									<!-- OPL여부 -->
+		)
+	</insert>
+
+	<!-- 신분증 인식개선 공통화용 거래정보 등록 (asis: NF_TRADINFO_MGT_I_03) -->
+ 	<insert id="insertNonfaceTradeInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.RegisterOngoingTradeInfoParameter" >
+		<selectKey keyProperty="tradNo" resultType="string" order="BEFORE">
+			SELECT NEXTVAL FOR NF_TRADINFO_MGT_TRAD_NO_SQ FROM SYSIBM.SYSDUMMY1
+		</selectKey>
+		INSERT INTO NF_TRADINFO_MGT
+			(
+				INIT_REGIST_DT,
+				CUST_NO,
+				TRAD_NO,
+				BIZ_TYPE,
+				PRDCT_ID,
+				PRDCT_CD,
+				PRDCT_NM,
+				CDD_REQ_CD,
+				BRNCH_NO,
+				LST_CHNG_DT
+			) VALUES (
+				CURRENT TIMESTAMP,
+				#{custNo},
+				#{tradNo},
+				#{bizType},
+				#{prdctId},
+				#{prdctCd},
+				#{prdctNm},
+				#{cddReqCd},
+				#{brnchNo},
+				CURRENT TIMESTAMP
+			)
+	</insert>
+
+	<!-- 진행상태 수정  (asis : NF_TRADINFO_MGT_U_01)-->
+	<update id="updateOngoingTradeInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.RegisterOngoingTradeInfoParameter">
+		UPDATE
+			NF_TRADINFO_MGT
+		SET
+			<choose>
+				<when test='prgrssStsCd == "DONE"'>CMPLTN_DT = CURRENT TIMESTAMP,</when>												<!-- 완료 -->
+				<when test='prgrssStsCd != "PRGS"'>CNCL_DT   = CURRENT TIMESTAMP,</when>												<!-- 취소, 거절 건 -->
+			</choose>
+			
+			<if test='prdctId != null and prdctId != ""'> PRDCT_ID = #{prdctId}, </if>													<!-- 상품ID -->
+			<if test='prdctCd != null and prdctCd != ""'> PRDCT_CD = #{prdctCd}, </if>													<!-- 상품코드 -->
+			<if test='prdctNm != null and prdctNm != ""'> PRDCT_NM = #{prdctNm}, </if>													<!-- 상품명 -->
+			<if test='clerkNo != null and clerkNo != ""'> CLERK_NO = #{clerkNo}, </if>													<!-- 소개자행번 -->
+			<if test='cnnctnWay != null and cnnctnWay != ""'> CNNCTN_WAY = #{cnnctnWay}, </if>											<!-- 접속방식 -->
+			<if test='cddReqCd != null and cddReqCd != ""'>
+				<choose>
+					<when test='cddReqCd == "Y" or cddReqCd == ""'> CDD_REQ_CD = null, </when>											<!-- CDD정상여부 -->
+					<otherwise> CDD_REQ_CD = #{cddReqCd}, </otherwise>																	<!-- CDD정상여부 -->
+				</choose>
+				CDD_CNFRM_DT = CURRENT TIMESTAMP,																						<!-- CDD 등록일자 -->
+			</if>
+			<if test='idCardCd != null and idCardCd != ""'> ID_CARD_CD = #{idCardCd}, </if>												<!-- 신분증 코드 -->
+			<if test='idCardCd != null and idCardCd == "N"'> ID_CARD_REQ_DT = CURRENT TIMESTAMP, </if>									<!-- 신분증 진위 요청 일자 -->
+			<if test='idCardCnt != null and idCardCnt != ""'> ID_CARD_CNT = #{idCardCnt}, </if>											<!-- 신분증 진위 건수 -->
+			<if test='brnchNo != null and brnchNo != ""'> BRNCH_NO = #{brnchNo}, </if>													<!-- 점번호 -->
+			<if test='reqAmt != null and reqAmt != ""'> REQ_AMT = #{reqAmt}, </if>														<!-- 신청금액 -->
+			<if test='authntIndCd != null and authntIndCd == "Y"'> ID_CARD_CMPLTN_DT = CURRENT TIMESTAMP, </if>							<!-- 신분증 진위 완료 일자 -->
+			<if test='authntIndCd != null and authntIndCd != ""'> AUTHNT_IND_CD = #{authntIndCd}, </if>									<!-- 인증유형 여부 -->
+			<if test='authntInd != null and authntInd != ""'> AUTHNT_IND = #{authntInd}, </if>											<!-- 인증유형 -->
+			<if test='authntReqDt != null and authntReqDt != ""'> AUTHNT_REQ_DT = CURRENT TIMESTAMP, </if>								<!-- 인증신청일 -->
+			<if test='authntReqExpireDt != null and authntReqExpireDt != ""'> AUTHNT_REQ_EXPIRE_DT = DATE(#{authntReqExpireDt}), </if>	<!-- 만료일(3영업일 후) -->
+			<if test='authntReqCmpltnDt != null and authntReqCmpltnDt != ""'> AUTHNT_REQ_CMPLTN_DT = CURRENT TIMESTAMP, </if>			<!-- 인증신청완료일자 -->
+			<if test='kfbAcctNo != null and kfbAcctNo != ""'> KFB_ACCT_NO = #{kfbAcctNo}, </if>											<!-- 당행계좌 -->
+			<if test='alliancCd != null and alliancCd != ""'> ALLIANC_CD = #{alliancCd}, </if>											<!-- 제휴코드 -->
+			<if test='effctvInt != null and effctvInt != ""'> EFFCTV_INT = #{effctvInt}, </if>											<!-- 적용금리 -->
+			<if test='loanPrd != null and loanPrd != ""'> LOAN_PRD = #{loanPrd}, </if>													<!-- 대출기간 -->
+			<if test='rdmptnMthd != null and rdmptnMthd != ""'> RDMPTN_MTHD = #{rdmptnMthd}, </if>										<!-- 상환방법 -->
+			<if test='execDt != null and execDt != ""'> EXEC_DT = #{execDt}, </if>														<!-- 대출 실행일자 -->
+			<if test='rdmptnDt != null and rdmptnDt != ""'> RDMPTN_DT = #{rdmptnDt}, </if>												<!-- 대출상환기일 -->
+			<if test='loanReqNo != null and loanReqNo != ""'> LOAN_REQ_NO = #{loanReqNo}, </if>											<!-- 대출신청번호 -->
+			<if test='loanAccptNo != null and loanAccptNo != ""'> LOAN_ACCPT_NO = #{loanAccptNo}, </if>									<!-- 대출접수번호 -->
+			<if test='errCd != null and errCd != ""'> ERR_CD = #{errCd}, </if>															<!-- 에러코드 -->
+			<if test='errMsg != null and errMsg != ""'> ERR_MSG = #{errMsg}, </if>														<!-- 에러메시지 -->
+			<if test='coplCmmnClltrlInd != null and coplCmmnClltrlInd != ""'> COPL_CMMN_CLLTRL_IND = #{coplCmmnClltrlInd}, </if>		<!-- 부부공동담보여부 -->
+			<if test='rjctnCd != null and rjctnCd != ""'> RJCTN_CD = #{rjctnCd}, </if>													<!-- 거절코드 -->
+			<if test='rjctnMsg != null and rjctnMsg != ""'> RJCTN_MSG = #{rjctnMsg}, </if>												<!-- 거절사유 -->
+			<if test='perPart != null and perPart != ""'> PER_PART = #{perPart}, </if>													<!-- 고객거래구분 -->
+			<if test='docEvdcCd != null and docEvdcCd != ""'> DOC_EVDC_CD = #{docEvdcCd}, </if>											<!-- 증빙서류확인 -->
+			<if test='loanHopeDt != null and loanHopeDt != ""'> LOAN_HOPE_DT = #{loanHopeDt}, </if>										<!-- 대출희망일자 -->
+			<if test='hlPrsnCd != null and hlPrsnCd != ""'> HL_PRSN_CD = #{hlPrsnCd}, </if>												<!-- 무주택자확인 -->
+			<if test='adSbstCd != null and adSbstCd != ""'> AD_SBST_CD = #{adSbstCd}, </if>												<!-- 사전청약확인 -->
+			<if test='kwInsrCd != null and kwInsrCd != ""'> KW_INSR_CD = #{kwInsrCd}, </if>												<!-- 권원보험확인 -->
+			<if test='reaCd != null and reaCd != ""'> REA_CD = #{reaCd}, </if>															<!-- 접속방식 -->
+			<if test='integratedConselingYn != null and integratedConselingYn != ""'> INTEGRATED_CONSELING_YN = #{integratedConselingYn}, </if>	<!-- 접속방식 -->
+			<if test='preLoanMoveYn != null and preLoanMoveYn != ""'> PRE_LOAN_MOVE_YN = #{preLoanMoveYn}, </if>								<!-- 대출이동여부(상담) -->
+			<if test='realLoanMoveYn != null and realLoanMoveYn != ""'> REAL_LOAN_MOVE_YN = #{realLoanMoveYn}, </if>							<!-- 대출이동여부(실행) -->
+			<if test='hqPrimeRateApplyYn != null and hqPrimeRateApplyYn != ""'> HQ_PRIME_RATE_APPLY_YN = #{hqPrimeRateApplyYn}, </if>	<!-- 본부우대금리적용여부 -->
+			<if test='hqPrimeRate != null and hqPrimeRate != ""'> HQ_PRIME_RATE = #{hqPrimeRate}, </if>									<!-- 본부우대금리 -->
+			<if test='easyLoanYn != null and easyLoanYn != ""'> EASY_LOAN_YN = #{easyLoanYn}, </if>										<!-- 이지론여부 -->
+			<if test='loanDocInvstgtFlg != null and loanDocInvstgtFlg != ""'> LOAN_DOC_INVSTGT_FLG = #{loanDocInvstgtFlg}, </if>		<!-- 심사대상여부 -->
+			<if test='securityAcctNo != null and securityAcctNo != ""'> SECURITY_ACCT_NO = #{securityAcctNo}, </if>						<!-- 증권계좌번호 --> 
+			<if test='govmDataType != null and govmDataType != ""'> GOVM_DATA_TYPE = #{govmDataType}, </if>								<!-- 스크래핑타입 G:공공데이터, S:스크래핑 -->
+			<if test='govmSignType != null and govmSignType != ""'> GOVM_SIGN_TYPE = #{govmSignType}, </if>								<!-- 서명타입 1:공동, B:금융 pin, C:금융생체, 9:디지털 -->
+			<if test='govmSignErr != null and govmSignErr != ""'> GOVM_SIGN_ERR = #{govmSignErr}, </if>									<!-- 서명오류 -->
+			<if test='loanPurpose != null and loanPurpose != ""'> LOAN_PURPOSE = #{loanPurpose}, </if>									<!-- 대출목적 -->
+			<if test='collateralType != null and collateralType != ""'> COLLATERAL_TYPE = #{collateralType}, </if>						<!-- 담보유형 -->
+			<if test='spouseCustNo != null and spouseCustNo != ""'> SPOUSE_CUST_NO = #{spouseCustNo}, </if>								<!-- 배우자 고객번호 -->
+			<if test='spouseTradNo != null and spouseTradNo != ""'> SPOUSE_TRAD_NO = #{spouseTradNo}, </if>								<!-- 배우자 거래번호 -->
+			<if test='advSeqNo != null and advSeqNo != ""'> ADV_SEQ_NO = #{advSeqNo}, </if>												<!-- 상담일련번호 -->
+			<if test='advDt != null and advDt != ""'> ADV_DT = #{advDt}, </if>															<!-- 상담일자 -->
+			<if test='oplCnsltYn != null and oplCnsltYn != ""'> OPL_CNSLT_YN = #{oplCnsltYn}, </if>										<!-- OPL여부 -->
+			<if test='cmpltnYn != null and oplCnsltYn != ""'> CMPLTN_YN = #{cmpltnYn}, </if>											<!-- 비대면 거래완료 여부 -->
+			
+			CALL_CNTR_STS_CD = #{callCntrStsCd},
+			PRGRSS_STS_CD = #{prgrssStsCd},
+			LST_CHNG_DT = CURRENT TIMESTAMP
+		WHERE
+			TRAD_NO = #{tradNo}
+			AND CUST_NO = #{custNo}
+	</update>
+	
+	<!-- 비대면 진행 상품 취소  (asis : NF_TRADINFO_MGT_U_02)-->
+	<update id="updateOngoingProductCancellation" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.OngoingTradeInfoCancelParameter">
+		UPDATE
+			NF_TRADINFO_MGT
+		SET
+			PRGRSS_STS_CD = 'CNCL',
+			CNCL_DT = CURRENT TIMESTAMP
+		WHERE
+			CUST_NO = #{custNo}
+			AND TRAD_NO = #{tradNo}
+	</update>		
+	
+	
+	<!-- 추가서류제출 페이지 진입 시 해당 TRAD_NO 관련 정보 조회 -->
+	<select id="selectBasicTradeInfo" parameterType="string" resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.NonFaceBasicTradeInfoResult">
+		SELECT
+			CUST_NO,
+			TRAD_NO,
+			BIZ_TYPE,
+			PRDCT_ID,
+			PRDCT_CD,
+			PRDCT_NM
+		FROM
+			NF_TRADINFO_MGT
+		WHERE
+			TRAD_NO = #{tradNo}
+		WITH UR
+	</select>
+	
+	<!-- KCDD 응답 결과 업데이트 (asis : NF_TRADINFO_MGT_U_06)-->
+	<update id="updateTradeInfoCddResult" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.NonFaceCddResultParameter">
+		UPDATE
+			NF_TRADINFO_MGT
+		SET
+			<if test='kcddResMsg != null and kcddResMsg != ""'> KCDD_RES_MSG = #{kcddResMsg}, </if>
+			<if test='cddReqCd != null and cddReqCd != ""'> CDD_REQ_CD = #{cddReqCd}, </if>
+			PRGRSS_STS_CD = #{prgrssStsCd}
+		WHERE
+			CUST_NO = #{custNo}
+			AND TRAD_NO = #{tradNo}
+	</update>
+	
+</mapper>

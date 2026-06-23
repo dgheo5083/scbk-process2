@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="ko">
+	<errorCode code="PRCCRT30111">
+		<msg><![CDATA[죄송합니다. 공동인증 등록기관 시스템 점검중입니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20833">
+		<msg><![CDATA[갱신 중 오류가 발생하였습니다. 자세한 사항은 고객서비스센터(1588-1599)로 문의 하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT30114">
+		<msg><![CDATA[고객님의 개인 법인 구분을 알 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20136">
+		<msg><![CDATA[고객께서는 이미 유효한 개인 금융 용도제한용 공동인증서를 발급받은 상태입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20137">
+		<msg><![CDATA[고객께서는 이미 유효한 개인 금융 용도제한용 공동인증서를 발급받았으며, 현재 효력정지된 상태입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20138">
+		<msg><![CDATA[고객께서는 이미 유효한 개인사업자 금융 용도제한용 공동인증서를 발급받은 상태입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20139">
+		<msg><![CDATA[고객께서는 이미 유효한 개인사업자 금융 용도제한용 공동인증서를 발급받았으며, 현재 효력정지된 상태입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT201121">
+		<msg><![CDATA[공동인증 등록기관의 시스템 점검중입니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT201122">
+		<msg><![CDATA[공동인증 등록기관의 시스템 점검중입니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT201123">
+		<msg><![CDATA[공동인증 등록기관의 시스템 점검중입니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT201124">
+		<msg><![CDATA[공동인증 등록기관의 시스템 점검중입니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT201125">
+		<msg><![CDATA[공동인증 등록기관의 시스템 점검중입니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20142">
+		<msg><![CDATA[정보통신부의 정책에 따라 금융결제원 범용 인증서 발급이 허용되지 않습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20118">
+		<msg><![CDATA[고객의 인증서는 {0}로 남아 있습니다. 해당 은행의 인터넷뱅킹 웹사이트에서 공동인증서를 발급받으신 후 사용하시기 바랍니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20116">
+		<msg><![CDATA[고객께서는 이미 인증서를 발급받으셨으며 현재 효력정지 상태입니다. 효력회복을 하셔서 사용하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20114">
+		<msg><![CDATA[{0} 금융결제원에서 발행하는 공동인증서는 금융기관중 한곳에서만 발급받으실 수 있습니다. 1. 당행에서 발급 받으셨다면 인증서 재발급 메뉴를, 2. 타행에서 발급 받으셨다면 타기관 인증서 등록 메뉴를, 3. 지점에서 이용자번호를 새로 신규하셨으면 기존 인증서 폐기를 먼저하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20117">
+		<msg><![CDATA[가입자 등록에 실패하였습니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20111">
+		<msg><![CDATA[호스트 시스템 점검중입니다. 인증시스템 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20519">
+		<msg><![CDATA[SC은행에서 발급받으신 사설인증서로 타기관 공동인증서 사용신청을 하실 수 없습니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT9000">
+		<msg><![CDATA[제출하신 공동인증서는 본인의 인증서가 아니므로 등록하실수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT9001">
+		<msg><![CDATA[제출하신 공동인증서의 검증에 실패 하였습니다. 인증서를 다시한번 확인해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT9004">
+		<msg><![CDATA[제출하신 인증서의 확인에 실패하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20518">
+		<msg><![CDATA[SC은행에서 발급받으신 공동인증서로 타기관 공동인증서 사용신청을 하실 수 없습니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20520">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 이미 자행에서 발급받은 개인 금융용 유효한 공동인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20521">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 이미 타행에서 발급받은 개인 금융용 유효한 공동인증서가 등록되어있으므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20522">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 이미 자행에서 발급받은 개인 금융용 효력정지된 공동인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20523">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 이미 타행에서 발급받은 개인 금융용 효력정지된 공동인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20560">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 이미 자행에서 발급받은 개인 범용 유효한 공동인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20561">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 이미 타행에서 발급받은 개인 범용 유효한 공동인증서가 등록되어있으므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20562">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 이미 자행에서 발급받은 개인 범용 효력정지된 공동인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20563">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 이미 타행에서 발급받은 개인 범용 효력정지된 공동인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20524">
+		<msg><![CDATA[고객(개인)께서는 타행에서 발급받은 법인 금융용 공동인증서를 등록할 수 없습니다. 개인 금융용 공동인증서만 등록 할 수 있습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20525">
+		<msg><![CDATA[고객(개인)께서는 타행에서 발급받은 법인 전자거래용 공동인증서를 등록할 수 없습니다.  개인 금융용 공동인증서만 등록 할 수 있습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20526">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 자행에서 발급받은 유효한 개인 금융용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20527">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 타행에서 발급받은 유효한 개인 금융용 공동인증서가 등록되어있으므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20528">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 자행에서 발급받은 효력정지된 개인 금융용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20529">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 타행에서 발급받은 효력정지된 개인 금융용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20566">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 자행에서 발급받은 유효한 개인 범용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20567">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 타행에서 발급받은 유효한 개인 범용 공동인증서가 등록되어있으므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20568">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 자행에서 발급받은 효력정지된 개인 범용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20569">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 타행에서 발급받은 효력정지된 개인 범용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20530">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 금융용 공동인증서이나, 자행에서 발급받은 유효한 법인 금융용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20531">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 금융용 공동인증서이나, 타행에서 발급받은 유효한 법인 금융용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20532">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 금융용 공동인증서이나, 자행에서 발급받은 효력정지된 법인 금융용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20533">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 금융용 공동인증서이나, 타행에서 발급받은 효력정지된 법인 금융용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20534">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 자행에서 발급받은 유효한 법인 전자거래용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20535">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 타행에서 발급받은 유효한 법인 전자거래용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20536">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 자행에서 발급받은 효력정지된 법인 전자거래용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20537">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 타행에서 발급받은 효력정지된 법인 전자거래용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20538">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 개인 금융용 공동인증서이나, 법인 고객이므로 개인 금융용 공동인증서를 등록할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20569">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 타행에서 발급받은 효력정지된 개인 범용 공동인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20570">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 개인 범용 공동인증서이나, 법인 고객이므로 개인 범용 공동인증서를 등록할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20541">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 법인 금융용 공동인증서이나, 자행에서 발급받은 효력정지된 법인 금융용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20542">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 법인 금융용 공동인증서이나, 타행에서 발급받은 효력정지된 법인 금융용 공동인증서가 등록되어있으므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20543">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 자행에서 발급받은 유효한 법인 전자거래용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20544">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 타행에서 발급받은 유효한 법인 전자거래용 공동인증서가 등록되어있으므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20545">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 자행에서 발급받은 효력정지된 법인 전자거래용 공동인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20546">
+		<msg><![CDATA[고객(법인)께서는 등록하고자 하는 공동인증서가 법인 전자거래용 공동인증서이나, 타행에서 발급받은 효력정지된 법인 전자거래용 공동인증서가 등록되어있으므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20513">
+		<msg><![CDATA[공동인증 등록기관 시스템 점검중으로 타기관 공동인증서 등록 요청서비스를 제공하여 드리지 못하여 죄송합니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20514">
+		<msg><![CDATA[고객께서 요청하신 공동인증서는 효력정지된 인증서이므로 먼저 인증서를 발급받았던 기관(은행)에서 효력회복을 해야합니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20547">
+		<msg><![CDATA[고객께서 제출하신 공동인증서는 폐기된 인증서 이므로 타행등록을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20554">
+		<msg><![CDATA[OCSPGD의 소켓으로부터 읽기 쓰기 실패입니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20555">
+		<msg><![CDATA[OCSPGD와 연결할 수 없습니다.[OCSPGD Connection Fail] 현재 금융결제원 공동인증센터 장애로 인하여 해당거래가 불가하오니 잠시후에 거래하여 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20556">
+		<msg><![CDATA[OCSPGD 서버 점검중입니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20557">
+		<msg><![CDATA[OCSPGD로 보내는 전문 메시지가 올바르지 않습니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20558">
+		<msg><![CDATA[OCSPGD관련 알수 없는 오류가 발생하였습니다. 자세한 내용은 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20830">
+		<msg><![CDATA[고객의 인증서는 효력정지된 인증서이므로 유효기간 연장을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20831">
+		<msg><![CDATA[SC은행 사설인증서는 공동인증센터에서 유효기간 연장을 할 수 없습니다. SC은행인증센터에서 재발급 받으시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20711">
+		<msg><![CDATA[고객께서 등록하신 타기관인증서는 해당 은행에서만 갱신이 가능합니다. 발급받으신 은행의 인터넷뱅킹 웹사이트에서 공동인증서 갱신을 하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20712">
+		<msg><![CDATA[고객께서 등록하신 타기관인증서는 해당 은행에서만 갱신이 가능해요. 발급받으신 은행에서 금융인증서를 갱신해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT30113">
+		<msg><![CDATA[고객께서 제출하신 공동인증서는 SC은행에서 발급받으셨으나 현재 폐기되었거나 효력정지 중인 인증서입니다. 자세한 내용은 인증센터 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT30115">
+		<msg><![CDATA[고객께서 제출하신 금융인증서는 SC은행에서 발급받으셨으나 현재 폐기되었거나 효력정지 중인 인증서입니다. 자세한 내용은 인증센터 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20614">
+		<msg><![CDATA[고객께서 제출하신 인증서는 본인의 인증서가 아니므로 갱신하실수 없습니다.인증서를 다시 한번 확인하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20832">
+		<msg><![CDATA[가입자 갱신 등록은 30 일 전부터 허용됩니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20834">
+		<msg><![CDATA[고객의 인증서는 현재 폐기되었거나 효력정지인 상태이므로 갱신 불가합니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20835">
+		<msg><![CDATA[갱신 처리중 오류가 발생하였습니다. 자세한 사항은 고객서비스센터(1588-1599)로 문의 하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20218">
+		<msg><![CDATA[고객님의 공동인증서가 만료되어 폐기되었거나 이미 폐기된 인증서라 폐기할 수 없어요]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20219">
+		<msg><![CDATA[고객(개인)께서는 금융용 인증서를 받지 않은 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20248">
+		<msg><![CDATA[고객(개인)의 범용 공동인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20249">
+		<msg><![CDATA[고객(개인)께서는 범용 인증서를 받지 않은 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20221">
+		<msg><![CDATA[고객(개인사업자)의 개인 금융용 공동인증서가 존재하지 않으므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20222">
+		<msg><![CDATA[고객(개인사업자)의 개인 금융용 공동인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20251">
+		<msg><![CDATA[고객(개인사업자)의 개인 범용 공동인증서가 존재하지 않으므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20252">
+		<msg><![CDATA[고객(개인사업자)의 개인 범용 공동인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT20213">
+		<msg><![CDATA[공동인증 등록기관 시스템 점검중으로 고객의 인증서를 폐기 할 수 없습니다. 공동인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT0001">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT0009">
+		<msg><![CDATA[인터넷뱅킹 미가입 고객입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCRT0010">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 타기관 인증서 등록을 하실수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI938">
+		<msg><![CDATA[고객님이 당행에서 발급 받은 인증서 정보를 확인해 주세요(LDAP_INFO 테이블 조회결과 무)]]></msg>
+	</errorCode>
+	<errorCode code="INI602">
+		<msg><![CDATA[고객님이 타행에서 발급 받은 인증서 정보를 확인해 주세요(LDAP_INFO 테이블 조회결과 무)]]></msg>
+	</errorCode>
+	<errorCode code="INI958">
+		<msg><![CDATA[고객님이 제출한 당행에서 발급된 인증서는 현재 효력 정지되어 있어요. 인터넷뱅킹을 통해 효력 회복하시면 사용할 수 있어요.]]></msg>
+	</errorCode>
+	<errorCode code="INI939">
+		<msg><![CDATA[인증서가 유효하지 않습니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI603">
+		<msg><![CDATA[고객님의 공동인증서는 타기관인증서 등록이 되지 않았거나 폐기된 인증서에요. 확인 후 이용해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="INI800">
+		<msg><![CDATA[타행 타기관 인증서 등록이 필요합니다.<br />아래 경로에서 등록 부탁드립니다.<br/>인증센터 > 공동인증서 > 타기관인증서 등록]]></msg>
+	</errorCode>
+	<errorCode code="INI968">
+		<msg><![CDATA[현재 로그인 시도한 인증서는 타행에서 발급되었거나 폐기된 인증서 입니다. 인증서 상태를 확인해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="INI969">
+		<msg><![CDATA[현재 로그인 시도한 인증서는 타행에서 발급되었거나 효력정지된 인증서 입니다. 발급받으신 은행에서 효력회복후 사용 가능 합니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI856">
+		<msg><![CDATA[전자서명 인증과정에서 실패하였습니다. ID, PASSWORD 방식으로 로그인하여 주십시요.]]></msg>
+	</errorCode>
+	<errorCode code="INI978">
+		<msg><![CDATA[고객님이 제출한 타기관에서 발급한 인증서는 현재 폐기되어 있어요. 확인 후 이용해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="INI979">
+		<msg><![CDATA[고객님이 제출한 타기관에서 발급한 인증서는 현재 효력 정지되어 있어요. 발급한 기관에서 효력 회복하시면 사용할 수 있어요.]]></msg>
+	</errorCode>
+	<errorCode code="INI120">
+		<msg><![CDATA[고객께서 제출하신 인증서는 은행 거래에 사용할 수 없는 인증서 입니다. 올바른 인증서인지 확인해주세요. (OID 부적합)]]></msg>
+	</errorCode>
+	<errorCode code="INI999">
+		<msg><![CDATA[알수없는에러가 발생하였습니다.에러코드 : {0} 인증서 상태 {1}]]></msg>
+	</errorCode>
+	<errorCode code="INI856">
+		<msg><![CDATA[전자서명 인증과정에서 실패하였습니다. ID, PASSWORD 방식으로 로그인하여 주십시요.]]></msg>
+	</errorCode>
+	<errorCode code="INI923">
+		<msg><![CDATA[제출된 인증서에서 시리얼 번호, 주체자, 발급자 정보를 얻지 못했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI922">
+		<msg><![CDATA[이 페이지는 인증서가 필요합니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI935">
+		<msg><![CDATA[은행 업무용 인증서를 사용하시기 바랍니다. (증권업무용 인증서 사용 불가)]]></msg>
+	</errorCode>
+	<errorCode code="INI101">
+		<msg><![CDATA[본인확인에 실패했습니다. 로그인한 사용자와 제출한 인증서 사용자가 다릅니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI857">
+		<msg><![CDATA[WEBBANK 가입 고객은 인터넷 뱅킹거래가 불가합니다. WEBBANK를 통해 거래해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI604">
+		<msg><![CDATA[로그인한 사용자와 제출된 사용자의 아이디가 일치하지 않습니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI100">
+		<msg><![CDATA[본인확인에 실패했습니다. 로그인한 사용자와 제출한 인증서 사용자가 다릅니다.]]></msg>
+	</errorCode>
+	<errorCode code="INI201">
+		<msg><![CDATA[본인확인에 실패했습니다.본인 인증서를 제출하여 주십시오.]]></msg>
+	</errorCode>
+
+	<errorCode code="PRCSRP9000">
+		<msg><![CDATA[제출하신 공동인증서는 본인의 인증서가 아니므로 스크래핑하실수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCSRP9001">
+		<msg><![CDATA[제출하신 공동인증서의 검증에 실패 하였습니다. 인증서를 다시한번 확인해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCSRP9004">
+		<msg><![CDATA[제출하신 인증서의 확인에 실패하였습니다.]]></msg>
+	</errorCode>
+
+	<errorCode code="INI303">
+		<msg><![CDATA[고객님의 금융인증서는 타기관인증서 등록이 되지 않았거나 폐기된 인증서에요. 확인 후 이용해 주세요.]]></msg>
+	</errorCode>
+
+	<errorCode code="INI310">
+		<msg><![CDATA[선택하신 금융인증서는 타기관인증서 등록 후 이용할 수 있습니다. <br />타기관인증서 등록 화면으로 이동하시겠습니까?]]></msg>
+	</errorCode>
+
+	<!-- 금융인증서 발급/재발급 START-->
+	<errorCode code="PRCFCA01001">
+		<msg><![CDATA[고객님의 개인 법인 구분을 알 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01002">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01003">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01004">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증 등록기관 관리자에게 문의하시기 바랍니다.[01]]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01005">
+		<msg><![CDATA[이미 발급받은 인증서가 있어요.<br/>재발급하면 기존 인증서는 폐기되어 다른 기관에서도 이용할 수 없어요.<br/>금융인증서를 재발급하시겠어요?]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01006">
+		<msg><![CDATA[고객께서는 이미 유효한 개인 금융인증서를 발급받았으며, 현재 효력정지된 상태입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01007">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증기관 관리자에게 문의하시기 바랍니다.[02]]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01008">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01009">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01010">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01011">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01012">
+		<msg><![CDATA[인증 등록기관의 시스템 점검중입니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01013">
+		<msg><![CDATA[고객의 인증서는 {0}로 남아 있습니다. 해당 은행의 인터넷뱅킹 웹사이트에서 금융인증서를 발급받으신 후 사용하시기 바랍니다. 인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01014">
+		<msg><![CDATA[고객께서는 이미 인증서를 발급받으셨으며 현재 효력정지 상태입니다. 효력회복을 하셔서 사용하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01015">
+		<msg><![CDATA[이미 발급하신 금융인증서가 존재합니다.타기관인증서 등록 후 이용하시기 바랍니다. <br/>기존 금융인증서를 폐기 후 신규 발급을 진행하시겠습니까?]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01016">
+		<msg><![CDATA[가입자 등록에 실패하였습니다. 인증 등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01017">
+		<msg><![CDATA[고객님의 개인 법인 구분을 알 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01018">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[1].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01019">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[2].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01020">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[3].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01021">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[5].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01022">
+		<msg><![CDATA[등록기관 시스템 점검중으로 고객의 인증서를 폐기 할 수 없습니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01023">
+		<msg><![CDATA[등록기관 시스템 점검중으로 고객의 인증서를 폐기 할 수 없습니다. 인증기관 관리자에게 문의하시기 바랍니다. :]]></msg>
+	</errorCode>
+	<!-- 금융인증서 발급/재발급 END-->
+
+	<!-- 금융인증서 타기관인증서 등록 START-->
+	<errorCode code="PRCFCA02001">
+		<msg><![CDATA[고객님의 개인 법인 구분을 알 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02002">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 타기관 인증서 등록을 하실수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02003">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02004">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02005">
+		<msg><![CDATA[고객님의 개인 법인 구분을 알 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02006">
+		<msg><![CDATA[금융인증서 정보 조회 중 오류가 발생하였습니다. 다시 시도하여 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02007">
+		<msg><![CDATA[SC은행에서 발급받으신 금융인증서로 타행 금융인증서 사용신청을 하실 수 없습니다. 자세한 내용은 인증등록기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02008">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 금융인증서가 개인 금융용 금융인증서이나, 이미 자행에서 발급받은 개인 금융용 유효한 금융인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02009">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 금융인증서가 개인 금융용 금융인증서이나, 이미 타행에서 발급받은 개인 금융용 유효한 금융인증서가 등록되어있으므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02010">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 금융인증서가 개인 금융용 금융인증서이나, 이미 자행에서 발급받은 개인 금융용 효력정지된 금융인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02011">
+		<msg><![CDATA[고객(개인)께서는 등록하고자 하는 금융인증서가 개인 금융용 금융인증서이나, 이미 타행에서 발급받은 개인 금융용 효력정지된 금융인증서가 존재하므로 타행 등록을 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02012">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 금융인증서가 개인 금융용 금융인증서이나, 자행에서 발급받은 효력정지된 개인 금융용 금융인증서가 존재하므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02013">
+		<msg><![CDATA[고객(개인사업자)께서는 등록하고자 하는 금융인증서가 개인 금융용 금융인증서이나, 타행에서 발급받은 효력정지된 개인 금융용 금융인증서가 등록되어있므로 타행등록 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02014">
+		<msg><![CDATA[타행 금융인증서 등록 중 오류가 발생하였습니다. 다시 시도하여 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02015">
+		<msg><![CDATA[인증기관 시스템 점검중으로 타기관 금융인증서 등록 요청서비스를 제공하여 드리지 못하여 죄송합니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02016">
+		<msg><![CDATA[인증기관 시스템 점검중으로 타기관 공동인증서 등록 요청서비스를 제공하여 드리지 못하여 죄송합니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02017">
+		<msg><![CDATA[고객께서 제출하신 금융인증서는 폐기된 인증서 이므로 타행등록을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02018">
+		<msg><![CDATA[고객께서 요청하신 금융인증서는 효력정지된 인증서이므로 먼저 인증서를 발급받았던 기관(은행)에서 효력회복을 해야합니다. 자세한 내용은 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<!-- 금융인증서 타기관인증서 등록 END-->
+
+	<!-- 금융인증서 타기관인증서 해지 START-->
+	<errorCode code="PRCFCA03001">
+		<msg><![CDATA[인터넷뱅킹 미가입 고객입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03002">
+		<msg><![CDATA[잘못된 사용자]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03003">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 타기관 인증서 등록을 하실수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03004">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03005">
+		<msg><![CDATA[사업자 고객은 스마트폰에서 인증서 발급을 하실 수 없습니다.]]></msg>
+	</errorCode>
+	<!-- 금융인증서 타기관인증서 해지 END-->
+
+	<!-- 금융인증서 폐기 START-->
+	<errorCode code="PRCFCA04001">
+		<msg><![CDATA[고객님의 개인 법인 구분을 알 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04002">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[1].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04003">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[2].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04004">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[3].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04005">
+		<msg><![CDATA[잠시 후 다시 시도해 주세요[5].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04006">
+		<msg><![CDATA[고객(개인)의 금융인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04007">
+		<msg><![CDATA[고객(개인)께서는 금융인증서를 받지 않은 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04008">
+		<msg><![CDATA[고객(개인)의 범용 인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04009">
+		<msg><![CDATA[고객(개인)께서는 범용 인증서를 받지 않은 상태이므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04010">
+		<msg><![CDATA[고객(개인사업자)의 개인 금융인증서가 존재하지 않으므로 폐기 할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04011">
+		<msg><![CDATA[고객(개인사업자)의 개인 금융인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04012">
+		<msg><![CDATA[고객(개인사업자)의 개인 범용 인증서가 만료되어 폐기되었거나, 이미 폐기된 상태이므로 폐기할 수 없습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04013">
+		<msg><![CDATA[인증기관 시스템 점검중으로 고객의 인증서를 폐기 할 수 없습니다. 인증기관 관리자에게 문의하시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04014">
+		<msg><![CDATA[인증기관 시스템 점검중으로 고객의 인증서를 폐기 할 수 없습니다. 인증기관 관리자에게 문의하시기 바랍니다. :]]></msg>
+	</errorCode>
+	<!-- 금융인증서 폐기 END-->
+
+	<errorCode code="PRCFTC0001">
+		<msg><![CDATA['토스' 이용 등록 중 오류가 발생했습니다.<br>다시 시도해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0002">
+		<msg><![CDATA['카카오페이' 이용 등록 중 오류가 발생했습니다.<br>다시 시도해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0003">
+		<msg><![CDATA['토스' 인증에 실패했습니다.<br>다시 시도해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0004">
+		<msg><![CDATA['카카오페이' 인증에 실패했습니다.<br>다시 시도해 주시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0005">
+		<msg><![CDATA[이용등록중 에러가 발생했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0006">
+		<msg><![CDATA[이용등록중 에러가 발생했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0007">
+		<msg><![CDATA[이용등록중 에러가 발생했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0008">
+		<msg><![CDATA[이용해지중 에러가 발생했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0009">
+		<msg><![CDATA[이용해지중 에러가 발생했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0010">
+		<msg><![CDATA[이용해지중 에러가 발생했습니다.]]></msg>
+	</errorCode>
+	<errorCode code="FINERR0604">
+		<msg><![CDATA[로그인한 사용자와 제출된 사용자의 아이디가 일치하지 않습니다.]]></msg>
+	</errorCode>
+</errorCodes>

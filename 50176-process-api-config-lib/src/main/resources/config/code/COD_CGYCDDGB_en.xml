@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 상품구분 -->
+<category name="CGYCDDGB" lang="en">
+  <code key="1" order="1"><![CDATA[가계 신용]]></code>
+  <code key="2" order="2"><![CDATA[가계 담보]]></code>
+  <code key="3" order="3"><![CDATA[가계 기타]]></code>
+</category>

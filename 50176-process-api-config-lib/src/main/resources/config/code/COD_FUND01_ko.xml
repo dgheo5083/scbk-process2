@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FUND01" lang="ko">
+	<code key="" order="0"><![CDATA[목표를 선택하세요]]></code>
+ 	<code key="01" order="1"><![CDATA[은퇴]]></code>
+	<code key="02" order="2"><![CDATA[교육]]></code>
+	<code key="03" order="3"><![CDATA[주택]]></code>
+	<code key="04" order="4"><![CDATA[여행]]></code>
+	<code key="05" order="5"><![CDATA[목돈]]></code>
+</category>

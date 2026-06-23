@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_CARINSRNCTYPE" lang="ko">
+  <code key="01" order="01"><![CDATA[자동차손해배상책임보험]]></code>
+  <code key="02" order="02"><![CDATA[자동차종합보험]]></code>
+  <code key="03" order="03"><![CDATA[자동차자손보험]]></code>
+  <code key="04" order="04"><![CDATA[운전자보험]]></code>
+  <code key="05" order="05"><![CDATA[자동차대인배상정액보험/자동차 유한보험]]></code>
+  <code key="06" order="06"><![CDATA[자가운전자동차종합보험]]></code>
+  <code key="07" order="07"><![CDATA[통합계약]]></code>
+  <code key="09" order="09"><![CDATA[개인면허사업용자동차종합보험]]></code>
+  <code key="11" order="11"><![CDATA[개인용자동차보험]]></code>
+  <code key="12" order="12"><![CDATA[업무용자동차보험]]></code>
+  <code key="13" order="13"><![CDATA[영업용자동차보험]]></code>
+  <code key="18" order="18"><![CDATA[이륜자동차보험]]></code>
+  <code key="19" order="19"><![CDATA[농기계보험]]></code>
+  <code key="20" order="20"><![CDATA[플러스개인용자동차보험]]></code>
+  <code key="21" order="21"><![CDATA[플러스업무용자동차보험]]></code>
+</category>

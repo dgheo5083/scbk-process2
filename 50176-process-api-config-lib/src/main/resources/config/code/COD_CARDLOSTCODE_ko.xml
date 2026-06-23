@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CARDLOSTCODE" lang="ko">
+  <code key="000" order="1"><![CDATA[일괄신고(전 기관)]]></code>
+  <code key="001" order="2"><![CDATA[KB국민카드]]></code>
+  <code key="003" order="3"><![CDATA[신한카드]]></code>
+  <code key="011" order="4"><![CDATA[롯데카드]]></code>
+  <code key="012" order="5"><![CDATA[현대카드]]></code>
+  <code key="013" order="6"><![CDATA[삼성카드]]></code>
+  <code key="018" order="7"><![CDATA[시티은행]]></code>
+  <code key="019" order="8"><![CDATA[NH농협카드]]></code>
+  <code key="021" order="9"><![CDATA[하나카드]]></code>
+  <code key="023" order="10"><![CDATA[우리카드]]></code>
+  <code key="044" order="11"><![CDATA[바로카드(비씨)]]></code>
+  <code key="076" order="12"><![CDATA[IBK기업은행]]></code>
+  <code key="066" order="13"><![CDATA[아이엠뱅크 (구)대구은행]]></code>
+  <code key="067" order="14"><![CDATA[부산은행]]></code>
+  <code key="074" order="15"><![CDATA[경남은행]]></code>
+  <code key="006" order="16"><![CDATA[광주은행]]></code>
+  <code key="007" order="17"><![CDATA[제주은행]]></code>
+  <code key="008" order="18"><![CDATA[전북은행]]></code>
+  <code key="020" order="19"><![CDATA[수협중앙회]]></code>
+  <code key="097" order="20"><![CDATA[카카오뱅크]]></code>
+  <code key="096" order="21"><![CDATA[케이뱅크]]></code>
+  <code key="098" order="22"><![CDATA[토스뱅크]]></code>
+  <code key="085" order="23"><![CDATA[새마을금고중앙회]]></code>
+</category>

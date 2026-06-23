@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.fw.base.integration.log.dao.MciLogDao">
+	<!-- MCI 거래 로그 적재 -->
+	<insert id="insertMciLog" parameterType="com.scbank.process.api.fw.base.integration.log.IntegrationLogEvent">
+		INSERT INTO
+		<choose>
+			<when test="dynamic == 'NF_MCI_LOG_202105'">UIDBS01.NF_MCI_LOG_202105</when>
+			<when test="dynamic == 'NF_MCI_LOG_202106'">UIDBS01.NF_MCI_LOG_202106</when>
+			<when test="dynamic == 'NF_MCI_LOG_202107'">UIDBS01.NF_MCI_LOG_202107</when>
+			<when test="dynamic == 'NF_MCI_LOG_202108'">UIDBS01.NF_MCI_LOG_202108</when>
+			<when test="dynamic == 'NF_MCI_LOG_202109'">UIDBS01.NF_MCI_LOG_202109</when>
+			<when test="dynamic == 'NF_MCI_LOG_202110'">UIDBS01.NF_MCI_LOG_202110</when>
+			<when test="dynamic == 'NF_MCI_LOG_202111'">UIDBS01.NF_MCI_LOG_202111</when>
+			<when test="dynamic == 'NF_MCI_LOG_202112'">UIDBS01.NF_MCI_LOG_202112</when>
+			<when test="dynamic == 'NF_MCI_LOG_202201'">UIDBS01.NF_MCI_LOG_202201</when>
+			<when test="dynamic == 'NF_MCI_LOG_202202'">UIDBS01.NF_MCI_LOG_202202</when>
+			<when test="dynamic == 'NF_MCI_LOG_202203'">UIDBS01.NF_MCI_LOG_202203</when>
+			<when test="dynamic == 'NF_MCI_LOG_202204'">UIDBS01.NF_MCI_LOG_202204</when>
+			<when test="dynamic == 'NF_MCI_LOG_202205'">UIDBS01.NF_MCI_LOG_202205</when>
+			<when test="dynamic == 'NF_MCI_LOG_202206'">UIDBS01.NF_MCI_LOG_202206</when>
+			<when test="dynamic == 'NF_MCI_LOG_202207'">UIDBS01.NF_MCI_LOG_202207</when>
+			<when test="dynamic == 'NF_MCI_LOG_202208'">UIDBS01.NF_MCI_LOG_202208</when>
+			<when test="dynamic == 'NF_MCI_LOG_202209'">UIDBS01.NF_MCI_LOG_202209</when>
+			<when test="dynamic == 'NF_MCI_LOG_202210'">UIDBS01.NF_MCI_LOG_202210</when>
+			<when test="dynamic == 'NF_MCI_LOG_202211'">UIDBS01.NF_MCI_LOG_202211</when>
+			<when test="dynamic == 'NF_MCI_LOG_202212'">UIDBS01.NF_MCI_LOG_202212</when>
+			<when test="dynamic == 'NF_MCI_LOG_202301'">UIDBS01.NF_MCI_LOG_202301</when>
+			<when test="dynamic == 'NF_MCI_LOG_202302'">UIDBS01.NF_MCI_LOG_202302</when>
+			<when test="dynamic == 'NF_MCI_LOG_202303'">UIDBS01.NF_MCI_LOG_202303</when>
+			<when test="dynamic == 'NF_MCI_LOG_202304'">UIDBS01.NF_MCI_LOG_202304</when>
+			<when test="dynamic == 'NF_MCI_LOG_202305'">UIDBS01.NF_MCI_LOG_202305</when>
+			<when test="dynamic == 'NF_MCI_LOG_202306'">UIDBS01.NF_MCI_LOG_202306</when>
+			<when test="dynamic == 'NF_MCI_LOG_202307'">UIDBS01.NF_MCI_LOG_202307</when>
+			<when test="dynamic == 'NF_MCI_LOG_202308'">UIDBS01.NF_MCI_LOG_202308</when>
+			<when test="dynamic == 'NF_MCI_LOG_202309'">UIDBS01.NF_MCI_LOG_202309</when>
+			<when test="dynamic == 'NF_MCI_LOG_202310'">UIDBS01.NF_MCI_LOG_202310</when>
+			<when test="dynamic == 'NF_MCI_LOG_202311'">UIDBS01.NF_MCI_LOG_202311</when>
+			<when test="dynamic == 'NF_MCI_LOG_202312'">UIDBS01.NF_MCI_LOG_202312</when>
+			<when test="dynamic == 'NF_MCI_LOG_202401'">UIDBS01.NF_MCI_LOG_202401</when>
+			<when test="dynamic == 'NF_MCI_LOG_202402'">UIDBS01.NF_MCI_LOG_202402</when>
+			<when test="dynamic == 'NF_MCI_LOG_202403'">UIDBS01.NF_MCI_LOG_202403</when>
+			<when test="dynamic == 'NF_MCI_LOG_202404'">UIDBS01.NF_MCI_LOG_202404</when>
+			<when test="dynamic == 'NF_MCI_LOG_202405'">UIDBS01.NF_MCI_LOG_202405</when>
+			<when test="dynamic == 'NF_MCI_LOG_202406'">UIDBS01.NF_MCI_LOG_202406</when>
+			<when test="dynamic == 'NF_MCI_LOG_202407'">UIDBS01.NF_MCI_LOG_202407</when>
+			<when test="dynamic == 'NF_MCI_LOG_202408'">UIDBS01.NF_MCI_LOG_202408</when>
+			<when test="dynamic == 'NF_MCI_LOG_202409'">UIDBS01.NF_MCI_LOG_202409</when>
+			<when test="dynamic == 'NF_MCI_LOG_202410'">UIDBS01.NF_MCI_LOG_202410</when>
+			<when test="dynamic == 'NF_MCI_LOG_202411'">UIDBS01.NF_MCI_LOG_202411</when>
+			<when test="dynamic == 'NF_MCI_LOG_202412'">UIDBS01.NF_MCI_LOG_202412</when>
+			<when test="dynamic == 'NF_MCI_LOG_202501'">UIDBS01.NF_MCI_LOG_202501</when>
+			<when test="dynamic == 'NF_MCI_LOG_202502'">UIDBS01.NF_MCI_LOG_202502</when>
+			<when test="dynamic == 'NF_MCI_LOG_202503'">UIDBS01.NF_MCI_LOG_202503</when>
+			<when test="dynamic == 'NF_MCI_LOG_202504'">UIDBS01.NF_MCI_LOG_202504</when>
+			<when test="dynamic == 'NF_MCI_LOG_202505'">UIDBS01.NF_MCI_LOG_202505</when>
+			<when test="dynamic == 'NF_MCI_LOG_202506'">UIDBS01.NF_MCI_LOG_202506</when>
+			<when test="dynamic == 'NF_MCI_LOG_202507'">UIDBS01.NF_MCI_LOG_202507</when>
+			<when test="dynamic == 'NF_MCI_LOG_202508'">UIDBS01.NF_MCI_LOG_202508</when>
+			<when test="dynamic == 'NF_MCI_LOG_202509'">UIDBS01.NF_MCI_LOG_202509</when>
+			<when test="dynamic == 'NF_MCI_LOG_202510'">UIDBS01.NF_MCI_LOG_202510</when>
+			<when test="dynamic == 'NF_MCI_LOG_202511'">UIDBS01.NF_MCI_LOG_202511</when>
+			<when test="dynamic == 'NF_MCI_LOG_202512'">UIDBS01.NF_MCI_LOG_202512</when>
+			<when test="dynamic == 'NF_MCI_LOG_202601'">UIDBS01.NF_MCI_LOG_202601</when>
+			<when test="dynamic == 'NF_MCI_LOG_202602'">UIDBS01.NF_MCI_LOG_202602</when>
+			<when test="dynamic == 'NF_MCI_LOG_202603'">UIDBS01.NF_MCI_LOG_202603</when>
+			<when test="dynamic == 'NF_MCI_LOG_202604'">UIDBS01.NF_MCI_LOG_202604</when>
+			<when test="dynamic == 'NF_MCI_LOG_202605'">UIDBS01.NF_MCI_LOG_202605</when>
+			<when test="dynamic == 'NF_MCI_LOG_202606'">UIDBS01.NF_MCI_LOG_202606</when>
+			<when test="dynamic == 'NF_MCI_LOG_202607'">UIDBS01.NF_MCI_LOG_202607</when>
+			<when test="dynamic == 'NF_MCI_LOG_202608'">UIDBS01.NF_MCI_LOG_202608</when>
+			<when test="dynamic == 'NF_MCI_LOG_202609'">UIDBS01.NF_MCI_LOG_202609</when>
+			<when test="dynamic == 'NF_MCI_LOG_202610'">UIDBS01.NF_MCI_LOG_202610</when>
+			<when test="dynamic == 'NF_MCI_LOG_202611'">UIDBS01.NF_MCI_LOG_202611</when>
+			<when test="dynamic == 'NF_MCI_LOG_202612'">UIDBS01.NF_MCI_LOG_202612</when>
+			<when test="dynamic == 'NF_MCI_LOG_202701'">UIDBS01.NF_MCI_LOG_202701</when>
+			<when test="dynamic == 'NF_MCI_LOG_202702'">UIDBS01.NF_MCI_LOG_202702</when>
+			<when test="dynamic == 'NF_MCI_LOG_202703'">UIDBS01.NF_MCI_LOG_202703</when>
+			<when test="dynamic == 'NF_MCI_LOG_202704'">UIDBS01.NF_MCI_LOG_202704</when>
+			<when test="dynamic == 'NF_MCI_LOG_202705'">UIDBS01.NF_MCI_LOG_202705</when>
+			<when test="dynamic == 'NF_MCI_LOG_202706'">UIDBS01.NF_MCI_LOG_202706</when>
+			<when test="dynamic == 'NF_MCI_LOG_202707'">UIDBS01.NF_MCI_LOG_202707</when>
+			<when test="dynamic == 'NF_MCI_LOG_202708'">UIDBS01.NF_MCI_LOG_202708</when>
+			<when test="dynamic == 'NF_MCI_LOG_202709'">UIDBS01.NF_MCI_LOG_202709</when>
+			<when test="dynamic == 'NF_MCI_LOG_202710'">UIDBS01.NF_MCI_LOG_202710</when>
+			<when test="dynamic == 'NF_MCI_LOG_202711'">UIDBS01.NF_MCI_LOG_202711</when>
+			<when test="dynamic == 'NF_MCI_LOG_202712'">UIDBS01.NF_MCI_LOG_202712</when>
+			<when test="dynamic == 'NF_MCI_LOG_202801'">UIDBS01.NF_MCI_LOG_202801</when>
+			<when test="dynamic == 'NF_MCI_LOG_202802'">UIDBS01.NF_MCI_LOG_202802</when>
+			<when test="dynamic == 'NF_MCI_LOG_202803'">UIDBS01.NF_MCI_LOG_202803</when>
+			<when test="dynamic == 'NF_MCI_LOG_202804'">UIDBS01.NF_MCI_LOG_202804</when>
+			<when test="dynamic == 'NF_MCI_LOG_202805'">UIDBS01.NF_MCI_LOG_202805</when>
+			<when test="dynamic == 'NF_MCI_LOG_202806'">UIDBS01.NF_MCI_LOG_202806</when>
+			<when test="dynamic == 'NF_MCI_LOG_202807'">UIDBS01.NF_MCI_LOG_202807</when>
+			<when test="dynamic == 'NF_MCI_LOG_202808'">UIDBS01.NF_MCI_LOG_202808</when>
+			<when test="dynamic == 'NF_MCI_LOG_202809'">UIDBS01.NF_MCI_LOG_202809</when>
+			<when test="dynamic == 'NF_MCI_LOG_202810'">UIDBS01.NF_MCI_LOG_202810</when>
+			<when test="dynamic == 'NF_MCI_LOG_202811'">UIDBS01.NF_MCI_LOG_202811</when>
+			<when test="dynamic == 'NF_MCI_LOG_202812'">UIDBS01.NF_MCI_LOG_202812</when>
+			<when test="dynamic == 'NF_MCI_LOG_202901'">UIDBS01.NF_MCI_LOG_202901</when>
+			<when test="dynamic == 'NF_MCI_LOG_202902'">UIDBS01.NF_MCI_LOG_202902</when>
+			<when test="dynamic == 'NF_MCI_LOG_202903'">UIDBS01.NF_MCI_LOG_202903</when>
+			<when test="dynamic == 'NF_MCI_LOG_202904'">UIDBS01.NF_MCI_LOG_202904</when>
+			<when test="dynamic == 'NF_MCI_LOG_202905'">UIDBS01.NF_MCI_LOG_202905</when>
+			<when test="dynamic == 'NF_MCI_LOG_202906'">UIDBS01.NF_MCI_LOG_202906</when>
+			<when test="dynamic == 'NF_MCI_LOG_202907'">UIDBS01.NF_MCI_LOG_202907</when>
+			<when test="dynamic == 'NF_MCI_LOG_202908'">UIDBS01.NF_MCI_LOG_202908</when>
+			<when test="dynamic == 'NF_MCI_LOG_202909'">UIDBS01.NF_MCI_LOG_202909</when>
+			<when test="dynamic == 'NF_MCI_LOG_202910'">UIDBS01.NF_MCI_LOG_202910</when>
+			<when test="dynamic == 'NF_MCI_LOG_202911'">UIDBS01.NF_MCI_LOG_202911</when>
+			<when test="dynamic == 'NF_MCI_LOG_202912'">UIDBS01.NF_MCI_LOG_202912</when>
+			<when test="dynamic == 'NF_MCI_LOG_203001'">UIDBS01.NF_MCI_LOG_203001</when>
+			<when test="dynamic == 'NF_MCI_LOG_203002'">UIDBS01.NF_MCI_LOG_203002</when>
+			<when test="dynamic == 'NF_MCI_LOG_203003'">UIDBS01.NF_MCI_LOG_203003</when>
+			<when test="dynamic == 'NF_MCI_LOG_203004'">UIDBS01.NF_MCI_LOG_203004</when>
+			<when test="dynamic == 'NF_MCI_LOG_203005'">UIDBS01.NF_MCI_LOG_203005</when>
+			<when test="dynamic == 'NF_MCI_LOG_203006'">UIDBS01.NF_MCI_LOG_203006</when>
+			<when test="dynamic == 'NF_MCI_LOG_203007'">UIDBS01.NF_MCI_LOG_203007</when>
+			<when test="dynamic == 'NF_MCI_LOG_203008'">UIDBS01.NF_MCI_LOG_203008</when>
+			<when test="dynamic == 'NF_MCI_LOG_203009'">UIDBS01.NF_MCI_LOG_203009</when>
+			<when test="dynamic == 'NF_MCI_LOG_203010'">UIDBS01.NF_MCI_LOG_203010</when>
+			<when test="dynamic == 'NF_MCI_LOG_203011'">UIDBS01.NF_MCI_LOG_203011</when>
+			<when test="dynamic == 'NF_MCI_LOG_203012'">UIDBS01.NF_MCI_LOG_203012</when>
+			<when test="dynamic == 'NF_MCI_LOG_203101'">UIDBS01.NF_MCI_LOG_203101</when>
+			<when test="dynamic == 'NF_MCI_LOG_203102'">UIDBS01.NF_MCI_LOG_203102</when>
+			<when test="dynamic == 'NF_MCI_LOG_203103'">UIDBS01.NF_MCI_LOG_203103</when>
+			<when test="dynamic == 'NF_MCI_LOG_203104'">UIDBS01.NF_MCI_LOG_203104</when>
+			<when test="dynamic == 'NF_MCI_LOG_203105'">UIDBS01.NF_MCI_LOG_203105</when>
+			<when test="dynamic == 'NF_MCI_LOG_203106'">UIDBS01.NF_MCI_LOG_203106</when>
+			<when test="dynamic == 'NF_MCI_LOG_203107'">UIDBS01.NF_MCI_LOG_203107</when>
+			<when test="dynamic == 'NF_MCI_LOG_203108'">UIDBS01.NF_MCI_LOG_203108</when>
+			<when test="dynamic == 'NF_MCI_LOG_203109'">UIDBS01.NF_MCI_LOG_203109</when>
+			<when test="dynamic == 'NF_MCI_LOG_203110'">UIDBS01.NF_MCI_LOG_203110</when>
+			<when test="dynamic == 'NF_MCI_LOG_203111'">UIDBS01.NF_MCI_LOG_203111</when>
+			<when test="dynamic == 'NF_MCI_LOG_203112'">UIDBS01.NF_MCI_LOG_203112</when>
+			<when test="dynamic == 'NF_MCI_LOG_203201'">UIDBS01.NF_MCI_LOG_203201</when>
+			<when test="dynamic == 'NF_MCI_LOG_203202'">UIDBS01.NF_MCI_LOG_203202</when>
+			<when test="dynamic == 'NF_MCI_LOG_203203'">UIDBS01.NF_MCI_LOG_203203</when>
+			<when test="dynamic == 'NF_MCI_LOG_203204'">UIDBS01.NF_MCI_LOG_203204</when>
+			<when test="dynamic == 'NF_MCI_LOG_203205'">UIDBS01.NF_MCI_LOG_203205</when>
+			<when test="dynamic == 'NF_MCI_LOG_203206'">UIDBS01.NF_MCI_LOG_203206</when>
+			<when test="dynamic == 'NF_MCI_LOG_203207'">UIDBS01.NF_MCI_LOG_203207</when>
+			<when test="dynamic == 'NF_MCI_LOG_203208'">UIDBS01.NF_MCI_LOG_203208</when>
+			<when test="dynamic == 'NF_MCI_LOG_203209'">UIDBS01.NF_MCI_LOG_203209</when>
+			<when test="dynamic == 'NF_MCI_LOG_203210'">UIDBS01.NF_MCI_LOG_203210</when>
+			<when test="dynamic == 'NF_MCI_LOG_203211'">UIDBS01.NF_MCI_LOG_203211</when>
+			<when test="dynamic == 'NF_MCI_LOG_203212'">UIDBS01.NF_MCI_LOG_203212</when>
+			<when test="dynamic == 'NF_MCI_LOG_203301'">UIDBS01.NF_MCI_LOG_203301</when>
+			<when test="dynamic == 'NF_MCI_LOG_203302'">UIDBS01.NF_MCI_LOG_203302</when>
+			<when test="dynamic == 'NF_MCI_LOG_203303'">UIDBS01.NF_MCI_LOG_203303</when>
+			<when test="dynamic == 'NF_MCI_LOG_203304'">UIDBS01.NF_MCI_LOG_203304</when>
+			<when test="dynamic == 'NF_MCI_LOG_203305'">UIDBS01.NF_MCI_LOG_203305</when>
+			<when test="dynamic == 'NF_MCI_LOG_203306'">UIDBS01.NF_MCI_LOG_203306</when>
+			<when test="dynamic == 'NF_MCI_LOG_203307'">UIDBS01.NF_MCI_LOG_203307</when>
+			<when test="dynamic == 'NF_MCI_LOG_203308'">UIDBS01.NF_MCI_LOG_203308</when>
+			<when test="dynamic == 'NF_MCI_LOG_203309'">UIDBS01.NF_MCI_LOG_203309</when>
+			<when test="dynamic == 'NF_MCI_LOG_203310'">UIDBS01.NF_MCI_LOG_203310</when>
+			<when test="dynamic == 'NF_MCI_LOG_203311'">UIDBS01.NF_MCI_LOG_203311</when>
+			<when test="dynamic == 'NF_MCI_LOG_203312'">UIDBS01.NF_MCI_LOG_203312</when>
+			<when test="dynamic == 'NF_MCI_LOG_203401'">UIDBS01.NF_MCI_LOG_203401</when>
+			<when test="dynamic == 'NF_MCI_LOG_203402'">UIDBS01.NF_MCI_LOG_203402</when>
+			<when test="dynamic == 'NF_MCI_LOG_203403'">UIDBS01.NF_MCI_LOG_203403</when>
+			<when test="dynamic == 'NF_MCI_LOG_203404'">UIDBS01.NF_MCI_LOG_203404</when>
+			<when test="dynamic == 'NF_MCI_LOG_203405'">UIDBS01.NF_MCI_LOG_203405</when>
+			<when test="dynamic == 'NF_MCI_LOG_203406'">UIDBS01.NF_MCI_LOG_203406</when>
+			<when test="dynamic == 'NF_MCI_LOG_203407'">UIDBS01.NF_MCI_LOG_203407</when>
+			<when test="dynamic == 'NF_MCI_LOG_203408'">UIDBS01.NF_MCI_LOG_203408</when>
+			<when test="dynamic == 'NF_MCI_LOG_203409'">UIDBS01.NF_MCI_LOG_203409</when>
+			<when test="dynamic == 'NF_MCI_LOG_203410'">UIDBS01.NF_MCI_LOG_203410</when>
+			<when test="dynamic == 'NF_MCI_LOG_203411'">UIDBS01.NF_MCI_LOG_203411</when>
+			<when test="dynamic == 'NF_MCI_LOG_203412'">UIDBS01.NF_MCI_LOG_203412</when>
+			<when test="dynamic == 'NF_MCI_LOG_203501'">UIDBS01.NF_MCI_LOG_203501</when>
+			<when test="dynamic == 'NF_MCI_LOG_203502'">UIDBS01.NF_MCI_LOG_203502</when>
+			<when test="dynamic == 'NF_MCI_LOG_203503'">UIDBS01.NF_MCI_LOG_203503</when>
+			<when test="dynamic == 'NF_MCI_LOG_203504'">UIDBS01.NF_MCI_LOG_203504</when>
+			<when test="dynamic == 'NF_MCI_LOG_203505'">UIDBS01.NF_MCI_LOG_203505</when>
+			<when test="dynamic == 'NF_MCI_LOG_203506'">UIDBS01.NF_MCI_LOG_203506</when>
+			<when test="dynamic == 'NF_MCI_LOG_203507'">UIDBS01.NF_MCI_LOG_203507</when>
+			<when test="dynamic == 'NF_MCI_LOG_203508'">UIDBS01.NF_MCI_LOG_203508</when>
+			<when test="dynamic == 'NF_MCI_LOG_203509'">UIDBS01.NF_MCI_LOG_203509</when>
+			<when test="dynamic == 'NF_MCI_LOG_203510'">UIDBS01.NF_MCI_LOG_203510</when>
+			<when test="dynamic == 'NF_MCI_LOG_203511'">UIDBS01.NF_MCI_LOG_203511</when>
+			<when test="dynamic == 'NF_MCI_LOG_203512'">UIDBS01.NF_MCI_LOG_203512</when>
+		</choose>
+		(
+			CHNLGB,
+			SEQNO,
+			TRCLS,
+			TRDATE,
+			TRTIME,
+			CUSTINFO,
+			TXCD,
+			ERRCD,
+			DATA,
+			IP,
+			USERID
+		) VALUES (
+			#{chnlGb},
+			CHAR(CONCAT(VARCHAR_FORMAT(CURRENT TIMESTAMP, 'HH24MISSFF3'), INT(RAND()* 8999 + 1000))),
+			#{trCls},
+			VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDD'),
+			VARCHAR_FORMAT(CURRENT TIMESTAMP, 'HH24MISS'),
+			#{custInfo},
+			#{txCd},
+			#{errCd},
+			#{data},
+			#{ipAddress},
+			#{userId}
+		)
+	</insert>
+</mapper>

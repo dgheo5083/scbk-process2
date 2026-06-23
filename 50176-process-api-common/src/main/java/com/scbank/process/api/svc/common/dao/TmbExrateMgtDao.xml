@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.TmbExrateMgtDao">
+
+    <!-- PUSH 등록된 환율 정보 전체 삭제 DELECT [ASIS: TMB_EXRATE_MGT_SEQ_D_02] -->
+	<delete id="deleteAllExratePushData" parameterType="com.scbank.process.api.svc.common.dao.dto.DeleteAllExratePushDataParameter">
+	DELETE FROM
+		TMB_EXRATE_MGT
+	WHERE 
+		ER_PUSERNO = #{serno}
+	</delete>
+
+    <!-- PUSH 고객 환율 등록 정보 조회 [ASIS: TMB_EXRATE_MGT_S_01] -->
+	<select id="selectExratePushData" parameterType="java.lang.String" resultType = "com.scbank.process.api.svc.common.dao.dto.SelectExratePushDataResult">
+	SELECT 
+        ER_SEQNO AS SEQNO, 
+        ER_PUSERNO AS PUSERNO, 
+        ER_GB AS GB, 
+        ER_CURRNM AS CURRNM, 
+        ER_TYPE AS TYPE, 
+        ER_FIT_RATE AS FIT_RATE, 
+        ER_PUSH_DAY AS PUSH_DAY, 
+        ER_PUSH_TIME AS PUSH_TIME 
+	FROM 
+	    TMB_EXRATE_MGT 
+	WHERE 
+	    ER_PUSERNO = #{serno}
+	</select>
+
+    <!-- PUSH 등록된 환율 UPDATE [ASIS: TMB_EXRATE_MGT_SEQ_U_01] -->
+	<update id="updateExratePushData" parameterType = "com.scbank.process.api.svc.common.dao.dto.UpdateExratePushDataParameter">
+	UPDATE
+		TMB_EXRATE_MGT
+	SET
+		ER_TYPE = #{type},
+	  	ER_FIT_RATE = #{fitRate},
+	 	ER_PUSH_DAY = #{pushDay},
+	  	ER_PUSH_TIME = #{pushTime}
+	WHERE
+		ER_PUSERNO = #{puserno} AND ER_SEQNO = #{seqNo}
+	</update>
+
+    <!-- PUSH 환율 등록 INSERT [ASIS: TMB_EXRATE_MGT_SEQ_I_01] -->
+	<insert id="insertExratePushData" parameterType = "com.scbank.process.api.svc.common.dao.dto.InsertExratePushDataParameter">
+	INSERT INTO
+		TMB_EXRATE_MGT (
+	 ER_SEQNO,
+	 ER_PUSERNO,
+	 ER_GB,
+	 ER_CURRNM,
+	 ER_TYPE,
+	 ER_FIT_RATE,
+	 ER_PUSH_DAY,
+	 ER_PUSH_TIME,
+	 REGSIT_DT
+	) VALUES (
+	(select CASE WHEN MAX(ER_SEQNO) IS NULL THEN 0 ELSE MAX(ER_SEQNO)+1 END from  TMB_EXRATE_MGT),
+	 #{puSerno},
+	 #{gb},
+	 #{currnm},
+	 #{type},
+	 #{fitRate},
+	 #{pushDay},
+	 #{pushTime},
+	 CURRENT_TIMESTAMP
+	)
+	</insert>
+
+    <!-- PUSH 등록된 환율 삭제 DELETE [ASIS: TMB_EXRATE_MGT_SEQ_D_01] -->
+	<delete id="deleteExratePushData" parameterType = "com.scbank.process.api.svc.common.dao.dto.DeleteExratePushDataParameter">
+	DELETE FROM
+		TMB_EXRATE_MGT
+	WHERE 
+		ER_PUSERNO = #{puSerno} AND ER_SEQNO = #{seqNo}
+	</delete>
+
+</mapper>

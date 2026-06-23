@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="en">
+
+    <errorCode code="PRCMNG30001">
+        <msg><![CDATA[Digital certificate error. {0}]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30002">
+        <msg><![CDATA[Digital certificate communications error.]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30003">
+        <msg><![CDATA[Error has occurred while analyzing digital certificate header.]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30004">
+        <msg><![CDATA[Certificate issuance error. {0}[{1}]]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30005">
+        <msg><![CDATA[Error has occurred in certificate issuance confirmation. {0}[{1}]]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30006">
+        <msg><![CDATA[Error has occurred in certificate inquiry.]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30007">
+        <msg><![CDATA[No security card or OTP information exist.]]></msg>
+    </errorCode>
+
+</errorCodes>

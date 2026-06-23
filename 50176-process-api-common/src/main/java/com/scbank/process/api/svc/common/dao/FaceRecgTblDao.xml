@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.FaceRecgTblDao">
+	<!-- 안면인식 정보 저장 -->
+	<insert id="insertFaceRecg" parameterType="com.scbank.process.api.svc.common.dao.dto.FaceRecgParameter" >
+		INSERT INTO FACE_RECG_TBL (
+			 TRAD_DATE
+			,USER_CIF_NO
+			,FACE_TRANSACTION_ID
+			,CUST_NO
+			,TRAD_NO
+			,FACE_RECG_YN
+			,FACE_RECG_SCORE
+			,FACE_RECG_CD
+			,FACE_RECG_MSG
+			,FACE_RECG_DATE
+			<if test='selfiePath != null and selfiePath != ""'>
+			,SELFIE_PATH
+			</if>
+			<if test='filePath != null and filePath != ""'>
+			,FILE_PATH
+			</if>
+			<if test='fileName != null and fileName != ""'>
+			,FILE_NAME
+			</if>
+			,REGISTER_DATE
+		) VALUES (
+			 VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDD')
+			,#{userCifNo}
+			,#{faceTransactionId}
+			,#{custNo}
+			,#{tradNo}
+			,#{faceRecgYn}
+			,#{faceRecgScore}
+			,#{faceRecgCd}
+			,#{faceRecgMsg}
+			,#{faceRecgData}
+			<if test='selfiePath != null and selfiePath != ""'>
+			,#{selfiePath}
+			</if>
+			<if test='filePath != null and filePath != ""'>
+			,#{filePath}
+			</if>
+			<if test='fileName != null and fileName != ""'>
+			,#{fileName}
+			</if>
+			,CURRENT TIMESTAMP
+		)
+	</insert>
+</mapper>

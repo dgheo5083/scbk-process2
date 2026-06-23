@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TAXTY" lang="ko">
+  <code key="0" order="0"><![CDATA[세목선택]]></code>
+  <code key="10" order="1"><![CDATA[10 종합소득세]]></code>
+  <code key="11" order="2"><![CDATA[11 이자소득세]]></code>
+  <code key="12" order="3"><![CDATA[12 배당소득세]]></code>
+  <code key="13" order="4"><![CDATA[13 사업소득세]]></code>
+  <code key="14" order="5"><![CDATA[14 갑종근로소득세]]></code>
+  <code key="15" order="6"><![CDATA[15 을종근로소득세]]></code>
+  <code key="16" order="7"><![CDATA[16 기타소득세]]></code>
+  <code key="19" order="8"><![CDATA[19 근로장려금]]></code>
+  <code key="21" order="9"><![CDATA[21 퇴직소득세]]></code>
+  <code key="22" order="10"><![CDATA[22 양도소득세]]></code>
+  <code key="23" order="11"><![CDATA[23 산림소득세]]></code>
+  <code key="31" order="12"><![CDATA[31 법인세]]></code>
+  <code key="32" order="13"><![CDATA[32 상속세]]></code>
+  <code key="33" order="14"><![CDATA[33 증여세]]></code>
+  <code key="34" order="15"><![CDATA[34 자산재평가세]]></code>
+  <code key="35" order="16"><![CDATA[35 부당이득세]]></code>
+  <code key="36" order="17"><![CDATA[36 토지초과이득세]]></code>
+  <code key="41" order="18"><![CDATA[41 부가가치세]]></code>
+  <code key="42" order="19"><![CDATA[42 특별소비세]]></code>
+  <code key="43" order="20"><![CDATA[43 주세]]></code>
+  <code key="44" order="21"><![CDATA[44 전화세]]></code>
+  <code key="45" order="22"><![CDATA[45 증권거래세]]></code>
+  <code key="46" order="23"><![CDATA[46 인지세]]></code>
+  <code key="47" order="24"><![CDATA[47 개별소비세(구 특별소비세)]]></code>
+  <code key="53" order="25"><![CDATA[53 교통세]]></code>
+  <code key="57" order="26"><![CDATA[57 종합부동산세]]></code>
+  <code key="59" order="27"><![CDATA[59 현년도교통에너지환경세(구 교통세)]]></code>
+  <code key="60" order="28"><![CDATA[60 과년도교통에너지환경세(구 교통세)]]></code>
+  <code key="76" order="76"><![CDATA[76 과태료]]></code>
+  <code key="77" order="77"><![CDATA[77 벌금]]></code>
+  <code key="84" order="84"><![CDATA[84 징계부가금]]></code>
+</category>

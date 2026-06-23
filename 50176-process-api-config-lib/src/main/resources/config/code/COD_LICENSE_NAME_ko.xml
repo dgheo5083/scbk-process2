@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="LICENSE_NAME" lang="ko">
+  <!-- 운전면허 지역번호 -->
+  <code key="11" order="1"><![CDATA[서울]]></code>
+  <code key="12" order="2"><![CDATA[부산]]></code>
+  <code key="13" order="3"><![CDATA[경기]]></code>
+  <code key="14" order="4"><![CDATA[강원]]></code>
+  <code key="15" order="5"><![CDATA[충북]]></code>
+  <code key="16" order="6"><![CDATA[충남]]></code>
+  <code key="17" order="7"><![CDATA[전북]]></code>
+  <code key="18" order="8"><![CDATA[전남]]></code>
+  <code key="19" order="9"><![CDATA[경북]]></code>
+  <code key="20" order="10"><![CDATA[경남]]></code>
+  <code key="21" order="11"><![CDATA[제주]]></code>
+  <code key="22" order="12"><![CDATA[대구]]></code>
+  <code key="23" order="13"><![CDATA[인천]]></code>
+  <code key="24" order="14"><![CDATA[광주]]></code>
+  <code key="25" order="15"><![CDATA[대전]]></code>
+  <code key="26" order="16"><![CDATA[울산]]></code>
+</category>
+

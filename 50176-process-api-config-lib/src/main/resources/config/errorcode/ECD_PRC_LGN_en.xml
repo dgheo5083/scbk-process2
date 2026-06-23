@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>				
+<errorCodes lang="en">				
+    <errorCode code="PRCLGN0001">				
+		<msg><![CDATA[Error has occurred in BankSign certificate transaction.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0002">				
+		<msg><![CDATA[This IP/MAC is registered on IP/MAC blacklist, thus its access to SCBK internet banking is restricted. (Please contact customer center 1588-1599 for any inquires.)]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0003">				
+		<msg><![CDATA[You can login with your cerficiate after you have registered for Mobile Banking.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0004">				
+		<msg><![CDATA[Identification failed. Logged-in user and certificate-submitted user are different.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0005">				
+		<msg><![CDATA[Abnormal HDD value.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0006">				
+		<msg><![CDATA[Abnormal HDD value]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0007">				
+		<msg><![CDATA[Please subscribe to keyboard banking from mobile banking app. \n (Service and setting) > Simple service setting > Register for keyboard banking]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0008">				
+		<msg><![CDATA[To use keyboard banking service, go to mobile banking Service and setting > Simple service setting > Subscribe/cancel keyboard banking > Keyboard banking setting.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0009">				
+		<msg><![CDATA[This IP is subject to overseas IP block thus access to SCBK keyboard banking is restricted.(Please contact customer center 1588-1599 for any inquires.)]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0010">				
+		<msg><![CDATA[Sorry, we are unable to process your request at this time. Please try again later.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0011">				
+		<msg><![CDATA[Failed ARS authentication.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0012">				
+		<msg><![CDATA[Password cannot be reset in Breeze Banking. Please use internet banking for password reset.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0013">				
+		<msg><![CDATA[Customer name does not match.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0014">				
+		<msg><![CDATA[You are currently logged out since log-in from other PC/Mobile is detected. If this is not deemed normal, please contact the customer center(1588-1599).]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0015">				
+		<msg><![CDATA[This menu requires log in.<br/>Do you want to go to log-in page?]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0016">				
+		<msg><![CDATA[Incorrect new password.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0017">				
+		<msg><![CDATA[Error has occurred while logging in to BankSign.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0018">				
+		<msg><![CDATA[Failed bio-authentication. [TR{0} {1} ({2} {3})]]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0019">				
+		<msg><![CDATA[There was an error occurred while processing duplicate login.]]></msg>		
+    </errorCode>				
+    <errorCode code="PRCLGN0020">				
+		<msg><![CDATA[Update to the latest version of SC mobile banking application.]]></msg>		
+    </errorCode>
+    <errorCode code="PRCLGN0021">
+		<msg><![CDATA[]]></msg>
+    </errorCode>
+    <errorCode code="PRCLGN0022">
+		<msg><![CDATA[Invalid log-in request. Please try again.]]></msg>
+    </errorCode>
+    <errorCode code="PRCLGN0023">
+		<msg><![CDATA[An error occurred during fintech certificate transaction.]]></msg>
+    </errorCode>				
+</errorCodes>				

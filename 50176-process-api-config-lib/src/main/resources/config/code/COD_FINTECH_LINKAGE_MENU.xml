@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	MenuID		  |	 Menu Dept
+	MA3CMMBIZ019 ::: FINTECH 모듈 호출전 CI 조회 업무 MA3CMMBIZ019_101S.act
+	MA3TRNMOV002 ::: 이체/납부 > 계좌이동서비스(자동납부) > 계좌변경내역조회/취소 (MA3TRNMOV002_20P.view)
+	MA3TRNMOV003 ::: 이체/납부 > 계좌이동서비스(자동납부) > 자동납부해지 (MA3TRNMOV003_40V.view)
+	MA3TRNGRO003 ::: 이체/납부 > 지로납부 > 납부취소	(MA3TRNGRO003_40V.view)
+	MA3TRNERR001 ::: 이체/납부 > 착오송금반환/조회 > 착오송금반환	(MA3TRNERR001_60V.view)
+	MA3TRNSMI003 ::: 이체/납부 > 스마트 출금 > 출금계좌 해지	(MA3TRNSMI003_30V.view)
+	MA3ACTCLS001 ::: 입출금/예적금 > 가입상품 조회/해지	(MA3ACTCLS001_60V.view)
+	MA3MSCPDM001 ::: 입출금/예적금 > 출금계좌 삭제	(MA3MSCPDM001.mnu)
+	MA3CCDBCD028 ::: 카드	 > 분할납부(할부전화) > 일시불 분할납부(국내)	(MA3CCDBCD028_40V.view)
+	MA3CCDBCD029 ::: 카드	 > 분할납부(할부전화) > 일시불 분할납부(해외)	(MA3CCDBCD029_40V.view)
+	MA3CCDBCD013 ::: 카드 > 카드선결제	(MA3CCDBCD014_60V.view)
+	MA3CCDBCD027 ::: 카드	 > 일부결제금액이월약정(리볼빙) > 일부결제금액이월약정(리볼빙) 해지
+	MA3FRNFCC001 ::: 외환 > 현찰환전 > 현찰환전신청	(MA3FRNFCC001_40V.view)
+	MA3MSCPDM001 ::: 입출금/예적금 > 출금계좌 등록	(MA3MSCPDM001_31V.view)
+	MA3LGNPST001 ::: 로그인 > 기본계좌변경 (MA3LGNPST001_20V.view)
+-->
+<category name="FINTECH_LINKAGE_MENU">
+<!-- 
+  	<code key="LINKAGE" order="0"><![CDATA[MA3TRNMOV002|MA3TRNMOV003|MA3TRNGRO003|MA3TRNERR001|MA3TRNSMI005|MA3ACTCLS001|MA3MSCPDM001|MA3CCDBCD028|MA3CCDBCD029|MA3CCDBCD013|MA3CCDBCD027|MA3FRNFCC001]]></code>
+	<code key="LINKAGE" order="0"><![CDATA[MA3MSCPDM001.mnu|MA3TRNMOV002_20P.view|MA3TRNMOV003_40V.view|MA3TRNGRO003_40V.view|MA3TRNERR001_60V.view|MA3TRNSMI003_30V.view|MA3ACTCLS001_60V.view|MA3CCDBCD028_40V.view|MA3CCDBCD029_40V.view|MA3CCDBCD014_60V.view|MA3FRNFCC001_40V.view]]></code>
+-->
+	<!-- key : Menu value : view명 | 접속URL로 View명만 체크해야하는경우 Y 그외 생략 -->
+ 	<!--  <code key="MA3CMMVCG002" order="0"><![CDATA[MA3CMMVCG002_100S.act]]></code>--><!-- 베라포트 모듈 CI 조회 추가 -->
+	<!--<code key="MA3MSCPDM102" order="1"><![CDATA[MA3MSCPDM001_102S.act]]></code>--><!-- 베라포트 모듈 CI 조회 추가 -->
+	<!--<code key="MA3CMMBIZ019" order="2"><![CDATA[MA3CMMBIZ019_101S.act]]></code>--><!-- 베라포트 모듈 CI 조회 추가 -->
+	<code key="MA3TRNMOV002" order="0"><![CDATA[MA3TRNMOV002_30V.view]]></code>
+	<code key="MA3TRNMOV003" order="1"><![CDATA[MA3TRNMOV003_40V.view]]></code>
+	<code key="MA3TRNGRO003" order="2"><![CDATA[MA3TRNGRO003_40V.view]]></code>
+	<code key="MA3TRNERR001" order="3"><![CDATA[MA3TRNERR001_60V.view]]></code>
+	<code key="MA3TRNSMI002" order="4"><![CDATA[MA3TRNSMI002_30V.view]]></code>
+	<code key="MA3TRNSMI003" order="5"><![CDATA[MA3TRNSMI003_30V.view]]></code>
+	<code key="MA3ACTCLS001" order="6"><![CDATA[MA3ACTCLS001_60V.view]]></code>
+	<!-- <code key="MA3MSCPDM001" order="9"><![CDATA[MA3MSCPDM001.mnu$Y]]></code> -->
+	<code key="MA3MSCPDM001" order="7"><![CDATA[MA3MSCPDM001.mnu]]></code>
+	<code key="MA3MSCPDM120" order="8"><![CDATA[MA3MSCPDM001_20V.view]]></code>
+	<code key="MA3MSCPDM131" order="9"><![CDATA[MA3MSCPDM001_31V.view]]></code>
+	<code key="MA3CCDBCD028" order="10"><![CDATA[MA3CCDBCD028_40V.view]]></code>
+	<code key="MA3CCDBCD029" order="11"><![CDATA[MA3CCDBCD029_40V.view]]></code>
+	<code key="MA3CCDBCD013" order="12"><![CDATA[MA3CCDBCD014_50V.view]]></code>
+	<!-- 2020.11.03 대상업무 제외 <code key="MA3CCDBCD027" order="11"><![CDATA[MA3CCDBCD025_30V.view]]></code>  -->
+	<code key="MA3FRNFCC001" order="13"><![CDATA[MA3FRNFCC001_40V.view]]></code>
+	<!-- <code key="MA3MSCPDM001" order="15"><![CDATA[MA3MSCPDM001_31V.view]]></code> -->
+	<code key="MA3LGNPST001" order="14"><![CDATA[MA3LGNPST001_20V.view]]></code>
+</category>

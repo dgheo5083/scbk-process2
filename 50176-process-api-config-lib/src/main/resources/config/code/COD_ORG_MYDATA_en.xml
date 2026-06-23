@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ORG_MYDATA" lang="en">
+	<!-- 마이데이터 타기관 코드 리스트 (구분자:;;) 은행명;;이미지;;오픈뱅킹여부;;오픈뱅킹기관코드-->
+	<code key='A1AAEO0000' order='1'><![CDATA[KB국민은행;;/resource/images/mydata/A1_72x72_04.png;;Y;;004]]></code>
+	<code key='A1AAER0000' order='2'><![CDATA[신한은행;;/resource/images/mydata/A1_72x72_06.png;;Y;;088]]></code>
+	<code key='A1AABG0000' order='3'><![CDATA[NH농협은행;;/resource/images/mydata/A1_72x72_02.png;;Y;;011]]></code>
+	<code key='A1AAEM0000' order='4'><![CDATA[우리은행;;/resource/images/mydata/A1_72x72_03.png;;Y;;020]]></code>
+	<code key='A1AAES0000' order='5'><![CDATA[하나은행;;/resource/images/mydata/A1_72x72_07.png;;Y;;081]]></code>
+	<code key='A1AAPF0000' order='6'><![CDATA[토스뱅크;;/resource/images/mydata/A1_72x72_19.png;;Y;;092]]></code>
+	<code key='A1AAHJ0000' order='7'><![CDATA[카카오뱅크;;/resource/images/mydata/A1_72x72_08.png;;Y;;090]]></code>
+	<code key='A1AAJB0000' order='8'><![CDATA[케이뱅크;;/resource/images/mydata/A1_72x72_15.png;;Y;;089]]></code>
+	<code key='A1AAEQ0000' order='9'><![CDATA[IBK기업은행;;/resource/images/mydata/A1_72x72_05.png;;Y;;003]]></code>
+	<code key='A1AAAD0000' order='10'><![CDATA[KDB산업은행;;/resource/images/mydata/A1_72x72_01.png;;Y;;002]]></code>
+	<code key='A1AAQE0000' order='11'><![CDATA[씨티은행;;/resource/images/mydata/A1_72x72_18.png;;Y;;027]]></code>
+	<code key='A1AAKA0000' order='12'><![CDATA[우체국;;/resource/images/mydata/A1_72x72_16.png;;Y;;071]]></code>
+	<code key='A4AAPA0000' order='13'><![CDATA[새마을금고;;/resource/images/mydata/A1_72x72_21.png;;Y;;045]]></code>
+	<code key='A1AAHX0000' order='14'><![CDATA[Sh수협은행;;/resource/images/mydata/A1_72x72_11.png;;Y;;007]]></code>
+	<code key='A1AAII0000' order='15'><![CDATA[BNK부산은행;;/resource/images/mydata/A1_72x72_12.png;;Y;;032]]></code>
+	<code key='A1AAHS0000' order='16'><![CDATA[아이엠뱅크 (구)대구은행;;/resource/images/mydata/A1_72x72_10.png;;Y;;031]]></code>
+	<code key='A1AAIM0000' order='17'><![CDATA[BNK경남은행;;/resource/images/mydata/A1_72x72_13.png;;Y;;039]]></code>
+	<code key='A1AAMW0000' order='18'><![CDATA[광주은행;;/resource/images/mydata/A1_72x72_17.png;;Y;;034]]></code>
+	<code key='A1AAHP0000' order='19'><![CDATA[전북은행;;/resource/images/mydata/A1_72x72_09.png;;Y;;037]]></code>
+	<code key='A1AAIP0000' order='20'><![CDATA[제주은행;;/resource/images/mydata/A1_72x72_14.png;;Y;;035]]></code>
+	<code key='A4AAAZ0000' order='21'><![CDATA[농협중앙회;;/resource/images/mydata/A1_72x72_20.png;;Y;;012]]></code>
+	<code key='A4AAKM0000' order='22'><![CDATA[신협;;/resource/images/mydata/A1_72x72_22.png;;Y;;048]]></code>
+	<code key='A4AAGD0000' order='23'><![CDATA[수협중앙회;;/resource/images/mydata/A1_72x72_24.png;;Y;;007]]></code>
+	<code key='A4AAGC0000' order='24'><![CDATA[산림조합중앙회;;/resource/images/mydata/A1_72x72_23.png;;Y;;064]]></code>
+	<code key='D1AAFO0000' order='25'><![CDATA[현대카드;;/resource/images/mydata/D1_72x72_06.png;;N;; ]]></code>
+	<code key='D1AAEX0000' order='26'><![CDATA[신한카드;;/resource/images/mydata/D1_72x72_09.png;;N;; ]]></code>
+	<code key='D1AAEV0000' order='27'><![CDATA[삼성카드;;/resource/images/mydata/D1_72x72_05.png;;N;; ]]></code>
+	<code key='D1AAAF0000' order='28'><![CDATA[KB국민카드;;/resource/images/mydata/D1_72x72_08.png;;N;; ]]></code>
+	<code key='D1AADO0000' order='29'><![CDATA[롯데카드;;/resource/images/mydata/D1_72x72_04.png;;N;; ]]></code>
+	<code key='D1AAAH0000' order='30'><![CDATA[우리카드;;/resource/images/mydata/D1_72x72_01.png;;N;; ]]></code>
+	<code key='D1AABJ0000' order='31'><![CDATA[하나카드;;/resource/images/mydata/D1_72x72_03.png;;N;; ]]></code>
+	<code key='D1AAFQ0000' order='32'><![CDATA[BC카드;;/resource/images/mydata/D1_72x72_07.png;;N;; ]]></code>
+	<code key='D1AAPF0000' order='33'><![CDATA[토스뱅크(카드);;/resource/images/mydata/A1_72x72_19.png;;N;; ]]></code>
+	<code key='D1AAHJ0000' order='34'><![CDATA[카카오뱅크(카드);;/resource/images/mydata/A1_72x72_08.png;;N;; ]]></code>
+	<code key='D1AAMF0000' order='35'><![CDATA[케이뱅크(카드);;/resource/images/mydata/A1_72x72_15.png;;N;; ]]></code>
+	<code key='D1AABG0000' order='36'><![CDATA[농협은행(카드);;/resource/images/mydata/D1_72x72_02.png;;N;; ]]></code>
+	<code key='D1AAEQ0000' order='37'><![CDATA[IBK기업은행(카드);;/resource/images/mydata/A1_72x72_05.png;;N;; ]]></code>
+	<code key='D1AAQE0000' order='38'><![CDATA[씨티은행(카드);;/resource/images/mydata/A1_72x72_18.png;;N;; ]]></code>
+	<code key='D1AAAD0000' order='39'><![CDATA[KDB산업은행(카드);;/resource/images/mydata/A1_72x72_01.png;;N;; ]]></code>
+	<code key='D1AAKA0000' order='40'><![CDATA[우체국(카드);;/resource/images/mydata/A1_72x72_16.png;;N;; ]]></code>
+	<code key='D1AAPA0000' order='41'><![CDATA[새마을금고(카드);;/resource/images/mydata/A1_72x72_21.png;;N;; ]]></code>
+	<code key='D1AAHX0000' order='42'><![CDATA[Sh수협은행(카드);;/resource/images/mydata/A1_72x72_11.png;;N;; ]]></code>
+	<code key='D1AAII0000' order='43'><![CDATA[BNK부산은행(카드);;/resource/images/mydata/A1_72x72_12.png;;N;; ]]></code>
+	<code key='D1AAHS0000' order='44'><![CDATA[아이엠뱅크 (구)대구은행(카드);;/resource/images/mydata/A1_72x72_10.png;;N;; ]]></code>
+	<code key='D1AAIM0000' order='45'><![CDATA[BNK경남은행(카드);;/resource/images/mydata/A1_72x72_13.png;;N;; ]]></code>
+	<code key='D1AAMW0000' order='46'><![CDATA[광주은행(카드);;/resource/images/mydata/A1_72x72_17.png;;N;; ]]></code>
+	<code key='D1AAHP0000' order='47'><![CDATA[전북은행(카드);;/resource/images/mydata/A1_72x72_09.png;;N;; ]]></code>
+	<code key='D1AAIP0000' order='48'><![CDATA[제주은행(카드);;/resource/images/mydata/A1_72x72_14.png;;N;; ]]></code>
+	<code key='D1AAKM0000' order='49'><![CDATA[신협(카드);;/resource/images/mydata/A1_72x72_22.png;;N;; ]]></code>
+	<code key='D1AAGC0000' order='50'><![CDATA[산림조합(카드);;/resource/images/mydata/A1_72x72_23.png;;N;; ]]></code>
+	<code key='C1AABR0000' order='51'><![CDATA[키움증권;;/resource/images/mydata/C1_72x72_02.png;;Y;;264]]></code>
+	<code key='C1AACU0000' order='52'><![CDATA[미래에셋증권;;/resource/images/mydata/C1_72x72_08.png;;Y;;238]]></code>
+	<code key='C1AADF0000' order='53'><![CDATA[신한금융투자;;/resource/images/mydata/C1_72x72_17.png;;Y;;278]]></code>
+	<code key='C1AACT0000' order='54'><![CDATA[한국투자증권;;/resource/images/mydata/C1_72x72_07.png;;Y;;243]]></code>
+	<code key='C1AACQ0000' order='55'><![CDATA[NH투자증권;;/resource/images/mydata/C1_72x72_05.png;;Y;;247]]></code>
+	<code key='C1AAEY0000' order='56'><![CDATA[삼성증권;;/resource/images/mydata/C1_72x72_19.png;;Y;;240]]></code>
+	<code key='C1AAGU0000' order='57'><![CDATA[카카오페이증권;;/resource/images/mydata/C1_72x72_20.png;;N;; ]]></code>
+	<code key='C1AAHW0000' order='58'><![CDATA[토스증권;;/resource/images/mydata/C1_72x72_21.png;;N;; ]]></code>
+	<code key='C1AADA0000' order='59'><![CDATA[KB증권;;/resource/images/mydata/C1_72x72_13.png;;Y;;218]]></code>
+	<code key='C1AAPD0000' order='60'><![CDATA[우리종합금융;;/resource/images/mydata/C1_72x72_30.png;;N;; ]]></code>
+	<code key='C1AAKN0000' order='61'><![CDATA[하나금융투자;;/resource/images/mydata/C1_72x72_24.png;;N;; ]]></code>
+	<code key='C1AACY0000' order='62'><![CDATA[한화투자증권;;/resource/images/mydata/C1_72x72_11.png;;Y;;269]]></code>
+	<code key='C1AAKO0000' order='63'><![CDATA[대신증권;;/resource/images/mydata/C1_72x72_25.png;;Y;;267]]></code>
+	<code key='C1AACS0000' order='64'><![CDATA[교보증권;;/resource/images/mydata/C1_72x72_06.png;;Y;;261]]></code>
+	<code key='C1AADB0000' order='65'><![CDATA[유진투자증권;;/resource/images/mydata/C1_72x72_14.png;;Y;;280]]></code>
+	<code key='C1AADD0000' order='66'><![CDATA[현대차증권;;/resource/images/mydata/C1_72x72_16.png;;Y;;263]]></code>
+	<code key='C1AAPW0000' order='67'><![CDATA[SK증권;;/resource/images/mydata/C1_72x72_29.png;;Y;;266]]></code>
+	<code key='C1AABQ0000' order='68'><![CDATA[LS증권;;/resource/images/mydata/C1_72x72_01.png;;Y;;265]]></code>
+	<code key='C1AADI0000' order='69'><![CDATA[DB증권;;/resource/images/mydata/C1_72x72_18.png;;Y;;279]]></code>
+	<code key='C1AADC0000' order='70'><![CDATA[유안타증권;;/resource/images/mydata/C1_72x72_15.png;;N;; ]]></code>
+	<code key='C1AARV0000' order='71'><![CDATA[메리츠증권;;/resource/images/mydata/C1_72x72_12.png;;Y;;287]]></code>
+	<code key='C1AACV0000' order='72'><![CDATA[상상인증권;;/resource/images/mydata/C1_72x72_28.png;;N;; ]]></code>
+	<code key='C1AAJE0000' order='73'><![CDATA[신영증권;;/resource/images/mydata/C1_72x72_10.png;;N;; ]]></code>
+	<code key='C1AABU0000' order='74'><![CDATA[IBK투자증권;;/resource/images/mydata/C1_72x72_03.png;;N;; ]]></code>
+	<code key='C1AABV0000' order='75'><![CDATA[케이프투자증권;;/resource/images/mydata/C1_72x72_04.png;;N;; ]]></code>
+	<code key='C1AAPV0000' order='76'><![CDATA[KTB투자증권;;/resource/images/mydata/C1_72x72_26.png;;N;; ]]></code>
+	<code key='C1AAIJ0000' order='77'><![CDATA[아이엠증권;;/resource/images/mydata/C1_72x72_22.png;;Y;;262]]></code>
+	<code key='C1AAIK0000' order='78'><![CDATA[BNK투자증권;;/resource/images/mydata/C1_72x72_23.png;;N;; ]]></code>
+	<code key='C1AAJN0000' order='79'><![CDATA[부국증권;;/resource/images/mydata/C1_72x72_09.png;;N;; ]]></code>
+	<code key='C1AACO0000' order='80'><![CDATA[한국증권금융;;/resource/images/mydata/C1_72x72_27.png;;N;; ]]></code>
+	<code key='B1AAAR0000' order='81'><![CDATA[삼성생명;;/resource/images/mydata/B1_72x72_03.png;;N;; ]]></code>
+	<code key='B1AAHE0000' order='82'><![CDATA[미래에셋생명;;/resource/images/mydata/B1_72x72_16.png;;N;; ]]></code>
+	<code key='B1AAAS0000' order='83'><![CDATA[신한라이프;;/resource/images/mydata/B1_72x72_04.png;;N;; ]]></code>
+	<code key='B1AAAI0000' order='84'><![CDATA[교보생명;;/resource/images/mydata/B1_72x72_01.png;;N;; ]]></code>
+	<code key='B1AAJH0000' order='85'><![CDATA[교보라이프플래닛;;/resource/images/mydata/B1_72x72_08.png;;N;; ]]></code>
+	<code key='B1AAEU0000' order='86'><![CDATA[동양생명;;/resource/images/mydata/B1_72x72_13.png;;N;; ]]></code>
+	<code key='B1AAAO0000' order='87'><![CDATA[흥국생명;;/resource/images/mydata/B1_72x72_02.png;;N;; ]]></code>
+	<code key='B1AAAY0000' order='88'><![CDATA[라이나생명;;/resource/images/mydata/B1_72x72_05.png;;N;; ]]></code>
+	<code key='B1AADN0000' order='89'><![CDATA[메트라이프생명;;/resource/images/mydata/B1_72x72_10.png;;N;; ]]></code>
+	<code key='B1AANZ0000' order='90'><![CDATA[KB생명;;/resource/images/mydata/B1_72x72_21.png;;N;; ]]></code>
+	<code key='B1AAQI0000' order='91'><![CDATA[한화생명;;/resource/images/mydata/C1_72x72_11.png;;N;; ]]></code>
+	<code key='B1AAJM0000' order='92'><![CDATA[푸르덴셜생명;;/resource/images/mydata/B1_72x72_11.png;;N;; ]]></code>
+	<code key='B1AAIX0000' order='93'><![CDATA[AIA생명;;/resource/images/mydata/B1_72x72_17.png;;N;; ]]></code>
+	<code key='B1AAMU0000' order='94'><![CDATA[KDB생명;;/resource/images/mydata/B1_72x72_19.png;;N;; ]]></code>
+	<code key='B1AAQA0000' order='95'><![CDATA[푸본현대생명;;/resource/images/mydata/B1_72x72_23.png;;N;; ]]></code>
+	<code key='B1AABF0000' order='96'><![CDATA[NH농협생명;;/resource/images/mydata/B1_72x72_07.png;;N;; ]]></code>
+	<code key='B1AAET0000' order='97'><![CDATA[DB생명;;/resource/images/mydata/B1_72x72_12.png;;N;; ]]></code>
+	<code key='B1AAFP0000' order='98'><![CDATA[ABL생명;;/resource/images/mydata/B1_72x72_14.png;;N;; ]]></code>
+	<code key='B1AANL0000' order='99'><![CDATA[DGB생명;;/resource/images/mydata/B1_72x72_20.png;;N;; ]]></code>
+	<code key='B1AADM0000' order='100'><![CDATA[CHUBB라이프생명;;/resource/images/mydata/B1_72x72_09.png;;N;; ]]></code>
+	<code key='B1AAKD0000' order='101'><![CDATA[BNP파리바카디프생명;;/resource/images/mydata/B1_72x72_22.png;;N;; ]]></code>
+	<code key='B1AAFS0000' order='102'><![CDATA[하나생명;;/resource/images/mydata/B1_72x72_15.png;;N;; ]]></code>
+	<code key='B1AAKA0000' order='103'><![CDATA[우체국보험;;/resource/images/mydata/B1_72x72_18.png;;N;; ]]></code>
+	<code key='B1AABD0000' order='104'><![CDATA[IBK연금보험;;/resource/images/mydata/B1_72x72_06.png;;N;; ]]></code>
+	<code key='B2AAEW0000' order='105'><![CDATA[삼성화재;;/resource/images/mydata/B2_72x72_10.png;;N;; ]]></code>
+	<code key='B2AAAL0000' order='106'><![CDATA[현대해상;;/resource/images/mydata/B2_72x72_02.png;;N;; ]]></code>
+	<code key='B2AAEN0000' order='107'><![CDATA[DB손해;;/resource/images/mydata/B2_72x72_09.png;;N;; ]]></code>
+	<code key='B2AALR0000' order='108'><![CDATA[KB손해;;/resource/images/mydata/B2_72x72_13.png;;N;; ]]></code>
+	<code key='B2AACR0000' order='109'><![CDATA[메리츠화재;;/resource/images/mydata/B2_72x72_06.png;;N;; ]]></code>
+	<code key='B2AADH0000' order='110'><![CDATA[한화손해;;/resource/images/mydata/C1_72x72_11.png;;N;; ]]></code>
+	<code key='B2AAOC0000' order='111'><![CDATA[NH농협손해;;/resource/images/mydata/B2_72x72_14.png;;N;; ]]></code>
+	<code key='B2AANY0000' order='112'><![CDATA[흥국화재;;/resource/images/mydata/B2_72x72_15.png;;N;; ]]></code>
+	<code key='B2AAAT0000' order='113'><![CDATA[롯데손해;;/resource/images/mydata/B2_72x72_03.png;;N;; ]]></code>
+	<code key='B2AAIF0000' order='114'><![CDATA[캐롯손해;;/resource/images/mydata/B2_72x72_12.png;;N;; ]]></code>
+	<code key='B2AACL0000' order='115'><![CDATA[AXA손해;;/resource/images/mydata/B2_72x72_05.png;;N;; ]]></code>
+	<code key='B2AABT0000' order='116'><![CDATA[하나손해;;/resource/images/mydata/B2_72x72_04.png;;N;; ]]></code>
+	<code key='B2AAGZ0000' order='117'><![CDATA[MG손해;;/resource/images/mydata/B2_72x72_11.png;;N;; ]]></code>
+	<code key='B2AAAG0000' order='118'><![CDATA[AIG손해;;/resource/images/mydata/B2_72x72_01.png;;N;; ]]></code>
+	<code key='B2AAQG0000' order='119'><![CDATA[BNP파리바카디프손해보험;;/resource/images/mydata/B1_72x72_22.png;;N;; ]]></code>
+	<code key='E1AABK0000' order='120'><![CDATA[L.Point;;/resource/images/mydata/E1_72x72_03.png;;N;; ]]></code>
+	<code key='E1AAIE0000' order='121'><![CDATA[Payco;;/resource/images/mydata/E1_72x72_19.png;;N;; ]]></code>
+	<code key='E1AAJA0000' order='122'><![CDATA[SK Pay;;/resource/images/mydata/E1_72x72_20.png;;N;; ]]></code>
+	<code key='E1AABE0000' order='123'><![CDATA[SK플래닛;;/resource/images/mydata/E1_72x72_02.png;;N;; ]]></code>
+	<code key='E1AAPM0000' order='124'><![CDATA[SSG페이;;/resource/images/mydata/E1_72x72_21.png;;N;; ]]></code>
+	<code key='E1AAPU0000' order='125'><![CDATA[구글페이;;/resource/images/mydata/E1_72x72_14.png;;N;; ]]></code>
+	<code key='E1AAHY0000' order='126'><![CDATA[네이버페이;;/resource/images/mydata/E1_72x72_17.png;;N;; ]]></code>
+	<code key='E1AAGH0000' order='127'><![CDATA[네이트;;/resource/images/mydata/E1_72x72_11.png;;N;; ]]></code>
+	<code key='E1AABN0000' order='128'><![CDATA[뱅크샐러드;;/resource/images/mydata/E1_72x72_05.png;;N;; ]]></code>
+	<code key='E1AAGP0000' order='129'><![CDATA[스마일클럽;;/resource/images/mydata/E1_72x72_13.png;;N;; ]]></code>
+	<code key='E1AAEX0000' order='130'><![CDATA[신한카드;;/resource/images/mydata/D1_72x72_09.png;;N;; ]]></code>
+	<code key='E1AAGK0000' order='131'><![CDATA[인터파크;;/resource/images/mydata/E1_72x72_12.png;;N;; ]]></code>
+	<code key='E1AAPC0000' order='132'><![CDATA[카카오;;/resource/images/mydata/E1_72x72_06.png;;N;; ]]></code>
+	<code key='E1AAHJ0000' order='133'><![CDATA[카카오뱅크;;/resource/images/mydata/E1_72x72_16.png;;N;; ]]></code>
+	<code key='E1AAIA0000' order='134'><![CDATA[카카오페이;;/resource/images/mydata/E1_72x72_18.png;;N;; ]]></code>
+	<code key='E1AAPN0000' order='135'><![CDATA[쿠팡;;/resource/images/mydata/E1_72x72_04.png;;N;; ]]></code>
+	<code key='E1AADV0000' order='136'><![CDATA[토스;;/resource/images/mydata/E1_72x72_07.png;;N;; ]]></code>
+	<code key='E1AAAX0000' order='137'><![CDATA[티머니;;/resource/images/mydata/E1_72x72_01.png;;N;; ]]></code>
+	<code key='E1AAJI0000' order='138'><![CDATA[핀크;;/resource/images/mydata/E1_72x72_15.png;;N;; ]]></code>
+	<code key='E1AADW0000' order='139'><![CDATA[핀트;;/resource/images/mydata/E1_72x72_08.png;;N;; ]]></code>
+	<code key='D3AAAF0000' order='140'><![CDATA[KB국민카드;;/resource/images/mydata/D1_72x72_08.png;;N;; ]]></code>
+	<code key='D3AADZ0000' order='141'><![CDATA[KB캐피탈;;/resource/images/mydata/D2_72x72_06.png;;N;; ]]></code>
+	<code key='D3AAOB0000' order='142'><![CDATA[NH농협캐피탈;;/resource/images/mydata/D2_72x72_02.png;;N;; ]]></code>
+	<code key='D3AAEF0000' order='143'><![CDATA[롯데오토리스;;/resource/images/mydata/D2_72x72_07.png;;N;; ]]></code>
+	<code key='D3AABW0000' order='144'><![CDATA[메리츠캐피탈;;/resource/images/mydata/D2_72x72_04.png;;N;; ]]></code>
+	<code key='D3AAEX0000' order='145'><![CDATA[신한카드;;/resource/images/mydata/D1_72x72_09.png;;N;; ]]></code>
+	<code key='D3AAFW0000' order='146'><![CDATA[애큐온캐피탈;;/resource/images/mydata/D2_72x72_08.png;;N;; ]]></code>
+	<code key='D3AAAJ0000' order='147'><![CDATA[오케이캐피탈;;/resource/images/mydata/D2_72x72_01.png;;N;; ]]></code>
+	<code key='D3AAMM0000' order='148'><![CDATA[우리금융캐피탈;;/resource/images/mydata/D2_72x72_09.png;;N;; ]]></code>
+	<code key='D3AAGE0000' order='149'><![CDATA[하나캐피탈;;/resource/images/mydata/D2_72x72_10.png;;N;; ]]></code>
+	<code key='D3AADE0000' order='150'><![CDATA[현대캐피탈;;/resource/images/mydata/D2_72x72_05.png;;N;; ]]></code>
+	<code key='D3AAOA0000' order='151'><![CDATA[현대커머셜;;/resource/images/mydata/D2_72x72_03.png;;N;; ]]></code>
+	<code key='D3AABY0000' order='152'><![CDATA[한국투자캐피탈;;/resource/images/mydata/C1_72x72_07.png;;N;;]]></code>
+	<code key='D3AAHO0000' order='153'><![CDATA[미래에셋캐피탈;;/resource/images/mydata/C1_72x72_08.png;;N;;]]></code>
+	<code key='F1AAAN0000' order='154'><![CDATA[KT;;/resource/images/mydata/F1_72x72_01.png;;N;; ]]></code>
+	<code key='F1AAGI0000' order='155'><![CDATA[LG유플러스;;/resource/images/mydata/F1_72x72_03.png;;N;; ]]></code>
+	<code key='F1AAFT0000' order='156'><![CDATA[SK브로드밴드;;/resource/images/mydata/F1_72x72_04.png;;N;; ]]></code>
+	<code key='F1AAAU0000' order='157'><![CDATA[SK텔레콤;;/resource/images/mydata/F1_72x72_02.png;;N;; ]]></code>
+</category>

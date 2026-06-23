@@ -1,0 +1,31 @@
+#!/bin/bash
+
+mvn install:install-file -Dfile=lib/INISAFECore-2.2.61.jar -DgroupId=com.initech.inisafe -DartifactId=INISAFECore -Dversion=2.2.61 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/INICrypto-4.2.10.jar -DgroupId=com.initech.inisafe -DartifactId=INICrypto -Dversion=4.2.10 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/INISAFEPKI-1.1.58.jar -DgroupId=com.initech.inisafe -DartifactId=INISAFEPKI -Dversion=1.1.58 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/INISAFENet-7.2.65.jar -DgroupId=com.initech.inisafe -DartifactId=INISAFENet -Dversion=7.2.65 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/dbprotector-1.0.0.jar -DgroupId=com.initech.dbprotector -DartifactId=dbprotector -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/delfino-v3_full-3.3.13.jar -DgroupId=com.wizvera -DartifactId=delfino-v3_full -Dversion=3.3.13 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/wizvera-provider-2.1.5-resign.jar -DgroupId=com.wizvera -DartifactId=wizvera-provider -Dversion=2.1.5 -Dpackaging=jar -Dclassifier=resign
+mvn install:install-file -Dfile=lib/wizvera-pkix-2.0.1.jar -DgroupId=com.wizvera -DartifactId=wizvera-pkix -Dversion=2.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/interezen-1.1.2.jar -DgroupId=com.interezen -DartifactId=interezen -Dversion=1.1.2 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/jOCSPGD-4.0.6.jar -DgroupId=com.initech.ocspgd -DartifactId=jOCSPGD -Dversion=4.0.6 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/jOPPRA-5.1.33.jar -DgroupId=com.initech.oppra -DartifactId=jOPPRA -Dversion=5.1.33 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/mirae-hwotpcore-2.2.0.jar -DgroupId=com.dreammirae -DartifactId=mirae-hwotpcore -Dversion=2.2.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/mirae-kfb-mobile-1.1.1.jar -DgroupId=com.dreammirae -DartifactId=mirae-kfb-mobile -Dversion=1.1.1 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/secu.jar -DgroupId=secu -DartifactId=secu -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/signgateCrypto.jar -DgroupId=signgate -DartifactId=signgateCrypto -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/sgsecukit.jar -DgroupId=signgate -DartifactId=sgsecukit -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/ldapjdk.jar -DgroupId=netscape -DartifactId=ldapjdk -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/sgkm.jar -DgroupId=com.sg -DartifactId=sgkm -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/signgate_common.jar -DgroupId=com.sg -DartifactId=signgate_common -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/alchera-aes256-1.0.0.jar -DgroupId=kr.co.alchera-aes256 -DartifactId=alchera-aes256 -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/imas-1.0.1.jar -DgroupId=com.imas -DartifactId=imas -Dversion=1.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/v3mobileplus-1.0.0.jar -DgroupId=com.ahnlab.v3mobileplus -DartifactId=v3mobileplus -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/OpenWebNFilter-4.17_SpringBoot3.jar -DgroupId=com.nshc -DartifactId=OpenWebnFilter -Dversion=4.17 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/nSafer2.1.0.1.jar -DgroupId=com.nshc -DartifactId=nSafer -Dversion=2.1.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/astx2.jar -DgroupId=com.ahnlab.astx2 -DartifactId=astx2 -Dversion=1.0.0 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/nfsrv_G2_1.0.3_Jakarta.jar -DgroupId=com.nshc -DartifactId=nfsrv_G2 -Dversion=1.0.3 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/delfino-v3_full-3.3.16.jar -DgroupId=com.wizvera -DartifactId=delfino-v3_full -Dversion=3.3.16 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/secu-1.0.0.1.jar -DgroupId=secu -DartifactId=secu -Dversion=1.0.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=lib/sgsecukit-1.0.0.0.jar -DgroupId=signgate -DartifactId=sgsecukit -Dversion=1.0.0.0 -Dpackaging=jar

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CST_NTC" lang="ko">
+	<!-- command        #servicePath    #callGroup    #url -->
+	<!-- AS-IS ClickToCall ID START -->
+	<code key="main" order="0"><![CDATA[모바일4.0APP | 메인 화면입니다.#모바일4.0APP#300#]]></code>
+	<code key="more" order="0"><![CDATA[모바일4.0APP | 전체 화면입니다.#모바일4.0APP#300#]]></code>
+	<code key="SA_MA_S00000000" order="0"><![CDATA[모바일4.0APP | 메인 화면입니다.#모바일4.0APP#300#]]></code>
+    
+    <code key="SA_CO_CDD000000" order="0"><![CDATA[모바일4.0APP>CDD대상고객>고객컨텍센터확인 | CDD대상고객 고객컨텍센터확인 화면입니다.#모바일4.0APP#380#]]></code>
+     
+     <!-- 고객컨택센터 START -->
+     <code key="CST_MA3CSTCLT003_10V_01" order="0"><![CDATA[모바일4.0>고객센터>고객컨택센터연결>바로상담 | 신용대출 상담 신청 화면입니다.#모바일4.0#400#]]></code>
+     <code key="CST_MA3CSTCLT003_10V_02" order="0"><![CDATA[모바일4.0>고객센터>고객컨택센터연결>바로상담 | 담보대출 상담 신청 화면입니다.#모바일4.0#410#]]></code>
+     <code key="CST_MA3CSTCLT003_10V_03" order="0"><![CDATA[모바일4.0>고객센터>고객컨택센터연결>바로상담 | 장기카드대출 상담 신청 화면입니다.#모바일4.0#420#]]></code>
+     <code key="CST_MA3CSTCLT003_10V_04" order="0"><![CDATA[모바일4.0>고객센터>고객컨택센터연결>바로상담 | 예금 상담 신청 화면입니다.#모바일4.0#430#]]></code>
+     <code key="CST_MA3CSTCLT003_10V_05" order="0"><![CDATA[모바일4.0>고객센터>고객컨택센터연결>바로상담 | 외환 상담 신청 화면입니다.#모바일4.0#440#]]></code>
+     <code key="CST_MA3CSTCLT003_10V_06" order="0"><![CDATA[모바일4.0>고객센터>고객컨택센터연결>바로상담 | 자산관리상품 상담 신청#모바일4.0#450#]]></code>
+     <!-- 고객컨택센터 END -->
+</category>

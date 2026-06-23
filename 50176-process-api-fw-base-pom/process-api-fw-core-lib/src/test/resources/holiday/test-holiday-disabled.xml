@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays useYn="N">
+    <holiday date="20250101" description="New Year"/>
+    <holiday date="20251225" description="Christmas"/>
+</holidays>

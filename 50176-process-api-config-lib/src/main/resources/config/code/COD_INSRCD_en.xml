@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="INSRCD" lang="en">
+  <code key="4" order="0"><![CDATA[no-passbook deposit transaction record]]></code>
+  <code key="1" order="1"><![CDATA[Inquire deposit/withdrawal transaction record]]></code>
+  <code key="2" order="2"><![CDATA[inquire deposit/inquire withdrawal transaction record]]></code>
+  <code key="3" order="3"><![CDATA[inquire withdrawal transaction record]]></code>
+</category>

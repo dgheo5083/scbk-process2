@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://sc.com/service-definition"
+           xmlns="http://sc.com/service-definition"
+           elementFormDefault="qualified"
+           attributeFromDefault="unqualified">
+
+  <xs:element name="service-definition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="endpoint" type="EndpointType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="EndpointType">
+    <xs:attribute name="url" type="xs:string" use="required"/>
+    <xs:attribute name="description" type="xs:string"/>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="services" type="ServicesType"/>
+        <xs:element name="access-control" type="AccessControlType" minOccurs="0"/>
+        <xs:element name="interceptors" type="InterceptorListType" minOccurs="0"/>
+        <xs:element name="service-time" type="ServiceTimeType" minOccurs="0"/>
+        <xs:element name="paramters" type="ServiceParameterListType" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:complexType>
+
+  <xs:complexType name="AccessControlType">
+    <xs:attribute name="role" type="xs:string"/>
+    <xs:attribute name="channel" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="InterceptorListType">
+    <xs:sequence>
+      <xs:element name="interceptor" type="InterceptorType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InterceptorType">
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ServiceParameterListType">
+    <xs:sequence>
+      <xs:element name="parameter" type="ServiceParameterType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ServiceParameterType">
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="value" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="ServiceTimeType">
+    <xs:sequence>
+      <xs:element name="businessday" type="TimeRangeType" minOccurs="0"/>
+      <xs:element name="holiday" type="TimeRangeType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="enabled" type="xs:boolean" default="false"/>
+  </xs:complexType>
+
+  <xs:complexType name="TimeRangeType">
+    <xs:attribute name="startTime" type="xs:string"/>
+    <xs:attribute name="endTime" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="ServicesType">
+    <xs:sequence>
+      <xs:element name="service" type="ServiceType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ServiceType">
+    <xs:sequence>
+      <xs:element name="interceptors" type="InterceptorListType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="condition" type="xs:string"/>
+    <xs:attribute name="priority" type="xs:int" default="999"/>
+    <xs:attribute name="component" type="xs:string"/>
+    <xs:attribute name="input" type="xs:string"/>
+    <xs:attribute name="output" type="xs:string"/>
+    <xs:attribute name="fallback" type="xs:boolean" default="false"/>
+    <xs:attribute name="fallback-ref" type="xs:string"/>
+    <xs:attribute name="description" type="xs:string"/>
+  </xs:complexType>
+
+</xs:schema>

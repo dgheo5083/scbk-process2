@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MOTP_PUSH_MESSAGE">
+  <code key="MSG001" order="0"><![CDATA[SC제일은행]]></code>
+  <code key="MSG002" order="0"><![CDATA[인터넷뱅킹 거래 인증을 위해 모바일OTP 인증을 진행해주시기 바랍니다. [확인] 버튼을 누르시면 모바일OTP 인증화면으로 이동합니다.]]></code>
+  <code key="MSG003" order="0"><![CDATA[인터넷뱅킹 거래 인증을 위해 모바일OTP 인증을 진행해주시기 바랍니다. [보기] 버튼을 누르시면 모바일OTP 인증화면으로 이동합니다.]]></code>
+  <code key="MSG004" order="0"><![CDATA[모바일OTP담당자]]></code>
+  <code key="MSG005" order="0"><![CDATA[모바일OTP운영팀]]></code>
+</category>

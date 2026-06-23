@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="BPSchoolCode" lang="ko">
+  <code key="0" order="2"><![CDATA[학교를 선택하십시요]]></code>
+  <code key="608" order="3"><![CDATA[관동대]]></code>
+  <code key="901" order="4"><![CDATA[광운대]]></code>
+  <code key="111" order="5"><![CDATA[군산간호대]]></code>
+  <code key="105" order="6"><![CDATA[경원전문대]]></code>
+  <code key="606" order="7"><![CDATA[남서울대]]></code>
+  <code key="902" order="8"><![CDATA[동국대-서울]]></code>
+  <code key="104" order="9"><![CDATA[명지대]]></code>
+  <code key="106" order="10"><![CDATA[명지전문대]]></code>
+  <code key="679" order="11"><![CDATA[백석대(학부)]]></code>
+  <code key="680" order="12"><![CDATA[백석문화대]]></code>
+  <code key="114" order="13"><![CDATA[백석대(대학원)]]></code>
+  <code key="113" order="14"><![CDATA[백석예술학교]]></code>
+  <code key="962" order="15"><![CDATA[서경대]]></code>
+  <code key="610" order="16"><![CDATA[상주대]]></code>
+  <code key="602" order="17"><![CDATA[아주대]]></code>
+  <code key="604" order="18"><![CDATA[원광대]]></code>
+  <code key="607" order="19"><![CDATA[원광디지털대]]></code>
+  <code key="961" order="20"><![CDATA[우송정보대]]></code>
+  <code key="904" order="21"><![CDATA[추계예술대(서울)]]></code>
+  <code key="102" order="22"><![CDATA[한국외대]]></code>
+  <code key="107" order="23"><![CDATA[한양대]]></code>
+  <code key="112" order="24"><![CDATA[호원대]]></code>
+</category>

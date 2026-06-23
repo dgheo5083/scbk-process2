@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-time-definition>
+  <service-time-list group="menu">
+    <service-time code="MA3LGIXXX" checkYn="Y" description="" nextPage="SVCSUP003" nextPageParameter="aa=aa&amp;bb=bb"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3SMP999002" checkYn="Y" description="샘플페이지2" nextPage="SVCSUP003" nextPageParameter="directToggle=inq&amp;aaaa=1111&amp;bbb=333"><![CDATA[0900,2200]]></service-time>
+    <service-time code="TESTPRODUCT001" checkYn="Y" description="강제체크" nextPage="SVCSUP003" nextPageParameter="directToggle=inq&amp;aaaa=1111"><![CDATA[1800,2300]]></service-time>
+    <service-time code="KLDHOM000" checkYn="Y" description="메인" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="KLDCMF000" checkYn="Y" description="고령자 메인" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="KLDMAP000" checkYn="Y" description="전체" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0020,2355]]></service-time>
+    <service-time code="DPSINQ001" checkYn="Y" description="조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=inquiry"><![CDATA[0020,2355]]></service-time><!-- MA3INQALL001 -->
+    <service-time code="MA3PRDIBR002" checkYn="Y" description="전자금융 신규 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=authcenter"><![CDATA[0020,2350]]></service-time>
+    <service-time code="TRNSGL001" checkYn="Y" description="이체" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    
+    <!-- 메뉴 없음 -->
+    <service-time code="MA3TRNPTS001" checkYn="Y" description="전화번호이체" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3TRNKTS001" checkYn="Y" description="카카오톡이체" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <!--  -->
+    
+    <service-time code="TRNMUL002" checkYn="Y" description="여러통장이체" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNSWP006" checkYn="Y" description="잔액모으기" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="TRNMGT001" checkYn="N" description="자동이체등록" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNMGT001_59" checkYn="N" description="자동이체등록 - 신탁" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0900,1700]]></service-time>
+    <service-time code="TRNMGT003" checkYn="Y" description="자동이체변경/해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNMGT004" checkYn="Y" description="예약이체변경/해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3TRNMOV001" checkYn="N" description="계좌이동제-자동납부 계좌변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0900,2200]]></service-time>
+    <service-time code="MA3TRNMOV002" checkYn="N" description="계좌이동제-자동납부 계좌변경 조회/해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0900,2200]]></service-time>
+    <service-time code="MA3TRNMOV003" checkYn="N" description="계좌이동제-자동납부 해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2240]]></service-time>
+    <service-time code="MA3TRNMOV004" checkYn="N" description="계좌이동제-자동송금 계좌변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2200]]></service-time>
+    <service-time code="MA3TRNMOV005" checkYn="N" description="계좌이동제-자동송금 계좌변경 조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2200]]></service-time>
+    
+    <!-- 메뉴 없음 -->
+    <service-time code="MA3TRNKBS014" checkYn="Y" description="키보드뱅킹 가입/변경/해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2355]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3PRDLON005" checkYn="N" description="예적금담보대출" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2200]]></service-time>
+    <service-time code="MA3TRNGRO004" checkYn="Y" description="국세납부조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNMGT008" checkYn="N" description="착오송금반환" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNMGT009" checkYn="N" description="반환내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNMGT007" checkYn="Y" description="이체한도 조회/감액" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2355]]></service-time>
+    <service-time code="TRNMGT005" checkYn="Y" description="지연이체 조회/취소" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3TRNGRO011" checkYn="Y" description="지방세 조회 납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2200]]></service-time>
+    <service-time code="MA3TRNGRO012" checkYn="Y" description="지방세 납부내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2200]]></service-time>
+    <service-time code="MA3TRNGRO001" checkYn="Y" description="지로조회납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO002" checkYn="Y" description="지로입력납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO003" checkYn="Y" description="지로납부취소" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO013" checkYn="Y" description="지로납부내역조회 대출금리" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="TRNMGT100" checkYn="Y" description="장기미사용 해제" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO014" checkYn="Y" description="국세 납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO015" checkYn="Y" description="관세 납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO016" checkYn="Y" description="관세 납부내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO017" checkYn="Y" description="범칙금 납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO018" checkYn="Y" description="범칙금 납부내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO019" checkYn="Y" description="특허 수수료 납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO020" checkYn="Y" description="특허 수수료 납부내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO021" checkYn="Y" description="기금및기타국고 납부" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3TRNGRO022" checkYn="Y" description="기금및기타국고 납부내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2330]]></service-time>
+    <service-time code="TRNMGT008" checkYn="N" description="자행간 착오송금반환" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    <service-time code="TRNMGT009" checkYn="N" description="자행간 반환내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=transfer"><![CDATA[0030,2340]]></service-time>
+    
+    <!-- ??? -->
+    <service-time code="MA3ACTMNG001" checkYn="Y" description="출금내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2355]]></service-time>
+    <!--  -->
+    
+    <service-time code="TRNMGT012" checkYn="Y" description="출금통장등록" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2340]]></service-time>
+    <service-time code="DPSACC005" checkYn="Y" description="비대면한도제한해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2355]]></service-time>
+    <service-time code="DPSACC009" checkYn="Y" description="통장별명관리" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2340]]></service-time>
+    <service-time code="SVCOBS100" checkYn="Y" description="타행계좌(오픈뱅킹) 등록/삭제" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2350]]></service-time>
+    <service-time code="TRNINQ002" checkYn="Y" description="출금내역조회(타행계좌)" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2350]]></service-time>
+    <service-time code="DPSACC004" checkYn="N" description="휴면계좌 활성화" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0900,2100]]></service-time>
+    <service-time code="DPSACC010" checkYn="Y" description="통장 사본 보기" nextPage="MA3ACTPAS001" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3STCINQ001" checkYn="Y" description="SC증권 연계계좌 등록/조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2355]]></service-time>
+    <service-time code="TRNMGT011" checkYn="N" description="출금계좌등록방법변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0900,2100]]></service-time>
+    <service-time code="SVCSUP002" checkYn="Y" description="사고신고 &gt; 통장인감" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCSUP007" checkYn="Y" description="사고신고 &gt; 신용카드" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCSUP008" checkYn="Y" description="사고신고 &gt; 현금/직불카드" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCSUP009" checkYn="Y" description="사고신고 &gt; 자기앞수표" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCSUP010" checkYn="Y" description="사고신고 &gt; 보안카드/OTP" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCSUP011" checkYn="Y" description="사고신고 &gt; OTP분실신고해제" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCSUP012" checkYn="Y" description="사고신고 &gt; 신용체크카드 일괄분실신고" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CSTCQI007" checkYn="Y" description="고객센터 &gt; 자기앞수표조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    
+    <!-- 메뉴없음 -->
+    <service-time code="MA3CSTCLT002" checkYn="Y" description="고객센터 &gt; 바로상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0900,2100]]></service-time>
+    <!--  -->
+    
+    <service-time code="SVCSUP005" checkYn="Y" description="고객센터 &gt; 고객컨텍센터 연결" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CSTCDD001" checkYn="Y" description="고객센터 &gt; 고객확인제도" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CSTCCS001" checkYn="N" description="고객센터 &gt; 개인신용평가 결과 조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=custcenter"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3CCDBCD003" checkYn="Y" description="My Card조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD008" checkYn="Y" description="이용한도조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD009" checkYn="N" description="이용한도조회/변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2300]]></service-time>
+    <service-time code="MA3CCDBCD010" checkYn="Y" description="한도상향가능안내 서비스 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD011" checkYn="Y" description="이용대금명세서조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD012" checkYn="Y" description="결제예상금액조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD013" checkYn="Y" description="카드선결제안내" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD014" checkYn="Y" description="카드선결제신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD006" checkYn="Y" description="카드포인트조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0900,2030]]></service-time>
+    <service-time code="MA3CCDBCD015" checkYn="Y" description="결제출금내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD018" checkYn="Y" description="단기카드대출신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2350]]></service-time>
+    <service-time code="MA3CCDBCD019" checkYn="Y" description="단기카드대출 잔액및이용내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2330]]></service-time>
+    <service-time code="MA3CCDBCD020" checkYn="Y" description="장기카드대출 안내" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD021" checkYn="N" description="장기카드대출신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD023" checkYn="Y" description="장기카드대출조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD023" checkYn="Y" description="장기카드대출이용동의" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD024" checkYn="Y" description="일부결제이월약정(리볼빙)안내" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDBCD025" checkYn="Y" description="일부결제이월약정(리볼빙)신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD026" checkYn="Y" description="일부결제이월약정(리볼빙)조회/변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3CCDBCD027" checkYn="Y" description="일부결제이월약정(리볼빙)해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2200]]></service-time>
+    
+    <!-- 메뉴없음 -->
+    <service-time code="MA3CCDBCD031" checkYn="Y" description="장기카드대출 카드론플러스 안내" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2350]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3CCDBCD032" checkYn="N" description="장기카드대출 카드론플러스 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0000,0001]]></service-time>
+    <service-time code="MA3CCDBCD033" checkYn="Y" description="단기카드대출이용동의" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2350]]></service-time>
+    <service-time code="MA3CCDBCD034" checkYn="N" description="연체금액/결제일 결제" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0800,2100]]></service-time>
+    <service-time code="MA3CCDBCD035" checkYn="Y" description="카드수수료율" nextPage="SVCSUP003" nextPageParameter="toggleKey=card"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3CCDHCD005" checkYn="N" description="SC-현대 개인정보 동의 변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=hyundaiCard"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDHCD007" checkYn="Y" description="금융바우처 안내" nextPage="SVCSUP003" nextPageParameter="toggleKey=hyundaiCard"><![CDATA[0030,2350]]></service-time>
+    <service-time code="MA3CCDHCD003" checkYn="N" description="금융바우처 프로모션" nextPage="SVCSUP003" nextPageParameter="toggleKey=hyundaiCard"><![CDATA[0900,2330]]></service-time>
+    <service-time code="FEXEXC001" checkYn="N" description="실시간매매" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0900,2359]]></service-time>
+    <service-time code="FEXEXC002" checkYn="N" description="목표환율매매" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0900,1630]]></service-time>
+    <service-time code="FEXEXC003" checkYn="N" description="목표환율매매 내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0900,1630]]></service-time>
+    <service-time code="MA3FRNFTR001" checkYn="N" description="간편 해외송금" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3FRNFTR002" checkYn="N" description="보내신 송금내역" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3FRNFTR003" checkYn="N" description="체제자(유학생) 연간송금내역" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0900,2330]]></service-time>
+    <service-time code="FEXEXC004" checkYn="N" description="현찰환전신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="FEXEXC005" checkYn="N" description="환전내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3FRNINQ001" checkYn="Y" description="환율조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3FRNINQ002" checkYn="N" description="통화별 보유 영업점 조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3FRNINF001" checkYn="Y" description="시장정보" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    
+    <!-- MA3FRNFTR006 -->
+    <service-time code="MA3FRNFTR006_20" checkYn="N" description="해외송금 최초송금 - 해외송금 5000불 이하 소액송금" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <service-time code="MA3FRNFTR006_21" checkYn="N" description="해외송금 최초송금" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0030,2340]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3FRNFTR007" checkYn="N" description="거래외국환 조회지정" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0900,1630]]></service-time>
+    <service-time code="MA3FRNERI001" checkYn="Y" description="환율바로알기" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0030,2355]]></service-time>
+    <service-time code="FEXEXC001" checkYn="Y" description="WFX 실시간매매" nextPage="SVCSUP003" nextPageParameter="toggleKey=foreign"><![CDATA[0000,2359]]></service-time>
+    <service-time code="MA3PRDPRD001" checkYn="Y" description="금융상품몰" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDPRD001_CHK" checkYn="Y" description="금융상품몰" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3MSCPRG001" checkYn="Y" description="금융상품몰_신청현황조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3MSCPRG001_CHK" checkYn="Y" description="금융상품몰_신청현황조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2330]]></service-time>
+    <service-time code="MA3PRDACT001" checkYn="Y" description="금융상품몰_입출금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3ACTOPN001_CHK" checkYn="Y" description="금융상품몰_입출금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2330]]></service-time>
+    <service-time code="MA3PRDACT002" checkYn="Y" description="금융상품몰_예금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDACT003_CHK" checkYn="Y" description="금융상품몰_예금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3PRDACT002" checkYn="Y" description="금융상품몰_적금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDACT004_CHK" checkYn="Y" description="금융상품몰_적금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3PRDACT002" checkYn="Y" description="금융상품몰_외화정기예금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDACT005_CHK" checkYn="N" description="금융상품몰_외화정기예금" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,1630]]></service-time>
+    <service-time code="MA3PRDFND600" checkYn="N" description="금융상품몰_펀드" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDSTC001" checkYn="Y" description="금융상품몰_증권" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3STCACT001_CHK" checkYn="N" description="금융상품몰_증권" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3PRDBNC001" checkYn="N" description="생명보험" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3PRDBNC001" checkYn="N" description="손해보험" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3BNCAPR001" checkYn="N" description="청약철회" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3BNCAPW001" checkYn="N" description="부활청약" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0900,1800]]></service-time>
+    
+    <!-- ??? -->
+    <service-time code="MA3BNCPAY001_ETC" checkYn="N" description="영업점 가입상품 보험료입금(미래에셋생명보험 외 불가)" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0900,1800]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3BNCINQ001" checkYn="N" description="가입설계 내역조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0900,1800]]></service-time>
+    
+    <!-- ??? -->
+    <service-time code="MA3BNCPAY001" checkYn="Y" description="영업점 가입상품 보험료입금" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3BNCPAY001_L34" checkYn="Y" description="영업점 가입상품 보험료입금(미래에셋생명보험 가능)" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3BNCOPN100_L43" checkYn="Y" description="교보라이플플래닛보험" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3BNCOPN300_N18" checkYn="Y" description="여행자보험" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,1800]]></service-time>
+    <service-time code="MA3BNCOPN001" checkYn="Y" description="보험계약조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0100,2330]]></service-time>
+    <service-time code="MA3BNCLPS001" checkYn="Y" description="내 연금 미리보기" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0030,2355]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3BNCFPC001" checkYn="Y" description="재무설계 계산기" nextPage="SVCSUP003" nextPageParameter="toggleKey=banca"><![CDATA[0030,2355]]></service-time>
+    
+    <!-- ??? -->
+    <service-time code="MA3PRDFND002" checkYn="N" description="역내펀드" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,1630]]></service-time>
+    <service-time code="MA3PRDFND003" checkYn="N" description="역외펀드" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[1000,1500]]></service-time>
+    <!--  -->
+    
+    <service-time code="FNDDPS001" checkYn="N" description="원화펀드 추가납입" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0900,1630]]></service-time>
+    <service-time code="FNDDPS001" checkYn="N" description="외화펀드 추가납입" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[1000,1500]]></service-time>
+    <service-time code="FNDRDM001" checkYn="N" description="목표도달 자동환매" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0930,2200]]></service-time>
+    <service-time code="FNDINQ00171" checkYn="N" description="환매신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0900,1630]]></service-time>
+    <service-time code="MA3PRDLON006" checkYn="N" description="펀드 담보대출" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0900,2200]]></service-time>
+    <service-time code="FNDINQ002" checkYn="N" description="실질투자수익률보고서조회(앱)" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3FNDRIR002" checkYn="N" description="실질투자수익률보고서조회(LMS)" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDLON002" checkYn="Y" description="신용대출 대출상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDLON002_CHK" checkYn="Y" description="신용대출 대출상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3PRDLON001" checkYn="Y" description="신용대출 대출상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDLON001_CHK" checkYn="Y" description="신용대출 대출상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0700,2200]]></service-time>
+    <service-time code="MA3PRDLON003" checkYn="Y" description="신용대출 대출신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDLON003_CHK" checkYn="N" description="신용대출 대출신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0800,2200]]></service-time>
+    <service-time code="MA3LONCPR001" checkYn="Y" description="제휴대출 가상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3LONCPR001_CHK" checkYn="N" description="제휴대출 가상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3PRDLON007" checkYn="Y" description="담보대출 대출상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3PRDLON007_CHK" checkYn="N" description="담보대출 대출상담" nextPage="SVCSUP003" nextPageParameter="toggleKey=product"><![CDATA[0900,2100]]></service-time>
+    <service-time code="DPSACC003" checkYn="N" description="가입상품조회해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0900,2200]]></service-time>
+    
+    <!-- 메뉴없음 -->
+    <service-time code="MA3TSTSMT001" checkYn="Y" description="ETF/ETN 해지 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=trust"><![CDATA[0900,1515]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3TSTSMT002" checkYn="N" description="자동입금계좌변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0900,1700]]></service-time>
+    <service-time code="MA3TSTISA001" checkYn="N" description="미운용자산매수" nextPage="SVCSUP003" nextPageParameter="toggleKey=ISA"><![CDATA[0900,1730]]></service-time>
+    <service-time code="MA3TSTISA002" checkYn="N" description="보유자산매도" nextPage="SVCSUP003" nextPageParameter="toggleKey=ISA"><![CDATA[0900,1730]]></service-time>
+    <service-time code="MA3TSTISA003" checkYn="N" description="운용지시조회/취소" nextPage="SVCSUP003" nextPageParameter="toggleKey=ISA"><![CDATA[0900,1730]]></service-time>
+    <service-time code="MA3TSTISA004" checkYn="N" description="자동운용등록/해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=ISA"><![CDATA[0900,1730]]></service-time>
+    <service-time code="MA3TSTCSP001" checkYn="N" description="홍콩 H지수 ELS 조정" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0930,2230]]></service-time>
+    <service-time code="MA3TSTCSP002" checkYn="N" description="금융정보 제공의뢰서 동의" nextPage="SVCSUP003" nextPageParameter="toggleKey=fund"><![CDATA[0900,2100]]></service-time>
+    <service-time code="LONMGT000" checkYn="Y" description="대출 원금/이자내기" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2330]]></service-time>
+    <service-time code="LONMGT006" checkYn="Y" description="대출 한도해지/감액" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3LONEMD001" checkYn="N" description="대출 기일연기" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2200]]></service-time>
+    <service-time code="MA3LONLGD001" checkYn="N" description="퍼스트전세보증론 연기" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3LONPLS004" checkYn="Y" description="대출 전자서명" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2100]]></service-time>
+    
+    <!-- 메뉴없음 -->
+    <service-time code="MA3LONPNL001" checkYn="N" description="파트너스론 실행" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2100]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3LONFRI001" checkYn="N" description="대출 금리인하요구권" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2200]]></service-time>
+    <service-time code="MA3LONCNL001" checkYn="N" description="대출계약철회 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3LONOPN003" checkYn="N" description="중소기업분할상환대출" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2100]]></service-time>
+    <service-time code="MA3LONDRA001" checkYn="N" description="신용대출 연기갱신" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2100]]></service-time>
+    <service-time code="DPSACC011" checkYn="N" description="인터넷담보대출 허용" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0800,2200]]></service-time>
+    <service-time code="DPSACC012" checkYn="N" description="만기이자 M포인트 관리" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0900,2200]]></service-time>
+    <service-time code="MA3MSCMNG002" checkYn="Y" description="기본화면변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=mysc"><![CDATA[0030,2355]]></service-time>
+    
+    <!-- 메뉴없음 -->
+    <service-time code="MA3MSCMNG001" checkYn="Y" description="Goal" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3MSCMNG005" checkYn="Y" description="내정보변경" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="SVCPSH000" checkYn="Y" description="푸시알림설정" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3MSCPMG001" checkYn="N" description="입출금문자알림서비스" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MSCPMG002" checkYn="N" description="무료문자알림서비스" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3CCDHCD008" checkYn="N" description="현금카드 기능관리 해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    
+    <!-- 메뉴없음 -->
+    <service-time code="MA3MSCPRN001" checkYn="Y" description="선물하기" nextPage="SVCSUP003" nextPageParameter="toggleKey=benefit"><![CDATA[0030,2340]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3MSCPNT005" checkYn="Y" description="마일리지" nextPage="SVCSUP003" nextPageParameter="toggleKey=benefit"><![CDATA[0800,2300]]></service-time>
+    <service-time code="MA3MSCPNT002" checkYn="N" description="포인트 전환" nextPage="SVCSUP003" nextPageParameter="toggleKey=benefit"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3MSCPNT003" checkYn="N" description="포인트 양도" nextPage="SVCSUP003" nextPageParameter="toggleKey=benefit"><![CDATA[0030,2355]]></service-time>
+    <service-time code="CRTATH001" checkYn="Y" description="OTP이용등록해제" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0040,2340]]></service-time>
+    <service-time code="MA3CRTLCS001" checkYn="N" description="여신거래 안심차단 서비스" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0700,2200]]></service-time>
+    <service-time code="MA3CRTCCS001" checkYn="Y" description="계좌개설 안심차단 서비스" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0700,2200]]></service-time>
+    <service-time code="CRTATH002" checkYn="Y" description="보안카드/OTP 오류 해제" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0030,2355]]></service-time>
+    <service-time code="CRTATH002_CHK" checkYn="Y" description="보안카드/OTP 오류 해제" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0900,2100]]></service-time>
+    <service-time code="DPSACC001" checkYn="Y" description="계좌비밀번호 재설정" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0900,2100]]></service-time>
+    <service-time code="LGNSET001" checkYn="Y" description="기본계좌변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0900,2100]]></service-time>
+    <service-time code="DPSACC002" checkYn="Y" description="계좌비밀번호 오류 해제" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0030,2355]]></service-time>
+    
+    <!-- LGNHLP002 진행중 비대면 인증 화면, 메뉴가 아님 -->
+    <service-time code="MA3LGNLIN005" checkYn="Y" description="로그인 비밀번호 재설정 비대면 인증" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3LGNLIN005_CHK" checkYn="Y" description="로그인 비밀번호 재설정 비대면 인증" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0900,2100]]></service-time>
+    <!--  -->
+    
+    <service-time code="MA3CRTAUT000" checkYn="N" description="이체비밀번호 해지" nextPage="SVCSUP003" nextPageParameter="toggleKey=security"><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3ACTOPN036" checkYn="N" description="금리산정 내역서" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2330]]></service-time>
+    <service-time code="MA3ACTOPN037" checkYn="N" description="금리산정 내역서 휴대폰본인인증" nextPage="SVCSUP003" nextPageParameter="toggleKey=loan"><![CDATA[0900,2330]]></service-time>
+    <service-time code="CRTFTC001" checkYn="N" description="핀테크인증서 이용 등록" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2340]]></service-time>
+    <service-time code="SVCSUP001" checkYn="Y" description="금융소비자보호법 - 계좌조회서비스(계약서류조회) " nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    
+    <service-time code="MA3CMMBIZ020" checkYn="Y" description="금융소비자보호법 - LMS계좌조회서비스(여신,신탁,펀드,수신,외화)" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CMMBIZ021" checkYn="Y" description="금융소비자보호법 - LMS적정성·적합성판단보고서조회" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CMMBIZ022" checkYn="Y" description="금융소비자보호법 - LMS적정성·적합성등록-신용대출" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CMMBIZ023" checkYn="Y" description="금융소비자보호법 - LMS적정성·적합성등록-기업대출" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3CMMBIZ024" checkYn="Y" description="금융소비자보호법 - LMS적정성·적합성등록-담보대출" nextPage="SVCSUP003" nextPageParameter=""><![CDATA[0030,2355]]></service-time>
+    <service-time code="MA3MDTMDR001" checkYn="Y" description="마이데이터 가입" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDR002" checkYn="Y" description="마이데이터 통합가입" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDR006" checkYn="Y" description="마이데이터 통합가입 (금융위 2.0)" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDR007" checkYn="Y" description="마이데이터 통합가입 (금융위 2.0)" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDR003" checkYn="Y" description="마이데이터 개별가입" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDR003_11" checkYn="Y" description="마이데이터 개별가입" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDM001" checkYn="Y" description="이용현황조회 및 관리" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTMDR004" checkYn="Y" description="마이데이터 설정" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTINQ000" checkYn="Y" description="마이데이터 조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="MA3MDTUMC001" checkYn="Y" description="마이데이터 이력관리조회" nextPage="SVCSUP003" nextPageParameter="toggleKey=service"><![CDATA[0030,2330]]></service-time>
+    <service-time code="DPSINQ005" checkYn="N" description="만기자동입금/재예치 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2355]]></service-time>
+    <service-time code="DPSINQ005_FRN" checkYn="N" description="만기자동입금 신청" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0930,1630]]></service-time>
+    <service-time code="DPSACC006" checkYn="N" description="비과세종합저축 대상자 확인" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2330]]></service-time>
+    <service-time code="DPSACC014" checkYn="N" description="비과세종합저축 한도변경" nextPage="SVCSUP003" nextPageParameter="toggleKey=deposit"><![CDATA[0030,2330]]></service-time>
+  </service-time-list>
+</service-time-definition>

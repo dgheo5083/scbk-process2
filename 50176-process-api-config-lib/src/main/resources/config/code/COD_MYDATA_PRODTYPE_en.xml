@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_PRODTYPE" lang="en">
+  <code key="401" order="1"><![CDATA[국내주식]]></code>
+  <code key="402" order="2"><![CDATA[해외주식]]></code>
+  <code key="403" order="3"><![CDATA[국내채권]]></code>
+  <code key="404" order="4"><![CDATA[해외채권]]></code>
+  <code key="405" order="5"><![CDATA[대출채권]]></code>
+  <code key="406" order="6"><![CDATA[국냅파생결합증권]]></code>
+  <code key="407" order="7"><![CDATA[해외파생결합증권]]></code>
+  <code key="408" order="8"><![CDATA[국내장내파생상품]]></code>
+  <code key="409" order="9"><![CDATA[해외장내파생상품]]></code>
+  <code key="410" order="10"><![CDATA[기타파생상품]]></code>
+  <code key="411" order="11"><![CDATA[국내단기금융상품]]></code>
+  <code key="412" order="12"><![CDATA[해외단기금융상품]]></code>
+  <code key="413" order="13"><![CDATA[국내펀드]]></code>
+  <code key="414" order="14"><![CDATA[해외(역내)펀드]]></code>
+  <code key="415" order="15"><![CDATA[해외(역외)펀드]]></code>
+  <code key="416" order="16"><![CDATA[랩]]></code>
+  <code key="417" order="17"><![CDATA[신탁]]></code>
+  <code key="418" order="18"><![CDATA[현금과예금]]></code>
+  <code key="419" order="19"><![CDATA[퇴직연금]]></code>
+  <code key="420" order="20"><![CDATA[현물]]></code>
+  <code key="421" order="21"><![CDATA[기타]]></code>
+</category>

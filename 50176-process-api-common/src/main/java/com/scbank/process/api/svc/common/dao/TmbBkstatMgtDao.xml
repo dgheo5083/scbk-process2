@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.TmbBkstatMgtDao">
+	
+	<!-- 입출금내역 DB 등록 계좌 존재 유무 조회 [ASIS: MA3_CMM.TMB_BKSTAT_MGT_S_01] -->
+	<select id="selectTransferPushAcctCnt" parameterType="java.lang.String" resultType = "int">
+        SELECT COUNT(BS_ACCT_NO) AS ACCT_CNT
+        FROM TMB_BKSTAT_MGT 
+        WHERE BS_ACCT_NO = #{bsAcctNo}
+	</select>
+
+    <!-- Push 입출금 내역 서비스 정보 삭제 [ASIS: MA3_CMM.TMB_BKSTAT_MGT_D_01] -->
+	<delete id="deleteTransferPushData" parameterType="com.scbank.process.api.svc.common.dao.dto.DeleteTransferPushDataParameter">
+		DELETE FROM TMB_BKSTAT_MGT
+		      WHERE BS_ACCT_NO= #{bsAcctNo}
+		        AND BS_PUSERNO= #{bsPuserno}
+	</delete>
+
+    <!-- 기등록 계좌 유무에 따른 계좌 삭제 [ASIS: MA3_CMM.TMB_BKSTAT_MGT_D_02] -->
+	<delete id="deleteTransferPushDataByAcctNo" parameterType="java.lang.String">
+		DELETE FROM TMB_BKSTAT_MGT
+		      WHERE BS_ACCT_NO= #{bsAcctNo}
+	</delete>
+
+    <!-- Push 입출금내역 서비스 정보 등록 [ASIS: MA3_CMM.TMB_BKSTAT_MGT_I_01] -->
+ 	<insert id="insertTransferPushData" parameterType="com.scbank.process.api.svc.common.dao.dto.InsertTransferPushDataParameter">
+	    INSERT INTO TMB_BKSTAT_MGT
+            (      
+                BS_ACCT_NO
+                , BS_PUSERNO
+                , BS_ACCT_NM
+                , BS_NOTI_RG
+                , BS_AMOUNT
+                , BS_TIME_FG
+                , BS_START_TM
+                , BS_END_TM
+                , BS_BALAN_MK
+                , BS_REGIST_ONCE
+            ) VALUES
+            (
+                #{bsAcctNo}
+                , #{bsPuserno}
+                , #{bsAcctNm}
+                , #{bsNotiRg}
+                , #{bsAmount}
+                , #{bsTimeFg}
+                <choose>
+                <when test="bsStartTm != ''">
+                , #{bsStartTm}
+                </when>
+                <otherwise>
+                , ''
+                </otherwise>
+                </choose>
+                <choose>
+                <when test="bsEndTm != ''">
+                , #{bsEndTm}
+                </when>
+                <otherwise>
+                , ''
+                </otherwise>
+                </choose>
+                <choose>
+                <when test="bsBalanMk != ''">
+                , #{bsBalanMk}
+                </when>
+                <otherwise>
+                , ''
+                </otherwise>
+                </choose>
+                , SYSDATE
+            )
+ 	</insert>
+
+    <!-- Push 입출금 내역 서비스 정보 변경 [ASIS: MA3_CMM.TMB_BKSTAT_MGT_U_01] -->
+	<update id="updateTransferPushData" parameterType="com.scbank.process.api.svc.common.dao.dto.UpdateTransferPushDataParameter">
+		UPDATE TMB_BKSTAT_MGT
+		   SET BS_NOTI_RG  = #{bsNotiRg}
+		     , BS_AMOUNT   = #{bsAmount}
+		     , BS_TIME_FG  = #{bsTimeFg}
+		     <choose>
+				<when test="bsStartTm != ''">
+				, BS_START_TM = #{bsStartTm}
+				</when>
+				<otherwise>
+				, BS_START_TM = ''
+				</otherwise>
+		     </choose>
+		     <choose>
+				<when test="bsEndTm != ''">
+				, BS_END_TM   = #{bsEndTm}
+				</when>
+				<otherwise>
+				, BS_END_TM = ''
+				</otherwise>
+		     </choose>
+		     <choose>
+				<when test="bsBalanMk != ''">
+				, BS_BALAN_MK = #{bsBalanMk}
+				</when>
+				<otherwise>
+				, BS_BALAN_MK = ''
+				</otherwise>
+		     </choose>
+		     , BS_UPD_ONCE = SYSDATE
+		 WHERE BS_ACCT_NO  = #{bsAcctNo}
+		   AND BS_PUSERNO  = #{bsPuserno}
+	</update>
+	
+</mapper>

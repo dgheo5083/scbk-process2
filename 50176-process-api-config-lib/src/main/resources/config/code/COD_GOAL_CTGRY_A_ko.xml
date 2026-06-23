@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="GOAL_CTGRY_A" lang="ko">
+  <code key="A00" order="1"><![CDATA[총한도]]></code>
+  <code key="A01" order="2"><![CDATA[쇼핑]]></code>
+  <code key="A02" order="3"><![CDATA[건강/의료]]></code>
+  <code key="A03" order="4"><![CDATA[레저/문화]]></code>
+  <code key="A04" order="5"><![CDATA[교육]]></code>
+  <code key="A05" order="6"><![CDATA[교통]]></code>
+  <code key="A06" order="7"><![CDATA[외식]]></code>
+  <code key="A07" order="8"><![CDATA[주유]]></code>
+  <code key="A08" order="9"><![CDATA[통신]]></code>
+  <code key="A09" order="10"><![CDATA[기타]]></code>
+</category>

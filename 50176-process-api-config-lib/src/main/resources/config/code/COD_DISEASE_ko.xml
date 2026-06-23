@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="DISEASE" lang="ko">
+  <code key="0" order="1"><![CDATA[질병명을 선택해주세요]]></code>
+  <code key="A04" order="2"><![CDATA[세균성 장염/대장염]]></code>
+  <code key="A09" order="3"><![CDATA[위장염/장염/대장염]]></code>
+  <code key="B02" order="4"><![CDATA[대상포진]]></code>
+  <code key="B351" order="5"><![CDATA[손발톱무좀]]></code>
+  <code key="B353" order="6"><![CDATA[무좀]]></code>
+  <code key="D25" order="7"><![CDATA[자궁근종]]></code>
+  <code key="E039" order="8"><![CDATA[갑상선기능저하증]]></code>
+  <code key="E050" order="9"><![CDATA[갑상선기능항진증]]></code>
+  <code key="E784" order="10"><![CDATA[고지혈증]]></code>
+  <code key="G43" order="11"><![CDATA[편두통]]></code>
+  <code key="H521" order="12"><![CDATA[라식/라섹]]></code>
+  <code key="H66" order="13"><![CDATA[중이염]]></code>
+  <code key="I10" order="14"><![CDATA[고혈압]]></code>
+  <code key="I83" order="15"><![CDATA[하지정맥류]]></code>
+  <code key="J00" order="16"><![CDATA[코감기/급성 비염/급성 비인두염]]></code>
+  <code key="J02" order="17"><![CDATA[목감기/급성 인두염]]></code>
+  <code key="J03" order="18"><![CDATA[급성 편도염]]></code>
+  <code key="J060" order="19"><![CDATA[급성 인후두염]]></code>
+  <code key="J11" order="20"><![CDATA[인플루엔자/독감]]></code>
+  <code key="J20" order="21"><![CDATA[급성 기관지염]]></code>
+  <code key="J304" order="22"><![CDATA[알레르기성 비염]]></code>
+  <code key="K010" order="23"><![CDATA[사랑니]]></code>
+  <code key="K02" order="24"><![CDATA[치아우식증/충치]]></code>
+  <code key="K082" order="25"><![CDATA[임플란트]]></code>
+  <code key="K121" order="26"><![CDATA[구내염]]></code>
+  <code key="K25" order="27"><![CDATA[위궤양]]></code>
+  <code key="K26" order="28"><![CDATA[십이지장궤양]]></code>
+  <code key="K295" order="29"><![CDATA[위염]]></code>
+  <code key="K35" order="30"><![CDATA[맹장염/충수염]]></code>
+  <code key="K40" order="31"><![CDATA[서혜부(사타구니) 탈장]]></code>
+  <code key="K57" order="32"><![CDATA[게실염]]></code>
+  <code key="K603" order="33"><![CDATA[치루]]></code>
+  <code key="K64" order="34"><![CDATA[치질/치핵]]></code>
+  <code key="K80" order="35"><![CDATA[담석증]]></code>
+  <code key="K81" order="36"><![CDATA[담낭염]]></code>
+  <code key="L20" order="37"><![CDATA[아토피피부염]]></code>
+  <code key="L309" order="38"><![CDATA[습진]]></code>
+  <code key="L50" order="39"><![CDATA[두드러기]]></code>
+  <code key="L659" order="40"><![CDATA[탈모]]></code>
+  <code key="M50" order="41"><![CDATA[목디스크/경추 추간판장애]]></code>
+  <code key="M518" order="42"><![CDATA[디스크/추간판장애/허리디스크/요추 추간판장애]]></code>
+  <code key="N10" order="43"><![CDATA[급성 신우신염]]></code>
+  <code key="N218" order="44"><![CDATA[하부요로결석]]></code>
+  <code key="N30" order="45"><![CDATA[방광염]]></code>
+  <code key="N418" order="46"><![CDATA[전립선염]]></code>
+  <code key="O809" order="47"><![CDATA[출산/자연분만]]></code>
+  <code key="O82" order="48"><![CDATA[제왕절개]]></code>
+  <code key="T10" order="49"><![CDATA[팔/손목/손/손가락 골절]]></code>
+  <code key="T12" order="50"><![CDATA[다리/발목/발/발가락 골절]]></code>
+  <code key="Z321" order="51"><![CDATA[임신/임신관리]]></code>
+  <code key="ZZZ" order="52"><![CDATA[기타]]></code>
+</category>

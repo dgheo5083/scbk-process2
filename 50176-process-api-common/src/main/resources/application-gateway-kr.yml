@@ -1,0 +1,86 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            logger-level: FULL
+            connect-timeout: 5000
+            read-timeout: 130000
+          mbOLTPCommonRoute:
+            connect-timeout: 5000
+            read-timeout: 130000
+          mbcommonroute:
+            connect-timeout: 5000
+            read-timeout: 130000
+          mobileBeregCommonRoute:
+            connect-timeout: 5000
+            read-timeout: 130000
+          smartphonebankingcommonRoute:
+            connect-timeout: 5000
+            read-timeout: 130000
+      okhttp:
+        enabled: true
+      httpclient:
+        enabled: false
+
+# edmi gateway config
+edmi:
+  gateway:
+    default:
+      baseUrl: http://10.61.117.213:5103
+      #serviceUrl: /edmirest/mbOLTPCommonRoute
+      userName: mb
+      credential: mb
+      ssl:
+        enabled: false
+        trust-store:
+          type: "JKS"
+          path: "file:/C:/jdk/MobileBanking/keystore/edmi-truststore.jks"
+          credential: ${EDMI_TRUST_STORE_PASSWORD}
+        # key-store:
+        #     type: ""
+        #     path: ""
+        #     password: ""
+    mbOLTPCommonRoute:
+      #baseUrl: http://10.61.117.213:5103
+      serviceUrl: /edmirest/mbOLTPCommonRoute
+      userName: mb
+      credential: mb
+    mbcommonroute:
+      baseUrl: http://10.61.117.213:5102
+      serviceUrl: /edmirest/mbcommonroute
+      userName: mb
+      credential: mb
+    mobileBeregCommonRoute:
+      baseUrl: http://10.61.117.213:5104
+      serviceUrl: /edmirest/mobileBeregCommonRoute
+      userName: mb
+      credential: mb
+    smartphonebankingcommonRoute:
+      #baseUrl: http://10.61.117.213:5103
+      serviceUrl: /edmirest/smartphonebankingcommonRoute
+      userName: smartphonebanking
+      credential: smartphonebanking
+
+prc:
+  gateway:
+    customer:
+      baseUrl: http://localhost:9102/process/api/v1/customer
+      simulation:
+        enabled: false
+        config-location: classpath:simulation/gateway/customer/**/*.json
+    # deposits:
+    #   baseUrl: http://localhost:9103/process/api/v1/deposits
+    # loans:
+    #   baseUrl: http://localhost:9104/process/api/v1/loans
+    # forex:
+    #   baseUrl: http://localhost:9105/process/api/v1/forex
+    # card:
+    #   baseUrl: http://localhost:9106/process/api/v1/card
+    # banca:
+    #   baseUrl: http://localhost:9107/process/api/v1/banca
+    # fund:
+    #   baseUrl: http://localhost:9108/process/api/v1/fund
+    # trust:
+    #   baseUrl: http://localhost:9109/process/api/v1/trust

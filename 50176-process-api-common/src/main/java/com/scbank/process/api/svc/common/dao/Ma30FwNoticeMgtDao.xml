@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30FwNoticeMgtDao">
+    <!-- PMS 공지팝업 조회 -->
+	<select id="selectPmsNotice" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.PmsNoticeResult">
+		SELECT SEQNO AS seqNo
+              ,REGIST_DT
+              ,UPD_DT
+              ,CTGRY_CD
+              ,POPUP_YN
+              ,BTN_FLG
+              ,BTN_URL
+              ,BTN_NAME
+              ,TITLE
+              ,S_DATE
+              ,S_TIME
+              ,E_DATE
+              ,E_TIME
+              ,ATTFILE_ICO_URL
+              ,ATTFILE_ICO_IMG
+              ,CONTENTS
+              ,APP_STATUS
+              ,D_FLAG
+		 FROM UIDBS01.MA30_FW_NOTICE_MGT
+		WHERE CTGRY_CD = #{ctrgyCd}
+	      AND (CONCAT(REPLACE(S_DATE, '-', ''), S_TIME) <![CDATA[<=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24') ) 
+	      AND (CONCAT(REPLACE(E_DATE, '-', ''), E_TIME) <![CDATA[>=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24') )
+		  AND APP_STATUS = 'PF4005' 
+		  AND D_FLAG = 'Z00001'
+		 WITH UR
+	</select>
+</mapper>

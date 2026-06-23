@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="UERSN" lang="ko">
+  <code key="001" order="1"><![CDATA[자주이용하지 않음]]></code>
+  <code key="002" order="2"><![CDATA[찾고자 하는 정보가 부족함]]></code>
+  <code key="003" order="3"><![CDATA[속도가 느림]]></code>
+  <code key="004" order="4"><![CDATA[서비스가 마음에 들지 않음]]></code>
+</category>

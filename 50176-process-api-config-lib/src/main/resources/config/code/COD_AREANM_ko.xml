@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="AREANM" lang="ko">
+  <code key="0002" order="0"><![CDATA[서울(02)]]></code>
+  <code key="0031" order="0"><![CDATA[경기(031)]]></code>
+  <code key="0032" order="0"><![CDATA[인천(032)]]></code>
+  <code key="0033" order="0"><![CDATA[강원(033)]]></code>
+  <code key="0041" order="0"><![CDATA[충남(041)]]></code>
+  <code key="0042" order="0"><![CDATA[대전(042)]]></code>
+  <code key="0043" order="0"><![CDATA[충북(043)]]></code>
+  <code key="0051" order="0"><![CDATA[부산(051)]]></code>
+  <code key="0052" order="0"><![CDATA[울산(052)]]></code>
+  <code key="0053" order="0"><![CDATA[대구(053)]]></code>
+  <code key="0054" order="0"><![CDATA[경북(054)]]></code>
+  <code key="0055" order="0"><![CDATA[경남(055)]]></code>
+  <code key="0061" order="0"><![CDATA[전남(061)]]></code>
+  <code key="0062" order="0"><![CDATA[광주(062)]]></code>
+  <code key="0063" order="0"><![CDATA[전북(063)]]></code>
+  <code key="0064" order="0"><![CDATA[제주(064)]]></code>
+</category>

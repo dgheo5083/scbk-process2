@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="PRODUCT_ID" lang="ko">
+  <code key="CMJG" 	order="0"><![CDATA[3005]]></code> <!-- 모바일 전세론 신청 -->
+  <code key="CMJL" 	order="0"><![CDATA[7979]]></code> <!-- 모바일 전세론 연기 -->
+  <code key="NSPL" 	order="0"><![CDATA[2440]]></code> <!-- 새희망홀씨론 -->
+  <code key="CRPL" 	order="0"><![CDATA[128]]></code> <!-- 드림론 순수 -->
+  <code key="CRPL_DGL" 	order="0"><![CDATA[3840]]></code> <!-- 드림론 집단 -->
+  <code key="SPPL" 	order="0"><![CDATA[4218]]></code> <!-- 직장인중금리 -->
+  <code key="MAPL" 	order="0"><![CDATA[5112]]></code> <!-- 모바일 소액대출 -->
+</category>

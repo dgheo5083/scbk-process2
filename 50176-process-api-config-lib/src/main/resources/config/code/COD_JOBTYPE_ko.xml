@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="JOBTYPE" lang="ko">
+  <code key="00" order="0"><![CDATA[회사업종정보]]></code>
+  <code key="01" order="1"><![CDATA[도박/카지노업]]></code>
+  <code key="02" order="2"><![CDATA[대부업]]></code>
+  <code key="03" order="3"><![CDATA[환전업]]></code>
+  <code key="04" order="4"><![CDATA[귀금속업]]></code>
+  <code key="05" order="5"><![CDATA[무기(제조)업]]></code>
+  <code key="06" order="6"><![CDATA[제조업]]></code>
+  <code key="07" order="7"><![CDATA[금융/증권/보험업]]></code>
+  <code key="08" order="8"><![CDATA[무역/수출입업]]></code>
+  <code key="09" order="9"><![CDATA[건설업]]></code>
+  <code key="10" order="10"><![CDATA[농/수/축산/광업]]></code>
+  <code key="11" order="11"><![CDATA[도/소매업]]></code>
+  <code key="12" order="12"><![CDATA[중개업]]></code>
+  <code key="13" order="13"><![CDATA[오락업]]></code>
+  <code key="14" order="14"><![CDATA[부동산업]]></code>
+  <code key="15" order="15"><![CDATA[숙박/음식점업]]></code>
+  <code key="16" order="16"><![CDATA[운수업]]></code>
+  <code key="17" order="17"><![CDATA[컴퓨터업]]></code>
+  <code key="18" order="18"><![CDATA[출판업]]></code>
+  <code key="19" order="19"><![CDATA[정보통신업]]></code>
+  <code key="20" order="20"><![CDATA[언론/방송]]></code>
+  <code key="21" order="21"><![CDATA[교육/서비스업]]></code>
+  <code key="99" order="99"><![CDATA[기타]]></code>
+</category>

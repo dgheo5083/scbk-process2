@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="YGKIND" lang="ko">
+  <code key="01" order="1"><![CDATA[보통예금]]></code>
+  <code key="02" order="2"><![CDATA[세이프저축예금]]></code>
+  <code key="03" order="3"><![CDATA[일복리저축]]></code>
+  <code key="04" order="4"><![CDATA[기업자유예금]]></code>
+  <code key="05" order="5"><![CDATA[프라임]]></code>
+  <code key="06" order="6"><![CDATA[두드림목돈]]></code>
+  <code key="07" order="7"><![CDATA[퍼스트주거래(수수료형)]]></code>
+  <code key="08" order="8"><![CDATA[퍼스트주거래(보험형)]]></code>
+  <code key="09" order="9"><![CDATA[123저축예금]]></code>
+  <code key="10" order="10"><![CDATA[레이디퍼스트]]></code>
+  <code key="11" order="11"><![CDATA[두드림통장]]></code>
+  <code key="12" order="12"><![CDATA[플러스알파]]></code>
+  <code key="13" order="13"><![CDATA[다모아비즈통장]]></code>
+  <code key="14" order="14"><![CDATA[내지갑통장]]></code>
+  <code key="15" order="15"><![CDATA[두드림2U통장]]></code>
+  <code key="17" order="16"><![CDATA[마이프리미엄통장]]></code>
+</category>

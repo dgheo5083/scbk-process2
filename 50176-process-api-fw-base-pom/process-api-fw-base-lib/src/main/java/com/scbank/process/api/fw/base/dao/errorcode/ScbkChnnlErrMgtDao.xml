@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scbank.process.api.fw.base.dao.errorcode.ScbkChnnlErrMgtDao">
+
+    <sql id="selectChnnlErrMgtQuery">
+        SELECT
+			CHNNL_MK_CD as chnnlMkCd,
+			NTNL_CD as ntnlCd,
+			IN_IDENT as inIdent,
+			ERR_CD as errCd,
+			ERR_MODE as errMode,
+			ERR_MSG as errMsg,
+			ERR_MSG1 as errMsg1,
+			ERR_MSG2 as errMsg2,
+			ERR_MSG3 as errMsg3,
+			ERR_MSG4 as errMsg4,
+			ERR_MSG5 as errMsg5,
+			ERR_MSG6 as errMsg6,
+			ERR_MSG7 as errMsg7,
+			USE_FLG as useFlg,
+			ERR_INFO_SLCT_FLG as errInfoSlctFlg
+		FROM
+			ALL_CHNNL_ERR_MGT
+        WHERE 1=1
+    </sql>
+
+	<!-- 채널 Error Code 목록 조회 -->
+	<select id="selectChnnlErrMgtList" parameterType="com.scbank.process.api.fw.base.dao.errorcode.dto.ScbkChnnlErrMsgInDto" resultType="com.scbank.process.api.fw.base.dao.errorcode.dto.ScbkChnnlErrMsgOutDto">
+		<include refid="selectChnnlErrMgtQuery" />
+		AND   CHNNL_MK_CD = #{chnnlMkCd}
+		AND   USE_FLG = 'Y'
+		ORDER BY ERR_CD
+		WITH UR
+	</select>
+
+    <!-- 채널 Error Code 단건 조회-->
+    <select id="selectChnnlErrMgt" parameterType="com.scbank.process.api.fw.base.dao.errorcode.dto.ScbkChnnlErrMsgInDto" resultType="com.scbank.process.api.fw.base.dao.errorcode.dto.ScbkChnnlErrMsgOutDto">
+		<include refid="selectChnnlErrMgtQuery" />
+		AND   CHNNL_MK_CD = #{chnnlMkCd}
+        AND   ERR_CD = #{errCd}
+        AND   NTNL_CD = #{ntnlCd}
+        AND   ERR_MODE = #{errMode}
+		AND   USE_FLG = 'Y'
+		ORDER BY ERR_CD
+		WITH UR
+	</select>
+</mapper>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="COD_API_REJECT_REASON_002_101S" lang="ko">
+	<!-- [ 2023.04.25 COD_API_REJECT_REASON_002_101S - API전세론 거절사유 ] key:거절코드,  value:거절사유 -->
+	<code key="D201" order="0" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D202" order="1" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D204" order="2" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D211" order="3" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D221" order="4" ><![CDATA[나이 기준을 충족하지 못했어요]]></code>
+	<code key="D228" order="5" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D229" order="6" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D232" order="7" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D241" order="8" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D246" order="9" ><![CDATA[대출가능 금액을 초과했어요]]></code>
+	<code key="D260" order="10" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D261" order="11" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D266" order="12" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D267" order="13" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D271" order="14" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D280" order="15" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D281" order="16" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D284" order="17" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D285" order="18" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D297" order="19" ><![CDATA[소득기준을 충족하지 못했어요]]></code>
+	<code key="D303" order="20" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D308" order="21" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D469" order="22" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D920" order="23" ><![CDATA[대출가능한도가 충족하지 못했어요]]></code>
+	<code key="D922" order="24" ><![CDATA[소득기준을 충족하지 못했어요]]></code>
+	<code key="D962" order="25" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D966" order="26" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="D969" order="27" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R403" order="28" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R599" order="29" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R600" order="30" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R602" order="31" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R644" order="32" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R645" order="33" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R650" order="34" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R900" order="35" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R961" order="36" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R962" order="37" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R963" order="38" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="R964" order="39" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	<code key="CODE_DEFAULT" order="40" ><![CDATA[자격 기준을 충족하지 못했어요]]></code>
+	
+</category>

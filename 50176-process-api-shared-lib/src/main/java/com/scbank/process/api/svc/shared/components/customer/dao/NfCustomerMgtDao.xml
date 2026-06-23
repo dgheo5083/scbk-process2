@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.customer.dao.NfCustomerMgtDao">
+
+	<!-- 비대면인증 고객관리 조회 (asis : NF_CUST_MGT_S_01) -->
+ 	<select id="selectNonFaceCustomerInfo" parameterType="com.scbank.process.api.svc.shared.components.customer.dao.dto.NonFaceCustomerInfoParameter" 
+ 		resultType="com.scbank.process.api.svc.shared.components.customer.dao.dto.NonFaceCustomerInfoInquiryResult" >
+		SELECT
+			SSN,
+		 	CUST_NO,
+		 	MBLPHN_NO,
+		 	USER_NM,
+		 	CMPND_CHECK_KEY,
+		 	SRC_NEW_USER_FLG,
+		 	NEW_USER_FLG,
+		 	SRC_DEL_OBJ_FLG,
+		 	DEL_OBJ_FLG,
+		 	INIT_CNNCTN_DT,
+		 	LST_CNNCTN_DT
+		FROM
+			NF_CUST_MGT
+		WHERE
+			SSN = #{ssn}
+		WITH UR
+	</select>
+
+	<!-- 비대면인증 고객관리 등록 (asis : NF_CUST_MGT_I_01) -->
+ 	<insert id="NF_CUST_MGT_I_01" parameterType="com.scbank.process.api.svc.shared.components.customer.dao.dto.NonFaceCustomerInfoParameter" >
+		INSERT INTO NF_CUST_MGT (
+			SSN,
+			CUST_NO,
+			MBLPHN_NO,
+			USER_NM,
+			CMPND_CHECK_KEY,
+			SRC_NEW_USER_FLG,
+			NEW_USER_FLG,
+			SRC_DEL_OBJ_FLG,
+			DEL_OBJ_FLG,
+			INIT_CNNCTN_DT,
+			LST_CNNCTN_DT
+		) VALUES (
+			#{ssn},
+			NEXTVAL FOR NF_CUST_MGT_CUST_NO_SQ,
+			#{mblphnNo},
+			#{userNm},
+			#{cmpndCheckKey},
+			#{srcNewUserFlg},
+			#{newUserFlg},
+			#{srcDelObjFlg},
+			#{delObjFlg},
+			CURRENT TIMESTAMP,
+			CURRENT TIMESTAMP
+		)
+ 	</insert>
+ 	
+ 	<!-- 비대면인증 고객관리 수정 (asis : NF_CUST_MGT_U_01) -->
+	<update id="updateNonFaceCustomerInfo" parameterType="com.scbank.process.api.svc.shared.components.customer.dao.dto.NonFaceCustomerInfoParameter" >
+		UPDATE 
+			NF_CUST_MGT
+		SET
+			LST_CNNCTN_DT = CURRENT TIMESTAMP,
+			MBLPHN_NO = #{mblphnNo},
+			USER_NM = #{userNm},
+			CMPND_CHECK_KEY = #{cmpndCheckKey},
+			SRC_NEW_USER_FLG = #{srcNewUserFlg},
+			NEW_USER_FLG = #{newUserFlg},
+			SRC_DEL_OBJ_FLG = #{srcDelObjFlg},
+			DEL_OBJ_FLG = #{delObjFlg}
+		WHERE
+			SSN = #{ssn}
+	</update>
+	
+</mapper>

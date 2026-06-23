@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="APITELECOM" lang="ko">
+  <code key="" order="1"><![CDATA[통신사 선택]]></code>
+  <code key="1" order="2"><![CDATA[SKT]]></code>
+  <code key="2" order="3"><![CDATA[KT]]></code>
+  <code key="3" order="4"><![CDATA[LGU]]></code>
+  <code key="5" order="5"><![CDATA[SKT알뜰폰]]></code>
+  <code key="6" order="6"><![CDATA[KT알뜰폰]]></code>
+  <code key="7" order="7"><![CDATA[LGU+알뜰폰]]></code>
+</category>

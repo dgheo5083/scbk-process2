@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30SedMsgAgrmntDao">
+
+    <!-- 푸시 동의 여부 조회 -->
+	<select id="selectPushAgreeInfo" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.SelectPushAgreeInfoResult">
+        SELECT
+            MSG_TYPE_SUB_CD
+            ,USE_YN
+        FROM UIDBS01.MA30_SED_MSG_AGRMNT
+        WHERE BANK_ID=#{bankId}
+	</select>
+
+    <!-- 푸시 동의 여부 등록/수정 -->
+    <insert id="insertUserPushAgree" parameterType="com.scbank.process.api.svc.common.dao.dto.InsertUserPushAgreeParameter">
+        MERGE INTO UIDBS01.MA30_SED_MSG_AGRMNT X
+        USING (
+            SELECT
+                COUNT(*) COUNT
+            FROM 
+                UIDBS01.MA30_SED_MSG_AGRMNT
+            WHERE
+                BANK_ID = #{userId}
+                AND MSG_TYPE_SUB_CD = #{msgTypeSubCd}
+        ) Y
+        ON (
+            Y.COUNT <![CDATA[>]]> 0
+            AND X.BANK_ID = #{userId}
+            AND X.MSG_TYPE_SUB_CD = #{msgTypeSubCd}
+        ) WHEN MATCHED THEN
+            UPDATE SET
+                X.USE_YN = #{useYn},
+                X.UPD_DT = CURRENT TIMESTAMP,
+                X.UPD_ID = #{userId}
+        WHEN NOT MATCHED THEN
+            INSERT (
+                X.BANK_ID,
+                X.MSG_TYPE_SUB_CD,
+                X.USE_YN,
+                X.REGIST_DT,
+                X.REGIST_ID,
+                X.UPD_DT,
+                X.UPD_ID
+            ) VALUES (
+                #{userId},
+                #{msgTypeSubCd},
+                #{useYn},
+                CURRENT TIMESTAMP,
+                #{userId},
+                CURRENT TIMESTAMP,
+                #{userId}
+            )
+    </insert>
+
+
+</mapper>

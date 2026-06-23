@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="SMS_ERROR_MSG" lang="ko">
+	<code key="SIGNPDF_0001" 	order="1"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 전자서명PDF 생성중 에러]]></code>
+	<code key="AMSHOST_0001" 	order="2"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] AMS(여신계정계)거래중 에러]]></code>
+	<code key="LPC_IMG_0001" 	order="3"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] LPC문서 송부중 에러]]></code>
+	<code key="LPCMETA_0001" 	order="4"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] LPC상품및문서정보 전송중 에러]]></code>
+	<code key="LPCMETA_0002"	order="5"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] LPC상품및문서정보 전송중 서버 에러]]></code>
+	<code key="LPCMETA_0003"	order="6"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] LPC상품정보 전송중 에러]]></code>
+	<code key="ADDTRAN_0001"	order="7"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 추가문서 전송중 에러]]></code>
+	<code key="OFFICAL_0001"	order="8"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 공전소 발송 등록중 에러]]></code>
+	<code key="OFFICAL_0002"	order="9"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 공전소 발송 등록중 서버에러]]></code>
+	<code key="LPC_RCV_0001"	order="10"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] LPC 복구중 에러]]></code>
+	<code key="OFF_RCV_0001"	order="11"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 공전소 복구중 에러]]></code>
+	<code key="EMAILSD_0001"	order="12"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 이메일 고객문서 발송중 에러]]></code>
+	<code key="EMAILSD_0002"	order="13"><![CDATA[[SC제일은행] [~~TRAD_NO~~] [~~PRDCT_NM~~] 이메일 상품설명서 발송중 에러]]></code>
+</category>

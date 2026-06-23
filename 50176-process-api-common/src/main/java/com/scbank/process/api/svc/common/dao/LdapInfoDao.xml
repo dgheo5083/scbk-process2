@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.LdapInfoDao">
+
+	<!-- 시리얼번호로 사용자 아이디 변경 -->
+	<update id="updateUseridBySerial" parameterType="java.lang.String">
+	UPDATE 
+		LDAP_INFO 
+	SET 
+		USERID = #{userId}
+	WHERE 
+		SERIAL = #{serial}
+	</update>
+	
+	<!-- LDAP_INFO 테이블 페기 정보 조회 -->
+	<select id="selectForDelete" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.LdapInfoResult">
+	SELECT 
+		DN
+		, SERIAL
+		, OBJECTCLASS
+		, CN
+		, SN
+		, MAIL
+		, TIMEID
+		, RAFLAG
+		, STATUS
+		, POLICY
+		, CID
+		, SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 1, 4)||SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 6, 2)||SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 9, 2) ISSUEDATESTR
+		, ISSUEDATE
+		, SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 1, 4)||SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 6, 2)||SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 9, 2) EXPIREDATESTR
+		, EXPIREDATE
+		, SUBSTR(CN, 1, LOCATE('(',CN)-1) CUSTNAME
+	FROM 
+		OPPRA.LDAP_INFO 
+	WHERE 
+	
+		USERID = #{userId}
+		AND EXPIREDATE >= CURRENT_TIMESTAMP
+		AND RAFLAG = '1' 
+		AND POLICY = #{policy}
+	ORDER BY POLICY DESC 
+	FETCH FIRST 1 ROWS ONLY
+	WITH UR
+	</select>
+
+	<!-- 시리얼로 당행 인증서 조회 -->
+	<select id="selectLdapInfoBySerial" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.LdapInfoResult">
+	SELECT
+		SERIAL
+		,DN
+		,OBJECTCLASS
+		,USERCERTIFICATE
+		,CN
+		,SN
+		,MAIL
+		,USERID
+		,TIMEID
+		,POLICY
+		,RAFLAG
+		,STATUS
+		,CID
+		,SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 1, 4)||SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 6, 2)||SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 9, 2) ISSUEDATESTR
+		,ISSUEDATE
+		,SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 1, 4)||SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 6, 2)||SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 9, 2) EXPIREDATESTR
+		,EXPIREDATE
+	FROM 
+		LDAP_INFO 
+	WHERE
+		SERIAL = #{serial}
+	WITH UR
+	</select>
+	
+	<!-- userid로 REFLAG 1인 당행 인증서 조회 -->
+	<select id="selectOppraLdapInfoByUserid" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.LdapInfoResult">
+	SELECT 
+		DN
+		,SERIAL
+		,OBJECTCLASS
+		,CN
+		,SN
+		,MAIL
+		,USERID
+		,TIMEID
+		,RAFLAG
+		,STATUS
+		,POLICY
+		,CID
+		,SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 1, 4)||SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 6, 2)||SUBSTR(CAST(CAST(ISSUEDATE AS DATE) AS CHAR(10)), 9, 2) ISSUEDATESTR
+		,ISSUEDATE
+		,SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 1, 4)||SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 6, 2)||SUBSTR(CAST(CAST(EXPIREDATE AS DATE) AS CHAR(10)), 9, 2) EXPIREDATESTR
+		,EXPIREDATE
+		,USERCERTIFICATE 
+	FROM 
+		LDAP_INFO 
+	WHERE USERID = #{userId}
+      AND RAFLAG = '1' 
+	WITH UR
+	</select>
+	
+	<!-- userid로 금융인증서 조회 -->
+	<select id="selectFincertCount" parameterType="java.lang.String" resultType="int">
+	SELECT 
+		COUNT(*) AS CNT
+	FROM 
+		LDAP_INFO 
+	WHERE 1 = 1
+		AND	USERID = #{userId}
+		AND POLICY = '16'
+	WITH UR
+	</select>
+	
+	<!-- 사용자아이디로 타기관 인증서 조회 -->
+	<select id="selectInfoOther" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.InfoOtherResult">
+	SELECT 
+		B.SERIAL SERIAL
+		,B.ISSUER ISSUER
+		,B.USERID USERID
+		,B.IDNUM IDNUM
+		,B.EXPIRED EXPIRED
+		,B.REGISTERD REGISTERD
+		,B.OID OID
+	FROM 
+		INFO B,
+		(SELECT 
+			MAX(EXPIRED) EXPIRED
+			,MAX(REGISTERD) REGISTERD
+			,OID
+			,USERID
+		FROM 
+			INFO
+		WHERE 
+			USERID = #{userId}
+		GROUP BY 
+			USERID
+			,OID) A
+	WHERE 
+		A.OID = B.OID
+		AND A.EXPIRED = B.EXPIRED
+		AND A.REGISTERD = B.REGISTERD
+	WITH UR
+	</select>
+	
+	<!-- 타기관 인증서 삭제 -->
+	<delete id="deleteInfoOther" parameterType="java.lang.String">
+	DELETE FROM 
+		INFO
+	WHERE 
+		USERID = #{userId}
+		AND  IDNUM = #{idNum} 
+		AND OID = #{oid} 
+	</delete>
+	
+</mapper>

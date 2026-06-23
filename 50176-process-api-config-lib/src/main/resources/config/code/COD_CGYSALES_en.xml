@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 매출액 -->
+<category name="CGYSALES" lang="en">
+  <code key="1" order="1"><![CDATA[소득없음]]></code>
+  <code key="2" order="2"><![CDATA[1,000만원 이하]]></code>
+  <code key="3" order="3"><![CDATA[1,000만원 초과~1억원이하]]></code>
+  <code key="4" order="4"><![CDATA[1억원초과~5억원이하]]></code>
+  <code key="5" order="5"><![CDATA[5억원초과]]></code>
+</category>

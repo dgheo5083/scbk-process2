@@ -1,0 +1,11 @@
+server:
+  servlet:
+    session:
+      timeout: 10m
+      cookie:
+        name: SESSIONID
+        http-only: true
+        secure: false
+        same-site: Lax
+        path: /
+        domain: sc.co.kr

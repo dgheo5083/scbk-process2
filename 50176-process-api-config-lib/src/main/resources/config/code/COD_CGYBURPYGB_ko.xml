@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 기업변제방법 -->
+<category name="CGYBURPYGB" lang="ko">
+  <code key="21" order="1"><![CDATA[사업소득]]></code>
+  <code key="22" order="2"><![CDATA[임대소득]]></code>
+  <code key="23" order="3"><![CDATA[근로소득]]></code>
+  <code key="24" order="4"><![CDATA[기타소득]]></code>
+</category>

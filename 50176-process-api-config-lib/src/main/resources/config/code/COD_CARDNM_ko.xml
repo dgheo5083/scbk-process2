@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CARDNM" lang="ko">
+  <code key="3560" order="3560"><![CDATA[JCB우량]]></code>
+  <code key="3563" order="3563"><![CDATA[JCB골드]]></code>
+  <code key="3565" order="3565"><![CDATA[정부구매]]></code>
+  <code key="4038" order="4038"><![CDATA[VISA우량]]></code>
+  <code key="4048" order="4048"><![CDATA[VISAFP]]></code>
+  <code key="4067" order="4067"><![CDATA[정부구매]]></code>
+  <code key="4140" order="4140"><![CDATA[VISACP]]></code>
+  <code key="4211" order="4211"><![CDATA[VISA골드]]></code>
+  <code key="4481" order="4481"><![CDATA[VISA체크]]></code>
+  <code key="4553" order="4553"><![CDATA[VISA골드]]></code>
+  <code key="4755" order="4755"><![CDATA[VISAE]]></code>
+  <code key="4859" order="4859"><![CDATA[VISA구매판매]]></code>
+  <code key="4906" order="4906"><![CDATA[VISA우량]]></code>
+  <code key="5377" order="5377"><![CDATA[BCMC골드]]></code>
+  <code key="5388" order="5388"><![CDATA[BCMC우량]]></code>
+  <code key="5521" order="5521"><![CDATA[BCMCFP]]></code>
+  <code key="5528" order="5528"><![CDATA[정부구매]]></code>
+  <code key="5551" order="5551"><![CDATA[BCMC구매판매]]></code>
+  <code key="5585" order="5585"><![CDATA[BCMCCP]]></code>
+  <code key="5589" order="5589"><![CDATA[BCMCE]]></code>
+  <code key="6048" order="6048"><![CDATA[BCMC체크]]></code>
+  <code key="9410" order="9410"><![CDATA[BC일반]]></code>
+  <code key="9420" order="9420"><![CDATA[BC우량]]></code>
+  <code key="9430" order="9430"><![CDATA[BC골드]]></code>
+  <code key="9440" order="9440"><![CDATA[BC플러스]]></code>
+  <code key="9450" order="9450"><![CDATA[BC구매판매]]></code>
+  <code key="9470" order="9470"><![CDATA[정부구매]]></code>
+  <code key="486703" order="486703"><![CDATA[독자구매]]></code>
+</category>

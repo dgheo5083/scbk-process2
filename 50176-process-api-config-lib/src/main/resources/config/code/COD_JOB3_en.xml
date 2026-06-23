@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="JOB3" lang="en">
+  <code key="10" order="0"><![CDATA[Civil servant]]></code>
+  <code key="20" order="1"><![CDATA[School teacher and staff]]></code>
+  <code key="21" order="2"><![CDATA[Professor]]></code>
+  <code key="30" order="3"><![CDATA[Soldier]]></code>
+  <code key="40" order="4"><![CDATA[Employee of public institution]]></code>
+  <code key="50" order="5"><![CDATA[Employee of financial institution]]></code>
+  <code key="51" order="6"><![CDATA[Employee of private institute]]></code>
+  <code key="52" order="7"><![CDATA[Employee of social and culture organization]]></code>
+  <code key="53" order="8"><![CDATA[Labor worker]]></code>
+  <code key="54" order="9"><![CDATA[Other employeed]]></code>
+  <code key="55" order="10"><![CDATA[Agricultural, Forestry and Fishery Workers]]></code>
+  <code key="60" order="11"><![CDATA[Employeed]]></code>
+  <code key="61" order="12"><![CDATA[Politician]]></code>
+  <code key="62" order="13"><![CDATA[Journalist/reporter/media staff]]></code>
+  <code key="63" order="14"><![CDATA[Artist]]></code>
+  <code key="64" order="15"><![CDATA[Athlete]]></code>
+  <code key="65" order="16"><![CDATA[Religious(leader)]]></code>
+  <code key="66" order="17"><![CDATA[Entertainer]]></code>
+  <code key="70" order="18"><![CDATA[Sole Proprietor]]></code>
+  <code key="71" order="19"><![CDATA[Lawyer]]></code>
+  <code key="72" order="20"><![CDATA[Accountant]]></code>
+  <code key="73" order="21"><![CDATA[Tax accountant]]></code>
+  <code key="74" order="22"><![CDATA[Judicial scrivener]]></code>
+  <code key="75" order="23"><![CDATA[Patent lawyer]]></code>
+  <code key="76" order="24"><![CDATA[Doctor]]></code>
+  <code key="77" order="25"><![CDATA[Pharmacist]]></code>
+  <code key="80" order="26"><![CDATA[Other professionals]]></code>
+  <code key="81" order="27"><![CDATA[Casino/Gambling biz]]></code>
+  <code key="82" order="28"><![CDATA[Loan shark]]></code>
+  <code key="83" order="29"><![CDATA[MSB]]></code>
+  <code key="84" order="30"><![CDATA[Jewelry business]]></code>
+  <code key="85" order="31"><![CDATA[Defence goods dealer]]></code>
+  <code key="86" order="32"><![CDATA[Students of private institute]]></code>
+  <code key="87" order="33"><![CDATA[Preschooler]]></code>
+  <code key="88" order="34"><![CDATA[Unemployeed]]></code>
+  <code key="90" order="35"><![CDATA[Free lancer]]></code>
+  <code key="91" order="36"><![CDATA[House wife]]></code>
+  <code key="92" order="37"><![CDATA[Student]]></code>
+  <code key="95" order="38"><![CDATA[Beneficiary of welfare facility]]></code>
+  <code key="96" order="39"><![CDATA[Retiree]]></code>
+  <code key="97" order="40"><![CDATA[Pension beneficiary]]></code>
+  <!-- <code key="98" order="41"><![CDATA[제공거부]]></code> -->
+  <code key="99" order="41"><![CDATA[Others]]></code>
+</category>

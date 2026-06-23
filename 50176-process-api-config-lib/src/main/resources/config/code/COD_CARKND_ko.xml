@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CARKND" lang="ko">
+  <code key="" order="0"><![CDATA[차종선택]]></code>
+  <code key="0" order="1"><![CDATA[운전안함]]></code>
+  <code key="1" order="2"><![CDATA[승용차]]></code>
+  <code key="2" order="3"><![CDATA[중형승합차(25인승 이하)]]></code>
+  <code key="B" order="4"><![CDATA[승용차(영업용)]]></code>
+  <code key="3" order="5"><![CDATA[버스]]></code>
+  <code key="4" order="6"><![CDATA[중형트럭(2.5톤 이상)]]></code>
+  <code key="5" order="7"><![CDATA[소형트럭(2.5톤 미만, 밴포함)]]></code>
+  <code key="E" order="8"><![CDATA[오토바이(영업용)(50cc 미만포함)]]></code>
+  <code key="6" order="9"><![CDATA[오토바이]]></code>
+  <code key="7" order="10"><![CDATA[탑차]]></code>
+  <code key="A" order="11"><![CDATA[농기계]]></code>
+  <code key="C" order="12"><![CDATA[화물차(자가용)]]></code>
+  <code key="D" order="13"><![CDATA[건설기계]]></code>
+</category>

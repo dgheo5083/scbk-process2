@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TAXDE" lang="ko">
+  <code key="0" order="0"><![CDATA[결정구분선택]]></code>
+  <code key="1" order="1"><![CDATA[1 확정분 자납]]></code>
+  <code key="2" order="2"><![CDATA[2 수시분 자납]]></code>
+  <code key="3" order="3"><![CDATA[3 중간예납및예정신고]]></code>
+  <code key="4" order="4"><![CDATA[4 원천분 자납]]></code>
+</category>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <service-time-list group="menu">
+        <menu code="M001" checkYn="Y" description="menu1" nextPage="/np" nextPageParameter="a=1">0900,1800</menu>
+        <menu code="M002" checkYn="N" description="menu2">0000,2359</menu>
+    </service-time-list>
+</root>

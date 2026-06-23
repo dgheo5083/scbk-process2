@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.dao.SignTransactionDao">
+	<resultMap id="signResult" type="com.scbank.process.api.svc.shared.dao.dto.SignInfoParameter">
+		<result column="encSign" property="encSign" jdbcType="BLOB" javaType="[B"></result>
+	</resultMap>
+
+	<!-- 전자서명 저장 -->
+	<insert id="insertSignInfo" parameterType="com.scbank.process.api.svc.shared.dao.dto.SignInfoParameter">
+		INSERT INTO SIGNTRANSACTION(
+			USERID,
+			USERNAME,
+			REGDATE,
+			JUMINNO,
+			SYSIP,
+			SYSNAME,
+			GUBUNCODE,
+			TXCODE,
+			PAGELANG,
+			REGSITE,
+			ENCSIGN,
+			DELFLAG,
+			REGDAY
+		)
+		VALUES (
+			#{userId},
+			#{userName},
+			#{regDate},
+			#{juminNo},
+			#{sysIp},
+			#{sysName},
+			#{gubunCode},
+			#{txCode},
+			#{pageLang},
+			#{regSite},
+			<!-- #{ENCSIGN}, -->
+			#{encSign, jdbcType=BLOB},
+			#{delFlag},
+			#{regDay}
+		)
+	</insert>
+
+</mapper>

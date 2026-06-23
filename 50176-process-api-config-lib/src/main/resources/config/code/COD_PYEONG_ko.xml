@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="PYEONG" lang="ko">
+  <code key="1" order="1"><![CDATA[85m2이하 (약25.7평)]]></code>
+  <code key="2" order="2"><![CDATA[102m2이하 (약30.8평)]]></code>
+  <code key="3" order="3"><![CDATA[102m2초과 135m2이하]]></code>
+  <code key="4" order="4"><![CDATA[135m2초과 (약40.8평)]]></code>
+</category>

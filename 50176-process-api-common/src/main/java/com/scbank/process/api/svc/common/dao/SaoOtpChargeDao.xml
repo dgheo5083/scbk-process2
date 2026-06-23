@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.SaoOtpChargeDao">
+
+	<select id="countSaoOtpChargeByUserId" parameterType="java.lang.String" resultType="int">
+		SELECT
+	          COUNT(*) AS CNT 
+		 FROM SAO_OTP_CHARGE 
+		 WHERE USER_ID = #{userId}
+	</select>
+	
+	<insert id="insertSaoOtpCharge" parameterType="com.scbank.process.api.svc.common.dao.dto.SaoOtpChargeParameter" >
+		INSERT INTO SAO_OTP_CHARGE(
+			USER_ID,  
+			DEVICE_ID,
+			DEVICE_TYPE, 
+			TOKEN_ID,  
+			ISSUE_TYPE,
+			REG_DEVICE_UUID,
+			USER_REG_DT
+			)
+		VALUES(    
+			#{userId},
+			#{deviceId},
+			#{deviceType},
+			#{tokenId},
+			#{issueType},
+			#{regDeviceUuid},
+			CURRENT TIMESTAMP)
+	</insert>
+	
+	<select id="countSaoOtpChargeByDeviceId" parameterType="java.lang.String" resultType="int">
+		SELECT 
+		 	  COUNT(*) AS CNT
+		FROM SAO_OTP_CHARGE 
+		WHERE USER_ID = #{userId} 
+		 AND DEVICE_ID = #{deviceId}
+	</select>
+	
+	<update id="updateSaoOtpCharge" parameterType="com.scbank.process.api.svc.common.dao.dto.SaoOtpChargeParameter">
+		UPDATE SAO_OTP_CHARGE 
+		SET DEVICE_ID = #{deviceId} 
+		  , DEVICE_TYPE = #{deviceType} 
+		  , ISSUE_TYPE = #{issueType} 
+		  , TOKEN_ID = #{tokenId} 
+		  , REG_DEVICE_UUID = #{regDeviceUuid}
+		  , USER_REG_DT = CURRENT TIMESTAMP 
+		WHERE USER_ID = #{userId}
+	</update>
+
+	<!-- MOTP 등록여부 조회 [MA3_LGN.SAO_OTP_CHARGE_S_02] -->
+	<select id="selectMotpRegistrationInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.MotpRegistrationInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.MotpRegistrationInfoResult">
+		SELECT
+			USER_ID,
+			DEVICE_ID,
+			DEVICE_TYPE,
+			TOKEN_ID,
+			ISSUE_TYPE,
+			REG_DEVICE_UUID
+		FROM
+			SAO_OTP_CHARGE
+		WHERE
+			USER_ID = #{userId}
+		AND
+			TOKEN_ID = #{tokenId}
+		WITH UR
+	</select>
+	
+</mapper>

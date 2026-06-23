@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="GOAL_CTGRY_B" lang="en">
+  	<code key="B01" order="1"><![CDATA[Retirement]]></code>	
+	<code key="B02" order="2"><![CDATA[Education]]></code>	
+	<code key="B03" order="3"><![CDATA[Housing]]></code>	
+	<code key="B04" order="4"><![CDATA[Travel]]></code>	
+	<code key="B05" order="5"><![CDATA[Large amount]]></code>	
+	<code key="B06" order="6"><![CDATA[Others]]></code>
+</category>

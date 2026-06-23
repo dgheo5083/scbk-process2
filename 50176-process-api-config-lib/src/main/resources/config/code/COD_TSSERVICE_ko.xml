@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TSSERVICE"><!-- 계좌이동제 서비스종류 변환 -->
+  <code key="A" order="0"><![CDATA[납부자]]></code>
+  <code key="B" order="0"><![CDATA[타행간]]></code>
+  <code key="C" order="0"><![CDATA[계좌간]]></code>
+  
+</category>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30BbsEventMgtDao">
+
+	<!-- Event 조회 [MA3_MAN.MA30_BBS_EVENT_MGT_S_01] -->
+	<select id="selectEvent" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.EventResult">
+		SELECT
+			SEQNO
+			, TITLE
+			, CAST(W_DATE AS VARCHAR(10)) AS W_DATE
+			, CAST(EVT_S_DATE AS VARCHAR(10)) AS EVT_S_DATE
+			, CAST(EVT_S_TIME AS VARCHAR(2)) AS EVT_S_TIME
+			, CAST(EVT_E_DATE AS VARCHAR(10)) AS EVT_E_DATE
+			, CAST(EVT_E_TIME AS VARCHAR(2)) AS EVT_E_TIME
+			, ATTFILE_DTL_IMG
+			, ATTFILE_DTL_URL
+			, ATTFILE_SNL_IMG
+			, ATTFILE_SNL_URL
+			, CTGRY_CD
+		FROM  MA30_BBS_EVENT_MGT
+		WHERE LOCTN_CD=#{loctnCd}
+		AND D_FLAG='Z00001'
+		AND APP_STATUS = 'PF4005'
+		AND CTGRY_CD IN ('EV0010', 'EV0020')
+		AND EVT_FLAG = 'Y'
+		AND (CONCAT(REPLACE(S_DATE, '-', ''), S_TIME) <![CDATA[<=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24') )
+		AND (CONCAT(REPLACE(E_DATE, '-', ''), E_TIME) <![CDATA[>=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24') )
+		AND UPPER(TITLE) LIKE UPPER('%'||#{searchWord}||'%')
+		ORDER BY SEQNO DESC
+		WITH UR
+	</select>
+
+	<!-- 이용시간안내 [MA3_CST.MA30_SERVICE_HOUR_MGT_S_01] -->
+	<select id="selectBusinessHour" parameterType="com.scbank.process.api.svc.common.dao.dto.BusinessHourParameter" resultType="com.scbank.process.api.svc.common.dao.dto.BusinessHourResult">
+		SELECT 
+			CGTRY_CD
+			,(SELECT CD_NM FROM SUB_CD WHERE CMMN_CD='SHM' AND CMMN_CD||SUB_CD = TRIM(CGTRY_CD)) AS CTGRY_NM
+			,CONTENTS
+		FROM MA30_SERVICE_HOUR_MGT
+		WHERE
+			1=1
+			AND LOCTN_CD = #{language}
+			AND CGTRY_CD IN (
+				'SHM001'
+				,'SHM002'
+				,'SHM003'
+				,'SHM004'
+				,'SHM005'
+				,'SHM006'
+				,'SHM007'
+				,'SHM008'
+				,'SHM009'
+				,'SHM010'
+				,'SHM011'
+				,'SHM012'
+				,'SHM013'
+			)
+			AND APP_STATUS = 'PF4005'
+		ORDER BY REGIST_DT DESC
+		WITH UR
+	</select>	
+
+</mapper>

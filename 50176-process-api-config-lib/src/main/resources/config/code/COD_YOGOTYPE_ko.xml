@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="YOGOTYPE" lang="ko">
+  <code key="0" order="0"><![CDATA[(정상분)]]></code>
+  <code key="1" order="0"><![CDATA[(연체분)]]></code>
+  <code key="2" order="0"><![CDATA[(독촉분)]]></code>
+  <code key="3" order="0"><![CDATA[(임의분)]]></code>
+  <code key="4" order="0"><![CDATA[(체납분)]]></code>
+  <code key="9" order="0"><![CDATA[(자동이체분)]]></code>
+</category>

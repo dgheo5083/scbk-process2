@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MONEY_PURPOSE" lang="ko">
+	<code key="R8" order="1"><![CDATA[결혼자금]]></code>
+	<code key="R15" order="2"><![CDATA[공과금 및 세금 납부]]></code>
+	<code key="R1" order="3"><![CDATA[대출상환자금]]></code>
+	<code key="R12" order="4"><![CDATA[내구 소비재 구입]]></code>
+	<code key="R13" order="5"><![CDATA[부동산 구입자금]]></code>
+	<code key="R5" order="6"><![CDATA[사업자금]]></code>
+	<code key="R17" order="7"><![CDATA[생계자금]]></code>
+	<code key="R6" order="8"><![CDATA[의료비]]></code>
+	<code key="R16" order="9"><![CDATA[전월세자금 반환용]]></code>
+	<code key="R2" order="10"><![CDATA[주택신축 및 개량]]></code>
+	<code key="R18" order="11"><![CDATA[전월세자금]]></code>
+	<code key="R14" order="12"><![CDATA[투자자금]]></code>
+	<code key="R3" order="13"><![CDATA[학자금]]></code>
+	<code key="R7" order="14"><![CDATA[기타]]></code>
+</category>

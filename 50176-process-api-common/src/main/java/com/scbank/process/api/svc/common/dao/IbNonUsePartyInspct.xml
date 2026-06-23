@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.IbNonUsePartyInspctDao">
+	<!--편한뱅킹 여부 조회-->
+	<select id="selectComfyBank" parameterType="com.scbank.process.api.svc.common.dao.dto.ComfyBankParameter" resultType="com.scbank.process.api.svc.common.dao.dto.ComfyBankResult">
+	 SELECT
+	     SSN_OR_TAXID as ssnOrTaxid 
+	     ,USR_NO as usrNo      
+	     ,PARTY_NM as partyNm    
+	     ,REGIST_DT as registDt   
+	     ,REGIST_TM as registTm   
+	     ,QUEST_RPLY_1 as questRply1 
+	     ,QUEST_RPLY_2 as questRply2 
+	     ,QUEST_RPLY_3 as questRply3 
+	     ,QUEST_RPLY_4 as questRply4 
+	     ,QUEST_RPLY_5 as questRply5 
+	     ,OTHR_INFO_1 as othrInfo1  
+	     ,OTHR_INFO_2 as othrInfo2  
+	     ,EMAIL_ADDR as emailAddr  
+	     ,CNTCT_PLCE as cntctPlce  
+	   FROM IB_NON_USE_PARTY_INSPCT
+	  WHERE USR_NO = #{userId}	
+	   WITH UR
+	</select>
+  
+  	<!-- 편한뱅킹 적재 -->
+	<insert id="insertComfyBank" parameterType="com.scbank.process.api.svc.common.dao.dto.ComfyBankParameter" >
+	  INSERT INTO IB_NON_USE_PARTY_INSPCT (
+	  	SSN_OR_TAXID
+	  	,USR_NO
+	  	,PARTY_NM
+	  	,REGIST_DT
+	  	,REGIST_TM
+	  	,QUEST_RPLY_1
+	  	,QUEST_RPLY_2
+	  	,QUEST_RPLY_3
+	  	,QUEST_RPLY_4
+	  	,QUEST_RPLY_5
+	  	,OTHR_INFO_1
+	  	,OTHR_INFO_2
+	  	,EMAIL_ADDR
+	  	,CNTCT_PLCE
+	  ) VALUES (
+	  	(SELECT NVL(MAX(TO_NUMBER(SSN_OR_TAXID)), 0) +1 FROM IB_NON_USE_PARTY_INSPCT WITH UR)
+	  		,#{userId}
+	  		,''
+	  		,CURRENT DATE
+	  		,CURRENT TIME
+	  		<choose>
+	  			<when test='orgSeniorYn != null and orgSeniorYn != ""'> ,#{orgSeniorYn} </when>
+	  			<otherwise> ,'' </otherwise>
+	  		</choose>
+	  		<choose>
+	  			<when test='chnSeniorYn != null and chnSeniorYn != ""'> ,#{chnSeniorYn} </when>
+	  			<otherwise> ,'' </otherwise>
+	  		</choose>
+	  	,''
+	  	,''
+	  	,''
+	  	<choose>
+	  		<when test='othr1Chk != null and othr1Chk == "Y"'> ,VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYY-MM-DD')  </when>
+	  		<otherwise> ,'' </otherwise>
+	  	</choose>
+	  	,VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYY-MM-DD')
+	  	,''
+	  	,''
+	  )
+ 	</insert>
+ 	
+ 	<!-- 편한뱅킹 업데이트 -->
+	<update id="updateComfyBank" parameterType="com.scbank.process.api.svc.common.dao.dto.ComfyBankParameter">
+		UPDATE 
+			IB_NON_USE_PARTY_INSPCT
+	    SET 
+	    	QUEST_RPLY_2 = #{chnSeniorYn}
+	    	,OTHR_INFO_2 = VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYY-MM-DD')
+	    	<if test='othr1Chk != null and othr1Chk == "Y"'>,OTHR_INFO_1 = VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYY-MM-DD')</if>
+	    WHERE 
+	    	USR_NO = #{userId}
+	</update>
+  
+</mapper>

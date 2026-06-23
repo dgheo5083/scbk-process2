@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="OGYECDACCTNM" lang="en">
+
+	<!--
+		계정코드 | 자금용도	
+		계정과목 | 대출종류
+	 -->
+
+	<code key="002003|041" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>
+	<code key="002013|041" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>
+	<code key="002013|042" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>
+	<code key="002013|241" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>
+	<code key="002013|242" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>	
+	
+	<code key="001217|901" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|923" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|213" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|103" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|131" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|122" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|924" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|106" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|206" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|906" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|905" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|214" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|215" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|903" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|203" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|104" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|132" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|907" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|207" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|107" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|133" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|909" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|910" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|209" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|902" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|202" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|102" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|123" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|912" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|212" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|926" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|927" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|928" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|205" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|301" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|230" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|930" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|402" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|403" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|951" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|953" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|961" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|962" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|963" order="0"><![CDATA[Drim loan]]></code>
+	<code key="001217|218" order="0"><![CDATA[SCBK Personal Loan]]></code>
+	<code key="001217|118" order="0"><![CDATA[SCBK Personal Loan]]></code>
+	<code key="001217|918" order="0"><![CDATA[SCBK Personal Loan]]></code>
+	<code key="002019|008" order="0"><![CDATA[Drim employee loan]]></code>
+	<code key="002019|022" order="0"><![CDATA[Drim employee loan]]></code>
+	<code key="002266|001" order="0"><![CDATA[Select loan]]></code>
+	<code key="002266|003" order="0"><![CDATA[Select loan]]></code>
+	<code key="002266|002" order="0"><![CDATA[Select loan]]></code>
+	<code key="002266|020" order="0"><![CDATA[Select loan]]></code>
+	<code key="002266|010" order="0"><![CDATA[Select loan]]></code>
+	<code key="002266|004" order="0"><![CDATA[Select loan]]></code>
+	<code key="002266|006" order="0"><![CDATA[희망드림론]]></code>
+	<code key="002266|007" order="0"><![CDATA[New Seed Loan]]></code>
+	<code key="002266|017" order="0"><![CDATA[New hope Plus]]></code>
+	<code key="002266|027" order="0"><![CDATA[New Seed Loan2]]></code>
+	<code key="002266|028" order="0"><![CDATA[New Seed Loan2]]></code>
+	<code key="002266|029" order="0"><![CDATA[Stepping Stone Loan]]></code>
+	<code key="002266|030" order="0"><![CDATA[Stepping Stone Loan]]></code>
+	<code key="001005|001" order="0"><![CDATA[Bagguadrim Loan]]></code>
+	<code key="001005|011" order="0"><![CDATA[Safety net loan]]></code>
+	<code key="001005|002" order="0"><![CDATA[Student Refinancing Loan]]></code>
+	<code key="001005|003" order="0"><![CDATA[Student Refinancing Loan]]></code>
+	<code key="001005|004" order="0"><![CDATA[Student Refinancing Loan]]></code>
+	<code key="001005|005" order="0"><![CDATA[Student Refinancing Loan]]></code>
+	<code key="001005|012" order="0"><![CDATA[Shnshine 17 loan]]></code>
+	<code key="001341|901" order="0"><![CDATA[Drim payment loan]]></code>
+	<code key="000420|092" order="0"><![CDATA[Installment Loan]]></code>
+	<code key="000420|192" order="0"><![CDATA[Installment Loan]]></code>
+	<code key="000420|193" order="0"><![CDATA[Installment Loan]]></code>
+	<code key="000420|100" order="0"><![CDATA[Installment Loan]]></code>
+	<code key="002288|003" order="0"><![CDATA[Employee mid-rate loan]]></code>
+	<code key="002288|004" order="0"><![CDATA[SC first mobile flash loan]]></code>
+	<code key="002288|005" order="0"><![CDATA[SC first mobile flash loan]]></code>
+	<code key="002288|006" order="0"><![CDATA[Toss micro loan]]></code>
+	<code key="001205|901" order="0"><![CDATA[JungKyeoUn loan]]></code>
+	<code key="001205|101" order="0"><![CDATA[JungKyeoUn loan]]></code>
+	<code key="001205|102" order="0"><![CDATA[JungKyeoUn loan]]></code>
+	<code key="002277|001" order="0"><![CDATA[government student loan]]></code>
+	<code key="002277|002" order="0"><![CDATA[government student loan]]></code>
+	<code key="002277|003" order="0"><![CDATA[government student loan]]></code>
+	<code key="002277|004" order="0"><![CDATA[government student loan]]></code>
+	<code key="002277|005" order="0"><![CDATA[government student loan]]></code>
+	<code key="002277|006" order="0"><![CDATA[government student loan]]></code>
+	<code key="000408|001" order="0"><![CDATA[Overdraft]]></code>
+	<code key="000408|922" order="0"><![CDATA[Overdraft]]></code>
+	<code key="000408|923" order="0"><![CDATA[Overdraft]]></code>
+	<code key="000408|962" order="0"><![CDATA[Overdraft]]></code>
+	<code key="000419|021" order="0"><![CDATA[General loan]]></code>
+	<code key="000419|101" order="0"><![CDATA[General loan]]></code>
+	<code key="000419|301" order="0"><![CDATA[General loan]]></code>
+	<code key="000419|951" order="0"><![CDATA[General loan]]></code>
+	<code key="000419|953" order="0"><![CDATA[General loan]]></code>
+	<code key="000419|960" order="0"><![CDATA[General loan]]></code>
+	<code key="002002|004" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|011" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|023" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|024" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|027" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|728" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|029" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|030" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|151" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|152" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|153" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|154" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|301" order="0"><![CDATA[CCPL general loan]]></code>
+	<code key="002002|302" order="0"><![CDATA[CCPL general loan]]></code>
+	
+	<code key="002003|FFF" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>
+	<code key="002013|FFF" order="0"><![CDATA[First Jeonse Guarantee Loan]]></code>
+	<code key="001355|FFF" order="0"><![CDATA[KHFC-Loan for Housing]]></code>
+	<code key="002014|FFF" order="0"><![CDATA[KHFC-Loan for Housing]]></code>
+	<code key="002015|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="002111|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="001211|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="001233|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="002144|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="000724|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="001344|FFF" order="0"><![CDATA[FIRST HOME LOAN]]></code>
+	<code key="001222|FFF" order="0"><![CDATA[WHOLESALE MORTGAGE LOAN]]></code>
+	<code key="002016|FFF" order="0"><![CDATA[WHOLESALE MORTGAGE LOAN]]></code>
+	<code key="000431|002" order="0"><![CDATA[Saving Secured loan]]></code>
+	<code key="000431|916" order="0"><![CDATA[Saving Secured loan]]></code>
+	<code key="000431|216" order="0"><![CDATA[Saving Secured loan(Internet)]]></code>
+	<code key="000431|963" order="0"><![CDATA[Saving Secured loan(Internet)]]></code>
+	<code key="000453|002" order="0"><![CDATA[Installment saving Secured loan]]></code>
+	<code key="000453|916" order="0"><![CDATA[Installment saving Secured loan]]></code>
+	<code key="002004|002" order="0"><![CDATA[Deposit Secured loan]]></code>
+	<code key="002004|902" order="0"><![CDATA[Deposit Secured loan]]></code>
+	<code key="002004|006" order="0"><![CDATA[Deposit Secured loan(Internet)]]></code>
+	<code key="002004|216" order="0"><![CDATA[Deposit Secured loan(Internet)]]></code>
+	<code key="002004|916" order="0"><![CDATA[Deposit Secured loan(Internet)]]></code>
+	<code key="002004|963" order="0"><![CDATA[Deposit Secured loan(Internet)]]></code>
+	<code key="002004|003" order="0"><![CDATA[Deposit Borrowed Loan]]></code>
+	<code key="002004|903" order="0"><![CDATA[Deposit Borrowed Loan]]></code>
+	<code key="002004|004" order="0"><![CDATA[Fund Backed loan]]></code>
+	<code key="002004|904" order="0"><![CDATA[Fund Backed loan]]></code>
+	<code key="002004|085" order="0"><![CDATA[CD Secured loan]]></code>
+	<code key="002004|923" order="0"><![CDATA[CD Secured loan]]></code>
+	
+</category>

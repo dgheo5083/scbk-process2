@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FXCONT" lang="ko">
+  <code key="001" order="1"><![CDATA[USD 미국]]></code>
+  <code key="002" order="2"><![CDATA[JPY 일본]]></code>
+  <code key="161" order="3"><![CDATA[EUR 유럽]]></code>
+  <code key="003" order="4"><![CDATA[GBP 영국]]></code>
+  <code key="005" order="5"><![CDATA[CAD 캐나다]]></code>
+  <code key="008" order="6"><![CDATA[CHF 스위스]]></code>
+  <code key="011" order="7"><![CDATA[AUD 호주]]></code>
+  <code key="023" order="8"><![CDATA[NZD 뉴질랜드]]></code>
+  <code key="009" order="9"><![CDATA[HKD 홍콩]]></code>
+  <code key="021" order="10"><![CDATA[SGD 싱가폴]]></code>
+  <code key="010" order="11"><![CDATA[SEK 스웨덴]]></code>
+  <code key="012" order="12"><![CDATA[DKK 덴마크]]></code>
+  <code key="015" order="13"><![CDATA[NOK 노르웨이]]></code>
+  <code key="052" order="14"><![CDATA[CNY 중국]]></code>
+</category>

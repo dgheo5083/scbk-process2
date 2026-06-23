@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batchDefinition>
+    <batch id="test-batch-003" description="No Trigger Batch" targetNode="">
+        <job>
+            <component id="noneComponent"/>
+            <parameters>
+            </parameters>
+        </job>
+        <trigger>
+        </trigger>
+    </batch>
+</batchDefinition>

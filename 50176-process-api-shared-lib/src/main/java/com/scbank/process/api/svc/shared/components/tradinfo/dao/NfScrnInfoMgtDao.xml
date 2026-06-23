@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.NfScrnInfoMgtDao">
+	<select id="selectNfScrnInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.NfScrnInfoInqiryParam" resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.NfScrnInfoInqiryReult">
+		SELECT
+		   SCRN.CUST_NO AS CUST_NO,
+		   SCRN.TRAD_NO AS TRAD_NO,
+		   SCRN.BIZ_TYPE AS BIZ_TYPE,
+		   SCRN.SCRN_DATA_INFO AS SCRN_DATA_INFO,
+		   SCRPPNG.SCRPPNG_DATA AS SCRPPNG_DATA
+		FROM
+			UIDBS01.NF_SCRN_INFO_MGT SCRN
+			LEFT OUTER JOIN (
+				SELECT
+					CUST_NO,
+					SCRPPNG_DATA
+				FROM
+					NF_SCRPPNG_MGT
+				WHERE
+					(ERR_CD IS NULL OR ERR_CD ='')
+		       		AND CUST_NO = #{custNo} 
+		       		AND TO_CHAR(UPD_DT, 'YYYYMMDD') = TO_CHAR(CURRENT TIMESTAMP , 'YYYYMMDD')
+				ORDER BY UPD_DT DESC
+				FETCH FIRST 1 ROW ONLY
+				WITH UR
+			) SCRPPNG
+		   ON SCRN.CUST_NO = SCRPPNG.CUST_NO
+		WHERE
+		    SCRN.CUST_NO = #{custNo}
+		    AND SCRN.TRAD_NO = #{tradNo}
+		    AND SCRN.BIZ_TYPE = #{bizType}
+		WITH UR
+ 	</select>
+</mapper>

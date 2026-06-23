@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FX0004" lang="ko">
+  <code key="001" order="1"><![CDATA[USD 미국]]></code>
+  <code key="002" order="2"><![CDATA[JPY 일본]]></code>
+  <code key="161" order="3"><![CDATA[EUR 유럽]]></code>
+  <code key="003" order="4"><![CDATA[GBP 영국]]></code>
+  <code key="005" order="5"><![CDATA[CAD 캐나다]]></code>
+  <code key="008" order="6"><![CDATA[CHF 스위스]]></code>
+  <code key="009" order="7"><![CDATA[HKD 홍콩]]></code>
+  <code key="010" order="8"><![CDATA[SEK 스웨덴]]></code>
+  <code key="011" order="9"><![CDATA[AUD 호주]]></code>
+  <code key="012" order="10"><![CDATA[DKK 덴마크]]></code>
+  <code key="015" order="11"><![CDATA[NOK 노르웨이]]></code>
+  <code key="017" order="12"><![CDATA[SAR 사우디아라비아]]></code>
+  <code key="018" order="13"><![CDATA[KWD 쿠웨이트]]></code>
+  <code key="019" order="14"><![CDATA[BHD 바레인]]></code>
+  <code key="020" order="15"><![CDATA[AED 아랍에미레이트]]></code>
+  <code key="021" order="16"><![CDATA[SGD 싱가포르]]></code>
+  <code key="022" order="17"><![CDATA[MYR 말레이시아]]></code>
+  <code key="023" order="18"><![CDATA[NZD 뉴질랜드]]></code>
+  <code key="052" order="19"><![CDATA[CNY 중국]]></code>
+  <code key="033" order="20"><![CDATA[IDR 인도네시아]]></code>
+  <code key="144" order="21"><![CDATA[THB 태국]]></code>
+</category>

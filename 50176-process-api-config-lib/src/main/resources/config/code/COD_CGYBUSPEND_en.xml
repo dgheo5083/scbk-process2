@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 기업고정지출 -->
+<category name="CGYBUSPEND" lang="en">
+  <code key="41" order="1"><![CDATA[연간 매출액의 50% 이하]]></code>
+  <code key="42" order="2"><![CDATA[연간 매출액의 50%초과~70% 이하]]></code>
+  <code key="43" order="3"><![CDATA[연간 매출액의 70%초과~90%이하]]></code>
+  <code key="44" order="4"><![CDATA[연간 매출액의 90%초과~ 100%이하]]></code>
+  <code key="45" order="5"><![CDATA[연간 매출액의 100%초과]]></code>
+</category>

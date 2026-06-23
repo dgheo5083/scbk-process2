@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 부채 -->
+<category name="CGYDEBTS" lang="en">
+  <code key="11" order="1"><![CDATA[없음]]></code>
+  <code key="12" order="2"><![CDATA[5천만원 이하]]></code>
+  <code key="13" order="3"><![CDATA[5천만원 초과~1억원 이하]]></code>
+  <code key="14" order="4"><![CDATA[1억원 초과 ~3억원 이하]]></code>
+  <code key="15" order="5"><![CDATA[3억원 초과]]></code>
+</category>

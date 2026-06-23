@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="COD_ALLINCLOAN_APIERR" lang="ko">
+  <code key="B001" order="1"><![CDATA[신용정보 동의 관련 미동의 처리]]></code>
+  <code key="B002" order="2"><![CDATA[실명번호가 유효하지 않는 경우]]></code>
+  <code key="B003" order="3"><![CDATA[신용정보조회(CB사) 관련 오류]]></code>
+  <code key="B004" order="4"><![CDATA[상품없음]]></code>
+  <code key="B005" order="5"><![CDATA[제휴기관에서 심사 진행중인 고객]]></code>
+  <code key="B006" order="6"><![CDATA[관리번호 중복 ]]></code>
+  <code key="B007" order="7"><![CDATA[관리번호 미존재]]></code>
+  <code key="B999" order="8"><![CDATA[기타 업무 오류]]></code>
+  <code key="S999" order="9"><![CDATA[기타 시스템 오류]]></code>
+  <code key="M999" order="10"><![CDATA[기타 시스템 오류]]></code>
+</category>

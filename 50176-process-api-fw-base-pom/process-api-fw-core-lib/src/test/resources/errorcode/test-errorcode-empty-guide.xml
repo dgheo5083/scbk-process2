@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors lang="en">
+    <errorCode code="ERR004">
+        <msg>Empty guide message list</msg>
+        <addMsgList>
+        </addMsgList>
+    </errorCode>
+</errors>

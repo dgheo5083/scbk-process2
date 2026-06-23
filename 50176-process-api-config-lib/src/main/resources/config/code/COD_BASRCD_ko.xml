@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="BASRCD" lang="ko">
+  <code key="0" order="1"><![CDATA[계약상세조회]]></code>
+  <code key="1" order="2"><![CDATA[보험료납입내역조회]]></code>
+  <code key="2" order="3"><![CDATA[해약환급금및약대가능금액조회]]></code>
+</category>

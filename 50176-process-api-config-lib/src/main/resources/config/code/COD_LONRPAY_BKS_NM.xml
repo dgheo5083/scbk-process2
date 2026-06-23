@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="LONRPAY_BKS_NM" lang="ko">
+	<!-- [ 2023.03.16 LONRPAY_BKS_NM - 대출이동제 대상 금융기관코드 리스트 ] key:금결원코드, value:기관명 -->
+	<code key="003000" order="0" ><![CDATA[기업은행]]></code>				<!-- 은행		|	기업은행				-->
+	<code key="004000" order="1" ><![CDATA[국민은행]]></code>				<!-- 은행		|	국민은행				-->
+	<code key="007000" order="2" ><![CDATA[수협은행]]></code>				<!-- 은행		|	수협은행				-->
+	<code key="010000" order="3" ><![CDATA[농협은행]]></code>				<!-- 은행		|	농협은행				-->
+	<code key="020000" order="4" ><![CDATA[우리은행]]></code>				<!-- 은행		|	우리은행				-->
+	<code key="023000" order="5" ><![CDATA[SC제일은행]]></code>		    <!-- 은행		|	SC제일은행	        	-->
+	<code key="026000" order="6" ><![CDATA[신한은행]]></code>				<!-- 은행		|	신한은행				-->
+	<code key="027000" order="7" ><![CDATA[한국씨티은행]]></code>			<!-- 은행		|	한국씨티은행			-->
+	<code key="031000" order="8" ><![CDATA[아이엠뱅크 (구)대구은행]]></code>				<!-- 은행		|	아이엠뱅크 (구)대구은행				-->
+	<code key="032000" order="9" ><![CDATA[부산은행]]></code>				<!-- 은행		|	부산은행				-->
+	<code key="034000" order="10"><![CDATA[광주은행]]></code>				<!-- 은행		|	광주은행				-->
+	<code key="035000" order="11"><![CDATA[제주은행]]></code>				<!-- 은행		|	제주은행				-->
+	<code key="037000" order="12"><![CDATA[전북은행]]></code>				<!-- 은행		|	전북은행				-->
+	<code key="039000" order="13"><![CDATA[경남은행]]></code>				<!-- 은행		|	경남은행				-->
+	<code key="081000" order="14"><![CDATA[하나은행]]></code>				<!-- 은행		|	하나은행				-->
+	<code key="089000" order="15"><![CDATA[케이뱅크]]></code>				<!-- 은행		|	케이뱅크				-->
+	<code key="090000" order="16"><![CDATA[카카오뱅크]]></code>				<!-- 은행		|	카카오뱅크				-->
+	<code key="092000" order="17"><![CDATA[토스뱅크]]></code>				<!-- 은행		|	토스뱅크				-->
+	<code key="002000" order="18"><![CDATA[산업은행]]></code>				<!-- 은행		|	산업은행				-->
+	<code key="050002" order="19"><![CDATA[애큐온저축은행]]></code>			<!-- 저축은행	|	애큐온저축은행			-->
+	<code key="050016" order="20"><![CDATA[이에스저축은행(HB저축은행)]]></code><!-- 저축은행	|	이에스저축은행(HB저축은행)	-->
+	<code key="050028" order="21"><![CDATA[SBI저축은행]]></code>			<!-- 저축은행	|	SBI저축은행			-->
+	<code key="050048" order="22"><![CDATA[유진저축은행(다올저축은행)]]></code>	<!-- 저축은행	|	유진저축은행(다올저축은행)	-->
+	<code key="050065" order="23"><![CDATA[케이비저축은행]]></code>			<!-- 저축은행	|	케이비저축은행			-->
+	<code key="050342" order="24"><![CDATA[신한저축은행]]></code>			<!-- 저축은행	|	신한저축은행			-->
+	<code key="050068" order="25"><![CDATA[제이티친애저축은행]]></code>		<!-- 저축은행	|	제이티친애저축은행		-->
+	<code key="050551" order="26"><![CDATA[한국투자저축은행]]></code>		<!-- 저축은행	|	한국투자저축은행			-->
+	<code key="050162" order="27"><![CDATA[모아상호저축은행]]></code>		<!-- 저축은행	|	모아상호저축은행			-->
+	<code key="050332" order="28"><![CDATA[제이티저축은행]]></code>			<!-- 저축은행	|	제이티저축은행			-->
+	<code key="050328" order="29"><![CDATA[페퍼저축은행]]></code>			<!-- 저축은행	|	페퍼저축은행			-->
+	<code key="050066" order="30"><![CDATA[웰컴저축은행]]></code>			<!-- 저축은행	|	웰컴저축은행			-->
+	<code key="050064" order="31"><![CDATA[오케이저축은행]]></code>			<!-- 저축은행	|	오케이저축은행			-->
+	<code key="050049" order="32"><![CDATA[예가람상호저축은행]]></code>		<!-- 저축은행	|	예가람상호저축은행		-->
+	<code key="050063" order="33"><![CDATA[대신상호저축은행]]></code>		<!-- 저축은행	|	대신상호저축은행			-->
+	<code key="050313" order="34"><![CDATA[키움저축은행]]></code>			<!-- 저축은행	|	키움저축은행			-->
+	<code key="050067" order="35"><![CDATA[하나저축은행]]></code>			<!-- 저축은행	|	하나저축은행			-->
+	<code key="050101" order="36"><![CDATA[고려상호저축은행]]></code>		<!-- 저축은행	|	고려상호저축은행			-->
+	<code key="366000" order="37"><![CDATA[신한카드]]></code>				<!-- 카드사	|	신한카드				-->
+	<code key="381000" order="38"><![CDATA[KB국민카드]]></code>			<!-- 카드사	|	KB국민카드				-->
+	<code key="374000" order="39"><![CDATA[하나카드]]></code>				<!-- 카드사	|	하나카드				-->
+	<code key="041001" order="40"><![CDATA[우리카드]]></code>				<!-- 카드사	|	우리카드				-->
+	<code key="041002" order="41"><![CDATA[우리카드]]></code>				<!-- 카드사	|	우리카드				-->
+	<code key="365000" order="42"><![CDATA[삼성카드]]></code>				<!-- 카드사	|	삼성카드				-->
+	<code key="367000" order="43"><![CDATA[현대카드]]></code>				<!-- 카드사	|	현대카드				-->
+	<code key="368001" order="44"><![CDATA[롯데카드]]></code>				<!-- 카드사	|	롯데카드				-->
+	<code key="368002" order="45"><![CDATA[롯데카드]]></code>				<!-- 카드사	|	롯데카드				-->
+	<code key="308000" order="46"><![CDATA[KB캐피탈]]></code>				<!-- 캐피탈사	|	KB캐피탈				-->
+	<code key="302000" order="47"><![CDATA[비엔케이캐피탈(주)]]></code>		<!-- 캐피탈사	|	비엔케이캐피탈(주)		-->
+	<code key="304000" order="48"><![CDATA[현대캐피탈(주)]]></code>			<!-- 캐피탈사	|	현대캐피탈(주)			-->
+	<code key="299000" order="49"><![CDATA[우리금융캐피탈]]></code>			<!-- 캐피탈사	|	우리금융캐피탈			-->
+	<code key="303000" order="50"><![CDATA[롯데캐피탈]]></code>				<!-- 캐피탈사	|	롯데캐피탈				-->
+	<code key="305000" order="51"><![CDATA[JB우리캐피탈]]></code>			<!-- 캐피탈사	|	JB우리캐피탈			-->
+	<code key="310000" order="52"><![CDATA[하나캐피탈(주)]]></code>			<!-- 캐피탈사	|	하나캐피탈(주)			-->
+	<code key="306000" order="53"><![CDATA[NH농협캐피탈]]></code>			<!-- 캐피탈사	|	NH농협캐피탈			-->
+	<code key="301000" order="54"><![CDATA[디지비캐피탈]]></code>			<!-- 캐피탈사	|	디지비캐피탈			-->
+</category>

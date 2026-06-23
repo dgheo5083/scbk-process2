@@ -1,0 +1,247 @@
+csl:
+  # 런타임 설정
+  runtime:
+    run-mode: local
+    center-mode: main
+    default-encoding: UTF-8
+    default-locale: ko_KR
+    default-error-code: ""
+    default-error-message: "오류 발생"
+  # (인증/컨텍스트) 필터 설정
+  filter:
+    skipFilterRegex: /actuator/\w+,/process/api/v1/common/swagger-ui/\w+,/process/api/v1/common/api-docs/\w+,/process/api/v1/common/api-docs
+    auth:
+      enabled: true
+    context:
+      enabled: true
+  # 채널 서비스 설정
+  channel:
+    enabled: true
+    default-controller-class: com.scbank.process.api.fw.channel.controller.DefaultServiceDispatchController
+    default-controller-method: dispatch
+    ## 서비스 설정
+    service:
+      - service-id: common # 공통 업무
+        enabled: true
+        service-mapping:
+          allowed-url-patterns:
+            #- /** 이렇게 사용하면 안됨..
+            - /verification/**
+            - /functions/**
+            - /authenticator/**
+            - /certification/**
+            - /settings/**
+            - /test/**
+            - /support/**
+            - /securities/**
+            - /identity/**
+            - /sample/**
+            - /mydata/**
+            - /privacy/**
+            - /services/**
+          allowed-methods:
+            - POST
+          allowed-content-types:
+            - application/json
+        component:
+          base-packages:
+            - com.scbank.process.api.svc.common
+    validation:
+      enabled: true
+    exception:
+      handle-global-advice: true
+    message-source:
+      enabled: false
+    # 채널 메시지 포맷 옵션 설정
+    message-format-options:
+      json:
+        deserialization:
+          "[ENABLED_SET_DEFAULT_VALUE]": true
+      xml:
+        deserialization:
+          "[ENABLED_SET_DEFAULT_VALUE]": true
+      fixedlength:
+        deserialization:
+          "[ENABLED_SET_DEFAULT_VALUE]": true
+  #dataaccess 설정
+  dao:
+    enabled: true
+    database:
+      kfbdb:
+        vendor: "db2"
+        datasource:
+          url: jdbc:db2://10.61.17.102:51000/KFBDB
+          username: Uidbs01
+          credential: "!QAZ2wsx3e"
+          driver-class-name: "com.ibm.db2.jcc.DB2Driver"
+        mybatis-config:
+          config-location: classpath:/mybatis/kfbdb-config.xml
+          mapper-location:
+            - classpath*:com/scbank/process/api/**/dao/*.xml
+          mapper-scan-base-packages:
+            - com.scbank.process.api
+      oppra:
+        vendor: "db2"
+        datasource:
+          url: jdbc:db2://10.61.17.102:51000/KFBDB
+          username: oppra
+          credential: "!QAZ2wsx3e"
+          driver-class-name: "com.ibm.db2.jcc.DB2Driver"
+        mybatis-config:
+          config-location: classpath:/mybatis/oppra-config.xml
+          mapper-location:
+            - classpath*:com/scbank/process/api/**/dao/*.xml
+          mapper-scan-base-packages:
+            - com.scbank.process.api
+      smsdb:
+        vendor: "oracle"
+        datasource:
+          url: jdbc:oracle:thin:@10.61.17.88:11521:sms
+          username: push
+          credential: "!QAZ2wsx3edc4rfv5tgb6yhn7"
+          driver-class-name: "oracle.jdbc.OracleDriver"
+        mybatis-config:
+          config-location: classpath:/mybatis/smsdb-config.xml
+          mapper-location:
+            - classpath*:com/scbank/process/api/**/dao/*.xml
+          mapper-scan-base-packages:
+            - com.scbank.process.api
+      ipinside:
+        datasource:
+          url: jdbc:postgresql://10.61.17.82:25432/ipinside
+          username: ip
+          credential: interezen
+          driver-class-name: org.postgresql.Driver
+          maximum-pool-size: 1 # 최대 커넥션 수
+          minimum-idle: 0  # 최소 유지 커넥션
+          idle-timeout-ms: 30000 # idle 유지시간(ms)
+          max-lifetime-ms: 1800000 # 커넥션 최대 수명 (ms)
+          connection-timeout-ms: 30000 # 커넥션 획득 대기시간
+        mybatis-config:
+          config-location: classpath:/mybatis/ipinside-config.xml
+          mapper-location:
+            - classpath*:com/scbank/process/api/**/dao/*.xml
+          mapper-scan-base-packages:
+            - com.scbank.process.api
+  # 메시지 설정
+  message:
+    enabled: true
+    default-encoding: UTF-8
+    use-debug-log: false
+    base-packages:
+      - "com.scbank.process.api"
+  # 연계시스템 설정 (HOST/MCI/FEP)
+  integration:
+    enabled: true
+    system:
+      # host 시스템
+      host:
+        charset: "cp933"
+        format: fixedlength
+        interceptors:
+          - integrationServiceTimeCheckInterceptor
+          - signVerifyIntegrationInterceptor
+          - oltpRequestInterceptor
+          - integrationMessageLoggingInterceptorComposite
+        default-headers:
+          "test": "1"
+        properties:
+          "[log_masking_enabled]": true # 로그 마스킹 처리여부
+          #"[msg_length_field_offset]": 0
+          #"[msg_length_field_size]": 8
+          "[tranno_sequence_file_path]": ""
+          "[special_error_list]": "2227,2228,2839,2232,3813,3812,4407,4408,4541,4542" # 스킵 처리 오류코드
+          "[msg_change_errorcode_list]": "2477"
+          "[msg_change_errormodule_list]": PBS01.55,HWS26017"
+        # 연속거래 전략 정책
+        rebound-strategy-policy:
+          max-loop-cnt: 10 # 연속거래 최대 반복 개수
+          default-list-field-name: REC_01 # 연속거래 반복부 필드명
+        simulation:
+          enabled: false
+          config-location: classpath:simulation/
+      # mci 시스템
+      mci:
+        charset: "euc-kr"
+        format: fixedlength
+        interceptors:
+          - integrationServiceTimeCheckInterceptor
+          - signVerifyIntegrationInterceptor
+          - integrationMessageLoggingInterceptorComposite
+        targets:
+          - center: main
+            ip: 10.61.117.203
+            port: 15001
+          - center: dr
+            ip: 127.0.0.1
+            port: 4040
+        socket-option:
+          connect-timeout: 5000
+          read-timeout: 310000
+        default-headers:
+          envrInfoDvCd: D # SCNF사용 D:개발,S:SIT,U:UAT,R:운영
+          tmsgCreSysNm: NF01
+          ipv6Adr: "10.61.17.91"
+          blngBrNo: 0019 # 소속점번호
+          txnBrNo: 0019 # 계좌점번호
+        properties:
+          "[log_masking_enabled]": true # 로그 마스킹 처리여부
+          "[msg_length_field_size]": 8
+        # 연속거래 전략 정책
+        rebound-strategy-policy:
+          max-loop-cnt: 10 # 연속거래 최대 반복 개수
+          default-list-field-name: FO_PAY # 연속거래 반복부 필드명
+        simulation:
+          enabled: false
+          config-location: classpath:simulation/
+      edmi:
+        charset: "euc-kr"
+        format: "json"
+        interceptors:
+          - integrationServiceTimeCheckInterceptor
+          - integrationMessageLoggingInterceptorComposite
+        default-headers:
+          envrInfoDvCd: D # SCNF사용 D:개발,S:SIT,U:UAT,R:운영
+          tmsgCreSysNm: NF01
+          ipv6Adr: "10.61.17.91"
+          #TranCommonHeader 설정
+          blngBrNo: 0019 # 소속점번호
+          txnBrNo: 0019 # 계좌점번호
+        properties:
+          "[log_masking_enabled]": true, # 로그 마스킹 처리여부
+        # 연속거래 전략 정책
+        rebound-strategy-policy:
+          max-loop-cnt: 10 # 연속거래 최대 반복 개수
+          default-list-field-name: FO_PAY # 연속거래 반복부 필드명
+        simulation:
+          enabled: false
+          config-location: classpath:simulation/
+  # open api 설정
+  openapi:
+    headers: # 커스텀 헤더 설정
+      - name: Authorization
+        description: Bearer token
+        required: false
+        type: string
+      - name: X-Auth-Token
+        description: Clix-auth-token
+        required: false
+        type: string
+      - name: X-Menu-Id
+        description: menuId
+        required: false
+        type: string
+      - name: X-Ac-Type
+        description: 접근제어
+        required: false
+        type: string
+      - name: X-Force-Check-Code
+        description: ASIS forceCheckCode
+        required: false
+        type: string
+  # 세션관련 설정
+  session:
+    enabled: false
+    adapter:
+      enabled: true
+      rule-path: config/session-adapter-rules.json

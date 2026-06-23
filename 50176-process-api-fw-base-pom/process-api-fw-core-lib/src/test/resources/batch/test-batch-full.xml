@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batchDefinition>
+    <batch id="test-batch-001" description="Test Batch Description" targetNode="node-1">
+        <job>
+            <component id="testComponent"/>
+            <parameters>
+                <parameter name="inputPath">/data/input</parameter>
+                <parameter name="outputPath">/data/output</parameter>
+            </parameters>
+        </job>
+        <trigger type="cron">
+            <properties>
+                <property name="cronExpression">0 0 12 * * ?</property>
+                <property name="timezone">Asia/Seoul</property>
+            </properties>
+        </trigger>
+    </batch>
+</batchDefinition>

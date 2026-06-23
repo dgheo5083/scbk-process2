@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CSNJUTAE" lang="ko">
+  <code key="1" order="0"><![CDATA[아파트]]></code>
+  <code key="2" order="1"><![CDATA[단독주택]]></code>
+  <code key="3" order="2"><![CDATA[빌라/연립/다세대]]></code>
+  <code key="9" order="3"><![CDATA[기타]]></code>
+</category>

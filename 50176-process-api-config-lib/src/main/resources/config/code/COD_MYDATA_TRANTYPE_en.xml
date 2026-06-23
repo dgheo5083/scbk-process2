@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_TRANTYPE" lang="en">
+  <code key="301" order="1"><![CDATA[입금]]></code>
+  <code key="302" order="2"><![CDATA[출금]]></code>
+  <code key="303" order="3"><![CDATA[상환]]></code>
+  <code key="311" order="4"><![CDATA[입금 취소]]></code>
+  <code key="312" order="5"><![CDATA[출금 취소]]></code>
+  <code key="321" order="6"><![CDATA[입고]]></code>
+  <code key="322" order="7"><![CDATA[출고]]></code>
+  <code key="341" order="8"><![CDATA[매수]]></code>
+  <code key="342" order="9"><![CDATA[매도]]></code>
+  <code key="381" order="10"><![CDATA[기타(입)]]></code>
+  <code key="382" order="11"><![CDATA[기타(출)]]></code>
+  <code key="391" order="12"><![CDATA[기타취소(입)]]></code>
+  <code key="392" order="13"><![CDATA[기타취소(출)]]></code>
+</category>

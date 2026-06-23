@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="USECD" lang="ko">
+  <code key="01" order="0"><![CDATA[신용카드거래심사및사후관리]]></code>
+  <code key="02" order="0"><![CDATA[당좌(가계당좌)개설및사후관리]]></code>
+  <code key="04" order="0"><![CDATA[여신심사및사후관리]]></code>
+  <code key="19" order="0"><![CDATA[본인조회]]></code>
+  <code key="52" order="0"><![CDATA[신용정보교환]]></code>
+  <code key="54" order="0"><![CDATA[채권추심]]></code>
+  <code key="61" order="0"><![CDATA[법원(검사,사법경찰관)제출]]></code>
+  <code key="62" order="0"><![CDATA[조세관련제출]]></code>
+  <code key="63" order="0"><![CDATA[기타법률관련제출]]></code>
+  <code key="64" order="0"><![CDATA[민원]]></code>
+  <code key="71" order="0"><![CDATA[보증인제공]]></code>
+</category>

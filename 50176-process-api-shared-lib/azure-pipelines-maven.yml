@@ -1,0 +1,47 @@
+trigger:
+- develop
+- release/*
+- main
+ 
+parameters:
+ - name: releaseId
+   type: string
+   displayName: Release WorkItem ID
+   default: "19452"
+ 
+resources:
+  repositories:
+    - repository: governed-templates
+      name: dj-core/governed-templates      
+      ref: "main"      
+      type: git
+ 
+variables:
+  - name: BRANCH_NAME
+    value: $(Build.SourceBranchName)
+  - name: VERSION
+    value: '1.0.0-$(Build.BuildId)'
+ 
+ 
+extends:
+  template: governed-template/build.yml@governed-templates
+  parameters:
+      releaseId: ${{ parameters.releaseId }}
+      buildStackName: maven
+      buildStackParams:
+        pool: 'sc-linux'
+        packageVersion: $(VERSION) #optional
+        jdkVersion: '21' #optional
+        mavenVersion: '3.9.9' #optional
+        mavenOptions: '-Xmx1024m' #optional
+        mavenPomFile: 'pom.xml' #optional
+        goals: 'clean install' # mandatory
+        options: '--batch-mode' #optional
+        publishJUnitResults: true #optional
+        testResultsFiles: 'target/surefire-reports/TEST-*.xml' #optional
+        skipJacocoCoverage : true #optional
+        dockerBuild: false #optional
+        gitleaksVersion:  'v7'
+        binaryPath: 'target/classes'
+        sonarSources: 'src/main/java'
+        sonarCoverageJacocoXmlReportPaths: '**/jacoco.xml'

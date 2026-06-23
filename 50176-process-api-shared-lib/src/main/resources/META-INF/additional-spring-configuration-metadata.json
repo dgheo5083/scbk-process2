@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "edmi.gateway.default.serviceUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'edmi.serviceUrl'"
+  },
+  {
+    "name": "edmi.gateway.default.userName",
+    "type": "java.lang.String",
+    "description": "A description for 'edmi.gateway.default.userName'"
+  },
+  {
+    "name": "edmi.gateway.default.credential",
+    "type": "java.lang.String",
+    "description": "A description for 'edmi.gateway.default.credential'"
+  },
+  {
+    "name": "edmi.gateway.default.baseUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'edmi.gateway.default.baseUrl'"
+  }
+]}

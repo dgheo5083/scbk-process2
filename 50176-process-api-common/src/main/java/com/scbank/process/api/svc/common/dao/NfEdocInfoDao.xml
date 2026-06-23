@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.NfEdocInfoDao">
+	
+	<!-- 정의된 상품 코드 데이터 조회 [MA3_CMM_EDC.NF_EDOC_INFO_S_01] -->
+	<select id="selectEdocNm" parameterType="java.lang.String" resultType = "java.lang.String">
+		SELECT 
+			EDOC_NM
+		FROM
+			NF_EDOC_INFO
+		WHERE
+			EDOC_CD = #{edocCd}
+		WITH UR
+	</select>
+
+	<!-- 전자문서정보 조회 [MA3_CMM_BIZ.NF_EDOC_INFO_S_01] -->
+ 	<select id="selectEdocInfo" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.EdocInfoResult" >
+		SELECT
+			EDOC_CD, 
+			EDOC_NM, 
+			EDOC_GBN, 
+			EDOC_PIC_GBN, 
+			REG_USERID, 
+			CLIP_FILE_PATH, 
+			OZ_FILE_PATH, 
+			LPC_SND_YN, 
+			EDMS_SND_YN, 
+			ORG_SND_YN, 
+			EMAIL_SND_MTHD,
+			EDOC_SIGN_YN,
+			EDOC_TSA_YN,  
+			UPD_DT,
+			EDOC_CONTRACT_OFFER_YN
+		FROM 
+			NF_EDOC_INFO
+		WHERE 
+			EDOC_CD = #{edocCd} 
+		WITH UR
+	</select>
+	
+</mapper>

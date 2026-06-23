@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CELEBRATION_UNIV" lang="ko">
+  <code key="000" order="1"><![CDATA[----- 받는 분 통장에 표시될 경조금 문구(대입/수능)선택하세요 -----]]></code>
+  <code key="063" order="2"><![CDATA[열심히 공부한 당신, 수능만점 문제없습니다.]]></code>
+  <code key="064" order="3"><![CDATA[수능만점을 기원합니다.]]></code>
+  <code key="065" order="4"><![CDATA[건강은 수험생의 가장 큰 재산, 감기 조심하세요]]></code>
+  <code key="066" order="5"><![CDATA[수능 대박 꿈은 이루어진다.]]></code>
+  <code key="067" order="6"><![CDATA[넌 할 수 있어! 수능 만점!]]></code>
+  <code key="068" order="7"><![CDATA[최고의 결과를 낼 수 있도록 두 손 모아 기원합니다.]]></code>
+  <code key="069" order="8"><![CDATA[고진감래 - 인내는 쓰지만 그 열매는 달다 조금만 더 힘내세요!]]></code>
+  <code key="070" order="9"><![CDATA[끊임없이 도전하는 당신. 최고입니다.]]></code>
+  <code key="071" order="10"><![CDATA[수능이 얼마남지 않았습니다. 조금만 더 힘내세요!]]></code>
+  <code key="072" order="11"><![CDATA[불가능은 없다. 수능 만점!]]></code>
+</category>

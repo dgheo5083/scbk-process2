@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.EmapBranchInfoDao">
+	<sql id="COMM_PAGING_HEADER">
+		SELECT R1.* FROM (
+	</sql>
+	<sql id="COMM_PAGING_TAIL">
+		) R1
+		WHERE R1.RN <![CDATA[>=]]> (((#{paging} - 1) * #{pageSize}) + 1)
+		   AND  R1.RN <![CDATA[<=]]> (#{paging} * #{pageSize})
+	</sql>
+
+	<!-- 영업점/ATM 데이터 수 -->
+	<select id="selectFindBranchAtmCount" parameterType="com.scbank.process.api.svc.common.dao.dto.FindBranchAtmCountParameter"  resultType="int">
+		SELECT
+			COUNT(BRNCH_CD) AS TOTAL_CNT
+		FROM EMAP_BRANCH_INFO
+		WHERE ( BRNCH_NM LIKE '%' || #{keyword} || '%' OR ADDR LIKE '%' || #{keyword} || '%' OR ADDR_ROAD LIKE '%' || #{keyword} || '%' )
+		
+		<choose>
+			<when test='subType == "BRANCH"'>
+				AND ATM_FLG = 'B'
+			</when>
+			<when test='subType == "ATM"'>
+				AND ATM_FLG = 'A'
+			</when>
+			<otherwise>
+				AND (ATM_FLG = 'A' OR ATM_FLG = 'B')
+			</otherwise>	
+		</choose>
+		WITH UR
+	</select>
+
+	<!-- 영업점 찾기(전체) -->
+	<select id="selectFindBranchAtm" parameterType="com.scbank.process.api.svc.common.dao.dto.FindBranchAtmParameter" resultType="com.scbank.process.api.svc.common.dao.dto.FindBranchAtmResult">
+		<include refid="COMM_PAGING_HEADER"/>
+		SELECT
+			BRNCH_CD	AS BRANCH_NO,
+			BRNCH_NM	AS BRANCH_NM,
+			ADDR		AS JIBUN,		--지번
+			ADDR_ROAD	AS ADDR,		--도로명
+			LAT			AS LATITUDE,	--위도
+			LNG			AS LONGITUDE,	--경도
+			SUBWAY_INFO	AS SUBWAY,		--근처 지하철역
+			AREA_INFO	AS ADDRESSDESC, --근처건물
+			BRNCH_TEL	AS TEL,
+			TM_INFO		AS BUSINESSHOURS, --영업시간
+			ATM_FLG		AS TYPE,
+			ROW_NUMBER() OVER() RN
+		FROM
+			EMAP_BRANCH_INFO
+		WHERE ( BRNCH_NM LIKE '%' || #{keyword} || '%' OR ADDR LIKE '%' || #{keyword} || '%' OR ADDR_ROAD LIKE '%' || #{keyword} || '%' )
+		<choose>
+			<when test='subType == "BRANCH"'>
+				AND ATM_FLG = 'B'
+			</when>
+			<when test='subType == "ATM"'>
+				AND ATM_FLG = 'A'
+			</when>
+			<otherwise>
+				AND (ATM_FLG = 'A' OR ATM_FLG = 'B')
+			</otherwise>
+		</choose>
+		<include refid="COMM_PAGING_TAIL"/>
+		WITH UR
+	</select>
+	
+</mapper>

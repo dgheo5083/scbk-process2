@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="LOGIN_MSG" lang="ko">
+  <code key="TYPE7" order="0"><![CDATA[0000#0700#다가올 하루를 위해 준비하는 모습이 아름답습니다!]]></code>
+  <code key="TYPE1" order="1"><![CDATA[0700#1200#오늘도 희망차고 활기차게 시작하세요!]]></code>
+  <code key="TYPE2" order="2"><![CDATA[1200#1800#나른하시죠? 기지개 쭈욱 켜시고 웃음가득한 하루 되세요!]]></code>
+  <code key="TYPE3" order="3"><![CDATA[1800#2200#오늘 하루도 수고많으셨습니다. 저녁식사 꼭 챙겨드세요!]]></code>
+  <code key="TYPE4" order="4"><![CDATA[2200#2400#다가올 하루를 위해 준비하는 모습이 아름답습니다!]]></code>
+  <code key="TYPE5" order="5"><![CDATA[오늘은 가족/친구와 함께 화목하고 건강한 하루 되세요!]]></code>
+  <code key="TYPE6" order="6"><![CDATA[로그인 하여 주십시요.]]></code>
+  <code key="SUB_TITLE" order="7"><![CDATA[님]]></code>
+</category>

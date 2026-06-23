@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CRT" lang="ko">
+  <code key="CRT009001" order="0"><![CDATA[공동]]></code>
+  <code key="CRT009002" order="1"><![CDATA[범용]]></code>
+  <code key="CRT009003" order="2"><![CDATA[전자세금계산서]]></code>
+  <code key="CRT009004" order="3"><![CDATA[타기관]]></code>
+  <code key="CRT009005" order="4"><![CDATA[SC제일은행(사설)]]></code>
+  <code key="CRT009006" order="5"><![CDATA[타기관]]></code>
+  <code key="CRT009007" order="6"><![CDATA[한국정보인증]]></code>
+  <code key="CRT009008" order="7"><![CDATA[한국증권전산]]></code>
+  <code key="CRT009009" order="8"><![CDATA[한국전산원]]></code>
+  <code key="CRT009010" order="9"><![CDATA[한국전자인증]]></code>
+  <code key="CRT009011" order="10"><![CDATA[한국무역정보통신]]></code>
+  <code key="CRT009012" order="11"><![CDATA[금융]]></code>
+</category>

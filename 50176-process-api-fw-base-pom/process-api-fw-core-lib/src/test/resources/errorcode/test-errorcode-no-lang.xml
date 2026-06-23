@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+    <errorCode code="ERR003">
+        <msg>언어코드 없는 에러</msg>
+    </errorCode>
+</errors>

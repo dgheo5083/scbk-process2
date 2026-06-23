@@ -1,0 +1,8 @@
+csl:
+  # 보안 설정
+  security:
+    enabled: true
+    xss:
+      ruleset-location: classpath:/config/xss/xss-ruleset.xml
+      ignore-paths:
+        - POST /test/api

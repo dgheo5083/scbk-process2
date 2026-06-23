@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.SmtPhoneBankingVsnMgtDao">
+
+	<select id="selectLatestAppVersion" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.SmtPhoneBankingInfoResult">
+		SELECT 
+		MBL_BNKING_TYPE TYPE
+		,MBL_BNKING_VSN VSN
+		,MBL_BNKING_REGIST_DT REGDT
+		,MBL_BNKING_REGIST_TM REGTM
+	FROM 
+		UIDBS01.SMTPHONE_BNKING_VSN_MGT
+	WHERE 
+		MBL_BNKING_TYPE = #{mblBankingType}
+	ORDER BY 
+		MBL_BNKING_REGIST_DT DESC
+		, MBL_BNKING_REGIST_TM DESC 
+	FETCH FIRST 1 ROWS ONLY
+	WITH UR
+	</select>
+
+</mapper>

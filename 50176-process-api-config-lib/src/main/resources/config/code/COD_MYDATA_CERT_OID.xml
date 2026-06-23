@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_CERT_OID">
+  <code key="1" order="1"><![CDATA[1.2.410.200005.1.1.1]]></code>
+  <code key="2" order="2"><![CDATA[1.2.410.200005.1.1.1.1]]></code>
+  <code key="3" order="3"><![CDATA[1.2.410.200005.1.1.1.2]]></code>
+  <code key="4" order="4"><![CDATA[1.2.410.200005.1.1.1.3]]></code>
+  <code key="5" order="5"><![CDATA[1.2.410.200005.1.1.1.4]]></code>
+  <code key="6" order="6"><![CDATA[1.2.410.200005.1.1.1.5]]></code>
+  <code key="7" order="7"><![CDATA[1.2.410.200005.1.1.1.6]]></code>
+  <code key="8" order="8"><![CDATA[1.2.410.200005.1.1.4]]></code>
+  <code key="9" order="9"><![CDATA[1.2.410.200005.1.1.4.1]]></code>
+  <code key="10" order="10"><![CDATA[1.2.410.200005.1.1.4.2]]></code>
+  <code key="11" order="11"><![CDATA[1.2.410.200005.1.1.4.3]]></code>
+  <code key="12" order="12"><![CDATA[1.2.410.200005.1.1.4.4]]></code>
+  <code key="13" order="13"><![CDATA[1.2.410.200005.1.1.4.5]]></code>
+  <code key="14" order="14"><![CDATA[1.2.410.200005.1.1.4.6]]></code>
+  <code key="15" order="15"><![CDATA[1.2.410.200004.5.1.1.5]]></code>
+  <code key="16" order="16"><![CDATA[1.2.410.200004.5.1.1.9]]></code>
+  <code key="17" order="17"><![CDATA[1.2.410.200004.5.2.1.2]]></code>
+  <code key="18" order="18"><![CDATA[1.2.410.200004.5.2.1.7.1]]></code>
+  <code key="19" order="19"><![CDATA[1.2.410.200004.5.4.1.1]]></code>
+  <code key="20" order="20"><![CDATA[1.2.410.200005.1.1.1.10]]></code>
+</category>

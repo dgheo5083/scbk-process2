@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast xmlns="http://www.hazelcast.com/schema/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.hazelcast.com/schema/config
+                        http://www.hazelcast.com/schema/config/hazelcast-config-5.3.xsd">
+
+    <cluster-name>csl-cache</cluster-name>
+    <properties>
+        <property name="hazelcast.jmx">true</property>
+        <!--
+            The number of incremental ports, starting with the port number defined in the network configuration,
+            that will be used to connect to a host (which is defined without a port in TCP/IP member list while
+            a member is searching for a cluster). Value 50 is chosen as number of busy ports should be between 20 and 40.
+        -->
+        <property name="hazelcast.tcp.join.port.try.count">50</property>
+        <property name="hazelcast.shutdownhook.enabled">true</property>
+        <property name="hazelcast.discovery.enabled">false</property>
+    </properties>
+
+    <map name="csl-*">
+        <backup-count>0</backup-count>
+        <time-to-live-seconds>120</time-to-live-seconds>
+        <eviction eviction-policy="LRU" size="10000" max-size-policy="USED_HEAP_SIZE" />
+    </map>
+
+    <network>
+        <!--
+            1. Port count == 100 because number of instances should significantly decrease - not more than 50
+            2. Port range 45701 - 45801 to avoid intersection with legacy lib-cache instances
+        -->
+        <join>
+            <auto-detection enabled="false" />
+            <multicast enabled="false"/>
+            <tcp-ip enabled="true">
+                <member>127.0.0.1</member>
+            </tcp-ip>
+        </join>
+        <public-address>127.0.0.1</public-address>
+        <port auto-increment="true">45701</port>
+    </network>
+
+    <partition-group group-type="HOST_AWARE"/>
+</hazelcast>

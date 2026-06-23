@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="EBPP01" lang="ko">
+  <code key="00" order="0"><![CDATA[전체]]></code>
+  <code key="APTFEE_COZYBILL" order="1"><![CDATA[아파트관리비]]></code>
+</category>

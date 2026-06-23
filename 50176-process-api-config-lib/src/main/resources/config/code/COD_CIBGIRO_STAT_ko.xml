@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CIBGIRO_STAT" lang="ko">
+  <code key="0" order="0"><![CDATA[보험료구분선택]]></code>
+  <code key="498_3" order="1"><![CDATA[고용(납기내)]]></code>
+  <code key="498_0" order="2"><![CDATA[고용(납기경과:체납)]]></code>
+</category>

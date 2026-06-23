@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="BKCODE_KW" lang="ko">
+	<!-- 기웅 타은행 스크래핑 은행 코드 리스트 (구분자:;;)-->
+	<!--<code key='MBSCPM' order='1'><![CDATA[SC은행;;/resource/images/cmm/icon_bank_023.png]]></code>-->
+	<code key='MBKBPM' order='2'><![CDATA[국민은행;;/resource/images/cmm/icon_bank_004.png]]></code>
+	<code key='MBSHPM' order='3'><![CDATA[신한은행;;/resource/images/cmm/icon_bank_088.png]]></code>
+	<code key='MBNHPM' order='4'><![CDATA[농협은행;;/resource/images/cmm/icon_bank_011.png]]></code>
+	<code key='MBHNPM' order='5'><![CDATA[KEB하나은행;;/resource/images/cmm/icon_bank_081.png]]></code>
+	<code key='MBWRPM' order='6'><![CDATA[우리은행;;/resource/images/cmm/icon_bank_020.png]]></code>
+	<code key='MBKFPM' order='7'><![CDATA[새마을금고;;/resource/images/cmm/icon_bank_045.png]]></code>
+	<code key='MBDBPM' order='8'><![CDATA[아이엠뱅크 (구)대구은행;;/resource/images/cmm/icon_bank_031.png]]></code>
+	<code key='MBPSPM' order='9'><![CDATA[부산은행;;/resource/images/cmm/icon_bank_032.png]]></code>
+	<code key='MBKDPM' order='10'><![CDATA[산업은행;;/resource/images/cmm/icon_bank_002.png]]></code>
+	<code key='MBSUPM' order='11'><![CDATA[수협은행;;/resource/images/cmm/icon_bank_048-35.png]]></code>
+	<code key='MBKNPM' order='12'><![CDATA[경남은행;;/resource/images/cmm/icon_bank_039.png]]></code>
+	<code key='MBCUPM' order='13'><![CDATA[신협;;/resource/images/cmm/icon_bank_048.png]]></code>
+	<code key='MBCTPM' order='14'><![CDATA[씨티은행;;/resource/images/cmm/icon_bank_027.png]]></code>
+	<code key='MBKJPM' order='15'><![CDATA[광주은행;;/resource/images/cmm/icon_bank_034.png]]></code>
+	<code key='MBEPPM' order='16'><![CDATA[우체국;;/resource/images/cmm/icon_bank_071.png]]></code>
+	<code key='MBJBPM' order='17'><![CDATA[전북은행;;/resource/images/cmm/icon_bank_037.png]]></code>
+	<code key='MBIBPM' order='18'><![CDATA[기업은행;;/resource/images/cmm/icon_bank_003.png]]></code>
+	<code key='MBJJPM' order='19'><![CDATA[제주은행;;/resource/images/cmm/icon_bank_035.png]]></code>
+	<code key='MBKKPM' order='20'><![CDATA[K뱅크;;/resource/images/cmm/icon_bank_089.png]]></code>
+</category>

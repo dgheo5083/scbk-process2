@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.FidoCertificateInfoDao">
+
+	<!-- 디지털인증서 시리얼정보 틀린 인증서 파기 FIDO_EXPIRED_CERTIFICATE_ISSUED -->
+	<update id="updateExpiredCertificateIssued" parameterType="java.lang.String" >
+		UPDATE FIDODBS01.FIDO_CERTIFICATE_INFO SET 
+			STATUS_VALUE='04', 
+			DEL_YN='Y', 
+			DEL_DT=TO_CHAR(SYSDATE, 'YYYYMMDDHH24MISS') 
+		WHERE 
+			SERIAL_NUMBER = #{serialNumber}
+	</update>
+
+	<!-- 디지털인증서 Backup 정보 등록 FIDO_BACKUP_CERTLIST_DATA_I-->
+	<insert id="insertFidoBackupCertListData" parameterType="com.scbank.process.api.svc.common.dao.dto.FidoBackupCertListDataParameter">
+		INSERT 
+		  INTO FIDODBS01.OP_MYSELF_CONFR_HIST (
+		  	HIST_ID
+			, AUTH_DT
+			, USER_ID
+			, TR_ID
+			, TELE_TYPE
+			, HP_NUM
+			, RESLT_CD
+		) VALUES (
+			  #{histId}
+			, #{authDt}
+			, #{userId}
+			, #{trId}
+			, #{teleType}
+			, #{hpNum}
+			, #{resltCd}
+		)
+	</insert>
+	
+</mapper>

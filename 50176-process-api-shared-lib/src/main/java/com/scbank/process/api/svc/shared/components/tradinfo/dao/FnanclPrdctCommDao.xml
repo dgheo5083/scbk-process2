@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.FnanclPrdctCommDao">
+
+	<!-- 메인 입출금 계좌 상품 리스트 (asis : FNANCL_PRDCT_CMMN_S_01) -->
+	<select id="selectMainDepositAccountProduct" resultType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.MainDepositAccountProductResult" >
+		SELECT
+			X.PRDCT_ID,
+			X.PRDCT_NM,
+			X.PRDCT_FTUR_KR,
+			X.PRDCT_CD,
+			X.CTGRY_SYS_NM,
+			X.CTGRY_SYS_CD,
+			X.HGHST_INT,
+			X.NF_ENTRNC_URL,
+			X.NF_ENTRNC_BTN_FLG,
+			X.NF_PREVIEW_BTN_FLG,
+			X.CLLCT_START_DT,
+			X.CLLCT_END_DT,
+			X.LND_ODR,
+			G.PRDCT_SMPL_EXPLN
+		FROM (
+			(SELECT
+  				A.PRDCT_ID,
+  				A.PRDCT_NM,
+  				A.PRDCT_FTUR_KR,
+  				A.PRDCT_CD,
+  				D.CTGRY_SYS_NM,
+  				D.CTGRY_SYS_CD,
+  				E.HGHST_INT,
+  				B.NF_ENTRNC_URL,
+  				B.NF_ENTRNC_BTN_FLG,
+  				B.NF_PREVIEW_BTN_FLG,
+  				'' AS CLLCT_START_DT,
+  				'' AS CLLCT_END_DT,
+  				C.LND_ODR
+   			FROM
+   				FNANCL_PRDCT_CMMN A,
+   				MBL_WB_INFO B,
+   				PRDCT_WEB_CTGRY C,
+   				PRDCT_CTGRY_SYS D,
+   				FNANCL_PRDCT_DPST E
+			WHERE
+				A.PRDCT_ID = B.PRDCT_ID
+    			AND A.PRDCT_ID = C.PRDCT_ID
+    			AND B.PRDCT_ID = C.PRDCT_ID
+			    AND A.PRDCT_ID = E.PRDCT_ID
+			    AND C.CTGRY_SYS_CD LIKE 'NF05%'
+			    AND A.PRDCT_CD NOT LIKE 'e-green%'
+			    AND A.CTGRY_SYS_CD_JOB = D.CTGRY_SYS_CD
+			    AND A.USE_IND = 'Y'
+			    AND C.NF_MBL_WB_EXPS_IND = 'Y'
+    		WITH UR
+  			) UNION ALL (
+  			SELECT
+  				PRDCT_ID,
+  				PRDCT_NM,
+  				PRDCT_FTUR_KR,
+  				PRDCT_CD,
+  				CTGRY_SYS_NM,
+  				CTGRY_SYS_CD,
+  				HGHST_INT,
+  				NF_ENTRNC_URL,
+  				NF_ENTRNC_BTN_FLG,
+  				NF_PREVIEW_BTN_FLG,
+  				CLLCT_START_DT,
+  				CLLCT_END_DT,
+  				LND_ODR
+			FROM (
+				SELECT
+					A.PRDCT_ID,
+					A.PRDCT_NM,
+					A.PRDCT_FTUR_KR,
+					A.PRDCT_CD,
+					D.CTGRY_SYS_NM,
+					D.CTGRY_SYS_CD,
+					C.LND_ODR,
+					E.HGHST_INT,
+					B.NF_ENTRNC_URL,
+					B.NF_ENTRNC_BTN_FLG,
+					B.NF_PREVIEW_BTN_FLG,
+					CONCAT(REPLACE(F.CLLCT_START_DT, '-'),
+					F.CLLCT_START_TM) AS CLLCT_START_DT,
+					CONCAT(REPLACE(F.CLLCT_END_DT, '-'),
+					F.CLLCT_END_TM) AS CLLCT_END_DT
+   				FROM
+   					FNANCL_PRDCT_CMMN A,
+   					MBL_WB_INFO B,
+   					PRDCT_WEB_CTGRY C,
+   					PRDCT_CTGRY_SYS D,
+   					FNANCL_PRDCT_DPST E,
+   					PRDCT_GRP_PRCHSE_MGT F
+				WHERE
+					A.PRDCT_ID = B.PRDCT_ID
+				    AND A.PRDCT_ID = C.PRDCT_ID
+				    AND B.PRDCT_ID = C.PRDCT_ID
+				    AND A.PRDCT_ID = E.PRDCT_ID
+				    AND A.PRDCT_ID = F.PRDCT_ID
+				    AND C.CTGRY_SYS_CD LIKE 'NF06%'
+				    AND A.CTGRY_SYS_CD_JOB = D.CTGRY_SYS_CD
+				    AND A.USE_IND = 'Y'
+				    AND C.NF_MBL_WB_EXPS_IND = 'Y'  
+				WITH UR
+  			)
+  			WHERE
+  				<![CDATA[
+  				CLLCT_START_DT <= VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24MI')
+  				AND CLLCT_END_DT >= VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24MI')
+  				]]>
+  			) UNION ALL (
+  			SELECT
+  				A.PRDCT_ID,
+  				A.PRDCT_NM,
+  				A.PRDCT_FTUR_KR,
+  				A.PRDCT_CD,
+  				D.CTGRY_SYS_NM,
+  				D.CTGRY_SYS_CD,
+  				E.HGHST_INT,
+  				B.NF_ENTRNC_URL,
+  				B.NF_ENTRNC_BTN_FLG,
+  				B.NF_PREVIEW_BTN_FLG,
+  				'' AS CLLCT_START_DT,
+  				'' AS CLLCT_END_DT,
+  				C.LND_ODR        
+   			FROM
+   				FNANCL_PRDCT_CMMN A,
+   				MBL_WB_INFO B,
+   				PRDCT_WEB_CTGRY C,
+   				PRDCT_CTGRY_SYS D,
+   				FNANCL_PRDCT_DPST E
+			WHERE
+				A.PRDCT_ID = B.PRDCT_ID
+			    AND A.PRDCT_ID = C.PRDCT_ID
+			    AND B.PRDCT_ID = C.PRDCT_ID
+			    AND A.PRDCT_ID = E.PRDCT_ID
+			    AND C.CTGRY_SYS_CD = 'NF06000000000000'
+			    AND D.CTGRY_SYS_CD = 'JC01020000000000'
+			    AND A.CTGRY_SYS_CD_JOB = D.CTGRY_SYS_CD
+			    AND A.USE_IND = 'Y'
+			    AND C.NF_MBL_WB_EXPS_IND = 'Y'  
+			WITH UR
+  			) UNION ALL (
+  			SELECT
+	  			A.PRDCT_ID,
+	  			A.PRDCT_NM,
+	  			A.PRDCT_FTUR_KR,
+	  			A.PRDCT_CD,
+	  			D.CTGRY_SYS_NM,
+	  			D.CTGRY_SYS_CD,
+	  			E.HGHST_INT,
+	  			B.NF_ENTRNC_URL,
+	  			B.NF_ENTRNC_BTN_FLG,
+	  			B.NF_PREVIEW_BTN_FLG,
+	  			'' AS CLLCT_START_DT,
+	  			'' AS CLLCT_END_DT,
+	  			C.LND_ODR        
+			FROM
+				FNANCL_PRDCT_CMMN A,
+				MBL_WB_INFO B,
+				PRDCT_WEB_CTGRY C,
+				PRDCT_CTGRY_SYS D,
+				FNANCL_PRDCT_DPST E
+			WHERE
+				A.PRDCT_ID = B.PRDCT_ID
+			    AND A.PRDCT_ID = C.PRDCT_ID
+			    AND B.PRDCT_ID = C.PRDCT_ID
+			    AND A.PRDCT_ID = E.PRDCT_ID
+			    AND C.CTGRY_SYS_CD = 'NF06000000000000'
+			    AND D.CTGRY_SYS_CD = 'JC01030000000000'
+			    AND A.PRDCT_CD NOT LIKE 'e-green%'
+			    AND A.CTGRY_SYS_CD_JOB = D.CTGRY_SYS_CD
+			    AND A.USE_IND = 'Y'
+			    AND C.NF_MBL_WB_EXPS_IND = 'Y'  
+			WITH UR
+			)
+		) X LEFT OUTER JOIN FNANCL_PRDCT_CMMN_ADD G ON X.PRDCT_ID = G.PRDCT_ID
+  		ORDER BY LND_ODR ASC
+		WITH UR
+	</select>
+</mapper>

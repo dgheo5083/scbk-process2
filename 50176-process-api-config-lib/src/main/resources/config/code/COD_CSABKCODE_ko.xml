@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CSABKCODE" lang="ko">
+	<code key="004" order="2"><![CDATA[국민은행]]></code>
+	<code key="003" order="3"><![CDATA[기업은행]]></code>
+	<code key="011" order="4"><![CDATA[농협은행]]></code>
+	<code key="088" order="5"><![CDATA[신한은행]]></code>
+	<code key="020" order="6"><![CDATA[우리은행]]></code>
+	<code key="081" order="7"><![CDATA[하나은행]]></code>
+	<code key="027" order="8"><![CDATA[한국씨티은행]]></code>
+	<code key="039" order="9"><![CDATA[경남은행]]></code>
+	<code key="034" order="10"><![CDATA[광주은행]]></code>
+	<code key="012" order="11"><![CDATA[지역농협]]></code>
+	<code key="031" order="12"><![CDATA[아이엠뱅크 (구)대구은행]]></code>
+	<code key="032" order="13"><![CDATA[부산은행]]></code>
+	<code key="002" order="14"><![CDATA[산업은행]]></code>
+	<code key="045" order="15"><![CDATA[새마을금고]]></code>
+	<code key="048" order="16"><![CDATA[신협]]></code>
+	<code key="007" order="17"><![CDATA[수협중앙회]]></code>
+	<code key="071" order="18"><![CDATA[우체국]]></code>
+	<code key="037" order="19"><![CDATA[전북은행]]></code>
+	<code key="035" order="20"><![CDATA[제주은행]]></code>
+	<code key="055" order="21"><![CDATA[도이치뱅크]]></code>
+	<code key="060" order="22"><![CDATA[뱅크오브아메리카]]></code>
+	<code key="054" order="23"><![CDATA[HSBC]]></code>
+	<code key="057" order="24"><![CDATA[JP모간]]></code>
+	<code key="061" order="25"><![CDATA[BNP파리바]]></code>
+	<code key="062" order="26"><![CDATA[중국공상은행]]></code>
+	<code key="089" order="27"><![CDATA[케이뱅크]]></code>
+	<code key="090" order="28"><![CDATA[카카오뱅크]]></code>
+	<code key="092" order="29"><![CDATA[토스뱅크]]></code>
+</category>

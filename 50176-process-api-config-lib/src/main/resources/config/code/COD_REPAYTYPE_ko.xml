@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="REPAYTYPE" lang="ko">
+  <code key="0" order="0"><![CDATA[상환방법선택]]></code>
+  <code key="2" order="2"><![CDATA[원금균등상환]]></code>
+  <code key="3" order="3"><![CDATA[원리금균등상환]]></code>
+  <code key="4" order="4"><![CDATA[거치식원리금균등상환]]></code>
+</category>

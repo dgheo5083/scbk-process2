@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="EMAILDOMAIN" lang="ko">
+  <code key="" order="1"><![CDATA[직접 입력]]></code>
+  <code key="naver.com" order="2"><![CDATA[naver.com]]></code>
+  <code key="nate.com" order="3"><![CDATA[nate.com]]></code>
+  <code key="dreamwiz.com" order="4"><![CDATA[dreamwiz.com]]></code>
+  <code key="gmail.com" order="5"><![CDATA[gmail.com]]></code>
+  <code key="daum.net" order="6"><![CDATA[daum.net]]></code>
+  <code key="hanmail.net" order="7"><![CDATA[hanmail.net]]></code>
+  <code key="hotmail.com" order="8"><![CDATA[hotmail.com]]></code>
+</category>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="COD_API_REJECT_REASON_003_101S" lang="ko">
+	<!-- [ 2023.11.14 COD_API_REJECT_REASON_003_101S - API주담대 거절사유 ] key:거절코드,  value:거절사유 -->
+	<code key="D001" order="0" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D002" order="1" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D646" order="2" ><![CDATA[대출이 많아서 불가합니다]]></code>
+	<code key="D297" order="3" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D367" order="4" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D456" order="5" ><![CDATA[상품 취급요건을 충족하지 못했어요]]></code>
+	<code key="D630" order="6" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D634" order="7" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D641" order="8" ><![CDATA[취급할 수 없는 물건이에요]]></code>
+	<code key="D228" order="9" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D303" order="10" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D308" order="11" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D368" order="12" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D402" order="13" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D446" order="14" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D457" order="15" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D460" order="16" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D469" order="17" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D621" order="18" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D629" order="19" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D631" order="20" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D103" order="21" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D369" order="22" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D425" order="23" ><![CDATA[상품 취급요건을 충족하지 못했어요]]></code>
+	<code key="D470" order="24" ><![CDATA[상품 취급요건을 충족하지 못했어요]]></code>
+	<code key="D546" order="25" ><![CDATA[자격조건을 충족하지 못했어요]]></code>
+	<code key="D601" order="26" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D606" order="27" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D610" order="28" ><![CDATA[상품 취급요건을 충족하지 못했어요]]></code>
+	<code key="D611" order="29" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D612" order="30" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D615" order="31" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D616" order="32" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D633" order="33" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D637" order="34" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D638" order="35" ><![CDATA[대출이 불가합니다]]></code>
+	<code key="D967" order="36" ><![CDATA[상품 취급요건을 충족하지 못했어요]]></code>
+	<code key="D971" order="37" ><![CDATA[상품 취급요건을 충족하지 못했어요]]></code>
+	<code key="CODE_DEFAULT" order="100" ><![CDATA[대출이 불가합니다]]></code>
+	
+</category>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TRANPURPOSEBIZ" lang="ko">
+  <code key="" order="1"><![CDATA[선택]]></code>
+  <code key="01" order="2"><![CDATA[저축/투자]]></code>
+  <code key="04" order="3"><![CDATA[결제계좌]]></code>
+  <code key="05" order="4"><![CDATA[자금이체]]></code>
+  <code key="17" order="5"><![CDATA[운전자금]]></code>
+  <code key="18" order="6"><![CDATA[사업관련 운영경비]]></code>
+</category>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<응답부>
+  <ScfbHeader>
+    <TotalLength>01505</TotalLength>
+    <ChannelType>I</ChannelType>
+    <WASTranNo>000040</WASTranNo>
+    <EGMSTranNo>000291</EGMSTranNo>
+    <UserIP>000.000.000.000</UserIP>
+    <AppVersion>1.7.8</AppVersion>
+    <VFDSDeviceKey>BbRhaA1C4ZOFa</VFDSDeviceKey>
+    <WASTYPE></WASTYPE>
+    <_DE2E123_EncSK></_DE2E123_EncSK>
+    <_DVKEY_EncSK></_DVKEY_EncSK>
+    <IMSTRANCD>TI1IBK01</IMSTRANCD>
+    <BLK></BLK>
+    <INCHANNEL>G</INCHANNEL>
+    <BRANCH>0998</BRANCH>
+    <LOTNO>000</LOTNO>
+    <TCNO>1</TCNO>
+    <INTERTYPE>3</INTERTYPE>
+    <INTERNO>1</INTERNO>
+    <COUNTERINFO1></COUNTERINFO1>
+    <COUNTERINFO2></COUNTERINFO2>
+    <BRANCHNO>860</BRANCHNO>
+    <CONVTERSCR></CONVTERSCR>
+    <RES>0</RES>
+    <MSGINFOBLK></MSGINFOBLK>
+    <MODEINFO></MODEINFO>
+    <DESTP></DESTP>
+    <JOBTP>GP</JOBTP>
+    <INCLASSCD>H920</INCLASSCD>
+    <CTRLCDNO></CTRLCDNO>
+    <RESCDNO></RESCDNO>
+    <STFLAG1></STFLAG1>
+    <STFLAG2></STFLAG2>
+    <STFLAG3></STFLAG3>
+    <STFLAG4></STFLAG4>
+    <INLINE></INLINE>
+    <PFKEY></PFKEY>
+    <RES1>01451</RES1>
+    <BRANCHSAV></BRANCHSAV>
+    <DEALSAV>998</DEALSAV>
+    <INTERSAV>AINTIB</INTERSAV>
+    <NEWFORMATTP>NEW</NEWFORMATTP>
+    <OUTERRCD></OUTERRCD>
+    <OUTLU></OUTLU>
+    <SOURCEOUTLU>DP</SOURCEOUTLU>
+    <INIJOBCLA>GP</INIJOBCLA>
+    <INIINCLA>H920</INIINCLA>
+    <FBTPROCESSTRNSNO></FBTPROCESSTRNSNO>
+    <RES2>36717</RES2>
+    <TRSTP>0210</TRSTP>
+    <TRSNO>000291</TRSNO>
+    <SVCCD>920</SVCCD>
+    <PROCESSTP>L</PROCESSTP>
+    <LOCALTP>P1</LOCALTP>
+    <VANTP>56</VANTP>
+    <VAPCNLNO>000</VAPCNLNO>
+    <FSPID>00000000</FSPID>
+    <INOUTCNLTP>W</INOUTCNLTP>
+    <SENDDATE>20251204</SENDDATE>
+    <SENDTIME>101157</SENDTIME>
+    <SENDSYSTEM>P</SENDSYSTEM>
+    <ERRORCODE>0000</ERRORCODE>
+    <RESPONSECODE>0</RESPONSECODE>
+    <DISPLAYTYPE></DISPLAYTYPE>
+    <ERRORLOCATION></ERRORLOCATION>
+    <FILLER></FILLER>
+  </ScfbHeader>
+  <RES_DATA_PART>
+    <UserID>LOANTE80</UserID>
+    <BKGuBun>2</BKGuBun>
+    <CustName>업무테스트　　　　　</CustName>
+    <JuMinNo>8007071999994</JuMinNo>
+    <Birthday>18000707</Birthday>
+    <SolarLunarCalPart>1</SolarLunarCalPart>
+    <HomeHT></HomeHT>
+    <HomeJL></HomeJL>
+    <HomePostNum>110160</HomePostNum>
+    <HomeAddr>１００　한국스탠다드차타드은행　빌딩테스트　　　　　　　　　</HomeAddr>
+    <HomeTele1>010</HomeTele1>
+    <HomeTele2>9876</HomeTele2>
+    <HomeTele3>9876</HomeTele3>
+    <JobTele1>02</JobTele1>
+    <JobTele2>9876</JobTele2>
+    <JobTele3>9876</JobTele3>
+    <JobPostNum>110160</JobPostNum>
+    <JobAddr>１００　한국스탠다드차타드은행　빌딩테스트　　　　　　　　　</JobAddr>
+    <JobName>직장　　　　　　　　</JobName>
+    <JobBSName>부서　　　</JobBSName>
+    <Jobposition>대리　　　</Jobposition>
+    <Job>10</Job>
+    <Email>TESTEE@TEST.COM</Email>
+    <HandPhone1>010</HandPhone1>
+    <HandPhone2>9876</HandPhone2>
+    <HandPhone3>9876</HandPhone3>
+    <Weddingday>00000000</Weddingday>
+    <Religion></Religion>
+    <Hobby>0000000000000000</Hobby>
+    <YearPay>0</YearPay>
+    <MarryYeubu>3</MarryYeubu>
+    <MailSend></MailSend>
+    <OneTimeDepLimt>0</OneTimeDepLimt>
+    <OneDayDepLimt>0</OneDayDepLimt>
+    <Interest>0000000000000000</Interest>
+    <SecureLV></SecureLV>
+    <YOADRGB1>1</YOADRGB1>
+    <YOZIPTXT1>서울　종로구　공평동　　　　　　　　　　</YOZIPTXT1>
+    <YOZIPCD40>03160</YOZIPCD40>
+    <YOZIPCD41>111103100013</YOZIPCD41>
+    <YOZIPCD42>03</YOZIPCD42>
+    <YOZIPCD43>0</YOZIPCD43>
+    <YOZIPCD44>0004700000</YOZIPCD44>
+    <YOSJUSO4>서울　종로구　종로　４７　　　　　　　　　　　　　　　　　　　　　　　</YOSJUSO4>
+    <YOJUSO4>（공평동，　한국스탠다드차타드은행　빌딩）테스트　　　　　　　　　　　　　　　　　　　　　　　　　　</YOJUSO4>
+    <YOJIKGB>1</YOJIKGB>
+    <YOJUSOK2>서울　종로구　공평동　　　　　　　　　　</YOJUSOK2>
+    <YOJIKCD40>03160</YOJIKCD40>
+    <YOJIKCD41>111103100013</YOJIKCD41>
+    <YOJIKCD42>03</YOJIKCD42>
+    <YOJIKCD43>0</YOJIKCD43>
+    <YOJIKCD44>0004700000</YOJIKCD44>
+    <YOJIKDORO>서울　종로구　종로　４７　　　　　　　　　　　　　　　　　　　　　　　</YOJIKDORO>
+    <YOJIKSANG>（공평동，　한국스탠다드차타드은행　빌딩）테스트　　　　　　　　　　　　　　　　　　　　　　　　　　</YOJIKSANG>
+    <YOENAME>TEST TEST</YOENAME>
+    <YOOGKCD>100</YOOGKCD>
+    <YOOCDDNI>100</YOOCDDNI>
+    <YOOBIRNC>100</YOOBIRNC>
+    <YOEJUSO1></YOEJUSO1>
+    <YOEJUSO2></YOEJUSO2>
+    <YOEBUNHO></YOEBUNHO>
+    <YOFXYN></YOFXYN>
+    <YOEADGB></YOEADGB>
+    <YOGEOJU></YOGEOJU>
+    <YOOFAGKCD></YOOFAGKCD>
+    <YOOFTGKCD></YOOFTGKCD>
+    <YODUMMY></YODUMMY>
+  </RES_DATA_PART>
+  <REMNANTS_LENGTH>18</REMNANTS_LENGTH>
+  <REMNANTS>                  </REMNANTS>
+</응답부>
+

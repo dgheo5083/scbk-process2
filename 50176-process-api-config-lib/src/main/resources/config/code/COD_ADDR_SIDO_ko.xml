@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ADDR_SIDO" lang="ko">
+	<code key="" order="0"><![CDATA[선택]]></code>
+	<code key="Gangwon" order="0"><![CDATA[강원도]]></code>
+	<code key="Gyeonggi" order="1"><![CDATA[경기도]]></code>
+	<code key="Gyeongnam" order="2"><![CDATA[경상남도]]></code>
+	<code key="Gyeongbuk" order="3"><![CDATA[경상북도]]></code>
+	<code key="Gwangju" order="4"><![CDATA[광주광역시]]></code>
+	<code key="Daegu" order="5"><![CDATA[대구광역시]]></code>
+	<code key="Daejeon" order="6"><![CDATA[대전광역시]]></code>
+	<code key="Busan" order="7"><![CDATA[부산광역시]]></code>
+	<code key="Seoul" order="8"><![CDATA[서울특별시]]></code>
+	<code key="Sejong" order="9"><![CDATA[세종특별자치시]]></code>
+	<code key="Ulsan" order="10"><![CDATA[울산광역시]]></code>
+	<code key="Incheon" order="11"><![CDATA[인천광역시]]></code>
+	<code key="Jeonnam" order="12"><![CDATA[전라남도]]></code>
+	<code key="Jeonbuk" order="13"><![CDATA[전라북도]]></code>
+	<code key="Jeju" order="14"><![CDATA[제주특별자치도]]></code>
+	<code key="Chungnam" order="15"><![CDATA[충청남도]]></code>
+	<code key="Chungbuk" order="16"><![CDATA[충청북도]]></code>
+</category>

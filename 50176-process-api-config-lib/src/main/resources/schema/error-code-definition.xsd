@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- 루트 요소 -->
+  <xs:element name="error-code-definition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="error-code" type="ErrorCodeType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="langCode" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- error-code 요소 -->
+  <xs:complexType name="ErrorCodeType">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string"/>
+      <xs:element name="guide-message-list" type="GuideMessageListType" minOccurs="0"/>
+      <xs:element name="button-action" type="ButtonActionType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+    <xs:attribute name="displayType" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <!-- 가이드 메시지 리스트 -->
+  <xs:complexType name="GuideMessageListType">
+    <xs:sequence>
+      <xs:element name="message" type="GuideMessageType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- 가이드 메시지 개별 항목 -->
+  <xs:complexType name="GuideMessageType" mixed="true">
+    <xs:attribute name="order" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <!-- 버튼 액션 정의 -->
+  <xs:complexType name="ButtonActionType">
+    <xs:sequence>
+      <xs:element name="type" type="xs:string"/>
+      <xs:element name="label" type="xs:string"/>
+      <xs:element name="target" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

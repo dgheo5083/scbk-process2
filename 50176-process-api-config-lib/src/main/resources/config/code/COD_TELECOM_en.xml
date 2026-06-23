@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TELECOM" lang="en">
+  <code key="" order="1"><![CDATA[Select Communications Company]]></code>
+  <code key="1" order="2"><![CDATA[SKT]]></code>
+  <code key="2" order="3"><![CDATA[KT]]></code>
+  <code key="3" order="4"><![CDATA[LGU]]></code>
+  <code key="5" order="5"><![CDATA[SKT (low-cost)]]></code>
+  <code key="6" order="6"><![CDATA[KT (low-cost)]]></code>
+  <code key="7" order="7"><![CDATA[LGU+ (low-cost)]]></code>
+</category>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ACCTSTATUS" lang="en">
+  <code key="1" order="1"><![CDATA[일반 입출금]]></code>
+  <code key="2" order="2"><![CDATA[정기예금]]></code>
+  <code key="3" order="3"><![CDATA[적금]]></code>
+  <code key="5" order="4"><![CDATA[펀드]]></code>
+  <code key="6" order="5"><![CDATA[대출]]></code>
+  <code key="8" order="6"><![CDATA[신탁]]></code>
+</category>

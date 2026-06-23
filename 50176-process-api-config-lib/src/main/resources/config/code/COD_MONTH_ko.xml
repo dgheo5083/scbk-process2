@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MONTH" lang="ko">
+  <code key="01" order="1"><![CDATA[1]]></code>
+  <code key="02" order="2"><![CDATA[2]]></code>
+  <code key="03" order="3"><![CDATA[3]]></code>
+  <code key="04" order="4"><![CDATA[4]]></code>
+  <code key="05" order="5"><![CDATA[5]]></code>
+  <code key="06" order="6"><![CDATA[6]]></code>
+  <code key="07" order="7"><![CDATA[7]]></code>
+  <code key="08" order="8"><![CDATA[8]]></code>
+  <code key="09" order="9"><![CDATA[9]]></code>
+  <code key="10" order="10"><![CDATA[10]]></code>
+  <code key="11" order="11"><![CDATA[11]]></code>
+  <code key="12" order="12"><![CDATA[12]]></code>
+</category>

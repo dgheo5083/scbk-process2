@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.SignTransactionDao">
+	<resultMap id="signResult" type="com.scbank.process.api.svc.common.dao.dto.SignInfoResult">
+		<result column="encSign" property="encSign" jdbcType="BLOB" javaType="[B"></result>
+	</resultMap>
+
+	<!-- 전자서명 저장 -->
+	<insert id="insertSignInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.SignInfoResult">
+		INSERT INTO SIGNTRANSACTION(
+			USERID,
+			USERNAME,
+			REGDATE,
+			JUMINNO,
+			SYSIP,
+			SYSNAME,
+			GUBUNCODE,
+			TXCODE,
+			PAGELANG,
+			REGSITE,
+			ENCSIGN,
+			DELFLAG,
+			REGDAY
+		)
+		VALUES (
+			#{USERID},
+			#{USERNAME},
+			#{REGDATE},
+			#{JUMINNO},
+			#{SYSIP},
+			#{SYSNAME},
+			#{GUBUNCODE},
+			#{TXCODE},
+			#{PAGELANG},
+			#{REGSITE},
+			<!-- #{ENCSIGN}, -->
+			#{ENCSIGN, jdbcType=BLOB},
+			#{DELFLAG},
+			#{REGDAY}
+		)
+	</insert>
+
+	<select id="selectSignInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.SignInfoParameter" resultMap="signResult">
+		SELECT
+			USERID as userId
+			,USERNAME as userName
+			,REGDATE as regDate
+			,JUMINNO as juminNo
+			,SYSIP as sysIp
+			,SYSNAME as sysName
+			,GUBUNCODE as gubunCode
+			,TXCODE as txCode
+			,PAGELANG as pageLang
+			,REGSITE as regSite
+			,ENCSIGN as encSign
+			,DELFLAG as delFlag
+			,REGDAY as regDay
+		FROM
+			SIGNTRANSACTION
+		WHERE REGDAY IS NOT NULL
+        <if test="userId != null and userId != ''">
+            AND USERID = #{userId}
+        </if>
+        <if test="userName != null and userName != ''">
+            AND USERNAME = #{userName}
+        </if>
+        <if test="sysName != null and sysName != ''">
+            AND SYSNAME = #{sysName}
+        </if>
+        <if test="gubunCode != null and gubunCode != ''">
+		    AND GUBUNCODE = #{gubunCode}
+        </if>
+        <if test="txCode != null and txCode != ''">
+		    AND TXCODE = #{txCode}
+        </if>
+        <if test="regSite != null and regSite != ''">
+		    AND REGSITE LIKE '%' || #{regSite} || '%'
+        </if>
+        <if test="regDay != null and regDay != ''">
+		    AND REGDAY = #{regDay}
+        </if>
+		LIMIT 1
+	</select>
+
+	<select id="testMultiSign" resultMap="signResult">
+		SELECT
+			USERID
+			,USERNAME
+			,REGDATE
+			,JUMINNO
+			,SYSIP
+			,SYSNAME
+			,GUBUNCODE
+			,TXCODE
+			,PAGELANG
+			,REGSITE
+			,ENCSIGN
+			,DELFLAG
+			,REGDAY
+		FROM
+			SIGNTRANSACTION
+		WHERE 
+			GUBUNCODE = 'MA'
+		AND 
+			REGSITE = '/transfer/MA3TRNMTI001_70V.view'
+		AND 
+			USERID = 'NTBTE568'
+		AND 
+			TXCODE = 'D211'
+		AND 
+			REGDATE LIKE '20251017%'
+	</select>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ISSUEINST" lang="ko">
+	<code key="" order="1"><![CDATA[지역선택]]></code>
+	<code key="01" order="2"><![CDATA[서울 (11)]]></code>
+	<code key="02" order="3"><![CDATA[부산 (12)]]></code>
+	<code key="03" order="4"><![CDATA[경기 (13)]]></code>
+	<code key="04" order="5"><![CDATA[강원 (14)]]></code>
+	<code key="05" order="6"><![CDATA[충북 (15)]]></code>
+	<code key="06" order="7"><![CDATA[충남 (16)]]></code>
+	<code key="07" order="8"><![CDATA[전북 (17)]]></code>
+	<code key="08" order="9"><![CDATA[전남 (18)]]></code>
+	<code key="09" order="10"><![CDATA[경북 (19)]]></code>
+	<code key="10" order="11"><![CDATA[경남 (20)]]></code>
+	<code key="11" order="12"><![CDATA[제주 (21)]]></code>
+	<code key="12" order="13"><![CDATA[대구 (22)]]></code>
+	<code key="13" order="14"><![CDATA[인천 (23)]]></code>
+	<code key="14" order="15"><![CDATA[광주 (24)]]></code>		
+	<code key="15" order="16"><![CDATA[대전 (25)]]></code>
+	<code key="16" order="17"><![CDATA[울산 (26)]]></code>
+	<code key="A0" order="18"><![CDATA[육군]]></code>
+	<code key="F0" order="19"><![CDATA[공군]]></code>
+	<code key="N0" order="20"><![CDATA[공군]]></code>
+</category>

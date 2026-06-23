@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TSCYCLE"><!-- 계좌이동제 이체주기 코드 변환 -->
+  <code key="000B" order="0"><![CDATA[매영업일]]></code>
+  <code key="000D" order="0"><![CDATA[매일]]></code>
+  <code key="00DD" order="0"><![CDATA[일주기]]></code>
+  <code key="000W" order="0"><![CDATA[매주]]></code>
+  <code key="0W01" order="0"><![CDATA[월요일]]></code>
+  <code key="0W02" order="0"><![CDATA[화요일]]></code>
+  <code key="0W03" order="0"><![CDATA[수요일]]></code>
+  <code key="0W04" order="0"><![CDATA[목요일]]></code>
+  <code key="0W05" order="0"><![CDATA[금요일]]></code>
+  <code key="0M01" order="0"><![CDATA[매월]]></code>
+  <code key="0M02" order="0"><![CDATA[격월]]></code>
+  <code key="0M03" order="0"><![CDATA[분기별]]></code>
+  <code key="0M04" order="0"><![CDATA[매4개월]]></code>
+  <code key="0M05" order="0"><![CDATA[월주기]]></code><!-- 05 , 07~11 -->
+  <code key="0M06" order="0"><![CDATA[반기별]]></code>
+  <code key="0M12" order="0"><![CDATA[매년]]></code>
+  <code key="0M99" order="0"><![CDATA[말일]]></code>
+</category>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batchDefinition>
+    <batch id="test-batch-002" description="Simple Batch" targetNode="node-2">
+        <job>
+            <component id="simpleComponent"/>
+        </job>
+        <trigger type="simple">
+        </trigger>
+    </batch>
+</batchDefinition>

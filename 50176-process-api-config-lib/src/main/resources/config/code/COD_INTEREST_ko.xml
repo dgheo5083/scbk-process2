@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="INTEREST" lang="ko">
+  <code key="27" order="1"><![CDATA[여행]]></code>
+  <code key="28" order="2"><![CDATA[재테크상담]]></code>
+  <code key="29" order="3"><![CDATA[신용카드]]></code>
+  <code key="30" order="4"><![CDATA[음악]]></code>
+  <code key="31" order="5"><![CDATA[자동차구입]]></code>
+  <code key="32" order="6"><![CDATA[영화]]></code>
+  <code key="33" order="7"><![CDATA[기타]]></code>
+</category>

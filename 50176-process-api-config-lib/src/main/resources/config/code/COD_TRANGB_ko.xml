@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TRANGB" lang="ko">
+  <code key="3" order="1"><![CDATA[일부환매]]></code>
+  <code key="9" order="2"><![CDATA[전액환매]]></code>
+  <code key="4" order="3"><![CDATA[계좌해지]]></code>
+</category>

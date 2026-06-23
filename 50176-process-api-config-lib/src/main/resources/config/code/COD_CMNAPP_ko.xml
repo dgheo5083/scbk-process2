@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CMNAPP" lang="ko">
+  <code key="CACHE_TIME" order="0"><![CDATA[3600]]></code>
+  <code key="DL_PRN" order="0"><![CDATA[Y]]></code>
+  <code key="EAI_IP" order="0"><![CDATA[23.20.12.40]]></code>
+  <code key="EBPP_CONFIG" order="0"><![CDATA[/revib/kfbib.ear/kfbib.war/WEB-INF/ebpp/config/config.xml]]></code>
+  <code key="ENG_MENU" order="0"><![CDATA[삭제대상]]></code>
+  <code key="GW_URL" order="0"><![CDATA[http://revwww.scfirstbank.com/gw/index.html]]></code>
+  <code key="IB_DOMAIN" order="0"><![CDATA[revib.scfirstbank.com]]></code>
+  <code key="IMAS_IP" order="0"><![CDATA[211.32.160.65]]></code>
+  <code key="IMAS_PORT" order="0"><![CDATA[9100]]></code>
+  <code key="IMAS_TITLE" order="0"><![CDATA[SC제일은행을 이용해 주셔서 감사합니다.]]></code>
+  <code key="IS_BCP" order="0"><![CDATA[N]]></code>
+  <code key="IS_REAL" order="0"><![CDATA[N]]></code>
+  <code key="LOG_TCHK" order="0"><![CDATA[Y]]></code>
+  <code key="L_CTN_MAIN" order="0"><![CDATA[Y]]></code>
+  <code key="L_CTN_URL" order="0"><![CDATA[http://revib.scfirstbank.com]]></code>
+  <code key="MAC_CHK" order="0"><![CDATA[Y]]></code>
+  <code key="MARK_ANY_DOMAIN" order="0"><![CDATA[http://revib.scfirstbank.com]]></code>
+  <code key="MAX_TIME" order="0"><![CDATA[1200]]></code>
+  <code key="NTC_MORE_URL" order="0"><![CDATA[http://revwww.scfirstbank.com/hp/kr/cm/cm/HP_CM_CM_IndexNew.jsp?DtlId=2]]></code>
+  <code key="RT_MAIN_TMP_URL" order="0"><![CDATA[http://revib.scfirstbank.com/nottemplate/common/temp_main.jsp]]></code>
+  <code key="RT_MAIN_URL" order="0"><![CDATA[http://revib.scfirstbank.com/nottemplate/common/main.jsp]]></code>
+  <code key="R_CNT_DIR" order="0"><![CDATA[/revib/kfbib.ear/kfbib.war/]]></code>
+  <code key="R_CTN_URL" order="0"><![CDATA[http://revwww.scfirstbank.com/EXTERNAL_DATA/]]></code>
+  <code key="SDTA_TYPE" order="0"><![CDATA[D]]></code>
+  <code key="SIGN_DIR" order="0"><![CDATA[/signdata/stores]]></code>
+  <code key="SSO_NLS" order="0"><![CDATA[http://kfbsso2.standardchartered.co.kr]]></code>
+  <code key="SYS_NAME" order="0"><![CDATA[REVIB]]></code>
+  <code key="S_CK_TIME" order="0"><![CDATA[2355,0020]]></code>
+  <code key="TRN_PW_RGP" order="0"><![CDATA[/authcenter/CS92401.jsp]]></code>
+  <code key="WL1_IP" order="0"><![CDATA[211.32.160.152]]></code>
+  <code key="WL2_IP" order="0"><![CDATA[211.32.160.153]]></code>
+  <code key="WSVS_HOME" order="0"><![CDATA[http://www.scfirstbank.com/newweb/common/member/member.jsp]]></code>
+  <code key="WWW_DOMAIN" order="0"><![CDATA[revwww.scfirstbank.com]]></code>
+  <code key="WWW_IP" order="0"><![CDATA[211.32.160.110]]></code>
+  <code key="QUARTZ_YN" order="1"><![CDATA[Y]]></code>
+  <code key="WEBUSER_CRON" order="1"><![CDATA[0/15 * * * * ?]]></code>
+  <code key="XML_WORK_CRON" order="1"><![CDATA[0/10 * * * * ?]]></code>
+  <code key="APP_RATE_CALL_YN" order="0"><![CDATA[Y]]></code>
+  <code key="RATEPOPUP_TIME_MIN" order="0"><![CDATA[0]]></code> 
+  <code key="RATEPOPUP_TIME_MAX" order="0"><![CDATA[60]]></code>
+</category>

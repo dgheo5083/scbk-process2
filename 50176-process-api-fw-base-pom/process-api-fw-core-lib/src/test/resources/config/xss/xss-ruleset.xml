@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../schema/xss-ruleset.xsd">
+	<rule>
+		<target><![CDATA[<]]></target>
+		<replacement><![CDATA[&lt;]]></replacement>
+	</rule>
+	<rule>
+		<target><![CDATA[>]]></target>
+		<replacement><![CDATA[&gt;]]></replacement>
+	</rule>
+	<rule>
+		<target><![CDATA[']]></target>
+		<replacement><![CDATA[&#39;]]></replacement>
+	</rule>
+	
+	<rule>
+		<target><![CDATA["]]></target>
+		<replacement><![CDATA[&quot;]]></replacement>
+	</rule>
+	<rule>
+		<target><![CDATA[document.cookie]]></target>
+		<replacement></replacement>
+	</rule>
+	<rule>
+		<target><![CDATA[eval\((.*)\)]]></target>
+		<replacement><![CDATA[]]></replacement>
+	</rule>
+	<rule>
+		<target><![CDATA[[\"\'][\s]*javascript:(.*)[\"\']]]></target>
+		<replacement><![CDATA[""]]></replacement>
+	</rule>
+	<rule>
+		<target><![CDATA[script]]></target>
+		<replacement></replacement>
+	</rule>
+</ruleset>

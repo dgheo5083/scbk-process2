@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.OpDeviceInfoDao">
+
+	<!-- 디지털인증서 LOG Tracking [MA3_LGN.FIDO_LOGIN_SERIAL_DATA] -->
+ 	<insert id="insert" parameterType="com.scbank.process.api.svc.common.dao.dto.FidoLogInfoParameter" >
+		INSERT 
+		  INTO FIDODBS01.OP_DEVICE_INFO (
+		  	DEVICE_MNGT_ID
+			, REG_DT
+			, DEVICE_MAC
+			, HP_NUM
+			, DEVICE_IMEI
+			, SPASS_YN
+			, DEL_DT
+		) VALUES (
+			#{deviceMngtId}
+			, #{regDt}
+			, #{deviceMac}
+			, #{hpNum}
+			, #{deviceImei}
+			, #{spassYn}
+			, #{delDt}
+		)
+	</insert>
+	
+</mapper>

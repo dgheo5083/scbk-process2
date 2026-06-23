@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Exchange100Dao">
+
+    <!-- 환율조회 (한글) [ASIS: EXCHANGE100_S_01] -->
+    <select id="selectExchangeInfo" resultType = "com.scbank.process.api.svc.common.dao.dto.SelectExchangeInfoResult">
+        SELECT B.STATENAME
+             , A.CURRENCY
+             , A.DATETIME
+             , A.BUYRATE
+             , A.TTBUYRATE
+             , A.TTSALERATE
+             , A.CASHBUYRATE
+             , A.CASHSALERATE
+             , A.USCHANGERATE
+             , A.YYCHANGERATE
+             , TRUNC(((((DOUBLE(A.TTBUYRATE) + DOUBLE(A.TTSALERATE)) / 2) * 100) / 100), 2) AS TMP_RATE
+          FROM DB2INST.EXCHANGE100 A
+             , DB2INST.STATE B
+         WHERE A.CURRENCY = B.CURRENCY
+           AND A.DATETIME = (
+                             SELECT DATETIME
+                               FROM DB2INST.EXCHANGE100
+                              GROUP BY  DATETIME
+                              ORDER BY DATETIME DESC
+                              FETCH FIRST 1 ROWS ONLY
+                             )
+         ORDER BY STATENO
+          WITH UR
+    </select>
+	
+</mapper>

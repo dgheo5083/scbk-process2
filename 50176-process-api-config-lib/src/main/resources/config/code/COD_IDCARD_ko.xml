@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="IDCARD" lang="ko">
+	<code key="" order="1"><![CDATA[신분증종류]]></code>
+	<code key="01" order="2"><![CDATA[주민등록증]]></code>
+	<code key="03" order="3"><![CDATA[운전면허증]]></code>
+</category>

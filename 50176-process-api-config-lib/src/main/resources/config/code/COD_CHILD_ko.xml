@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CHILD" lang="ko">
+  <code key="58" order="0"><![CDATA[자녀수선택]]></code>
+  <code key="45" order="1"><![CDATA[없음]]></code>
+  <code key="46" order="2"><![CDATA[1명]]></code>
+  <code key="47" order="3"><![CDATA[2명]]></code>
+  <code key="48" order="4"><![CDATA[3명]]></code>
+  <code key="49" order="5"><![CDATA[4명]]></code>
+  <code key="50" order="6"><![CDATA[5명]]></code>
+  <code key="51" order="7"><![CDATA[6명]]></code>
+  <code key="52" order="8"><![CDATA[7명]]></code>
+  <code key="53" order="9"><![CDATA[8명]]></code>
+  <code key="54" order="10"><![CDATA[9명이상]]></code>
+</category>

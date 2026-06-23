@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="BPPayCode" lang="ko">
+  <code key="0" order="1"><![CDATA[납부구분을 선택하십시요]]></code>
+  <code key="1" order="2"><![CDATA[신입생]]></code>
+  <code key="2" order="3"><![CDATA[재학생]]></code>
+  <code key="3" order="4"><![CDATA[대학원신입생]]></code>
+  <code key="4" order="5"><![CDATA[대학원재학생]]></code>
+  <code key="5" order="6"><![CDATA[편입생]]></code>
+  <code key="6" order="7"><![CDATA[평생교육원]]></code>
+  <code key="7" order="8"><![CDATA[기숙사비]]></code>
+  <code key="8" order="9"><![CDATA[기타]]></code>
+</category>

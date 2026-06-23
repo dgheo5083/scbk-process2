@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="PLREJC" lang="ko">
+	<code key="PL_REJC_NOND" order="1"><![CDATA[추가확인이 필요하여 지점에서 신청하실 수 있습니다. 고객컨택센터로 연락 주시면 자세히 안내해 드리겠습니다.]]></code>
+	<code key="PL_REJC_0000" order="2"><![CDATA[추가확인이 필요하여 지점에서 신청하실 수 있습니다.]]></code>
+	<!-- AS-IS 거절코드 우선순위 노출 START -->
+<!-- 	<code key="PL_REJC_0001" order="3"><![CDATA[신용정보 회사 및 기관이 제공한 신용정보 미충족]]></code>
+	<code key="PL_REJC_0002" order="4"><![CDATA[대출상품 가입조건 미충족]]></code>
+	<code key="PL_REJC_0003" order="5"><![CDATA[고객의 채무상환능력 부족]]></code>
+	<code key="PL_REJC_0004" order="6"><![CDATA[연체이력 등]]></code>
+	<code key="PL_REJC_0005" order="7"><![CDATA[기타 대출취급기준 미충족]]></code>
+ -->
+ 	<!-- AS-IS 거절코드 우선순위 노출 END -->
+	
+	<!-- TO-BE(통합상담대출) 거절코드 우선순위 노출 START -->
+	<code key="PL_REJC_0001" order="3"><![CDATA[연체이력 등]]></code>
+	<code key="PL_REJC_0002" order="4"><![CDATA[고객의 채무상환능력 부족]]></code>
+	<code key="PL_REJC_0003" order="5"><![CDATA[신용정보 회사 및 기관이 제공한 신용정보 미충족]]></code>
+	<code key="PL_REJC_0004" order="6"><![CDATA[대출상품 가입조건 미충족]]></code>
+	<code key="PL_REJC_0005" order="7"><![CDATA[기타 대출취급기준 미충족]]></code>
+	<!-- TO-BE(통합상담대출) 거절코드 우선순위 노출 END -->
+	
+	<code key="PL_REJC_0006" order="8"><![CDATA[NICE 및 KCB 등급 미달]]></code>
+	<code key="PL_REJC_0007" order="9"><![CDATA[동일상품보유차주]]></code>
+</category>

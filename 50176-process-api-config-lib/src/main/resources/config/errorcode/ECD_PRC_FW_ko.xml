@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="ko">
+	<errorCode code="MAF9999"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9001"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9002"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9003"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9004"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9005"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9006"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF9007"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MAF0001"><msg><![CDATA[알수없는 요청 유형입니다.]]></msg></errorCode>
+	<errorCode code="MAF0002"><msg><![CDATA[존재하지 않는 리소스 접근하였습니다.]]></msg></errorCode>
+	<errorCode code="MAF0003"><msg><![CDATA[서비스컴포넌트를 찾지 못하였습니다.]]></msg></errorCode>
+	<errorCode code="MAF0004"><msg><![CDATA[서비스컴포넌트를 찾지 못하였습니다.]]></msg></errorCode>
+	<errorCode code="MAF0005"><msg><![CDATA[지원하지 않는 요청 URI입니다.]]></msg></errorCode>
+	<errorCode code="MAF4100"><msg><![CDATA[외부시스템 설정 초기화 중 오류가 발생하였습니다.]]></msg></errorCode>
+	<errorCode code="MAF4200"><msg><![CDATA[외부시스템 전문 수신 중 오류가 발생하였습니다.]]></msg></errorCode>
+	<errorCode code="MAF4201"><msg><![CDATA[외부시스템 전문 수신 중 오류가 발생하였습니다. (타임아웃)]]></msg></errorCode>
+	<errorCode code="MAF4300"><msg><![CDATA[외부시스템 전문 송신 중 오류가 발생하였습니다.]]></msg></errorCode>
+	
+	<!-- 4.0 프레임워크 에러코드 -->
+	
+	<!-- COMMON 오류 (MACF0001~0099): 전역적이고 범용적인 입력 및 시스템 오류 -->
+	<errorCode code="MACF9999"><msg><![CDATA[서버접속이 원활하지 않습니다. 잠시 후 다시 접속해주세요.]]></msg></errorCode>
+	<errorCode code="MACF0001"><msg><![CDATA[잘못된 입력입니다.]]></msg></errorCode>
+	<errorCode code="MACF0002"><msg><![CDATA[지원하지 않는 Content-Type입니다.]]></msg></errorCode>
+	
+	<!-- MESSAGE 오류 (MACF0100~0199) -->
+	<errorCode code="MACF0101"><msg><![CDATA[메시지 메타데이터를 찾을 수 없습니다.]]></msg></errorCode>
+	<errorCode code="MACF0102"><msg><![CDATA[메시지 직렬화에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0103"><msg><![CDATA[메시지 역직렬화에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0104"><msg><![CDATA[메시지 처리에 실패했습니다.]]></msg></errorCode>
+	
+	<!-- INTEGRATION 오류 (MACF0200~0299) -->
+	<errorCode code="MACF0201"><msg><![CDATA[연계 시스템 연결에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0202"><msg><![CDATA[연계 시스템 응답 지연입니다.]]></msg></errorCode>
+	<errorCode code="MACF0203"><msg><![CDATA[연계 시스템 응답이 유효하지 않습니다.]]></msg></errorCode>
+	<errorCode code="MACF0204"><msg><![CDATA[연계시스템 전문 송/수신에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0205"><msg><![CDATA[연계시스템 전문 송신에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0206"><msg><![CDATA[연계시스템 전문 수신에 실패했습니다.]]></msg></errorCode>
+	
+	<!-- DAO 오류 (MACF0300~0399) -->
+	<errorCode code="MACF0301"><msg><![CDATA[요청한 데이터를 찾을 수 없습니다.]]></msg></errorCode>
+	<errorCode code="MACF0302"><msg><![CDATA[데이터 접근 중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0303"><msg><![CDATA[중복된 키로 인해 저장에 실패했습니다.]]></msg></errorCode>
+	
+	<!-- VALIDATION 오류 (MACF0400~0499) -->
+	<errorCode code="MACF0401"><msg><![CDATA[필수 입력값이 누락되었습니다.]]></msg></errorCode>
+	<errorCode code="MACF0402"><msg><![CDATA[입력 형식이 올바르지 않습니다.]]></msg></errorCode>
+	<errorCode code="MACF0403"><msg><![CDATA[입력 길이가 허용 범위를 초과했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0404"><msg><![CDATA[허용되지 않는 값입니다.]]></msg></errorCode>
+	<errorCode code="MACF0405"><msg><![CDATA[입력값이 허용 범위를 벗어났습니다.]]></msg></errorCode>
+	
+	<!-- SERVICE 오류 (MACF0500~0599) -->
+	<errorCode code="MACF0501"><msg><![CDATA[요청한 서비스가 존재하지 않습니다.]]></msg></errorCode>
+	<errorCode code="MACF0502"><msg><![CDATA[서비스 실행 중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0503"><msg><![CDATA[해당 서비스에 접근할 수 없습니다.]]></msg></errorCode>
+	<errorCode code="MACF0504"><msg><![CDATA[서비스 실행 결과가 유효하지 않습니다.]]></msg></errorCode>
+	<errorCode code="MACF0505"><msg><![CDATA[서비스 요청 파라미터가 유효하지 않습니다.]]></msg></errorCode>
+	
+	<!-- BIZTIME 오류 (MACF0700~0799) -->
+	<errorCode code="MACF0701"><msg><![CDATA[현재 시간은 서비스 이용이 불가능한 시간입니다.]]></msg></errorCode>
+	<errorCode code="MACF0702"><msg><![CDATA[해당 시간에는 거래를 처리할 수 없습니다.]]></msg></errorCode>
+	<errorCode code="MACF0703"><msg><![CDATA[오늘은 영업일이 아닙니다.]]></msg></errorCode>
+	
+	<!-- INIT 오류 (MACF0800~0899) -->
+	<errorCode code="MACF0801"><msg><![CDATA[설정 파일 로딩에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0802"><msg><![CDATA[메타데이터 초기화 중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0803"><msg><![CDATA[컴포넌트 등록에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0804"><msg><![CDATA[CaptureSystem 속성이 설정되지 않았습니다.]]></msg></errorCode>
+	
+	<!-- FILE 오류 (MACF0900~0999) -->
+	<errorCode code="MACF0901"><msg><![CDATA[파일 업로드에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0902"><msg><![CDATA[파일 다운로드에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0903"><msg><![CDATA[지원하지 않는 파일 형식입니다.]]></msg></errorCode>
+	<errorCode code="MACF0904"><msg><![CDATA[허용된 파일 크기를 초과했습니다.]]></msg></errorCode>
+	<errorCode code="MACF0905"><msg><![CDATA[파일에 접근할 권한이 없습니다.]]></msg></errorCode>
+	
+	<!-- SESSION 오류 (MACF1000~1099) -->
+	<errorCode code="MACF1001"><msg><![CDATA[세션이 만료되었습니다.]]></msg></errorCode>
+	<errorCode code="MACF1002"><msg><![CDATA[세션 정보를 찾을 수 없습니다.]]></msg></errorCode>
+	<errorCode code="MACF1003"><msg><![CDATA[허용하지 않은 세션키입니다.]]></msg></errorCode>
+	
+	<!-- ENCRYPT 오류 (MACF1100~1199) -->
+	<errorCode code="MACF1101"><msg><![CDATA[데이터 암호화에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF1102"><msg><![CDATA[데이터 복호화에 실패했습니다.]]></msg></errorCode>
+	<errorCode code="MACF1103"><msg><![CDATA[암호화 키를 찾을 수 없습니다.]]></msg></errorCode>
+	<errorCode code="MACF1104"><msg><![CDATA[지원하지 않는 암호화 알고리즘입니다.]]></msg></errorCode>
+	<errorCode code="MACF1105"><msg><![CDATA[암호화 입력값이 올바르지 않습니다.]]></msg></errorCode>
+</errorCodes>

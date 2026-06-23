@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="JHCode" lang="en">
+  <code key="1" order="1"><![CDATA[Billing details (all)]]></code>
+  <code key="2" order="2"><![CDATA[Inquiry of credit card use history (lump-sum payment)]]></code>
+  <code key="3" order="3"><![CDATA[Inquiry of credit card use history (installment purchase)]]></code>
+  <code key="4" order="4"><![CDATA[Inquiry of credit card use history (overseas purchase)]]></code>
+  <code key="5" order="5"><![CDATA[Inquiry of credit card use history (Easy-Pay)]]></code>
+</category>

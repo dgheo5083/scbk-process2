@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TSSTATUS" lang="ko"> <!-- 자동납부 상세조회 상태값 -->
+  <code key="0"  order="0"><![CDATA[정상]]></code>
+  <code key="2"  order="1"><![CDATA[해지 처리중]]></code>
+  <code key="3"  order="2"><![CDATA[변경 처리중]]></code>
+  <code key="9"  order="3"><![CDATA[기타사유 불가]]></code>
+  <code key="E"  order="4"><![CDATA[ 알수없는값]]></code> <!-- 기타 오류 상태값 -->
+</category>
+                                                                                                              

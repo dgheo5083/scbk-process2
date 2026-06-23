@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FOLOAN_GRNT" lang="ko">
+  <code key="11" order="0"><![CDATA[일반보증]]></code>
+  <code key="21" order="1"><![CDATA[저리보증]]></code>
+  <code key="22" order="2"><![CDATA[무이자보증]]></code>
+</category>

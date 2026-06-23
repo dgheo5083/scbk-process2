@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scbank.process.api.svc.shared.dao.FaceRecApiLogDao">
+	<insert id="insertFaceRecApiLog" parameterType="com.scbank.process.api.svc.shared.dao.dto.FaceRecApiLogInsertParameter">
+		INSERT 
+		  INTO MA3_FACE_REC_API_LOG (
+			  TRAD_DATE
+			, USER_CIF_NO
+			, FACE_TRANSACTION_ID
+			, CUST_NO
+			, TRAD_NO
+			, TRAD_CLS
+			, CHNL_GB
+			, API_URL
+			, DATA
+			, RES_CODE
+			, REGISTTIME
+		) VALUES (
+		 	  VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDD')
+			, #{userCifNo}
+			, #{faceTransactionId}
+			, #{custNo}
+			, #{tradNo}
+			, #{tradCls}
+			, #{chnlGb}
+			, #{apiUrl}
+			, #{data}
+			, #{resCode}
+			, CURRENT TIMESTAMP
+		)
+	</insert>
+</mapper>

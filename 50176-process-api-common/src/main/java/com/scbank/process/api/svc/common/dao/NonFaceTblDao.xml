@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.NonFaceTblDao">
+	<select id="selectNonFaceTblSeqNo" parameterType="java.lang.String" resultType = "java.lang.String">
+		SELECT
+			CASE COUNT(*)
+				WHEN 0 THEN 
+					TO_CHAR(CURRENT TIMESTAMP,'YYMMDD') || '000001'
+				ELSE 
+					TO_CHAR(TO_NUMBER(MAX(SEQNO)) + 1)
+			END AS SEQ_NO
+		FROM
+			NON_FACE_TBL
+		WHERE			
+			SEQNO LIKE SUBSTR(#{seqNo}, 3, 6)||'%'
+		WITH UR
+	</select>
+	
+	<insert id="insertNonFaceTbl" parameterType="com.scbank.process.api.svc.common.dao.dto.NonFaceTblParameter" >
+		INSERT INTO NON_FACE_TBL (
+			SEQNO,
+			APPLY_ID,
+			PRODUCT_CODE,
+			PRODUCT_NAME,
+			ACCT_NO,
+			BANK_NAME,
+			ANOTHER_ACCTNO,
+			DEPOSIT,
+			INVEST,
+			PROPERTY,
+			ASSETS,
+			ASSETS_FLAG,
+			MORTGAGE,
+			LOAN,
+			DEBT,
+			DETB_FLAG,
+			PSNO,
+			CUSNM,
+			REQBRCD,
+			REQBRNM,
+			AGTYN,
+			JOBTYPECD,
+			PASS_CODE,
+			PHONE,
+			REGISTER_DATE,
+			BUSINESS_DATE
+		) VALUES (
+			#{seqNo},
+			#{applyId},
+			#{productCode},
+			#{productName},
+			#{acctNo},
+			#{bankName},
+			#{anotherAcctNo},
+			#{deposit},
+			#{invest},
+			#{property},
+			#{assets},
+			#{assetsFlag},
+			#{mortgage},
+			#{loan},
+			#{debt},
+			#{detbFlag},
+			#{psno},
+			#{cusNm},
+			#{reqBrCd},
+			#{reqBrNm},
+			#{agtYn},
+			#{jobTypeCd},
+			#{passCode},
+			#{phone},
+			CURRENT TIMESTAMP,
+			#{businessDate}
+		)
+	</insert>
+	
+	<select id="selectNonFaceInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.SelectNonFaceInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.SelectNonFaceInfoResult">
+		SELECT
+			SEQNO,
+			APPLY_ID,
+			PRODUCT_CODE,
+			PRODUCT_NAME,
+			ACCT_NO,
+			BANK_NAME,
+			ANOTHER_ACCTNO,
+			DEPOSIT,
+			INVEST,
+			PROPERTY,
+			ASSETS,
+			ASSETS_FLAG,
+			MORTGAGE,
+			LOAN,
+			DEBT,
+			DETB_FLAG,
+			IDCDDSCD,
+			PSNO,
+			CUSNM,
+			IDCDISUDT,
+			OPLICNO,
+			REQBRCD,
+			REQBRNM,
+			AGTYN,
+			JOBTYPECD,
+			FILE_NAME,
+			FILE_PATH,
+			SENDYN,
+			PASS_CODE,
+			TO_CHAR(REGISTER_DATE,'YYYYMMDD') AS REGISTER_DATE,
+			IMG_SENDDATE,
+			IMGIDXNO,
+			IDCARD_DATE,
+			PHONE,
+			ERRMSG,
+			BUSINESS_DATE,
+			PSSPRT_NO,
+			MRTS_NO
+		FROM
+			NON_FACE_TBL
+		WHERE
+			PSNO = #{psNo}
+			AND PASS_CODE = #{passCode}
+			AND SEQNO = #{seqNo}
+		WITH UR
+	</select>
+	
+	<update id="updateNonFaceImgSendYn" parameterType="com.scbank.process.api.svc.common.dao.dto.UpdateNfInfoParameter">
+		UPDATE
+			NON_FACE_TBL
+		SET
+			SENDYN = #{sendYn}
+		WHERE 
+			PASS_CODE = #{passCode} 
+			AND PSNO = #{psNo}
+	</update>
+	
+	<update id="updateNonFaceInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.UpdateNfInfoParameter">
+		UPDATE
+			NON_FACE_TBL
+		SET
+			IDCDDSCD = #{idCdDsCd}, 
+			IDCDISUDT = #{idCdIsuDt}, 
+			OPLICNO = #{oplicNo}, 
+			FILE_NAME = #{fileName}, 
+			FILE_PATH = #{filePath}, 
+			SENDYN = #{sendYn}, 
+			BUSINESS_DATE = #{businessDate}, 
+			IMG_SENDDATE = CURRENT TIMESTAMP,
+			CUST_ISS_DT_CHG_YN = #{custIssDtChgYn}, 
+			CUST_NM_CHG_YN = #{custNmChgYn}, 
+			CUST_NO_CHG_YN = #{custNoChgYn}, 
+			EXTRACT_SCORE = #{extractScore}, 
+			FNGR_INFO = #{fngrInfo, jdbcType=CLOB}, 
+			FNGR_INFO_SIZE = #{fngrInfoSize}, 
+			PHOTO_INFO = #{photoInfo, jdbcType=CLOB}, 
+			PHOTO_INFO_SIZE = #{photoInfoSize},
+			MRTS_NO_CHG_YN = #{mrtsNoChgYn}, 
+			PSSPRT_NO_CHG_YN = #{pssprtNoChgYn}, 
+			PSSPRT_NO = #{pssprtNo}, 
+			MRTS_NO = #{mrtsNo}
+			<if test="idCdDsImg != null and idCdDsImg != ''">
+				,IDCDDS_IMG = #{idCdDsImg, jdbcType=CLOB} 
+			</if>
+		WHERE 
+			PASS_CODE = #{passCode} 
+			AND PSNO = #{psNo}
+			AND SEQNO = #{seqNo}
+	</update>
+</mapper>

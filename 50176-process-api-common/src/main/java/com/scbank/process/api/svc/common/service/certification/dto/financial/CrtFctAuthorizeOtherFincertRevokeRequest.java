@@ -1,0 +1,17 @@
+package com.scbank.process.api.svc.common.service.certification.dto.financial;
+
+import com.scbank.process.api.fw.message.IMessageObject;
+import com.scbank.process.api.fw.message.annotation.IntegrationMessage;
+import com.scbank.process.api.fw.message.annotation.IntegrationMessage.Type;
+
+import lombok.Data;
+
+/**
+ * CSL 서비스 요청 정보 클래스
+ * 타행금융인증서 강제폐기
+ */
+@Data
+@IntegrationMessage(id = "CrtFctAuthorizeOtherFincertRevokeRequest", type = Type.REQUEST)
+public class CrtFctAuthorizeOtherFincertRevokeRequest implements IMessageObject {
+
+}

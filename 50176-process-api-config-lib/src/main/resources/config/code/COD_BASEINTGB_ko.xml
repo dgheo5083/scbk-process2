@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="BASEINTGB" lang="ko">
+  <code key="16" order="0"><![CDATA[3개월 CD금리]]></code>
+  <code key="17" order="0"><![CDATA[1년 국고채]]></code>
+  <code key="32" order="0"><![CDATA[단기 COFIX]]></code>
+  <code key="33" order="0"><![CDATA[신규 COFIX]]></code>
+  <code key="34" order="0"><![CDATA[COFIX 잔액]]></code>
+  <code key="35" order="0"><![CDATA[신잔액기준 COFIX]]></code>
+  <code key="36" order="0"><![CDATA[1년 금융채]]></code>
+  <code key="37" order="0"><![CDATA[2년 금융채]]></code>
+  <code key="39" order="0"><![CDATA[5년 금융채]]></code>
+  <code key="47" order="0"><![CDATA[6개월 금융채]]></code>
+</category>

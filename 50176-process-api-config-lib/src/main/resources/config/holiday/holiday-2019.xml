@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holiday-definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:noNamespaceSchemaLocation="../../schema/holiday-definition.xsd"
+                    year="2019"
+                    useYn="N">
+  <holiday date="20190606" description="현충일"/>
+  <holiday date="20190815" description="광복절"/>
+  <holiday date="20190912" description="추석"/>
+  <holiday date="20190913" description="추석"/>
+  <holiday date="20191003" description="개천절"/>
+  <holiday date="20191009" description="한글날"/>
+  <holiday date="20191225" description="크리스마스"/>
+</holiday-definition>

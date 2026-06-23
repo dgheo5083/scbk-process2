@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="JOB3" lang="ko">
+  <code key="10" order="0"><![CDATA[공무원]]></code>
+  <code key="20" order="1"><![CDATA[교육기관종사자]]></code>
+  <code key="21" order="2"><![CDATA[교수]]></code>
+  <code key="30" order="3"><![CDATA[군인]]></code>
+  <code key="40" order="4"><![CDATA[공공기관종사자]]></code>
+  <code key="50" order="5"><![CDATA[금융기관종사자]]></code>
+  <code key="51" order="6"><![CDATA[사설학원종사자]]></code>
+  <code key="52" order="7"><![CDATA[사회문화단체종사자]]></code>
+  <code key="53" order="8"><![CDATA[일용직 근로자]]></code>
+  <code key="54" order="9"><![CDATA[기타급여소득자]]></code>
+  <code key="55" order="10"><![CDATA[농/축/임/수산업종사자]]></code>
+  <code key="60" order="11"><![CDATA[회사원]]></code>
+  <code key="61" order="12"><![CDATA[정치인]]></code>
+  <code key="62" order="13"><![CDATA[언론인]]></code>
+  <code key="63" order="14"><![CDATA[예술가]]></code>
+  <code key="64" order="15"><![CDATA[스포츠인]]></code>
+  <code key="65" order="16"><![CDATA[종교인]]></code>
+  <code key="66" order="17"><![CDATA[연예인]]></code>
+  <code key="70" order="18"><![CDATA[개인사업]]></code>
+  <code key="71" order="19"><![CDATA[변호사]]></code>
+  <code key="72" order="20"><![CDATA[회계사]]></code>
+  <code key="73" order="21"><![CDATA[세무사]]></code>
+  <code key="74" order="22"><![CDATA[법무사]]></code>
+  <code key="75" order="23"><![CDATA[변리사]]></code>
+  <code key="76" order="24"><![CDATA[의사]]></code>
+  <code key="77" order="25"><![CDATA[약사]]></code>
+  <code key="80" order="26"><![CDATA[기타전문직종사자]]></code>
+  <code key="81" order="27"><![CDATA[카지노업자]]></code>
+  <code key="82" order="28"><![CDATA[대부업자]]></code>
+  <code key="83" order="29"><![CDATA[환전상]]></code>
+  <code key="84" order="30"><![CDATA[귀금속상]]></code>
+  <code key="85" order="31"><![CDATA[무기상]]></code>
+  <code key="86" order="32"><![CDATA[학원수강생]]></code>
+  <code key="87" order="33"><![CDATA[미취학아동]]></code>
+  <code key="88" order="34"><![CDATA[무직]]></code>
+  <code key="90" order="35"><![CDATA[자유업]]></code>
+  <code key="91" order="36"><![CDATA[주부]]></code>
+  <code key="92" order="37"><![CDATA[학생(대학원생포함)]]></code>
+  <code key="95" order="38"><![CDATA[복지원생]]></code>
+  <code key="96" order="39"><![CDATA[정년퇴직자]]></code>
+  <code key="97" order="40"><![CDATA[연금수령자]]></code>
+  <!-- <code key="98" order="41"><![CDATA[제공거부]]></code> -->
+  <code key="99" order="41"><![CDATA[기타]]></code>
+</category>

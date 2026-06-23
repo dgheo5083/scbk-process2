@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.NfRemitMgtDao">
+	<select id="selectCntrtyRemitReqCnt" parameterType="com.scbank.process.api.svc.common.dao.dto.CntrtyRemitReqCntParameter" resultType="java.lang.String" >
+	 	SELECT
+			SUM(CNTRPRTY_REMIT_REQ_CNT) as CNTRPRTY_REMIT_REQ_CNT
+		FROM
+			NF_REMIT_MGT
+		WHERE
+			CUST_NO = #{custNo} AND REMIT_DT = TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+			<!-- s.20190423 MA3.0 진행상태 접근 채널별 분기 -->
+			AND TRAD_NO in ( 
+				SELECT TRAD_NO
+				FROM NF_TRADINFO_MGT
+				WHERE  CUST_NO = #{custNo}
+				AND (TRAD_REG_GB  = #{tradRegGb}) 
+				AND TO_CHAR(INIT_REGIST_DT, 'YYYYMMDD') LIKE TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+			)
+			<!-- e.20190423 MA3.0 진행상태 접근 채널별 분기 -->  
+		with ur
+	</select>
+	
+	<select id="selectCntrtyAuthFailCnt" parameterType="com.scbank.process.api.svc.common.dao.dto.CntrtyRemitReqCntParameter" resultType="java.lang.String" >
+	 	SELECT
+			SUM(CNTRPRTY_AUTHNT_FAIL_CNT) as CNTRPRTY_AUTHNT_FAIL_CNT
+		FROM
+			NF_REMIT_MGT
+		WHERE
+			CUST_NO = #{custNo} AND REMIT_DT = TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+			<!-- s.20190423 MA3.0 진행상태 접근 채널별 분기 -->
+			AND TRAD_NO in ( 
+				SELECT TRAD_NO
+				FROM NF_TRADINFO_MGT
+				WHERE  CUST_NO = #{custNo}
+				AND (TRAD_REG_GB  = #{tradRegGb}) 
+				AND TO_CHAR(INIT_REGIST_DT, 'YYYYMMDD') LIKE TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+			)
+			<!-- e.20190423 MA3.0 진행상태 접근 채널별 분기 -->   
+		with ur
+	</select>
+	
+	<select id="selectRemitCnt" parameterType="com.scbank.process.api.svc.common.dao.dto.RemitCntParameter" resultType="java.lang.Integer">
+	 	SELECT
+	   		count(*) CNT
+	    FROM 
+	    	NF_REMIT_MGT
+	    WHERE 
+	    	CUST_NO = #{custNo} AND REMIT_DT = TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+		<!-- s.20190423 MA3.0 진행상태 접근 채널별 분기 -->
+			AND TRAD_NO in ( 
+				SELECT TRAD_NO
+				FROM NF_TRADINFO_MGT
+				WHERE  CUST_NO = #{custNo}
+				AND (TRAD_REG_GB  = #{tradRegGb}) 
+				AND TO_CHAR(INIT_REGIST_DT, 'YYYYMMDD') LIKE TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+			)
+			<!-- e.20190423 MA3.0 진행상태 접근 채널별 분기 -->
+		with ur
+	</select>
+	
+	<insert id="insertRemitInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.RemitInfoParameter">
+	 	MERGE INTO NF_REMIT_MGT X
+        USING (SELECT COUNT(*) COUNT
+                 FROM NF_REMIT_MGT
+                WHERE CUST_NO = #{custNo}
+                  AND TRAD_NO = #{tradNo} 
+                  AND REMIT_DT = TO_CHAR(CURRENT TIMESTAMP,'yyyymmdd')) Y
+        ON (Y.COUNT > 0
+            AND X.CUST_NO = #{custNo}
+            AND X.TRAD_NO = #{tradNo} )
+        WHEN MATCHED THEN
+        UPDATE SET
+           CNTRPRTY_ACCT_NO = #{cntrprtyAcctNo}
+           , CNTRPRTY_CD = #{cntrprtyCd}
+           , LST_CHNG_DT = CURRENT TIMESTAMP
+           , CNTRPRTY_REMIT_REQ_CNT = CNTRPRTY_REMIT_REQ_CNT + 1
+           , CNTRPRTY_AUTHNT_CD = #{cntrprtyAuthntCd}
+        WHEN NOT MATCHED THEN
+        INSERT
+         (
+           CUST_NO,
+           REMIT_DT,
+           TRAD_NO,
+           CNTRPRTY_ACCT_NO,
+           CNTRPRTY_CD,
+           CNTRPRTY_AUTHNT_CD,
+           LST_CHNG_DT,
+           CNTRPRTY_REMIT_REQ_CNT
+         ) VALUES (
+           #{custNo}, TO_CHAR(CURRENT TIMESTAMP,'yyyymmdd'), #{tradNo}, #{cntrprtyAcctNo}, #{cntrprtyCd}, #{cntrprtyAuthntCd}, CURRENT TIMESTAMP, #{cntrprtyRemitReqCnt}
+         )
+	</insert>
+	
+	<update id="updateRemitInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.RemitInfoParameter">
+		UPDATE 
+        	NF_REMIT_MGT
+        SET
+	         CNTRPRTY_ACCT_NO = #{cntrprtyAcctNo}
+	         , CNTRPRTY_CD = #{cntrprtyCd}
+	         , LST_CHNG_DT = CURRENT TIMESTAMP
+	         , CNTRPRTY_REMIT_REQ_CNT = CNTRPRTY_REMIT_REQ_CNT + 1
+	         , CNTRPRTY_AUTHNT_CD = #{cntrprtyAuthntCd}
+        WHERE
+         	CUST_NO = #{custNo} AND TRAD_NO = #{tradNo}
+	</update>
+	
+	<select id="selectRemitInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.RemitInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.RemitInfoResult">
+		SELECT 
+			CUST_NO
+			,TRAD_NO
+			,REMIT_DT 
+			,CNTRPRTY_ACCT_NO
+			,CNTRPRTY_CD
+			,CNTRPRTY_AUTHNT_CD
+			,CNTRPRTY_AUTHNT_FAIL_CNT
+			,LST_CHNG_DT
+			,CNTRPRTY_REMIT_REQ_CNT
+		FROM 
+			NF_REMIT_MGT
+		WHERE
+			CUST_NO=#{custNo}
+			AND TRAD_NO=#{tradNo}
+			AND REMIT_DT = TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+			AND LST_CHNG_DT BETWEEN CURRENT TIMESTAMP - 10 MINUTE AND TIMESTAMP(LST_CHNG_DT)
+		ORDER BY LST_CHNG_DT DESC FETCH FIRST 1 ROW ONLY WITH UR
+	</select>
+	
+	<select id="selectAcctAuthNumber" parameterType="com.scbank.process.api.svc.common.dao.dto.AcctAuthNumberParameter" resultType="com.scbank.process.api.svc.common.dao.dto.AcctAuthNumberResult">
+		SELECT
+			X.RNUM
+			, X.TRAD_NO
+			, X.CNTRPRTY_AUTHNT_CD
+		FROM (
+			SELECT
+				 ROW_NUMBER() OVER(order by TRAD_NO DESC) as RNUM
+				 , TRAD_NO
+				 , CNTRPRTY_AUTHNT_CD
+			FROM
+				 NF_REMIT_MGT
+			WHERE
+				 CUST_NO = #{custNo} AND REMIT_DT = TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+				<!-- s.20190423 MA3.0 진행상태 접근 채널별 분기 -->
+				AND TRAD_NO in ( 
+					SELECT TRAD_NO
+					FROM NF_TRADINFO_MGT
+					WHERE  CUST_NO = #{custNo}
+					AND (TRAD_REG_GB  = #{tradRegGb}) 
+					<choose>
+						<when test='bizType == "BBCA"'>
+							AND BIZ_TYPE = #{bizType}
+							AND PRGRSS_STS_CD = 'PRGS'
+						</when>
+						<otherwise>
+							AND TO_CHAR(INIT_REGIST_DT, 'YYYYMMDD') LIKE TO_CHAR(CURRENT TIMESTAMP, 'YYYYMMDD')
+							<if test='tradNo != null and tradNo != ""'>
+								AND TRAD_NO = #{tradNo}
+							</if>
+						</otherwise>
+					</choose>
+				)
+				<!-- e.20190423 MA3.0 진행상태 접근 채널별 분기 -->  
+		) X
+		WHERE 
+			RNUM = 1
+		with ur
+	</select>
+	
+	<update id="updateRemitFailCnt" parameterType="com.scbank.process.api.svc.common.dao.dto.RemitInfoParameter">
+		UPDATE NF_REMIT_MGT
+		SET
+				CNTRPRTY_AUTHNT_FAIL_CNT =
+				CASE
+				WHEN (SELECT CNTRPRTY_AUTHNT_FAIL_CNT FROM NF_REMIT_MGT WHERE CUST_NO=#{custNo} and TRAD_NO=#{tradNo}) is null THEN 1
+				ELSE (CNTRPRTY_AUTHNT_FAIL_CNT + 1)
+				END
+		WHERE
+			CUST_NO=#{custNo} AND TRAD_NO=#{tradNo}
+	</update>
+</mapper>

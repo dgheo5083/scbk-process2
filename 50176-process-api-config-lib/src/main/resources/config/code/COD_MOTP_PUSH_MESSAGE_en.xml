@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MOTP_PUSH_MESSAGE">
+  <code key="MSG001" order="0"><![CDATA[SC BANK]]></code>
+  <code key="MSG002" order="0"><![CDATA[Please click the confirm button to proceed Mobile OTP authentication through SC Mobile app.]]></code>
+  <code key="MSG003" order="0"><![CDATA[Please click the view button to proceed Mobile OTP authentication through SC Mobile app.]]></code>
+  <code key="MSG004" order="0"><![CDATA[Mobile OTP Manager]]></code>
+  <code key="MSG005" order="0"><![CDATA[Mobile OTP Operations Team]]></code>
+</category>

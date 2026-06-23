@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+    <rule>
+        <target>&lt;</target>
+        <replacement>&amp;lt;</replacement>
+    </rule>
+    <rule>
+        <target>script</target>
+        <replacement></replacement>
+    </rule>
+</ruleset>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_BRND" lang="en">
+  <code key="I01" order="01"><![CDATA[VISA]]></code>
+  <code key="I02" order="02"><![CDATA[MASTER]]></code>
+  <code key="I03" order="03"><![CDATA[Unionpay(UPI)]]></code>
+  <code key="I04" order="04"><![CDATA[AMEX]]></code>
+  <code key="I05" order="05"><![CDATA[JCB]]></code>
+  <code key="I06" order="06"><![CDATA[Discover]]></code>
+  <code key="I07" order="07"><![CDATA[Diners]]></code>
+  <code key="D01" order="08"><![CDATA[LGlobal]]></code>
+  <code key="D02" order="09"><![CDATA[BCGlobal]]></code>
+  <code key="D03" order="10"><![CDATA[S&]]></code>
+  <code key="D04" order="11"><![CDATA[URS]]></code>
+  <code key="D05" order="11"><![CDATA[oneway]]></code>
+  <code key="D06" order="11"><![CDATA[K-world]]></code>
+  <code key="D07" order="11"><![CDATA[W]]></code>
+  <code key="D08" order="11"><![CDATA[기타국내전용카드]]></code>
+</category>

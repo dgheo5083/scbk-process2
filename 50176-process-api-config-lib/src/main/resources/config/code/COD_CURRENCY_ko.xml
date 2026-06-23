@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CURRENCY" lang="ko">
+  <code key="000" order="1"><![CDATA[KRW-대한민국 원]]></code>
+  <code key="001" order="2"><![CDATA[USD-미국 달러]]></code>
+  <code key="002" order="3"><![CDATA[JPY-일본 엔]]></code>
+  <code key="161" order="4"><![CDATA[EUR-유럽연합 유로]]></code>
+  <code key="003" order="5"><![CDATA[GBP-영국 파운드]]></code>
+  <code key="005" order="6"><![CDATA[CAD-캐나다 달러]]></code>
+  <code key="009" order="7"><![CDATA[HKD-홍콩 달러]]></code>
+  <code key="011" order="8"><![CDATA[AUD-호주 달러]]></code>
+  <code key="023" order="9"><![CDATA[NZD-뉴질랜드 달러]]></code>
+  <code key="021" order="10"><![CDATA[SGD-싱카폴 달러]]></code>
+  <code key="052" order="11"><![CDATA[CNY-중국 위안]]></code>
+  <code key="008" order="12"><![CDATA[CHF-스위스 프랑]]></code>
+  <code key="010" order="13"><![CDATA[SEK-스웨덴 코로나]]></code>
+  <code key="012" order="14"><![CDATA[DKK-덴마크 크로네]]></code>
+  <code key="015" order="15"><![CDATA[NOK-노르웨이 크로네]]></code>
+  <code key="017" order="16"><![CDATA[SAR-사우디 리얄]]></code>
+  <code key="018" order="17"><![CDATA[KWD-쿠웨이트]]></code>
+  <code key="019" order="18"><![CDATA[BHD-바레인 디나르]]></code>
+  <code key="020" order="19"><![CDATA[AED-아랍에미레이트 디람]]></code>
+  <code key="022" order="20"><![CDATA[MYR-말레이지아 링기트]]></code>
+  <code key="083" order="21"><![CDATA[IDR-인도네시아 루피아]]></code>
+  <code key="144" order="22"><![CDATA[THB-태국 바트]]></code>
+</category>

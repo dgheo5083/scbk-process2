@@ -1,0 +1,24 @@
+server:
+  servlet:
+    session:
+      timeout: 10m
+      cookie:
+        name: SESSIONID
+        http-only: true
+        secure: false
+        same-site: Lax
+        path: /
+        domain: sc.co.kr
+spring:
+  session:
+    redis:
+      flush-mode: immediate
+      save-mode: on-set-attribute
+  data:
+    redis:
+      host: scredis-mbut-session.redis.cache.windows.net
+      port: 6380
+      password: ${REDIS_PSWD}
+      ssl:
+        enabled: true
+      timeout: 5s

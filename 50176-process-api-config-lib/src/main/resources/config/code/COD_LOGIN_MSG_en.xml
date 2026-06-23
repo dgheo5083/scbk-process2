@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="LOGIN_MSG" lang="en">
+  <code key="TYPE1" order="1"><![CDATA[0700#1200#we wish you a day full of hope and vigor!]]></code>
+  <code key="TYPE2" order="2"><![CDATA[1200#1800#are you feeling listless? Try to stretch out and keep smiling!]]></code>
+  <code key="TYPE3" order="3"><![CDATA[1800#2200#you must have worked hard. Don't skip dinner!]]></code>
+  <code key="TYPE4" order="4"><![CDATA[2200#2400#you look brilliant preparing for tomorrow!]]></code>
+  <code key="TYPE5" order="5"><![CDATA[have a peace & healthy day with your family and friends!]]></code>
+  <code key="TYPE6" order="6"><![CDATA[please login.]]></code>
+  <code key="SUB_TITLE" order="7"><![CDATA[Sir]]></code>
+  <code key="TYPE7" order="7"><![CDATA[0000#0700#you look brilliant preparing for tomorrow!]]></code>
+</category>

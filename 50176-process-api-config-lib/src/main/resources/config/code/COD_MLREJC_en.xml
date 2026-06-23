@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MLREJC" lang="en">
+	<!-- 거절코드 우선순위 노출 START -->
+	<code key="ML_REJC_0001" order="1"><![CDATA[대출 가능한도가 낮아요]]></code>
+	<code key="ML_REJC_0002" order="2"><![CDATA[소득 혹은 부동산과 관련된 추가 상담이 필요해요]]></code>
+	<code key="ML_REJC_0003" order="3"><![CDATA[신용정보 확인이 필요해요]]></code>
+	<code key="ML_REJC_0004" order="4"><![CDATA[채무상환 능력이 부족해요]]></code>
+	<code key="ML_REJC_0005" order="5"><![CDATA[모바일 상담이 불가능한 부동산이에요]]></code>
+	<code key="ML_REJC_0006" order="6"><![CDATA[추가 확인이 필요해요]]></code>
+	<!-- 거절코드 우선순위 노출 END -->
+</category>

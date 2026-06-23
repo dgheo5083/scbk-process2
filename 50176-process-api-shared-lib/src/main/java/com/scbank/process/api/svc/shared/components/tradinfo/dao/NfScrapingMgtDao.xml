@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.NfScrapingMgtDao">	
+    <!-- 스크래핑데이터 저장 (asis : NF_SCRPPNG_MGT_U_01) -->
+	<update id="updateScrapingInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.NonFaceScrapingInfoParameter" >
+		MERGE INTO
+			NF_SCRPPNG_MGT X
+		USING (
+			SELECT COUNT(*) COUNT
+			FROM NF_SCRPPNG_MGT 
+			WHERE CUST_NO = #{custNoS} 
+			AND TRAD_NO = #{tradNoS} 
+			AND OBJ_INST = #{objInstS} 
+			AND OBJ_DOC_CD = #{objDocCdS} 
+		) Y ON (
+			Y.COUNT <![CDATA[>]]> 0
+			AND X.CUST_NO = #{custNoW} 
+			AND X.TRAD_NO = #{tradNoW} 
+			AND X.OBJ_INST = #{objInstW} 
+			AND X.OBJ_DOC_CD = #{objDocCdW} 
+		) WHEN MATCHED THEN
+			UPDATE SET
+				X.SCRPPNG_DATA = #{scrppngDataU, jdbcType=CLOB},
+				X.ERR_CD = #{errCdU},
+				X.ERR_MSG = #{errMsgU},
+				X.UPD_DT = CURRENT TIMESTAMP,
+				X.SCR_TYPE = #{scrType},
+				X.CERT_TYPE = #{certType}
+		WHEN NOT MATCHED THEN
+			INSERT (
+				X.CUST_NO,
+				X.TRAD_NO,
+				X.OBJ_INST,
+				X.OBJ_DOC_CD,
+				X.SCRPPNG_DATA,
+				X.ERR_CD,
+				X.ERR_MSG,
+				X.UPD_DT,
+				X.SCR_TYPE,
+				X.CERT_TYPE,
+				X.CERT_TYPE_ERR
+			) VALUES ( 
+			   #{custNo},
+			   #{tradNo},
+			   #{objInst},
+			   #{objDocCd},
+			   #{scrppngData, jdbcType=CLOB},
+			   #{errCd},
+			   #{errMsg},
+			   CURRENT TIMESTAMP,
+			   #{scrType},
+			   #{certType},
+			   #{certTypeErr}
+			)
+	</update>
+</mapper>

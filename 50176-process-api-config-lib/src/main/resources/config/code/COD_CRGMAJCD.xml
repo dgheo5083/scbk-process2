@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CRGMAJCD">
+  <code key="01" order="0"><![CDATA[금융거래확인서(전자보증서 발급제외)]]></code>
+  <code key="02" order="0"><![CDATA[부채잔액증명서]]></code>
+  <code key="03" order="0"><![CDATA[은행조회서]]></code>
+  <code key="04" order="0"><![CDATA[거래상황확인서]]></code>
+  <code key="05" order="0"><![CDATA[장기주택저당차입금 이자상환증명서]]></code>
+  <code key="06" order="0"><![CDATA[개인별금융자산 및 부채현황]]></code>
+  <code key="100" order="0"><![CDATA[CB 단기연체정보]]></code>
+  <code key="101" order="0"><![CDATA[CB 식별정보]]></code>
+  <code key="102" order="0"><![CDATA[CB 거래기록정보]]></code>
+  <code key="103" order="0"><![CDATA[CB 신용개설정보]]></code>
+  <code key="104" order="0"><![CDATA[원장정보(CB 신용개설정보)]]></code>
+  <code key="105" order="0"><![CDATA[CB 대출정보]]></code>
+  <code key="106" order="0"><![CDATA[실적정보(월별 CB 신용개설정보)]]></code>
+  <code key="107" order="0"><![CDATA[CB 대부업 연체정보]]></code>
+  <code key="108" order="0"><![CDATA[CB 채무보증정보]]></code>
+  <code key="109" order="0"><![CDATA[CB 채무보증정보]]></code>
+  <code key="11" order="0"><![CDATA[신용거래(금융거래)]]></code>
+  <code key="110" order="0"><![CDATA[CB 대부업 대출정보]]></code>
+  <code key="12" order="0"><![CDATA[신용거래(개인대출)]]></code>
+  <code key="13" order="0"><![CDATA[신용거래(채무보증)]]></code>
+  <code key="14" order="0"><![CDATA[신용거래(기업여신)]]></code>
+  <code key="20" order="0"><![CDATA[신용불량정보]]></code>
+  <code key="30" order="0"><![CDATA[신용능력정보]]></code>
+  <code key="40" order="0"><![CDATA[공공(특수) 기록정보]]></code>
+  <code key="99" order="0"><![CDATA[기타]]></code>
+</category>

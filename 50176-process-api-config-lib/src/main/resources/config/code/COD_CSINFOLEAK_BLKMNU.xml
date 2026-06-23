@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--	
+	로그인업무
+		이체/납부
+			MA3TRNSTR001 : 이체					MA3TRNSTR010 : 이체(리뉴얼)
+			MA3TRNMTI001 : 여러통장이체			MA3TRNOBS002 : 잔액모으기
+			MA3MSCPDM001 : 출금계좌 등록/삭제
+			MA3TRNGRO001 : 지로 조회납부		MA3TRNGRO002 : 지로 입력납부
+			MA3TRNGRO014 : 국세납부				MA3TRNGRO011 : 지방세 납부
+		계좌
+			MA3ACTCLS001 : 계좌해지
+			MA3ACTLMD007 : 비대면 한도해지		MA3CRTDAL001 : 휴면계좌활성화
+		편리한서비스
+			MA3MSCOBS002 : 오픈뱅킹
+		상품
+			MA3PRDFND : 펀드					MA3PRDBNC : 보험
+			MA3PRDSTC001 : 증권					MA3STCACT001 : 증권
+	
+	비로그인업무
+		인증/보안
+			공동인증서		- 발급 / 타기관등록
+			금융인증서		- 발급 / 타기관등록
+			디지털인증서	- 발급
+			핀테크인증서	- 등록
+			모바일OTP		- 발급
+		비대면
+			입출금				예/적금
+			신용/체크카드		신용/담보대출
+			전자금융신규		휴면계좌활성화
+-->
+<category name="CSINFOLEAK_BLKMNU">
+	<code key="DPSACC004" order="1"><![CDATA[DPSACC004]]></code><!-- 휴면계좌 : DPSACC004 -->
+	<code key="TRNSGL001" order="2"><![CDATA[TRNSGL001]]></code><!-- 이체 : TRNSGL001 -->
+	<code key="TRNSGL001" order="3"><![CDATA[TRNSGL001]]></code><!-- 일반이체 : TRNSGL001 -->
+	<code key="TRNSWP006" order="4"><![CDATA[TRNSWP006]]></code><!-- 잔액모으기 : TRNSWP006 -->
+	<code key="TRNMGT012" order="7"><![CDATA[TRNMGT012]]></code><!-- 출금계좌등록 : TRNMGT012 -->
+	<code key="DPSACC003" order="8"><![CDATA[DPSACC003]]></code><!-- 계좌해지 : DPSACC003 -->
+	<code key="DPSACC005" order="9"><![CDATA[DPSACC005]]></code><!-- 한도제한해제 : DPSACC005 -->
+	<code key="SVCOBS100" order="10"><![CDATA[SVCOBS100]]></code><!-- 오픈뱅킹 등록된계좌 : SVCOBS100 -->
+	<code key="TRNMUL002" order="15"><![CDATA[TRNMUL002]]></code><!-- 여러통장이체 : TRNMUL002 -->
+	<code key="MA3TRNGRO011" order="5"><![CDATA[MA3TRNGRO011]]></code><!-- 지방세납부 : MA3TRNGRO011 -->
+	<code key="MA3TRNGRO014" order="6"><![CDATA[MA3TRNGRO014]]></code><!-- 국세납부 : MA3TRNGRO014 -->
+	<code key="MA3PRDFND" order="11"><![CDATA[MA3PRDFND]]></code><!-- 펀드 전체 -->
+	<code key="MA3PRDBNC" order="12"><![CDATA[MA3PRDBNC]]></code><!-- 방카전체 -->
+	<code key="MA3PRDSTC001" order="13"><![CDATA[MA3PRDSTC001]]></code><!-- 증권상품목록 -->
+	<code key="MA3STCACT001" order="14"><![CDATA[MA3STCACT001]]></code><!-- 증권계좌신규 -->
+	<code key="MA3PRDLON006" order="16"><![CDATA[MA3PRDLON006]]></code><!-- 펀드담보대출 -->
+	<code key="MA3PRDLON005" order="17"><![CDATA[MA3PRDLON005]]></code><!-- 예적금담보대출 -->
+	<code key="MA3LONBIZ004" order="18"><![CDATA[MA3LONBIZ004]]></code><!-- MA3LONBIZ004* 담보대출 적합성확인 -->
+	<code key="MA3LONBIZ003" order="19"><![CDATA[MA3LONBIZ003]]></code><!-- MA3LONBIZ003* 신용대출 적합성 확인 -->
+	<code key="MA3PRDLON007" order="20"><![CDATA[MA3PRDLON007]]></code><!-- MA3PRDLON007* 퍼스트전세보증론 -->
+	<code key="MA3LONICS001" order="21"><![CDATA[MA3LONICS001]]></code><!-- MA3LONICS001* 모바일통합대출상담 -->
+	<code key="MA3TRNGRO001" order="22"><![CDATA[MA3TRNGRO001]]></code><!-- 지로조회 납부 -->
+	<code key="MA3TRNGRO002" order="23"><![CDATA[MA3TRNGRO002]]></code><!-- 지로입력 납부 -->
+	<code key="MA3BNCOPN" order="24"><![CDATA[MA3BNCOPN]]></code><!-- MA3BNCOPN* 보험가입 -->
+	<code key="MA3PRDLON" order="25"><![CDATA[MA3PRDLON]]></code><!-- MA3PRDLON* 대출가입 -->
+	<code key="MA3LONICS" order="26"><![CDATA[MA3LONICS]]></code>
+	<code key="MA3LONCLI" order="27"><![CDATA[MA3LONCLI]]></code>
+</category>

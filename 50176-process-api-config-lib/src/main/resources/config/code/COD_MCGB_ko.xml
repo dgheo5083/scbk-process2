@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MCGB" lang="ko">
+  <code key="0" order="0"><![CDATA[영업점]]></code>
+  <code key="1" order="0"><![CDATA[C/C]]></code>
+  <code key="2" order="0"><![CDATA[C/D]]></code>
+  <code key="3" order="0"><![CDATA[ATM]]></code>
+  <code key="4" order="0"><![CDATA[CD공동망]]></code>
+  <code key="5" order="0"><![CDATA[타행환]]></code>
+  <code key="7" order="0"><![CDATA[BANK POS]]></code>
+  <code key="C" order="0"><![CDATA[TELE]]></code>
+  <code key="G" order="0"><![CDATA[전자금융공동망]]></code>
+  <code key="I" order="0"><![CDATA[INTERNET]]></code>
+  <code key="K" order="0"><![CDATA[기업뱅킹]]></code>
+  <code key="P" order="0"><![CDATA[PDA뱅킹]]></code>
+  <code key="T" order="0"><![CDATA[S2B]]></code>
+  <code key="ETC" order="1"><![CDATA[기타]]></code>
+</category>

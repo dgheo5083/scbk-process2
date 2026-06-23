@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FOSTDNT_MK" lang="ko">
+  <code key="02" order="0"><![CDATA[2 년제]]></code>
+  <code key="03" order="1"><![CDATA[3 년제]]></code>
+  <code key="04" order="2"><![CDATA[4 년제]]></code>
+  <code key="05" order="3"><![CDATA[5 년제]]></code>
+  <code key="06" order="4"><![CDATA[6 년제]]></code>
+  <code key="07" order="5"><![CDATA[대학원(석사-2년)]]></code>
+  <code key="08" order="6"><![CDATA[대학원(석사-3년)]]></code>
+  <code key="09" order="7"><![CDATA[대학원(박사)]]></code>
+  <code key="99" order="8"><![CDATA[전문대학원(의치학,법학)]]></code>
+</category>

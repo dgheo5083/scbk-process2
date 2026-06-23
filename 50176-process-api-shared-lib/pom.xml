@@ -1,0 +1,436 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.scbank</groupId>
+    <artifactId>process-api-shared-lib</artifactId>
+    <version>1.0.0-270463</version>
+    <packaging>jar</packaging>
+    <name>process-api-shared-lib</name>
+
+    <properties>
+		<maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+		<jacoco.version>0.8.11</jacoco.version>
+
+        <lib.path>${project.basedir}/lib</lib.path>
+    </properties>
+
+    <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.scbank</groupId>
+				<artifactId>process-api-dependencies</artifactId>
+				<version>1.0.0-270590</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.scbank</groupId>
+            <artifactId>process-api-fw-core-lib</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.scbank</groupId>
+            <artifactId>process-api-fw-base-lib</artifactId>
+        </dependency>
+
+         <dependency>
+            <groupId>com.scbank</groupId>
+            <artifactId>process-api-fw-annotation-processor-lib</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.scbank</groupId>
+            <artifactId>process-api-edmi-lib</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.scbank</groupId>
+            <artifactId>process-api-config-lib</artifactId>
+        </dependency>
+
+        <dependency>
+			<groupId>com.ibm.db2.jcc</groupId>
+			<artifactId>db2jcc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
+
+<!-- TODO: 임시 인증서모듈 (추후 Wizvera모듈로 변경) -->
+        <dependency>
+			<groupId>com.initech.inisafe</groupId>
+			<artifactId>INISAFECore</artifactId>
+			<version>2.2.61</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/INISAFECore-2.2.61.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>com.initech.inisafe</groupId>
+			<artifactId>INICrypto</artifactId>
+			<version>4.2.10</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/INICrypto-4.2.10.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>com.initech.inisafe</groupId>
+			<artifactId>INISAFEPKI</artifactId>
+			<version>1.1.58</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/INISAFEPKI-1.1.58.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>com.initech.inisafe</groupId>
+			<artifactId>INISAFENet</artifactId>
+			<version>7.2.65</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/INISAFENet-7.2.65.jar</systemPath>-->
+		</dependency>
+
+        <dependency>
+			<groupId>com.initech.dbprotector</groupId>
+			<artifactId>dbprotector</artifactId>
+			<version>1.0.0</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/dbprotector-1.0.0.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+			<groupId>com.wizvera</groupId>
+			<artifactId>delfino-v3_full</artifactId>
+			<version>3.3.16</version>
+		</dependency>
+
+		<dependency>
+		 	<groupId>com.wizvera</groupId>
+		  	<artifactId>wizvera-provider</artifactId>
+		  	<version>2.1.5</version>
+		  	<classifier>resign</classifier>
+		  	<!--<scope>system</scope>
+		  	<systemPath>${lib.path}/wizvera-provider-2.1.5-resign.jar</systemPath>-->
+		</dependency>
+		<dependency>
+			<groupId>com.wizvera</groupId>
+			<artifactId>wizvera-pkix</artifactId>
+			<version>2.0.1</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/wizvera-pkix-2.0.1.jar</systemPath>-->
+		</dependency>
+<!-- TODO: 임시 인증서모듈 (추후 Wizvera모듈로 변경) -->
+
+        <!-- 임시 lib 폴더 적용-->
+        <dependency>
+            <groupId>com.interezen</groupId>
+			<artifactId>interezen</artifactId>
+			<version>1.1.2</version>
+            <!--<scope>system</scope>
+			<systemPath>${lib.path}/interezen-1.1.2.jar</systemPath>-->
+		</dependency>
+
+
+	<!-- FIXME 인증센터 임시 2025.11.07 이완주-->
+		<dependency>
+			<groupId>com.initech.ocspgd</groupId>
+			<artifactId>jOCSPGD</artifactId>
+			<version>4.0.6</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/jOCSPGD-4.0.6.jar</systemPath>-->
+		</dependency>
+		<dependency>
+			<groupId>com.initech.oppra</groupId>
+			<artifactId>jOPPRA</artifactId>
+			<version>5.1.33</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/jOPPRA-5.1.33.jar</systemPath>-->
+		</dependency>
+				<dependency>
+			<groupId>com.dreammirae</groupId>
+			<artifactId>mirae-hwotpcore</artifactId>
+			<version>2.2.0</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/mirae-hwotpcore-2.2.0.jar</systemPath>-->
+		</dependency>
+		<dependency>
+			<groupId>com.dreammirae</groupId>
+			<artifactId>mirae-kfb-mobile</artifactId>
+			<version>1.1.1</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/mirae-kfb-mobile-1.1.1.jar</systemPath>-->
+		</dependency>
+<!-- FIXME 인증센터 임시 2025.11.07 이완주-->
+
+<!-- FIXME 인증센터 임시 2025.12.02 오은진 -->
+        <dependency>
+			<groupId>secu</groupId>
+			<artifactId>secu</artifactId>
+			<version>1.0.0.2</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/secu-1.0.0.1.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>signgate</groupId>
+			<artifactId>signgateCrypto</artifactId>
+			<version>1.0</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/signgateCrypto.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>signgate</groupId>
+			<artifactId>sgsecukit</artifactId>
+			<version>1.0.0.1</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/sgsecukit-1.0.0.0.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>ldapjdk</groupId>
+			<artifactId>ldapjdk</artifactId>
+			<version>1.0</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/ldapjdk.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>com.sg</groupId>
+			<artifactId>sgkm</artifactId>
+			<version>1.0</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/sgkm.jar</systemPath>-->
+		</dependency>
+        <dependency>
+			<groupId>com.sg</groupId>
+			<artifactId>signgate_common</artifactId>
+			<version>1.0</version>
+			<!--<scope>system</scope>
+			<systemPath>${lib.path}/signgate_common.jar</systemPath>-->
+		</dependency>
+<!-- FIXME 인증센터 임시 2025.12.02 오은진 -->
+
+		<!-- 알체라 -->
+		<dependency>
+		  <groupId>kr.co</groupId>
+		  <artifactId>alchera-aes256</artifactId>
+		  <version>1.0.0</version>
+		 <!-- <scope>system</scope>
+			<systemPath>${lib.path}/alchera-aes256-1.0.0.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+		  <groupId>com.imas</groupId>
+		  <artifactId>imas</artifactId>
+		  <version>1.0.1</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/imas-1.0.1.jar</systemPath>-->
+		</dependency>
+
+		<!-- ahnlab -->
+		<dependency>
+		  <groupId>com.ahnlab.v3mobileplus</groupId>
+		  <artifactId>v3mobileplus</artifactId>
+		  <version>1.0.0</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/v3mobileplus-1.0.0.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+		  <groupId>com.ahnlab.astx2</groupId>
+		  <artifactId>astx2</artifactId>
+		  <version>1.0.0</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/astx2.jar</systemPath>-->
+		</dependency>
+
+		<!-- nfilter -->
+		<dependency>
+		  <groupId>com.nshc</groupId>
+		  <artifactId>OpenWebNFilter</artifactId>
+		  <version>4.17</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/OpenWebNFilter-4.17_SpringBoot3.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+		  <groupId>com.nshc</groupId>
+		  <artifactId>nSafer</artifactId>
+		  <version>2.1.0.1</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/nSafer2.1.0.1.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+		  <groupId>com.nshc</groupId>
+		  <artifactId>nfsrv_G2</artifactId>
+		  <version>1.0.3</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/nSafer2.1.0.1.jar</systemPath>-->
+		</dependency>
+
+		<!-- EDOC 관련 2026.03.25 허동규-->
+		<dependency>
+		  <groupId>kr.co.pace.crypto</groupId>
+		  <artifactId>PaceSeed</artifactId>
+		  <version>1.0</version>
+		  <!--<scope>system</scope>
+			<systemPath>${lib.path}/PaceSeed-1.0.jar</systemPath>-->
+		</dependency>
+
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-api</artifactId>
+		  <version>2.17.1</version>
+		</dependency>
+
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-core</artifactId>
+		  <version>2.17.1</version>
+		</dependency>
+
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-1.2-api</artifactId>
+		  <version>2.17.1</version>
+		</dependency>
+
+		<!-- XVARM API -->
+		<dependency>
+		  <groupId>xvarmext</groupId>
+		  <artifactId>xvarm_PROD</artifactId>
+		  <version>2018.12.20</version>
+		</dependency>
+
+		<!-- test 관련 디펜던시 추가 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+            	<exclusion>
+	            	<groupId>org.springframework.boot</groupId>
+	            	<artifactId>spring-boot-starter-logging</artifactId>
+            	</exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<encoding>${file.encoding}</encoding>
+                    <annotationProcessorPaths>
+                    	<path>
+                            <groupId>org.mapstruct</groupId>
+            				<artifactId>mapstruct-processor</artifactId>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+            				<artifactId>lombok</artifactId>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+            				<artifactId>lombok-mapstruct-binding</artifactId>
+            				<version>0.2.0</version>
+                        </path>
+                        <path>
+                            <groupId>com.scbank</groupId>
+            				<artifactId>process-api-fw-annotation-processor-lib</artifactId>
+                        </path>
+                    </annotationProcessorPaths>
+				</configuration>
+			</plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.11</version>
+				<configuration>
+					<excludes>
+						<exclude>**/*/dto/*</exclude>
+						<!--exclude>**/*/config/*</exclude -->
+						<exclude>**/*/configuration/*</exclude>
+						<exclude>**/*/constant/*</exclude>
+						<exclude>**/*/constants/*</exclude>
+					</excludes>
+				</configuration>
+				
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-site</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<dataFile>${project.build.directory}/jacoco.exec</dataFile>
+							<outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+				<!--
+				<executions>
+                    <execution>
+                        <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>default-report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>${basedir}/target/jacoco.exec</dataFile>
+                            <outputDirectory>${basedir}/target/coverage-reports</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+                -->
+			</plugin>
+        </plugins>
+    </build>
+</project>

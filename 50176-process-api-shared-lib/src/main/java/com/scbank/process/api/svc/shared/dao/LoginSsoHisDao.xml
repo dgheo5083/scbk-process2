@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.dao.LoginSsoHisDao">
+
+	<!-- 이중 로그인 테이블 SELECT [MA3_LGN.LOGIN_SSO_HIS_S_01]-->
+	<select id="selectDuplicationLoginCheckInfo" parameterType="com.scbank.process.api.svc.shared.dao.dto.DuplicationLoginCheckInfoParameter" resultType="java.lang.Integer">
+		SELECT
+			COUNT(BNKING_USER_ID) USER_ID_CNT
+		FROM
+			LOGIN_SSO_HIS 
+		WHERE
+			BNKING_USER_ID = #{userId}
+	 	AND
+			LOGIN_DT = #{loginDt}
+		WITH UR
+	</select>
+
+</mapper>

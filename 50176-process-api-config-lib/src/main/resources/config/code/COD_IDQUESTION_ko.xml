@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="IDQUESTION" lang="ko">
+  <code key="34" order="1"><![CDATA[내 생일]]></code>
+  <code key="35" order="2"><![CDATA[애인 이름]]></code>
+  <code key="36" order="3"><![CDATA[연예인 이름]]></code>
+  <code key="37" order="4"><![CDATA[어머니 성함]]></code>
+  <code key="38" order="5"><![CDATA[아버지 성함]]></code>
+  <code key="39" order="6"><![CDATA[휴대폰 번호]]></code>
+</category>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="VMCANCE" lang="ko">
+  <code key="0" order="1"><![CDATA[====해지사유선택====]]></code>
+  <code key="1" order="2"><![CDATA[VM뱅킹 서비스 부족]]></code>
+  <code key="2" order="3"><![CDATA[휴대폰분실]]></code>
+  <code key="3" order="4"><![CDATA[VM뱅킹 거래 불편]]></code>
+  <code key="4" order="5"><![CDATA[SC제일은행 거래 종료]]></code>
+  <code key="5" order="6"><![CDATA[타은행 이용]]></code>
+  <code key="6" order="7"><![CDATA[서비스 정리]]></code>
+  <code key="7" order="8"><![CDATA[기타]]></code>
+</category>

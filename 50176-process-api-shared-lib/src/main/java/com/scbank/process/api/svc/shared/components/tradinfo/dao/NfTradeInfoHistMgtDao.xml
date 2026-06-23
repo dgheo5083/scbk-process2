@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.NfTradeInfoHistMgtDao">
+
+	<!-- 진행상태 History 등록 (asis : NF_TRADINFO_HIST_MGT_I_01)-->
+	<insert id="insertTradInfoHist" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.NonFaceTradeInfoHistoryParameter" >
+		INSERT INTO NF_TRADINFO_HIST_MGT(
+			CUST_NO,
+			TRAD_NO,
+			TRAD_HIST_SEQ,
+			BIZ_TYPE,
+			CALL_CNTR_STS_CD,
+			PRGRSS_STS_CD,
+			BLK_CLERK_NO,
+			APPRVER_CLERK_NO,
+			INIT_REGIST_DT,
+			PRE_LOAN_MOVE_YN,			<!-- 대출이동제여부(상품진입) -->
+			HQ_PRIME_RATE_APPLY_YN,		<!-- 본부우대금리적용여부 -->
+			TRAD_REG_GB <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+		)
+ 		SELECT
+ 			CUST_NO,
+	 		TRAD_NO,
+	 		(SELECT COALESCE(MAX(TRAD_HIST_SEQ)+1,0) AS TRAD_NO FROM NF_TRADINFO_HIST_MGT WHERE CUST_NO = #{custNo} AND TRAD_NO = #{tradNo} ) AS TRAD_HIST_SEQ,
+	 		BIZ_TYPE,
+	 		CALL_CNTR_STS_CD,
+	 		PRGRSS_STS_CD,
+	 		COALESCE(BLK_CLERK_NO, '') AS BLK_CLERK_NO,
+	 		COALESCE(APPRVER_CLERK_NO, '') AS APPRVER_CLERK_NO,
+	 		CURRENT TIMESTAMP AS INIT_REGIST_DT,
+	 		PRE_LOAN_MOVE_YN,			<!-- 대출이동제여부(상품진입) -->
+			HQ_PRIME_RATE_APPLY_YN,		<!-- 본부우대금리적용여부 -->
+	 		TRAD_REG_GB <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+		FROM
+			NF_TRADINFO_MGT
+		WHERE
+			CUST_NO = #{custNo}
+   			AND TRAD_NO = #{tradNo}
+	</insert>
+</mapper>

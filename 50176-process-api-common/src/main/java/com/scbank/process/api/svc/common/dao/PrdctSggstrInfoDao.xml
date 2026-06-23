@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.PrdctSggstrInfoDao">
+
+	<!-- 영업점 찾기 -->
+ 	<select id="selectBranchList" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.BranchInfoResult" >
+		SELECT 
+		   SEARCH_ID    AS branchId, 
+		   BRNCH_MK     AS branchType,
+		   BRNCH_CD     AS branchCd, 
+		   FLDBRNAME    AS branchName, 
+		   FLDBRTEL1    AS branchTel1, 
+		   FLDBRTEL2    AS branchTel2, 
+		   FLDBRTEL3    AS branchTel3, 
+		   FLDJUSO      AS branchAddress
+		FROM
+			TBLBRANCH 
+		WHERE
+			( FLDBRNAME LIKE '%' || #{searchKeyword} || '%' OR FLDJUSO LIKE '%' || #{searchKeyword} || '%' )
+			AND (BRNCH_MK = '1'
+			OR BRNCH_MK = '2'
+			OR BRNCH_MK = '4')
+		ORDER BY FLDBRNAME ASC
+		WITH UR
+	</select>
+
+    <!-- 소개자행번 검색 -->
+ 	<select id="selectEmployeeList" parameterType="com.scbank.process.api.svc.common.dao.dto.EmployeeInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.EmployeeInfoResult" >
+		SELECT
+			TRIM(CLERK_NO) AS CLERK_NO,
+			EMPLY_NM,
+			BRNCH_NO,
+			DEPT_NM
+		FROM
+			PRDCT_SGGSTR_INFO
+		WHERE
+			EMPLY_NM LIKE  '%'||#{emplyNm}||'%'
+		<if test="clerkNo != null and clerkNo != ''">
+			AND CLERK_NO = #{clerkNo}
+		</if>
+		<if test='loanTypeProduct != null and loanTypeProduct == "Y"'>
+			AND (BANCA_GB <![CDATA[<>]]> 'Y' OR BANCA_GB IS NULL)
+		</if>
+		ORDER BY EMPLY_NM
+		WITH UR
+	</select>	
+
+</mapper>

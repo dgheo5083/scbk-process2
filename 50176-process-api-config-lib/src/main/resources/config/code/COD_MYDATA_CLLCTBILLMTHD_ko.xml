@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_CLLCTBILLMTHD" lang="ko">
+  <code key="01" order="01"><![CDATA[지로]]></code>
+  <code key="02" order="02"><![CDATA[자동이체]]></code>
+  <code key="03" order="03"><![CDATA[직납]]></code>
+  <code key="04" order="04"><![CDATA[신용카드]]></code>
+  <code key="05" order="05"><![CDATA[급여공제]]></code>
+  <code key="06" order="06"><![CDATA[간편결제]]></code>
+  <code key="07" order="07"><![CDATA[기타]]></code>
+</category>

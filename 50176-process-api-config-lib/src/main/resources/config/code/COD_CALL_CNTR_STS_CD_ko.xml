@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CALL_CNTR_STS_CD" lang="ko">
+  <!-- 입출금 -->
+  <code key="CASA_COCU" order="0"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/casa/MA3ACTOPN001_60V.view]]></code>		<!-- CASA:고객정보확인 완료 -->
+  <code key="CASA_CAID" order="1"><![CDATA[/product/casa/MA3ACTOPN001_60V.view]]></code>		<!-- CASA:신분증촬영 완료 -->
+  <code key="CASA_CAAG" order="2"><![CDATA[/product/casa/MA3ACTOPN001_70V.view]]></code>		<!-- CASA:약관동의 -->
+  <code key="CASA_CATO" order="3"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- CASA:거래목적확인 -->
+  <code key="CASA_CARI" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- CASA:추가인증선택(역송금 or 영상통화) -->
+  <code key="CASA_CAIF" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- CASA:타행계좌정보 입력 -->
+  <code key="CASA_CACI" order="6"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- CASA:타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)-->
+  <code key="CASA_CASC" order="7"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>		<!-- CASA:영상통화 인증 -->
+  <code key="CASA_CASE" order="8"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- CASA:영상통화 완료 (추가인증안내 or 계좌비밀번호입력)-->
+  <code key="CASA_CACD" order="9"><![CDATA[/product/casa/MA3ACTOPN000_24V.view]]></code>		<!-- CASA:추가인증완료(계약서류안내) -->
+  <code key="CASA_CAGU" order="10"><![CDATA[/product/casa/MA3ACTOPN001_B0V.view]]></code>		<!-- CASA:추가인증 안내(비밀번호입력) -->
+  
+  <!-- 외화보통예금 -->
+  <code key="FCSA_CAID" order="1"><![CDATA[/product/casa/MA3ACTOPN001_60V.view]]></code>		<!-- FCSA:신분증촬영 완료 -->
+  <code key="FCSA_CAAG" order="2"><![CDATA[/product/casa/MA3ACTOPN001_70V.view]]></code>		<!-- FCSA:약관동의 -->
+  <code key="FCSA_CATO" order="3"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- FCSA:거래목적확인 -->
+  <code key="FCSA_CARI" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- FCSA:추가인증선택(역송금 or 영상통화) -->
+  <code key="FCSA_CAIF" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- FCSA:타행계좌정보 입력 -->
+  <code key="FCSA_CACI" order="6"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- FCSA:타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)-->
+  <code key="FCSA_CASC" order="7"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>		<!-- FCSA:영상통화 인증 -->
+  <code key="FCSA_CASE" order="8"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>			<!-- FCSA:영상통화 완료 (추가인증안내 or 계좌비밀번호입력)-->
+  <code key="FCSA_CAGU" order="9"><![CDATA[/product/casa/MA3ACTOPN001_B0V.view]]></code>		<!-- FCSA:추가인증 안내 -->  
+  <!-- 다모아비즈통장 -->
+  <code key="BBCA_COCU" order="0"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/casa/MA3ACTOPN001_60V.view]]></code>		<!-- BBCA:고객정보확인 완료 -->
+  <code key="BBCA_CAID" order="1"><![CDATA[/product/casa/MA3ACTOPN001_60V.view]]></code>		<!-- BBCA:신분증촬영 완료 -->
+  <code key="BBCA_CAAG" order="2"><![CDATA[/product/casa/MA3ACTOPN001_70V.view]]></code>		<!-- BBCA:약관동의 -->
+  <code key="BBCA_CATO" order="3"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- BBCA:거래목적확인 -->
+  <code key="BBCA_CARI" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- BBCA:추가인증선택(역송금 or 영상통화) -->
+  <code key="BBCA_CAIF" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- BBCA:타행계좌정보 입력 -->
+  <code key="BBCA_CACI" order="6"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- BBCA:타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)-->
+  <!-- 다모아비즈 통장은 영상통화 불가
+  <code key="BBCA_CASC" order="7"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>
+  <code key="BBCA_CASE" order="8"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>
+   -->
+  <code key="BBCA_CAGU" order="9"><![CDATA[/product/casa/MA3ACTOPN001_B0V.view]]></code>		<!-- BBCA:추가인증 안내 -->
+
+  <!-- 직장인중금리 -->
+  <code key="SPPL_PLCE" order="0"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONOPN002_50V.view]]></code>		<!-- SPPL : 고객정보확인 -->
+  <code key="SPPL_CAID" order="1"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONOPN002_50V.view]]></code>		<!-- SPPL : 고객정보확인 -->
+  <!-- <code key="SPPL_COG1" order="2"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONOPN000_0AV.view]]></code>	 -->	<!-- SPPL : 고객정보확인 -->
+  <code key="SPPL_COCU" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONOPN002_50V.view]]></code>		<!-- SPPL : 고객정보확인 -->
+  <code key="SPPL_PLPA" order="4"><![CDATA[/product/loan/MA3LONOPN002_20V.view]]></code>		<!-- SPPL : 개인신용정보동의서-->
+  <code key="SPPL_PLCS" order="5"><![CDATA[/product/loan/MA3LONOPN002_20V.view]]></code>		<!-- SPPL : 대출상담신청 -->
+  <code key="SPPL_PLAG" order="6"><![CDATA[/product/loan/MA3LONOPN002_60V.view]]></code>		<!-- SPPL : 대출신청정보입력 -->
+  <code key="SPPL_PLRR" order="7"><![CDATA[/product/loan/MA3LONOPN002_70V.view]]></code>		<!-- SPPL : 대출신청정보확인 -->
+  <code key="SPPL_PLRO" order="8"><![CDATA[/product/loan/MA3LONOPN002_80V.view]]></code>		<!-- SPPL : 대출신청서류확인 -->
+  <code key="SPPL_PLDR" order="9"><![CDATA[/product/loan/MA3LONOPN002_90V.view]]></code>		<!-- SPPL : 대출신청실행 -->
+  <code key="SPPL_PLE1" order="10"><![CDATA[/product/loan/MA3LONOPN002_90V.view]]></code>		<!-- SPPL : 대출신청실행 -->
+  <code key="SPPL_PLE2" order="11"><![CDATA[/product/loan/MA3LONOPN002_90V.view]]></code>		<!-- SPPL : 대출신청실행 -->
+  <code key="SPPL_PLE3" order="12"><![CDATA[/product/loan/MA3LONOPN002_90V.view]]></code>		<!-- SPPL : 대출신청실행 -->
+  <code key="SPPL_PLE4" order="13"><![CDATA[/product/loan/MA3LONOPN002_90V.view]]></code>		<!-- SPPL : 대출신청실행 -->
+  <code key="SPPL_PLE5" order="14"><![CDATA[/product/loan/MA3LONOPN002_90V.view]]></code>		<!-- SPPL : 대출신청실행 -->
+  <code key="SPPL_PLSS" order="15"><![CDATA[/product/loan/MA3LONOPN002_20V.view]]></code>		<!-- SPPL : 스크래핑완료 -->
+  
+  <!-- 돌려드림론 -->
+  <code key="CRPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONOPN001_10V.view]]></code>		<!-- CRPL : 개인신용정보동의서 -->
+  <code key="CRPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONOPN001_10V.view]]></code>		<!-- CRPL : 스크래핑완료 -->
+  <code key="CRPL_COIC" order="2"><![CDATA[/product/loan/MA3LONOPN001_10V.view]]></code>		<!-- CRPL : 개인신용정보동의서 -->
+  <code key="CRPL_PLDT" order="3"><![CDATA[/product/loan/MA3LONOPN001_10V.view]]></code>		<!-- CRPL : 개인신용정보동의서 -->
+  <code key="CRPL_PLCS" order="4"><![CDATA[/product/loan/MA3LONOPN001_10V.view]]></code>		<!-- CRPL : 대출상담신청 -->
+  <code key="CRPL_PLCE" order="5"><![CDATA[/product/loan/MA3LONOPN001_50V.view]]></code>		<!-- CRPL : 고객정보확인 -->
+  <code key="CRPL_COCU" order="6"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONOPN001_60V.view]]></code>		<!-- CRPL : 고객정보확인 -->
+  <code key="CRPL_CAID" order="7"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONOPN001_60V.view]]></code>		<!-- CRPL : 고객정보확인 -->
+   <!-- <code key="CRPL_COG1" order="7"><![CDATA[]]></code>-->		<!-- CRPL :  -->
+  <code key="CRPL_PLAG" order="8"><![CDATA[/product/loan/MA3LONOPN001_70V.view]]></code>		<!-- CRPL : 대출신청정보입력 -->
+  <code key="CRPL_PLRR" order="9"><![CDATA[/product/loan/MA3LONOPN001_80V.view]]></code>		<!-- CRPL : 대출신청정보입력 확인-->
+  <code key="CRPL_PLRO" order="10"><![CDATA[/product/loan/MA3LONOPN001_90V.view]]></code>		<!-- CRPL : 대출신청실행 -->
+  <code key="CRPL_PLE1" order="11"><![CDATA[/product/loan/MA3LONOPN001_90V.view]]></code>		<!-- CRPL : 대출신청실행 -->
+  <code key="CRPL_PLE2" order="12"><![CDATA[/product/loan/MA3LONOPN001_90V.view]]></code>		<!-- CRPL : 대출신청실행 -->
+  <code key="CRPL_PLE3" order="13"><![CDATA[/product/loan/MA3LONOPN001_90V.view]]></code>		<!-- CRPL : 대출신청실행 -->
+  <code key="CRPL_PLE4" order="14"><![CDATA[/product/loan/MA3LONOPN001_90V.view]]></code>		<!-- CRPL : 대출신청실행 -->
+  <code key="CRPL_PLE5" order="15"><![CDATA[/product/loan/MA3LONOPN001_90V.view]]></code>		<!-- CRPL : 대출신청실행 -->
+  <code key="CRPL_PLE6" order="16"><![CDATA[/product/loan/MA3LONOPN001_A0V.view]]></code>		<!-- CRPL : 대출신청서확인 -->
+  <code key="CRPL_PLDR" order="17"><![CDATA[/product/loan/MA3LONOPN001_B0V.view]]></code>		<!-- CRPL : LPC송부 -->
+  <code key="CRPL_PLE7" order="18"><![CDATA[/product/loan/MA3LONOPN001_B0V.view]]></code>		<!-- CRPL : EMAIL전송 -->
+  
+  <!-- 모바일소액대출 -->
+  <code key="MAPL_PLPA" order="0"><![CDATA[/product/loan/MA3PRDLON004_20V.view]]></code>		<!-- MAPL : 개인신용정보동의서 -->
+  <code key="MAPL_PLSS" order="1"><![CDATA[/product/loan/MA3PRDLON004_20V.view]]></code>		<!-- MAPL : 스크래핑완료 -->
+  <code key="MAPL_PLCS" order="2"><![CDATA[/product/loan/MA3PRDLON004_20V.view]]></code>		<!-- MAPL : 대출상담신청 -->
+  <code key="MAPL_PLCE" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON004_60V.view]]></code>		<!-- MAPL : 고객정보확인 -->
+  <code key="MAPL_CAID" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON004_60V.view]]></code>		<!-- MAPL : 고객정보확인 -->
+  <!--<code key="MAPL_COG1" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON004_60V.view]]></code>-->		<!-- MAPL : 고객정보확인 -->
+  <code key="MAPL_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON004_60V.view]]></code>		<!-- MAPL : 고객정보확인 -->
+  <code key="MAPL_PLAG" order="6"><![CDATA[/product/loan/MA3PRDLON004_70V.view]]></code>		<!-- MAPL : 대출신청정보등록 -->
+  <code key="MAPL_PLRR" order="7"><![CDATA[/product/loan/MA3PRDLON004_80V.view]]></code>		<!-- MAPL : 대출신청정보확인 -->
+  <code key="MAPL_PLRO" order="8"><![CDATA[/product/loan/MA3PRDLON004_90V.view]]></code>		<!-- MAPL : 대출신청서류확인 -->
+  <code key="MAPL_PLDR" order="9"><![CDATA[/product/loan/MA3PRDLON004_A0V.view]]></code>		<!-- MAPL : 대출신청실행 -->
+  <code key="MAPL_PLE1" order="10"><![CDATA[/product/loan/MA3PRDLON004_A0V.view]]></code>		<!-- MAPL : 대출신청실행 -->
+  <code key="MAPL_PLE2" order="11"><![CDATA[/product/loan/MA3PRDLON004_A0V.view]]></code>		<!-- MAPL : 대출신청실행 -->
+  <code key="MAPL_PLE3" order="12"><![CDATA[/product/loan/MA3PRDLON004_A0V.view]]></code>		<!-- MAPL : 대출신청실행 -->
+  <code key="MAPL_PLE4" order="13"><![CDATA[/product/loan/MA3PRDLON004_A0V.view]]></code>		<!-- MAPL : 대출신청실행 -->
+  <code key="MAPL_PLE5" order="14"><![CDATA[/product/loan/MA3PRDLON004_A0V.view]]></code>		<!-- MAPL : 대출신청실행 -->
+  
+  <!-- 토스 지정대리인 -->
+  <code key="MAPL_PLCE_000120" order="0"><![CDATA[/product/loan/MA3PRDLON008_60V.view]]></code>		<!-- MAPL 000120 : 고객정보확인 -->
+  <code key="MAPL_COCU_000120" order="1"><![CDATA[/product/loan/MA3PRDLON008_80V.view]]></code>		<!-- MAPL 000120 : 대출신청약관확인 -->
+  <code key="MAPL_PLAG_000120" order="2"><![CDATA[/product/loan/MA3PRDLON008_90V.view]]></code>		<!-- MAPL 000120 : 대출신청정보등록 -->
+  <code key="MAPL_PLRR_000120" order="3"><![CDATA[/product/loan/MA3PRDLON008_A0V.view]]></code>		<!-- MAPL 000120 : 대출신청정보확인 -->
+  <code key="MAPL_PLRO_000120" order="4"><![CDATA[/product/loan/MA3PRDLON008_B0V.view]]></code>		<!-- MAPL 000120 : 대출신청서류확인 -->
+  <code key="MAPL_PLDR_000120" order="5"><![CDATA[/product/loan/MA3PRDLON008_C0V.view]]></code>		<!-- MAPL 000120 : 대출신청실행 -->
+  <code key="MAPL_PLE1_000120" order="6"><![CDATA[/product/loan/MA3PRDLON008_C0V.view]]></code>		<!-- MAPL 000120 : 대출신청실행 -->
+  <code key="MAPL_PLE2_000120" order="7"><![CDATA[/product/loan/MA3PRDLON008_C0V.view]]></code>		<!-- MAPL 000120 : 대출신청실행 -->
+  <code key="MAPL_PLE3_000120" order="8"><![CDATA[/product/loan/MA3PRDLON008_C0V.view]]></code>		<!-- MAPL 000120 : 대출신청실행 -->
+  <code key="MAPL_PLE4_000120" order="9"><![CDATA[/product/loan/MA3PRDLON008_C0V.view]]></code>		<!-- MAPL 000120 : 대출신청실행 -->
+  <code key="MAPL_PLE5_000120" order="10"><![CDATA[/product/loan/MA3PRDLON008_C0V.view]]></code>	<!-- MAPL 000120 : 대출신청실행 -->
+  
+  <!-- MOTP발급 -->  
+  <!-- <code key="MOTP_CAID" order="0"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>	 MOTP : 신분증촬영 완료 -->
+  <!-- <code key="MOTP_CARI" order="1"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>	 MOTP : 추가인증선택(역송금 또는 영상) -->
+  <code key="MOTP_CAIF" order="2"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>	<!-- MOTP : 타행계좌정보 입력 -->
+  <code key="MOTP_CACI" order="3"><![CDATA[/authcenter/MA3CRTMOM004_50V.view]]></code>		<!-- MOTP : 역송금 인증코드입력 완료 -->
+  <!-- <code key="MOTP_CASC" order="4"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>	 MOTP : 영상통화 인증 -->
+  <code key="MOTP_CASE" order="5"><![CDATA[/authcenter/MA3CRTMOM004_50V.view]]></code>		<!-- MOTP : 영상통화 완료 -->
+  <code key="MOTP_INAG" order="6"><![CDATA[/authcenter/MA3CRTMOM004_70V.view]]></code>		<!-- MOTP : 약관 및 동의 -->
+  
+  <!-- 인터넷뱅킹 신규 MOTP -->
+  <!-- <code key="INBK_CAID" order="0"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>	 MOTP : 신분증촬영 완료 -->
+  <!-- <code key="INBK_CARI" order="1"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>	 MOTP : 추가인증선택(역송금 또는 영상) -->
+  <code key="INBK_CAIF" order="2"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>	<!-- MOTP : 타행계좌정보 입력 -->
+  <code key="INBK_CACI" order="3"><![CDATA[/authcenter/MA3CRTMOM004_50V.view]]></code>		<!-- MOTP : 역송금 인증코드입력 완료 -->
+  <!-- <code key="INBK_CASC" order="4"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>	 MOTP : 영상통화 인증 -->
+  <code key="INBK_CASE" order="5"><![CDATA[/authcenter/MA3CRTMOM004_50V.view]]></code>		<!-- MOTP : 영상통화 완료 -->
+  <code key="INBK_INAG" order="6"><![CDATA[/product/common/MA3PRDIBR002_40V.view]]></code>		<!-- MOTP : 약관 및 동의 -->
+  
+  <!-- 퍼스트홈론 -->
+  <code key="SBMA_MACS" order="0"><![CDATA[/product/loan/MA3LONOPN006_60V.view]]></code>		<!-- SBMA : 대출상담결과 -->
+  <code key="SBMA_MACR" order="1"><![CDATA[/product/loan/MA3LONOPN006_60V.view]]></code>		<!-- SBMA : 대출상담결과 -->
+  
+   <!-- 이체한도증액 -->
+  <code key="TRLR_CAIM" order="0"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- TRLR : 이체한도증액 금액설정완료 -->
+  <code key="TRLR_CAID" order="1"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- TRLR : 이체한도증액 신분증촬영 완료 -->
+  <code key="TRLR_CARI" order="2"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- TRLR : 이체한도증액 추가인증선택-->
+  <code key="TRLR_CAIF" order="3"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- TRLR : 이체한도증액 타행계좌정보 입력 -->
+  <code key="TRLR_CACI" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- TRLR : 이체한도증액 타행 인증코드 입력-->
+  <code key="TRLR_CASC" order="5"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>		<!-- TRLR : 이체한도증액 영상통화 인증 -->
+  <code key="TRLR_CASE" order="6"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- TRLR : 이체한도증액 영상통화 완료-->
+  <code key="TRLR_CAGU" order="6"><![CDATA[/transfer/MA3TRNTLM001_20V.view]]></code>		<!-- TRLR : 이체한도증액 추가인증완료 -->
+	
+	<!-- 모바일 전세보증론 신청 -->
+	<code key="CMJG_JGPA" order="0"><![CDATA[/product/loan/MA3PRDLON007_10V.view]]></code>												<!-- CMJG : 상담동의     -->
+	<code key="CMJG_JGSP" order="1"><![CDATA[/product/loan/MA3PRDLON007_40V.view]]></code>												<!-- CMJG : 스크래핑완료 -->
+	<code key="CMJG_JGKB" order="2"><![CDATA[/product/loan/MA3PRDLON007_40V.view]]></code>												<!-- CMJG : KB시세조회 -->
+	<code key="CMJG_JGCS" order="3"><![CDATA[/product/loan/MA3PRDLON007_50V.view]]></code>												<!-- CMJG : 대출상담신청 -->
+	<code key="CMJG_JGCN" order="4"><![CDATA[/product/loan/MA3PRDLON007_70V.view]]></code>												<!-- CMJG : 상담정보확인 -->
+	<code key="CMJG_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON007_80V.view]]></code>		<!-- CMJG : 고객정보확인 -->
+	<code key="CMJG_CAID" order="6"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON007_80V.view]]></code>		<!-- CMJG : 고객정보확인 -->
+	<code key="CMJG_JGAG" order="7"><![CDATA[/product/loan/MA3PRDLON007_A0V.view]]></code>												<!-- CMJG : 신청정보입력 -->
+	<code key="CMJG_JGRR" order="8"><![CDATA[/product/loan/MA3PRDLON007_B0V.view]]></code>												<!-- CMJG : 신청정보확인 -->
+	<code key="CMJG_JGSE" order="9"><![CDATA[/product/loan/MA3PRDLON007_C0V.view]]></code>												<!-- CMJG : 신청서류등록 -->
+	<code key="CMJG_JGLP" order="10"><![CDATA[/product/loan/MA3PRDLON007_E0V.view]]></code>												<!-- CMJG : 촬영서류제출 -->
+	<code key="CMJG_JGPH" order="11"><![CDATA[/product/product/MA3MSCPRG001.mnu]]></code>
+	
+	<!-- 모바일 전세보증론 연기 -->
+	<code key="CMJL_JLPA" order="0"><![CDATA[/loan/MA3LONLGD001_30V.view]]></code>														<!-- CMJL : 연기상담동의 -->
+	<code key="CMJL_JLSP" order="1"><![CDATA[/loan/MA3LONLGD001_70V.view]]></code>														<!-- CMJL : 스크래핑완료 -->
+	<code key="CMJL_JLCS" order="2"><![CDATA[/loan/MA3LONLGD001_70V.view]]></code>														<!-- CMJL : 연기한도조회 -->
+	<code key="CMJL_JLCN" order="3"><![CDATA[/loan/MA3LONLGD001_90V.view]]></code>				<!-- CMJL : 고객정보확인 -->
+	<code key="CMJL_COCU" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/loan/MA3LONLGD001_A0V.view]]></code>				<!-- CMJL : 고객정보확인 -->
+	<code key="CMJL_CAID" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/loan/MA3LONLGD001_A0V.view]]></code>				<!-- CMJL : 고객정보확인 -->
+	<code key="CMJL_JLAG" order="6"><![CDATA[/loan/MA3LONLGD001_B0V.view]]></code>														<!-- CMJL : 약관동의완료 -->
+	<code key="CMJL_JLRR" order="7"><![CDATA[/loan/MA3LONLGD001_C0V.view]]></code>														<!-- CMJL : 연기정보확인 -->
+	<code key="CMJL_JLSE" order="8"><![CDATA[/loan/MA3LONLGD001_D0V.view]]></code>														<!-- CMJL : 연기서류등록 -->
+	<code key="CMJL_JLLP" order="9"><![CDATA[/loan/MA3LONLGD001_F0V.view]]></code>														<!-- CMJL : 촬영서류제출 -->
+	<code key="CMJL_JLPH" order="10"><![CDATA[/product/product/MA3MSCPRG001.mnu]]></code>
+	
+	<!-- 새희망홀씨론 -->
+	<code key="NSPL_PLPA" order="0"><![CDATA[/product/loan/MA3PRDLON009_20V.view]]></code>		<!-- NSPL : 개인신용정보동의서 -->
+	<code key="NSPL_PLSS" order="1"><![CDATA[/product/loan/MA3PRDLON009_20V.view]]></code>		<!-- NSPL : 스크래핑완료 -->
+	<code key="NSPL_PLCS" order="2"><![CDATA[/product/loan/MA3PRDLON009_20V.view]]></code>		<!-- NSPL : 대출상담신청 -->
+	<code key="NSPL_PLCE" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON009_60V.view]]></code>		<!-- NSPL : 고객정보확인 -->
+	<code key="NSPL_CAID" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON009_60V.view]]></code>		<!-- NSPL : 고객정보확인 -->
+	<code key="NSPL_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON009_60V.view]]></code>		<!-- NSPL : 고객정보확인 -->
+	<code key="NSPL_PLAG" order="6"><![CDATA[/product/loan/MA3PRDLON009_70V.view]]></code>		<!-- NSPL : 대출신청정보등록 -->
+	<code key="NSPL_PLRR" order="7"><![CDATA[/product/loan/MA3PRDLON009_80V.view]]></code>		<!-- NSPL : 대출신청정보확인 -->
+	<code key="NSPL_PLRO" order="8"><![CDATA[/product/loan/MA3PRDLON009_90V.view]]></code>		<!-- NSPL : 대출신청서류확인 -->
+	<code key="NSPL_PLDR" order="9"><![CDATA[/product/loan/MA3PRDLON009_A0V.view]]></code>		<!-- NSPL : 대출신청실행 -->
+	<code key="NSPL_PLE1" order="10"><![CDATA[/product/loan/MA3PRDLON009_A0V.view]]></code>		<!-- NSPL : 대출신청실행 -->
+	<code key="NSPL_PLE2" order="11"><![CDATA[/product/loan/MA3PRDLON009_A0V.view]]></code>		<!-- NSPL : 대출신청실행 -->
+	<code key="NSPL_PLE3" order="12"><![CDATA[/product/loan/MA3PRDLON009_A0V.view]]></code>		<!-- NSPL : 대출신청실행 -->
+	<code key="NSPL_PLE4" order="13"><![CDATA[/product/loan/MA3PRDLON009_A0V.view]]></code>		<!-- NSPL : 대출신청실행 -->
+	<code key="NSPL_PLE5" order="14"><![CDATA[/product/loan/MA3PRDLON009_A0V.view]]></code>		<!-- NSPL : 대출신청실행 -->
+	
+	<!-- OTP/보안카드 오류건수 해제 S. -->
+	<code key="MOLR_COCU" order="0"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- MOLR:고객정보확인 완료 -->
+	<code key="MOLR_CAID" order="1"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- MOLR : OTP/보안카드 오류건수 해제 신분증촬영 완료 -->
+	<code key="MOLR_CARI" order="2"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- MOLR : OTP/보안카드 오류건수 해제 추가인증선택-->
+	<code key="MOLR_CAIF" order="3"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- MOLR : OTP/보안카드 오류건수 해제 타행계좌정보 입력 -->
+	<code key="MOLR_CACI" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- MOLR : 타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)-->
+	<!-- <code key="MOLR_CACI" order="5"><![CDATA[/authcenter/MA3CRTOEL001_20V.view]]></code> -->
+	<!-- OTP/보안카드 오류건수 해제 E. -->
+	
+	<!-- 계좌 비밀번호 재설정 S. -->
+	<code key="MPLR_CPCO" order="0"><![CDATA[/authcenter/MA3CRTAPM001_20V.view]]></code>		<!-- MPLR : 계좌 비밀번호 재설정 계좌 선택 -->
+	<code key="MPLR_COCU" order="1"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- MPLR:고객정보확인 완료 -->
+	<code key="MPLR_CAID" order="2"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- MPLR : 계좌 비밀번호 재설정 신분증촬영 완료 -->
+	<code key="MPLR_CARI" order="3"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- MPLR : 계좌 비밀번호 재설정 추가인증선택-->
+	<code key="MPLR_CAIF" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- MPLR : 계좌 비밀번호 재설정 타행계좌정보 입력 -->
+	<code key="MPLR_CACI" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- MPLR : 타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)-->
+	<code key="MPLR_CAGU" order="6"><![CDATA[/authcenter/MA3CRTAPM001_30V.view]]></code>	
+	<!-- 계좌 비밀번호 재설정 E. -->
+	
+	<!-- 휴면계좌 활성화 S. -->
+	<code key="MHLR_CPCT" order="0"><![CDATA[/authcenter/MA3CRTDAL001_20V.view]]></code>		<!-- MHLR : 휴면계좌 활성화 계좌 선택 -->
+	<code key="MHLR_COCU" order="1"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- MHLR:고객정보확인 완료 -->
+	<code key="MHLR_CAID" order="2"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- MHLR : 휴면계좌 활성화 신분증촬영 완료 -->
+	<code key="MHLR_CARI" order="3"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- MHLR : 휴면계좌 활성화 추가인증선택-->
+	<code key="MHLR_CAIF" order="4"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- MHLR : 휴면계좌 활성화 타행계좌정보 입력 -->
+	<code key="MHLR_CACI" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- MHLR : 타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)-->
+	<code key="MHLR_CASE" order="6"><![CDATA[/authcenter/MA3CRTDAL001_30V.view]]></code>	
+	<!-- 휴면계좌 활성화 E. -->
+	
+	<!-- 모바일대출통합상담(돌려드림론) -->
+	<code key="MLIC_CRPL_VCPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 개인신용정보동의서(가상담) -->
+	<code key="MLIC_CRPL_VCCI" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 대출상담신청(가상담) -->
+	<code key="MLIC_CRPL_VCCS" order="3"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 판정결과조회(가상담) -->
+	<code key="MLIC_CRPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 개인신용정보동의서 -->
+	<code key="MLIC_CRPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 스크래핑완료 -->
+	<code key="MLIC_CRPL_PLCI" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 대출상담신청 -->
+	<code key="MLIC_CRPL_PLCS" order="3"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- CRPL : 판정결과조회 -->
+	<code key="MLIC_CRPL_PLCE" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- CRPL : 대출상담결과 -->
+	<code key="MLIC_CRPL_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- CRPL : 고객정보확인 -->
+	<code key="MLIC_CRPL_CAID" order="6"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- CRPL : 고객정보확인 -->
+	<code key="MLIC_CRPL_PLAG" order="7"><![CDATA[/product/loan/MA3PRDLON010_20V.view]]></code>		<!-- CRPL : 대출신청정보등록 -->
+	<code key="MLIC_CRPL_PLRR" order="8"><![CDATA[/product/loan/MA3PRDLON010_30V.view]]></code>		<!-- CRPL : 대출신청정보확인 -->
+	<code key="MLIC_CRPL_PLRO" order="9"><![CDATA[/product/loan/MA3PRDLON010_40V.view]]></code>		<!-- CRPL : 대출신청서류확인 -->
+	<code key="MLIC_CRPL_PLDR" order="10"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	<code key="MLIC_CRPL_PLE1" order="11"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	<code key="MLIC_CRPL_PLE2" order="12"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	<code key="MLIC_CRPL_PLE3" order="13"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	<code key="MLIC_CRPL_PLE4" order="14"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	<code key="MLIC_CRPL_PLE5" order="15"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	<code key="MLIC_CRPL_PLE6" order="16"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- CRPL : 대출신청실행 -->
+	
+	<!-- 모바일대출통합상담(촬영서류등록) -->
+	<code key="MLIC_ADRQ" order="0"><![CDATA[/product/loan/MA3PRDLON010_62V.view]]></code>		<!-- ADRQ : 촬영서류등록 -->
+	<code key="MLIC_ADEN" order="1"><![CDATA[]]></code>		<!-- ADEQ : 촬영서류제출완료 -->
+  
+	<!-- 모바일대출통합상담(직장인중금리) -->
+	<code key="MLIC_SPPL_VCPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 개인신용정보동의서(가상담) -->
+	<code key="MLIC_SPPL_VCCI" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 대출상담신청(가상담) -->
+	<code key="MLIC_SPPL_VCCS" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 판정결과조회(가상담) -->
+	<code key="MLIC_SPPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 개인신용정보동의서 -->
+	<code key="MLIC_SPPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 스크래핑완료 -->
+	<code key="MLIC_SPPL_PLCI" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 대출상담신청 -->
+	<code key="MLIC_SPPL_PLCS" order="3"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- SPPL : 판정결과조회 -->
+	<code key="MLIC_SPPL_PLCE" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- SPPL : 대출상담결과 -->
+	<code key="MLIC_SPPL_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- SPPL : 고객정보확인 -->
+	<code key="MLIC_SPPL_CAID" order="6"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- SPPL : 고객정보확인 -->
+	<code key="MLIC_SPPL_PLAG" order="7"><![CDATA[/product/loan/MA3PRDLON010_20V.view]]></code>		<!-- SPPL : 대출신청정보등록 -->
+	<code key="MLIC_SPPL_PLRR" order="8"><![CDATA[/product/loan/MA3PRDLON010_30V.view]]></code>		<!-- SPPL : 대출신청정보확인 -->
+	<code key="MLIC_SPPL_PLRO" order="9"><![CDATA[/product/loan/MA3PRDLON010_40V.view]]></code>		<!-- SPPL : 대출신청서류확인 -->
+	<code key="MLIC_SPPL_PLDR" order="10"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	<code key="MLIC_SPPL_PLE1" order="11"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	<code key="MLIC_SPPL_PLE2" order="12"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	<code key="MLIC_SPPL_PLE3" order="13"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	<code key="MLIC_SPPL_PLE4" order="14"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	<code key="MLIC_SPPL_PLE5" order="15"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	<code key="MLIC_SPPL_PLE6" order="16"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- SPPL : 대출신청실행 -->
+	
+	<!-- 모바일대출통합상담(모바일소액대출) -->
+	<code key="MLIC_MAPL_VCPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 개인신용정보동의서(가상담) -->
+	<code key="MLIC_MAPL_VCCI" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 대출상담신청(가상담) -->
+	<code key="MLIC_MAPL_VCCS" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 판정결과조회(가상담) -->
+	<code key="MLIC_MAPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 개인신용정보동의서 -->
+	<code key="MLIC_MAPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 스크래핑완료 -->
+	<code key="MLIC_MAPL_PLCI" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 대출상담신청 -->
+	<code key="MLIC_MAPL_PLCS" order="3"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- MAPL : 판정결과조회 -->
+	<code key="MLIC_MAPL_PLCE" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- MAPL : 대출상담결과 -->
+	<code key="MLIC_MAPL_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- MAPL : 고객정보확인 -->
+	<code key="MLIC_MAPL_CAID" order="6"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- MAPL : 고객정보확인 -->
+	<code key="MLIC_MAPL_PLAG" order="7"><![CDATA[/product/loan/MA3PRDLON010_20V.view]]></code>		<!-- MAPL : 대출신청정보등록 -->
+	<code key="MLIC_MAPL_PLRR" order="8"><![CDATA[/product/loan/MA3PRDLON010_30V.view]]></code>		<!-- MAPL : 대출신청정보확인 -->
+	<code key="MLIC_MAPL_PLRO" order="9"><![CDATA[/product/loan/MA3PRDLON010_40V.view]]></code>		<!-- MAPL : 대출신청서류확인 -->
+	<code key="MLIC_MAPL_PLDR" order="10"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	<code key="MLIC_MAPL_PLE1" order="11"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	<code key="MLIC_MAPL_PLE2" order="12"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	<code key="MLIC_MAPL_PLE3" order="13"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	<code key="MLIC_MAPL_PLE4" order="14"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	<code key="MLIC_MAPL_PLE5" order="15"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	<code key="MLIC_MAPL_PLE6" order="16"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- MAPL : 대출신청실행 -->
+	
+	<!-- 모바일대출통합상담(새희망홀씨론) -->
+	<code key="MLIC_NSPL_VCPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 개인신용정보동의서(가상담) -->
+	<code key="MLIC_NSPL_VCCI" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 대출상담신청(가상담) -->
+	<code key="MLIC_NSPL_VCCS" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 판정결과조회(가상담) -->
+	<code key="MLIC_NSPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 개인신용정보동의서 -->
+	<code key="MLIC_NSPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 스크래핑완료 -->
+	<code key="MLIC_NSPL_PLCI" order="2"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 대출상담신청 -->
+	<code key="MLIC_NSPL_PLCS" order="3"><![CDATA[/product/loan/MA3LONICS001_10V.view]]></code>		<!-- NSPL : 판정결과조회 -->
+	<code key="MLIC_NSPL_PLCE" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- NSPL : 대출상담결과 -->
+	<code key="MLIC_NSPL_COCU" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- NSPL : 고객정보확인 -->
+	<code key="MLIC_NSPL_CAID" order="6"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3PRDLON010_10V.view]]></code>		<!-- NSPL : 고객정보확인 -->
+	<code key="MLIC_NSPL_PLAG" order="7"><![CDATA[/product/loan/MA3PRDLON010_20V.view]]></code>		<!-- NSPL : 대출신청정보등록 -->
+	<code key="MLIC_NSPL_PLRR" order="8"><![CDATA[/product/loan/MA3PRDLON010_30V.view]]></code>		<!-- NSPL : 대출신청정보확인 -->
+	<code key="MLIC_NSPL_PLRO" order="9"><![CDATA[/product/loan/MA3PRDLON010_40V.view]]></code>		<!-- NSPL : 대출신청서류확인 -->
+	<code key="MLIC_NSPL_PLDR" order="10"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	<code key="MLIC_NSPL_PLE1" order="11"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	<code key="MLIC_NSPL_PLE2" order="12"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	<code key="MLIC_NSPL_PLE3" order="13"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	<code key="MLIC_NSPL_PLE4" order="14"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	<code key="MLIC_NSPL_PLE5" order="15"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	<code key="MLIC_NSPL_PLE6" order="16"><![CDATA[/product/loan/MA3PRDLON010_50V.view]]></code>	<!-- NSPL : 대출신청실행 -->
+	
+	<!-- SC증권 원화계좌 --> 
+	<code key="SCSK_COCU" order="0"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/stock/MA3STCACT001_20V.view]]></code>		<!-- CASA:고객정보확인 완료 ->  신분증촬영--> 
+	<code key="SCSK_CAID" order="1"><![CDATA[/product/stock/MA3STCACT001_20V.view]]></code>		<!-- SCSK:약관동의 --> 
+	<code key="SCSK_CAAG" order="2"><![CDATA[/product/stock/MA3STCACT001_60V.view]]></code>		<!-- SCSK:거래목적 --> 
+	<code key="SCSK_SCTO" order="3"><![CDATA[/product/stock/MA3STCACT001_30V.view]]></code>		<!-- SCSK:신청정보입력 --> 
+	<code key="SCSK_SCIF" order="4"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- SCSK:추가인증선택(역송금 or 영상통화) --> 
+	<code key="SCSK_CARI" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- SCSK:타행계좌정보 입력 --> 
+	<code key="SCSK_CAIF" order="6"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- SCSK:타행 인증코드 입력 --> 
+	<code key="SCSK_CACI" order="7"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- SCSK:추가인증안내--> 
+	<code key="SCSK_CASC" order="8"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>		<!-- SCSK:영상통화 인증 --> 
+	<code key="SCSK_CASE" order="9"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- SCSK:추가인증안내--> 
+	<code key="SCSK_CAGU" order="10"><![CDATA[/product/stock/MA3STCACT001_40V.view]]></code>	<!-- SCSK:계좌비밀번호입력 --> 
+	
+	<!-- SC증권 외화계좌 BIB 2021-08-27 --> 
+	<code key="SCSF_COCU" order="0"><![CDATA[/common/MA3CMMBIZ012_10V.view?nextURL=/product/stock/MA3STCACT001_20V.view]]></code>		<!-- CASA:고객정보확인 완료 ->  신분증촬영--> 
+	<code key="SCSF_CAID" order="1"><![CDATA[/product/stock/MA3STCACT001_20V.view]]></code>		<!-- SCSK:약관동의 --> 
+	<code key="SCSF_CAAG" order="2"><![CDATA[/product/stock/MA3STCACT001_60V.view]]></code>		<!-- SCSK:거래목적 --> 
+	<code key="SCSF_SCTO" order="3"><![CDATA[/product/stock/MA3STCACT001_30V.view]]></code>		<!-- SCSK:신청정보입력 --> 
+	<code key="SCSF_SCIF" order="4"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- SCSK:추가인증선택(역송금 or 영상통화) --> 
+	<code key="SCSF_CARI" order="5"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code>		<!-- SCSK:타행계좌정보 입력 --> 
+	<code key="SCSF_CAIF" order="6"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- SCSK:타행 인증코드 입력 --> 
+	<code key="SCSF_CACI" order="7"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- SCSK:추가인증안내--> 
+	<code key="SCSF_CASC" order="8"><![CDATA[/product/casa/MA3ACTOPN001_90V.view]]></code>		<!-- SCSK:영상통화 인증 --> 
+	<code key="SCSF_CASE" order="9"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- SCSK:추가인증안내--> 
+	<code key="SCSF_CAGU" order="10"><![CDATA[/product/stock/MA3STCACT001_40V.view]]></code>	<!-- SCSK:계좌비밀번호입력 --> 
+	
+	<!-- 주택담보대출 통합상담(퍼스트홈론, 순수장기고정금리대출, 보금자리론) -->
+	<code key="MLIC_MHLS_HLST" order="0"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 휴대폰본인확인 -->
+	<code key="MLIC_MHLS_HLCP" order="1"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 대출목적선택 -->
+	<code key="MLIC_MHLS_HLAS" order="2"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 서비스이용동의 -->
+	<code key="MLIC_MHLS_HLSS" order="3"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 데이터 수집 -->
+	<code key="MLIC_MHLS_HLSQ" order="4"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : QA -->
+	<code key="MLIC_MHLS_HLMO" order="5"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 기존담보대출선택 -->
+	<code key="MLIC_MHLS_HLAB" order="6"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 상환대출선택 -->
+	<code key="MLIC_MHLS_HLCT" order="7"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 적합성/적정성 -->
+	<code key="MLIC_MHLS_HLCN" order="8"><![CDATA[/product/loan/MA3LONICS002_70V.view]]></code>		<!-- MHLS : 대출상담결과 -->
+	<code key="MLIC_MHLS_HLCR" order="9"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 대출상담예약 -->
+	 
+		<!-- 주택담보대출 통합상담(퍼스트홈론, 순수장기고정금리대출, 보금자리론) -->
+	<code key="MLIC_FHLS_HLST" order="0"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 휴대폰본인확인 -->
+	<code key="MLIC_FHLS_HLCP" order="1"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 대출목적선택 -->
+	<code key="MLIC_FHLS_HLAS" order="2"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 서비스이용동의 -->
+	<code key="MLIC_FHLS_HLSS" order="3"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 데이터 수집 -->
+	<code key="MLIC_FHLS_HLSQ" order="4"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : QA -->
+	<code key="MLIC_FHLS_HLMO" order="5"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 기존담보대출선택 -->
+	<code key="MLIC_FHLS_HLAB" order="6"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 상환대출선택 -->
+	<code key="MLIC_FHLS_HLCT" order="7"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 적합성/적정성 -->
+	<code key="MLIC_FHLS_HLCN" order="8"><![CDATA[/product/loan/MA3LONICS002_70V.view]]></code>		<!-- MHLS : 대출상담결과 -->
+	<code key="MLIC_FHLS_HLCR" order="9"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MHLS : 대출상담예약 -->
+	
+	<!-- 주택담보대출 퍼스트홈론 -->
+	<code key="FHLS_HLST" order="0"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 휴대폰본인확인 -->
+	<code key="FHLS_HLCP" order="1"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 대출목적선택 -->
+	<code key="FHLS_HLAS" order="2"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 서비스이용동의 -->
+	<code key="FHLS_HLSS" order="3"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 데이터 수집 -->
+	<code key="FHLS_HLSQ" order="4"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : QA -->
+	<code key="FHLS_HLMO" order="5"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 기존담보대출선택 -->
+	<code key="FHLS_HLAB" order="6"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 상환대출선택 -->
+	<code key="FHLS_HLCT" order="7"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 적합성/적정성 -->
+	<code key="FHLS_HLCN" order="8"><![CDATA[/product/loan/MA3LONICS002_70V.view]]></code>		<!-- FHLS : 대출상담결과 -->
+	<code key="FHLS_HLCR" order="9"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- FHLS : 대출상담예약 -->
+	
+	<code key="FHLS_HLAC" order="10"><![CDATA[/product/loan/MA3LONICS002_C1V.view]]></code>	<!-- FHLS : 신청 준비 체크 -->
+	<code key="FHLS_HLCU" order="11"><![CDATA[/product/loan/MA3LONICS002_C4V.view]]></code>	<!-- FHLS : 고객 정보 확인 -->
+	<code key="FHLS_HLAA" order="12"><![CDATA[/product/loan/MA3LONICS002_C8V.view]]></code>	<!-- FHLS : 대출 신청 동의 -->
+	<code key="FHLS_HLTQ" order="13"><![CDATA[/product/loan/MA3LONICS002_D6V.view]]></code>	<!-- FHLS : 신청 정보 입력 -->
+	<code key="FHLS_HLFR" order="14"><![CDATA[/product/loan/MA3LONICS002_F4V.view]]></code>	<!-- FHLS : 신청 정보 확인 -->
+	
+	<code key="FHLS_HLFN" order="15"><![CDATA[/product/loan/MA3LONICS002_G1V.view]]></code>	<!-- FHLS : 신청 완료 -->
+	<code key="FHLS_HLPT" order="16"><![CDATA[/product/loan/MA3LONICS002_I1V.view]]></code>		<!-- FHLS : 사진촬영제출 완료-->
+	<code key="FHLS_HLPR" order="17"><![CDATA[/product/loan/MA3LONICS002_G1V.view]]></code>	<!-- FHLS : 서류재촬영 요청 -->
+	<code key="FHLS_HLUR" order="18"><![CDATA[/product/loan/MA3LONICS002_G1V.view]]></code>	<!-- FHLS : 보완서류 요청 -->
+	<code key="FHLS_HLER" order="19"><![CDATA[/product/loan/MA3LONICS002_G1V.view]]></code>	<!-- FHLS : 승인서류 요청 -->
+	
+	<!-- 주택담보대출 순수장기고정금리대출 -->
+	<code key="MPPS_HLST" order="0"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 휴대폰본인확인 -->
+	<code key="MPPS_HLCP" order="1"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 대출목적선택 -->
+	<code key="MPPS_HLAS" order="2"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 서비스이용동의 -->
+	<code key="MPPS_HLSS" order="3"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 데이터 수집 -->
+	<code key="MPPS_HLSQ" order="4"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : QA -->
+	<code key="MPPS_HLMO" order="5"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 기존담보대출선택 -->
+	<code key="MPPS_HLAB" order="6"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 상환대출선택 -->
+	<code key="MPPS_HLCT" order="7"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 적합성/적정성 -->
+	<code key="MPPS_HLCN" order="8"><![CDATA[/product/loan/MA3LONICS002_70V.view]]></code>		<!-- MPPS : 대출상담결과 -->
+	<code key="MPPS_HLCR" order="9"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- MPPS : 대출상담예약 -->
+	
+	<!-- 주택담보대출 보금자리론 -->
+	<code key="TBGL_HLST" order="0"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 휴대폰본인확인 -->
+	<code key="TBGL_HLCP" order="1"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 대출목적선택 -->
+	<code key="TBGL_HLAS" order="2"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 서비스이용동의 -->
+	<code key="TBGL_HLSS" order="3"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 데이터 수집 -->
+	<code key="TBGL_HLSQ" order="4"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : QA -->
+	<code key="TBGL_HLMO" order="5"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 기존담보대출선택 -->
+	<code key="TBGL_HLAB" order="6"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 상환대출선택 -->
+	<code key="TBGL_HLCT" order="7"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 적합성/적정성 -->
+	<code key="TBGL_HLCN" order="8"><![CDATA[/product/loan/MA3LONICS002_70V.view]]></code>		<!-- TBGL : 대출상담결과 -->
+	<code key="TBGL_HLCR" order="9"><![CDATA[/product/loan/MA3LONICS002_10V.view]]></code>		<!-- TBGL : 대출상담예약 -->
+	
+	<!-- 신용대출 연기갱신 (고객정보 / 신청서류확인)-->
+	<code key="DRPL_PDAL" order="0"><![CDATA[/loan/MA3LONDRA001_20V.view]]></code>											<!-- DRPL : 연기(갱신)대상계좌목록 --> 
+	<code key="DRPL_PLSS" order="1"><![CDATA[/loan/MA3LONDRA001_20V.view]]></code>											<!-- DRPL : 스크래핑 완료  --> 
+	<code key="DRPL_PDJC" order="2"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/loan/MA3LONDRA001_70V.view]]></code>	<!-- DRPL : 판정결과완료  --> 
+	<code key="DRPL_COCU" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/loan/MA3LONDRA001_70V.view]]></code>	<!-- DRPL : (연기)고객정보확인 --> 
+	<code key="DRPL_CAID" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/loan/MA3LONDRA001_70V.view]]></code>	<!-- DRPL : (연기)고객정보확인 --> 
+	<code key="DRPL_PDRR" order="5"><![CDATA[/loan/MA3LONDRA001_70V.view]]></code>											<!-- DRPL : (갱신)대출신청정보확인 -->
+	<code key="DRPL_PDRO" order="6"><![CDATA[/loan/MA3LONDRA001_70V.view]]></code>											<!-- DRPL : 신청서류확인 -->
+ 	<code key="DRPL_PLDR" order="7"><![CDATA[/loan/MA3LONDRA001_80V.view]]></code>											<!-- DRPL : 연기갱신신청-->
+	<code key="DRPL_PDE1" order="8"><![CDATA[/loan/MA3LONDRA001_80V.view]]></code>											<!-- DRPL : 연기갱신신청-->
+	<code key="DRPL_PDE2" order="9"><![CDATA[/loan/MA3LONDRA001_80V.view]]></code>											<!-- DRPL : 연기갱신신청-->
+	<code key="DRPL_PDE3" order="10"><![CDATA[/loan/MA3LONDRA001_80V.view]]></code>											<!-- DRPL : 연기갱신신청-->
+	
+	<!-- SC제일 신용대출 (SC제일 신용대출) -->
+	<code key="MLOP_OPPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 개인신용정보동의서 -->
+	<code key="MLOP_OPPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 스크래핑완료 -->
+	<code key="MLOP_OPPL_PLCS" order="2"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 판정결과조회 -->
+	<code key="MLOP_OPPL_PLCE" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 대출상담결과 -->
+	<code key="MLOP_OPPL_COCU" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 고객정보확인 -->
+	<code key="MLOP_OPPL_CAID" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 고객정보확인 -->
+	<code key="MLOP_OPPL_PLAG" order="6"><![CDATA[/product/loan/MA3LONCLI001_B0V.view]]></code>		<!-- OPPL : 대출신청정보등록 -->
+	<code key="MLOP_OPPL_PLAS" order="7"><![CDATA[/product/loan/MA3LONCLI001_C0V.view]]></code>		<!-- OPPL : 대출신청정보확인 -->
+	<code key="MLOP_OPPL_PLRR" order="8"><![CDATA[/product/loan/MA3LONCLI001_D0V.view]]></code>		<!-- OPPL : 대출신청정보제공선택 -->
+	<code key="MLOP_OPPL_PLRO" order="9"><![CDATA[/product/loan/MA3LONCLI001_E0V.view]]></code>		<!-- OPPL : 대출신청서류확인 -->
+	<code key="MLOP_OPPL_SCIF" order="10"><![CDATA[/product/loan/MA3LONCLI001_F0V.view]]></code>		<!-- OPPL : 비대면실명인증안내 -->
+	<code key="MLOP_OPPL_OPID" order="11"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- OPPL : 신분증촬영완료 -->
+	<code key="MLOP_OPPL_CARI" order="12"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code> 	<!-- CASA:추가인증선택(역송금 or 영상통화) --> 
+  	<code key="MLOP_OPPL_CAIF" order="13"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- CASA:타행계좌정보 입력 -->
+  	<code key="MLOP_OPPL_CACI" order="14"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- CASA:타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)--> 
+  	<code key="MLOP_OPPL_CAOE" order="15"><![CDATA[/product/loan/MA3LONCLI001_G0V.view]]></code>		<!-- 비대면 추가인증완료 -->
+	<code key="MLOP_OPPL_PLDR" order="16"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_OPPL_PLE1" order="17"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_OPPL_PLE2" order="18"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_OPPL_PLE3" order="19"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_OPPL_PLE4" order="20"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_OPPL_PLE5" order="21"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_OPPL_PLE6" order="22"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	
+	<!-- SC제일 신용대출 (모바일소액대출) -->
+	<code key="MLOP_MAPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 개인신용정보동의서 -->
+	<code key="MLOP_MAPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 스크래핑완료 -->
+	<code key="MLOP_MAPL_PLCS" order="2"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 판정결과조회 -->
+	<code key="MLOP_MAPL_PLCE" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 대출상담결과 -->
+	<code key="MLOP_MAPL_COCU" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 고객정보확인 -->
+	<code key="MLOP_MAPL_CAID" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 고객정보확인 -->
+	<code key="MLOP_MAPL_PLAG" order="6"><![CDATA[/product/loan/MA3LONCLI001_B0V.view]]></code>		<!-- OPPL : 대출신청정보등록 -->
+	<code key="MLOP_MAPL_PLAS" order="7"><![CDATA[/product/loan/MA3LONCLI001_C0V.view]]></code>		<!-- OPPL : 대출신청정보확인 -->
+	<code key="MLOP_MAPL_PLRR" order="8"><![CDATA[/product/loan/MA3LONCLI001_D0V.view]]></code>		<!-- OPPL : 대출신청정보제공선택 -->
+	<code key="MLOP_MAPL_PLRO" order="9"><![CDATA[/product/loan/MA3LONCLI001_E0V.view]]></code>		<!-- OPPL : 대출신청서류확인 -->
+	<code key="MLOP_MAPL_SCIF" order="10"><![CDATA[/product/loan/MA3LONCLI001_F0V.view]]></code>		<!-- OPPL : 비대면실명인증안내 -->
+	<code key="MLOP_MAPL_OPID" order="11"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>		<!-- OPPL : 신분증촬영완료 -->
+	<code key="MLOP_MAPL_CARI" order="12"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code> 	<!-- CASA:추가인증선택(역송금 or 영상통화) --> 
+  	<code key="MLOP_MAPL_CAIF" order="13"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>		<!-- CASA:타행계좌정보 입력 -->
+  	<code key="MLOP_MAPL_CACI" order="14"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>		<!-- CASA:타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)--> 
+  	<code key="MLOP_MAPL_CAOE" order="15"><![CDATA[/product/loan/MA3LONCLI001_G0V.view]]></code>		<!-- 비대면 추가인증완료 -->
+	<code key="MLOP_MAPL_PLDR" order="16"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_MAPL_PLE1" order="17"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_MAPL_PLE2" order="18"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_MAPL_PLE3" order="19"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_MAPL_PLE4" order="20"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_MAPL_PLE5" order="21"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_MAPL_PLE6" order="22"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>		<!-- OPPL : 대출신청실행 -->
+	
+	<!-- SC제일 신용대출 (새희망홀씨론) -->
+	<code key="MLOP_NSPL_PLPA" order="0"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 개인신용정보동의서 -->
+	<code key="MLOP_NSPL_PLSS" order="1"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 스크래핑완료 -->
+	<code key="MLOP_NSPL_PLCS" order="2"><![CDATA[/product/loan/MA3LONCLI001_40V.view]]></code>		<!-- OPPL : 판정결과조회 -->
+	<code key="MLOP_NSPL_PLCE" order="3"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 대출상담결과 -->
+	<code key="MLOP_NSPL_COCU" order="4"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 고객정보확인 -->
+	<code key="MLOP_NSPL_CAID" order="5"><![CDATA[/common/MA3CMMBIZ001_11V.view?nextURL=/product/loan/MA3LONCLI001_A0V.view]]></code>		<!-- OPPL : 고객정보확인 -->
+	<code key="MLOP_NSPL_PLAG" order="6"><![CDATA[/product/loan/MA3LONCLI001_B0V.view]]></code>		<!-- OPPL : 대출신청정보등록 -->
+	<code key="MLOP_NSPL_PLAS" order="7"><![CDATA[/product/loan/MA3LONCLI001_C0V.view]]></code>		<!-- OPPL : 대출신청정보확인 -->
+	<code key="MLOP_NSPL_PLRR" order="8"><![CDATA[/product/loan/MA3LONCLI001_D0V.view]]></code>		<!-- OPPL : 대출신청정보제공선택 -->
+	<code key="MLOP_NSPL_PLRO" order="9"><![CDATA[/product/loan/MA3LONCLI001_E0V.view]]></code>		<!-- OPPL : 대출신청서류확인 -->
+	<code key="MLOP_NSPL_SCIF" order="10"><![CDATA[/product/loan/MA3LONCLI001_F0V.view]]></code>	<!-- OPPL : 비대면실명인증안내 -->
+	<code key="MLOP_NSPL_OPID" order="11"><![CDATA[/product/casa/MA3ACTOPN001_80V.view]]></code>	<!-- OPPL : 신분증촬영완료 -->
+	<code key="MLOP_NSPL_CARI" order="12"><![CDATA[/product/casa/MA3ACTOPN001_A0V.view]]></code> 	<!-- CASA:추가인증선택(역송금 or 영상통화) --> 
+  	<code key="MLOP_NSPL_CAIF" order="13"><![CDATA[/product/casa/MA3ACTOPN001_A1V.view]]></code>	<!-- CASA:타행계좌정보 입력 -->
+  	<code key="MLOP_NSPL_CACI" order="14"><![CDATA[/product/casa/MA3ACTOPN001_A2V.view]]></code>	<!-- CASA:타행 인증코드 입력(추가인증안내 or 계좌비밀번호입력)--> 
+  	<code key="MLOP_NSPL_CAOE" order="15"><![CDATA[/product/loan/MA3LONCLI001_G0V.view]]></code>	<!-- 비대면 추가인증완료 -->
+	<code key="MLOP_NSPL_PLDR" order="16"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_NSPL_PLE1" order="17"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_NSPL_PLE2" order="18"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_NSPL_PLE3" order="19"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_NSPL_PLE4" order="20"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_NSPL_PLE5" order="21"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	<code key="MLOP_NSPL_PLE6" order="22"><![CDATA[/product/loan/MA3LONCLI001_H0V.view]]></code>	<!-- OPPL : 대출신청실행 -->
+	
+	<!-- 모바일대출통합상담(촬영서류등록) -->
+	<code key="MLOP_OPPL_ADRQ" order="0"><![CDATA[/product/loan/MA3LONCLI001_J0V.view]]></code>		<!-- ADRQ : 촬영서류등록 -->
+	<code key="MLOP_OPPL_ADEN" order="1"><![CDATA[]]></code>		<!-- ADEQ : 촬영서류제출완료 -->
+</category>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="en">
+    <errorCode code="PRCTRN1001">
+        <msg><![CDATA[There is no requested data.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1002">
+        <msg><![CDATA[Already processed or overdue for transfer.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1003">
+        <msg><![CDATA[The transaction is not valid.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1004">
+        <msg><![CDATA[The transaction is not valid.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1005">
+        <msg><![CDATA[Already processed.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1006">
+        <msg><![CDATA[This is not a normal transaction.(code : {0} )]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1007">
+        <msg><![CDATA[Inappropriate access.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1008">
+        <msg><![CDATA[There are no debit accounts to change.]]></msg>
+    </errorCode>
+    
+    <errorCode code="PRCTRN1009">
+        <msg><![CDATA[The amount for payment shall be identical or smaller than the remaining amount for payment. Please check your amount for payment.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1010">
+        <msg><![CDATA[The amount for payment shall be identical or smaller than the remaining amount for payment. Please check your amount for payment.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1011">
+        <msg><![CDATA[The amount for payment shall be identical or smaller than the remaining amount for payment. Please check your amount for payment.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1012">
+        <msg><![CDATA[The amount for payment shall be identical or smaller than the remaining amount for payment. Please check your amount for payment.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1013">
+        <msg><![CDATA[The amount for payment shall be identical or smaller than the remaining amount for payment. Please check your amount for payment.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1014">
+        <msg><![CDATA[Failed to extract device information.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1015">
+        <msg><![CDATA[There are no subscription information on keyboard banking.]]></msg>
+    </errorCode>
+    <errorCode code="PRCTRN1016">
+        <msg><![CDATA[Incorrect transaction.]]></msg>
+    </errorCode>
+</errorCodes>

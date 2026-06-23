@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30FnanclPrdctCmmnDao">
+
+	<!-- 상품 조회 [MA3_MAN.MA30_BBS_PRODUCT_MGT_S_01] -->
+	<select id="selectProduct" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.ProductResult">
+		SELECT
+			A.PRDCT_MK_CD
+			,A.PRDCT_CD
+			, A.BZTY_CD
+			, COALESCE(Z.CTGRY_SYS_CD,'') AS CTGRY_SYS_CD
+			, COALESCE(Z.CTGRY_SYS_NM,'') AS CTGRY_SYS_NM
+			, '' AS FUND_CLS_CD
+			, CASE A.PRDCT_MK_CD WHEN 'BP1005' THEN CAST(CRD.ALLIANC_CD AS VARCHAR(10))
+				ELSE '' END AS PRDCT_SUB_CD
+			, A.PRDCT_NM
+			, '' AS FUND_CLS1_NM
+			, '' AS FUND_CLS2_NM
+			, '' AS FUND_CLS3_NM
+			, A.PRDCT_FTUR_KR
+			, C.CD_NM AS PRDCT_MK_NM
+		FROM  MA30_FNANCL_PRDCT_CMMN A INNER JOIN SUB_CD C
+                                    ON A.PRDCT_MK_CD = C.CMMN_CD||C.SUB_CD
+                               LEFT JOIN MA30_FNANCL_PRDCT_DPST DST
+                                       ON A.PRDCT_CD = DST.PRDCT_CD AND DST.ENTRNC_TYPE_CD LIKE '%CHN001%'
+                               LEFT JOIN MA30_FNANCL_PRDCT_TRUST TRT
+                                       ON A.PRDCT_CD = TRT.PRDCT_CD AND TRT.ENTRNC_TYPE_CD LIKE '%CHN001%'
+                               LEFT JOIN MA30_FNANCL_PRDCT_LOAN LON
+                                       ON A.PRDCT_CD = LON.PRDCT_CD AND LON.ENTRNC_TYPE_CD LIKE '%CHN001%'
+                               LEFT JOIN MA30_FNANCL_PRDCT_INSRNC ISR
+                                       ON A.PRDCT_CD = ISR.PRDCT_CD AND ISR.ENTRNC_TYPE_CD LIKE '%CHN001%'
+                               LEFT JOIN MA30_FNANCL_PRDCT_CARD CRD
+                                       ON A.PRDCT_CD = CRD.PRDCT_CD AND CRD.ENTRNC_TYPE_CD LIKE '%CHN001%'
+                               LEFT JOIN (
+                                               SELECT
+                                                   CT2.PRDCT_CD
+                                                   , CT1.CTGRY_SYS_CD
+                                                   , CT1.CTGRY_SYS_NM
+                                               FROM MA30_PRDCT_CTGRY_SYS CT1 INNER JOIN MA30_FNANCL_PRDCT_CTGRY CT2
+                                                                                   ON CT1.CTGRY_SYS_CD = CT2.CTGRY_SYS_CD
+                                               WHERE CT1.USE_YN = 'Y'
+                                               AND CT2.USE_YN = 'Y'
+                                               AND SUB_CD = 'CHN001'
+                                               AND CT1.PRDCT_MK_CD = 'BP1001'
+                                           ) Z
+                                       ON A.PRDCT_CD = Z.PRDCT_CD
+		WHERE A.PRDCT_LANG_CD = #{loctnCd}
+		AND A.PRDCT_MK_CD <![CDATA[<>]]> 'BP1006'
+		AND A.USE_IND = 'Y'
+		AND A.SALE_FLG_CD = 'SE1001'
+		AND A.APP_STATUS = 'PF4005'
+		AND C.CMMN_CD = 'BP1'
+		AND (COALESCE(A.SALE_START_DT,'20190101')||COALESCE(A.SALE_START_TM,'00') <![CDATA[<=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24')
+		AND COALESCE(A.SALE_END_DT,'99991231')||COALESCE(A.SALE_END_TM,'00') <![CDATA[>=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24'))
+		AND (UPPER(A.PRDCT_NM) LIKE UPPER('%'||#{searchWord}||'%'))
+		ORDER BY PRDCT_MK_CD
+		WITH UR
+	</select>
+
+  	<!-- [미스터리쇼핑] 펀드코드로 투자설명서, 간이투자설명서 파일명 조회 [MA30_FNANCL_PRDCT_CMMN_S_01] -->
+	<select id="selectFundCodeFile" parameterType="java.util.List" resultType="com.scbank.process.api.svc.common.dao.dto.ProductFileResult">
+		SELECT
+		    CM.PRDCT_CD,
+		    B.FUND_CLS_CD,                      -- 클래스펀드코드
+		    F.ASSCTN_FUND_NM,       			-- 협회(클래스)펀드명
+		    F.TRAN_WAY,							-- 거래방식
+		    F.CNTRCT_PRD_STRT,					-- 계약시작일
+		    F.CNTRCT_PRD_END,					-- 계약종료일	
+		    C.PRVSN_MK1 AS PRVSN_MK1_FILENM,	--집합투자규약
+		    C.PRVSN_MK2 AS PRVSN_MK2_FILENM,	-- 투자설명서
+		    C.PRVSN_MK3 AS PRVSN_MK3_FILENM,	-- 간이투자설명서
+		    C.PRVSN_MK4 AS PRVSN_MK4_FILENM,	-- 외국집합투자증권 
+		    COALESCE((SELECT CD_NM FROM  SUB_CD  WHERE CMMN_CD = 'PF5' AND SUB_CD = F.FUND_CLS1 AND USE_IND='Y'), '') AS FUND_CLS1_NM,
+	        COALESCE((SELECT CD_NM FROM  SUB_CD  WHERE CMMN_CD = 'PF6' AND SUB_CD = F.FUND_CLS2 AND USE_IND='Y'), '') AS FUND_CLS2_NM,
+	        COALESCE((SELECT CD_NM FROM  SUB_CD  WHERE CMMN_CD = 'PF7' AND SUB_CD = F.FUND_CLS3 AND USE_IND='Y'), '') AS FUND_CLS3_NM
+		FROM MA30_FNANCL_PRDCT_CMMN CM INNER JOIN MA30_FNANCL_PRDCT_FUND B
+		      ON CM.PRDCT_CD = B.PRDCT_CD
+		   INNER JOIN FUND_PRDCT F
+		      ON B.FUND_CLS_CD = F.FUND_CD
+		   LEFT JOIN (SELECT PRV3.PRDCT_CD, MAX(PRVSN_MK1) AS PRVSN_MK1 ,MAX(PRVSN_MK2) AS PRVSN_MK2, MAX(PRVSN_MK3) AS PRVSN_MK3, MAX(PRVSN_MK4) AS PRVSN_MK4
+		              FROM (SELECT  PRV2.PRDCT_CD,
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF011' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK1",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF012' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK2",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF013' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK3",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF014' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK4"    
+		                    FROM MA30_PRDCT_PRVSN_MGT PRV1 INNER JOIN MA30_FNANCL_PRDCT_ATT_FILE PRV2
+		                                                          ON PRV1.PRVSN_CD = PRV2.PRVSN_CD
+		                    WHERE PRV1.LOCTN_CD = 'LN1001' AND PRV1.USE_YN = 'Y'
+		                          AND PRV1.PRVSN_MK IN ('ATF011','ATF012','ATF013','ATF014') ) PRV3
+		              GROUP BY PRV3.PRDCT_CD) C
+		      ON CM.PRDCT_CD = C.PRDCT_CD          
+		WHERE CM.PRDCT_LANG_CD = 'LN1001'     -- 게시언어구분		      
+		      AND F.SALE_FLG = 'Y'
+		      AND CM.APP_STATUS = 'PF4005'    -- 승인상태(승인완료)
+		      AND CM.PRDCT_MK_CD = 'BP1006'   -- 상품구분코드 
+		      AND (VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24') 
+	                    BETWEEN COALESCE(CM.SALE_START_DT,'20190101')||COALESCE(CM.SALE_START_TM,'00') AND COALESCE(CM.SALE_END_DT,'20190101')||COALESCE(CM.SALE_END_TM,'00') )
+		      AND B.FUND_CLS_CD IN 
+			  <foreach collection="fundCodeList" item="item"   index="index" open="(" close=")" separator=",">
+			  	#{item}
+			  </foreach>
+		ORDER BY CM.REGIST_DT DESC
+		WITH UR
+	 </select>
+	 
+	 <!-- 계약서류조회 사모펀드 핵심상품설명서 파일명 조회 [MA30_FNANCL_PRDCT_CMMN_S_03] -->
+	 <select id="selectFundDocumentFile" parameterType="java.util.List" resultType="com.scbank.process.api.svc.common.dao.dto.ProductFileResult">
+		SELECT
+		    CM.PRDCT_CD,
+		    B.FUND_CLS_CD,                      -- 클래스펀드코드
+		    F.ASSCTN_FUND_NM,       			-- 협회(클래스)펀드명
+		    F.TRAN_WAY,							-- 거래방식
+		    F.CNTRCT_PRD_STRT,					-- 계약시작일
+		    F.CNTRCT_PRD_END,					-- 계약종료일	
+		    C.PRVSN_MK1 AS PRVSN_MK1_FILENM,	--집합투자규약
+		    C.PRVSN_MK2 AS PRVSN_MK2_FILENM,	-- 투자설명서
+		    C.PRVSN_MK3 AS PRVSN_MK3_FILENM,	-- 간이투자설명서
+		    C.PRVSN_MK4 AS PRVSN_MK4_FILENM,	-- 외국집합투자증권
+		    C.PRVSN_MK5 AS PRVSN_MK5_FILENM,	-- 사모집합투자증권 핵심요약상품설명서 
+		    C.PRVSN_MK6 AS PRVSN_MK6_FILENM,	-- 사모집합투자증권 핵심상품설명서
+		    COALESCE((SELECT CD_NM FROM  SUB_CD  WHERE CMMN_CD = 'PF5' AND SUB_CD = F.FUND_CLS1 AND USE_IND='Y'), '') AS FUND_CLS1_NM,
+	        COALESCE((SELECT CD_NM FROM  SUB_CD  WHERE CMMN_CD = 'PF6' AND SUB_CD = F.FUND_CLS2 AND USE_IND='Y'), '') AS FUND_CLS2_NM,
+	        COALESCE((SELECT CD_NM FROM  SUB_CD  WHERE CMMN_CD = 'PF7' AND SUB_CD = F.FUND_CLS3 AND USE_IND='Y'), '') AS FUND_CLS3_NM
+		FROM MA30_FNANCL_PRDCT_CMMN CM INNER JOIN MA30_FNANCL_PRDCT_FUND B
+		      ON CM.PRDCT_CD = B.PRDCT_CD
+		   INNER JOIN FUND_PRDCT F
+		      ON B.FUND_CLS_CD = F.FUND_CD
+		   LEFT JOIN (SELECT PRV3.PRDCT_CD, MAX(PRVSN_MK1) AS PRVSN_MK1 ,MAX(PRVSN_MK2) AS PRVSN_MK2, MAX(PRVSN_MK3) AS PRVSN_MK3, MAX(PRVSN_MK4) AS PRVSN_MK4, MAX(PRVSN_MK5) AS PRVSN_MK5, MAX(PRVSN_MK6) AS PRVSN_MK6
+		              FROM (SELECT  PRV2.PRDCT_CD,
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF011' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK1",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF012' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK2",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF013' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK3",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF014' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK4",
+		                            CASE WHEN PRV1.PRVSN_MK = 'ATF018' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK5",
+					    			CASE WHEN PRV1.PRVSN_MK = 'ATF017' THEN PRV1.ATT_FILE_NM ELSE NULL END AS "PRVSN_MK6" 
+		                    FROM MA30_PRDCT_PRVSN_MGT PRV1 INNER JOIN MA30_FNANCL_PRDCT_ATT_FILE PRV2
+		                                                          ON PRV1.PRVSN_CD = PRV2.PRVSN_CD
+		                    WHERE PRV1.LOCTN_CD = 'LN1001' AND PRV1.USE_YN = 'Y'
+		                          AND PRV1.PRVSN_MK IN ('ATF011','ATF012','ATF013','ATF014','ATF018','ATF017') ) PRV3
+		              GROUP BY PRV3.PRDCT_CD) C
+		      ON CM.PRDCT_CD = C.PRDCT_CD          
+		WHERE CM.PRDCT_LANG_CD = 'LN1001'     -- 게시언어구분		      
+		      AND F.SALE_FLG = 'Y'
+		      AND CM.APP_STATUS = 'PF4005'    -- 승인상태(승인완료)
+		      AND CM.PRDCT_MK_CD = 'BP1006'   -- 상품구분코드 
+		      AND (VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24') 
+	                    BETWEEN COALESCE(CM.SALE_START_DT,'20190101')||COALESCE(CM.SALE_START_TM,'00') AND COALESCE(CM.SALE_END_DT,'20190101')||COALESCE(CM.SALE_END_TM,'00') )
+		      AND B.FUND_CLS_CD IN 
+			  <foreach collection="fundCodeList" item="item"   index="index" open="(" close=")" separator=",">
+			  	#{item}
+			  </foreach>
+		ORDER BY CM.REGIST_DT DESC
+		WITH UR
+	 </select>
+	 
+</mapper>

@@ -1,0 +1,21 @@
+#########################################
+# csl common config(code/properties/holiday/servicetime etc)
+#########################################
+csl:
+  common:
+    code:
+      enabled: true
+      config-location: classpath*:/config/code/**/*.xml
+    property:
+      enabled: true
+      config-locations:
+        - classpath*:/config/properties/${csl.runtime.run-mode}/**/*.properties
+    error-code:
+      enabled: true
+      config-location: classpath*:/config/errorcode/**/*.xml
+    holiday:
+      enabled: true
+      config-location: classpath*:/config/holiday/**/*.xml
+    service-time:
+      enabled: true
+      config-location: classpath*:/config/servicetime/**/*.xml

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.cert.dao.InfoDao">
+	<resultMap id="infoResult" type="com.scbank.process.api.svc.shared.components.cert.dao.dto.InfoResult">
+		<result column="cert" property="cert" jdbcType="BLOB" javaType="[B"></result>
+	</resultMap>
+
+	<select id="selectSerialInfo" parameterType="java.lang.String" resultMap="infoResult">
+	SELECT
+		USERID as userid
+		,IDNUM as idnum
+		,SERIAL as serial
+		,ISSUER as issuer
+		,EXPIRED as expired
+		,REGISTERD as registerd
+		,OID as oid
+		,CERT as cert
+	FROM
+		INFO
+	WHERE
+		SERIAL = #{serial}
+		AND
+		OID = #{oid}
+	WITH UR
+	</select>
+</mapper>

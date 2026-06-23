@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors lang="ko">
+    <errorCode code="ERR_MALFORMED">
+        <msg>This XML is not well-formed
+    </errorCode>
+</errors>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.product.dao.Ma30FnanclPrdctControlDao">
+	<!-- 상품별 이용가능시간 체크(PMS 연동) -->
+	<select id="selectPrdctAvailableInfo" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.shared.components.product.dao.dto.PrdctAvailableInfoInqiryResult">
+		SELECT
+		      PRDCT_CD,															/*상품코드*/
+		      SEQNO,															/*순번*/
+		      USE_DATE_FLG,														/*이용가능일자*/
+		      USE_TIME_FLG,														/*이용가능시간*/
+		      USE_TIME_START_HH,												/*이용가능시작(시)*/
+		      USE_TIME_START_MM,												/*이용가능시작(분)*/
+		      CONCAT(USE_TIME_START_HH, USE_TIME_START_MM) AS USE_TIME_START,	/*이용가능시작*/
+		      USE_TIME_END_HH,													/*이용가능종료(시)*/
+		      USE_TIME_END_MM,													/*이용가능종료(분)*/
+		      CONCAT(USE_TIME_END_HH, USE_TIME_END_MM) AS USE_TIME_END,			/*이용가능종료*/
+		      USE_AGE_FLG,														/*이용가능나이*/
+		      USE_ABROAD_FLG,													/*해외IP접속*/
+		      USE_ETC1,															/*이용관련 기타1*/
+		      USE_ETC2,															/*이용관련 기타2*/
+		      USE_ETC3															/*이용관련 기타3*/
+		FROM UIDBS01.MA30_FNANCL_PRDCT_CONTROL
+		WHERE PRDCT_CD = #{prdctCd}      										/*상품코드*/
+		WITH UR
+	</select>
+</mapper>

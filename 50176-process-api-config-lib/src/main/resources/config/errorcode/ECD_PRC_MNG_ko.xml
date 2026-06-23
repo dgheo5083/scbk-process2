@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="ko">
+
+    <errorCode code="PRCMNG30001">
+        <msg><![CDATA[디지털인증서 에러가 발생하였습니다. {0}]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30002">
+        <msg><![CDATA[디지털인증서 통신중 에러가 발생하였습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30003">
+        <msg><![CDATA[디지털인증서 전문 분석 중 에러가 발생하였습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30004">
+        <msg><![CDATA[인증서 발급 중 에러가 발생하였습니다. {0}[{1}]]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30005">
+        <msg><![CDATA[인증서 발급 확인 중 에러가 발생하였습니다. {0}[{1}]]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30006">
+        <msg><![CDATA[인증서 조회중 에러가 발생하였습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCMNG30007">
+        <msg><![CDATA[보안카드 또는 OTP 정보가 존재하지 않습니다.]]></msg>
+    </errorCode>
+
+</errorCodes>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CRT" lang="en">
+  <code key="CRT009001" order="0"><![CDATA[common]]></code>
+  <code key="CRT009002" order="1"><![CDATA[universal]]></code>
+  <code key="CRT009003" order="2"><![CDATA[tax]]></code>
+  <code key="CRT009004" order="3"><![CDATA[other]]></code>
+  <code key="CRT009005" order="4"><![CDATA[SC bank(private)]]></code>
+  <code key="CRT009006" order="5"><![CDATA[other]]></code>
+  <code key="CRT009007" order="6"><![CDATA[signgate]]></code>
+  <code key="CRT009008" order="7"><![CDATA[koscom]]></code>
+  <code key="CRT009009" order="8"><![CDATA[nia]]></code>
+  <code key="CRT009010" order="9"><![CDATA[crosscert]]></code>
+  <code key="CRT009011" order="10"><![CDATA[ktnet]]></code>
+  <code key="CRT009012" order="11"><![CDATA[finance]]></code>
+</category>

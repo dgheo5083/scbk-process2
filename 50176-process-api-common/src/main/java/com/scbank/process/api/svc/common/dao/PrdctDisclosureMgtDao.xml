@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.PrdctDisclosureMgtDao">
+ 
+	<!-- 펀드 공통 계약서류 조회 MA30_PMS_PRVSN_FUND_MGT_S_01 -->
+	<select id="selectCommonAgreeTEST"  parameterType="java.lang.String"  
+	    resultType="com.scbank.process.api.svc.common.dao.dto.CommonAgreeResult">
+		SELECT SUBSTR(CMMN_AFT_FILE_NM, 1, POSSTR(CMMN_AFT_FILE_NM, '|') - 1) AS CMM_AGREE_FILE_NM 
+				, SUBSTR(CMMN_AFT_FILE_NM, POSSTR(CMMN_AFT_FILE_NM, '|') + 1) AS CMM_AGREE_NM 
+				, CMMN_CNTRCT_FLG AS CMM_AGREE_CNTRCT_OFFER_CODE 
+				, SUBSTR(CTGRY_CMMN_AFT_FILE_NM, 1, POSSTR(CTGRY_CMMN_AFT_FILE_NM, '|') - 1) AS CTGRY_CMM_AGREE_FILE_NM 
+				, SUBSTR(CTGRY_CMMN_AFT_FILE_NM, POSSTR(CTGRY_CMMN_AFT_FILE_NM, '|') + 1) AS CTGRY_CMM_AGREE_NM 
+				, CTGRY_CNTRCT_FLG AS CTGRY_CMM_AGREE_CNTRCT_OFFER_CODE 
+				, SUBSTR(PRDCTP_AFT_FILE_NM, 1, POSSTR(PRDCTP_AFT_FILE_NM, '|') - 1) AS PRDCT_AGREE_FILE_NM 
+				, SUBSTR(PRDCTP_AFT_FILE_NM, POSSTR(PRDCTP_AFT_FILE_NM, '|') + 1) AS PRDCT_AGREE_NM 
+				, PRDCTP_CNTRCT_FLG AS PRDCT_AGREE_CNTRCT_OFFER_CODE
+				, SUBSTR(PRDCTE_AFT_FILE_NM, 1, POSSTR(PRDCTE_AFT_FILE_NM, '|') - 1) AS PRDCT_EXPLN_FILE_NM 
+				, SUBSTR(PRDCTE_AFT_FILE_NM, POSSTR(PRDCTE_AFT_FILE_NM, '|') + 1) AS PRDCT_EXPLN_NM 
+				, PRDCTE_CNTRCT_FLG AS PRDCT_EXPLN_CNTRCT_OFFER_CODE
+				, PRDCT_ID
+			FROM   (SELECT SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.CMMN_PRVSN_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS CMMN_AFT_FILE_NM
+						, CMMN_CNTRCT_FLG
+						, SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.CTGRY_CMMN_PRVSN_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS CTGRY_CMMN_AFT_FILE_NM
+						, CTGRY_CNTRCT_FLG
+						, SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.PRDCT_PRVSN_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS PRDCTP_AFT_FILE_NM
+						, PRDCTP_CNTRCT_FLG
+						, SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.PRDCT_EXPLN_DOC_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS PRDCTE_AFT_FILE_NM
+						, PRDCTE_CNTRCT_FLG
+						, A.PRDCT_ID
+					FROM   PRDCT_DISCLOSURE_MGT A
+					WHERE (1=1 OR PUB_NTC_PRDCT_TYPE_CD = #{pubNtcPrdctTypeCd})
+					AND A.BULLTN_FLG = '1' 
+					FETCH FIRST 1 ROWS ONLY
+					WITH UR
+				)
+	
+	</select>
+  
+	<!-- 펀드 공통 계약서류 조회 MA30_PMS_PRVSN_FUND_MGT_S_01 -->
+	<select id="selectCommonAgree"  parameterType="java.lang.String"  
+	    resultType="com.scbank.process.api.svc.common.dao.dto.CommonAgreeResult">
+		SELECT SUBSTR(CMMN_AFT_FILE_NM, 1, POSSTR(CMMN_AFT_FILE_NM, '|') - 1) AS CMM_AGREE_FILE_NM 
+				, SUBSTR(CMMN_AFT_FILE_NM, POSSTR(CMMN_AFT_FILE_NM, '|') + 1) AS CMM_AGREE_NM 
+				, CMMN_CNTRCT_FLG AS CMM_AGREE_CNTRCT_OFFER_CODE 
+				, SUBSTR(CTGRY_CMMN_AFT_FILE_NM, 1, POSSTR(CTGRY_CMMN_AFT_FILE_NM, '|') - 1) AS CTGRY_CMM_AGREE_FILE_NM 
+				, SUBSTR(CTGRY_CMMN_AFT_FILE_NM, POSSTR(CTGRY_CMMN_AFT_FILE_NM, '|') + 1) AS CTGRY_CMM_AGREE_NM 
+				, CTGRY_CNTRCT_FLG AS CTGRY_CMM_AGREE_CNTRCT_OFFER_CODE 
+				, SUBSTR(PRDCTP_AFT_FILE_NM, 1, POSSTR(PRDCTP_AFT_FILE_NM, '|') - 1) AS PRDCT_AGREE_FILE_NM 
+				, SUBSTR(PRDCTP_AFT_FILE_NM, POSSTR(PRDCTP_AFT_FILE_NM, '|') + 1) AS PRDCT_AGREE_NM 
+				, PRDCTP_CNTRCT_FLG AS PRDCT_AGREE_CNTRCT_OFFER_CODE
+				, SUBSTR(PRDCTE_AFT_FILE_NM, 1, POSSTR(PRDCTE_AFT_FILE_NM, '|') - 1) AS PRDCT_EXPLN_FILE_NM 
+				, SUBSTR(PRDCTE_AFT_FILE_NM, POSSTR(PRDCTE_AFT_FILE_NM, '|') + 1) AS PRDCT_EXPLN_NM 
+				, PRDCTE_CNTRCT_FLG AS PRDCT_EXPLN_CNTRCT_OFFER_CODE
+				, PRDCT_ID
+			FROM   (SELECT SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.CMMN_PRVSN_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS CMMN_AFT_FILE_NM
+						, CMMN_CNTRCT_FLG
+						, SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.CTGRY_CMMN_PRVSN_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS CTGRY_CMMN_AFT_FILE_NM
+						, CTGRY_CNTRCT_FLG
+						, SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.PRDCT_PRVSN_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS PRDCTP_AFT_FILE_NM
+						, PRDCTP_CNTRCT_FLG
+						, SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+										|| AMNDMNT_AFT_FILE_NM
+										|| '|'
+										|| PM.PRVSN_NM AS ENFRCMNT_DT2
+								FROM   PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+								WHERE  P.PRVSN_ID = A.PRDCT_EXPLN_DOC_ID
+									AND  P.PRVSN_ID = PM.PRVSN_ID
+									<![CDATA[
+									AND  P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+									]]>
+								ORDER  BY ENFRCMNT_DT2
+											|| AMNDMNT_AFT_FILE_NM DESC
+								FETCH FIRST 1 ROW ONLY), 11) AS PRDCTE_AFT_FILE_NM
+						, PRDCTE_CNTRCT_FLG
+						, A.PRDCT_ID
+					FROM   PRDCT_DISCLOSURE_MGT A
+					WHERE PUB_NTC_PRDCT_TYPE_CD = #{pubNtcPrdctTypeCd}
+					AND A.BULLTN_FLG = '1'
+					<![CDATA[
+					AND A.PUB_ANNUNCMNT_OEPN_DT <= SYSDATE 
+					AND A.PUB_ANNUNCMNT_END_DT >= SYSDATE 
+					]]> 
+				)
+	
+	</select>
+  
+	<!-- 계약서류 조회 MA30_PMS_PRVSN_UPDATE_MGT_S_01 -->
+	<select id="selectContractDocument" parameterType="com.scbank.process.api.svc.common.dao.dto.ContractDocumentParameter"  
+	    resultType="com.scbank.process.api.svc.common.dao.dto.ContractDocumentResult">
+		SELECT SUBSTR(CMMN_AFT_FILE_NM, 1, POSSTR(CMMN_AFT_FILE_NM, '|') - 1) AS CMM_AGREE_FILE_NM --공통약관파일명
+		     , SUBSTR(CMMN_AFT_FILE_NM, POSSTR(CMMN_AFT_FILE_NM, '|') + 1) AS CMM_AGREE_NM --공통약관명
+			 , CMMN_CNTRCT_FLG AS CMM_AGREE_CNTRCT_OFFER_CODE --공통약관아이디계약서류제공코드 1:홈페이지,2:계약서류,3:홈+계약서류
+			 , SUBSTR(CTGRY_CMMN_AFT_FILE_NM, 1, POSSTR(CTGRY_CMMN_AFT_FILE_NM, '|') - 1) AS CTGRY_CMM_AGREE_FILE_NM -- 카테고리공통약관파일명
+		     , SUBSTR(CTGRY_CMMN_AFT_FILE_NM, POSSTR(CTGRY_CMMN_AFT_FILE_NM, '|') + 1) AS CTGRY_CMM_AGREE_NM --카테고리공통약관명
+			 , CTGRY_CNTRCT_FLG AS CTGRY_CMM_AGREE_CNTRCT_OFFER_CODE --카테고리공통약관아이디계약서류제공코드 1:홈페이지,2:계약서류,3:홈+계약서류
+			 , SUBSTR(PRDCTP_AFT_FILE_NM, 1, POSSTR(PRDCTP_AFT_FILE_NM, '|') - 1) AS PRDCT_AGREE_FILE_NM --상품약관명파일명
+		     , SUBSTR(PRDCTP_AFT_FILE_NM, POSSTR(PRDCTP_AFT_FILE_NM, '|') + 1) AS PRDCT_AGREE_NM --상품약관명
+			 , PRDCTP_CNTRCT_FLG AS PRDCT_AGREE_CNTRCT_OFFER_CODE--상품약관아이디계약서류제공코드 1:홈페이지,2:계약서류,3:홈+계약서류
+			 , SUBSTR(PRDCTE_AFT_FILE_NM, 1, POSSTR(PRDCTE_AFT_FILE_NM, '|') - 1) AS PRDCT_EXPLN_FILE_NM --상품설명서파일명
+		     , SUBSTR(PRDCTE_AFT_FILE_NM, POSSTR(PRDCTE_AFT_FILE_NM, '|') + 1) AS PRDCT_EXPLN_NM --상품설명서명
+			 , PRDCTE_CNTRCT_FLG AS PRDCT_EXPLN_CNTRCT_OFFER_CODE--상품설명서계약서류제공코드 1:홈페이지,2:계약서류,3:홈+계약서류
+			 , PRDCT_ID
+			 , MAPPING_CD1
+			 , MAPPING_CD2
+			 , MAPPING_CD3
+		  FROM (SELECT SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+		                              || AMNDMNT_AFT_FILE_NM
+		                              || '|'
+		                              || PM.PRVSN_NM AS ENFRCMNT_DT2
+		                         FROM PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+		                        WHERE P.PRVSN_ID = A.CMMN_PRVSN_ID
+					              AND P.PRVSN_ID = PM.PRVSN_ID
+					              <![CDATA[
+					              AND P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+					              ]]>
+		                        ORDER BY ENFRCMNT_DT2 || AMNDMNT_AFT_FILE_NM DESC
+		                        FETCH FIRST 1 ROW ONLY), 11) AS CMMN_AFT_FILE_NM
+		             , CMMN_CNTRCT_FLG
+		             , SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+		                              || AMNDMNT_AFT_FILE_NM
+		                              || '|'
+		                              || PM.PRVSN_NM AS ENFRCMNT_DT2
+		                         FROM PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+		                        WHERE P.PRVSN_ID = A.CTGRY_CMMN_PRVSN_ID
+					              AND P.PRVSN_ID = PM.PRVSN_ID
+					              <![CDATA[
+					              AND P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+					              ]]>
+		                        ORDER BY ENFRCMNT_DT2 || AMNDMNT_AFT_FILE_NM DESC
+		                        FETCH FIRST 1 ROW ONLY), 11) AS CTGRY_CMMN_AFT_FILE_NM
+		             , CTGRY_CNTRCT_FLG
+		             , SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+		                              || AMNDMNT_AFT_FILE_NM
+		                              || '|'
+		                              || PM.PRVSN_NM AS ENFRCMNT_DT2
+		                         FROM PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+		                        WHERE P.PRVSN_ID = A.PRDCT_PRVSN_ID
+					              AND P.PRVSN_ID = PM.PRVSN_ID
+					              <![CDATA[
+					              AND P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+					              ]]>
+		                        ORDER BY ENFRCMNT_DT2 || AMNDMNT_AFT_FILE_NM DESC
+		                        FETCH FIRST 1 ROW ONLY), 11) AS PRDCTP_AFT_FILE_NM
+		             , PRDCTP_CNTRCT_FLG
+		             , SUBSTR((SELECT TO_CHAR(TO_DATE(ENFRCMNT_DT, 'YYYY-MM-DD'), 'YYYY-MM-DD')
+		                                || AMNDMNT_AFT_FILE_NM
+		                                || '|'
+		                                || PM.PRVSN_NM AS ENFRCMNT_DT2
+		                           FROM PRDCT_PRVSN_UPDATE_MGT P, PRDCT_PRVSN_MGT PM
+		                          WHERE P.PRVSN_ID = A.PRDCT_EXPLN_DOC_ID
+					                AND P.PRVSN_ID = PM.PRVSN_ID
+					                <![CDATA[
+					                AND P.ENFRCMNT_DT <= TO_CHAR(SYSDATE,'YYYYMMDD')
+					                ]]>
+		                          ORDER BY ENFRCMNT_DT2 || AMNDMNT_AFT_FILE_NM DESC
+		                          FETCH FIRST 1 ROW ONLY), 11) AS PRDCTE_AFT_FILE_NM
+		             , PRDCTE_CNTRCT_FLG
+		             , A.PRDCT_ID
+					 , B.MAPPING_CD1
+					 , B.MAPPING_CD2		   
+					 , B.MAPPING_CD3 
+		        FROM  PRDCT_DISCLOSURE_MGT A,
+		              PRDCT_VARIETYCD_MGT B
+		        WHERE A.PRDCT_ID = B.PRDCT_ID
+		        <![CDATA[
+		          AND A.PUB_ANNUNCMNT_OEPN_DT <= SYSDATE 
+				  AND A.PUB_ANNUNCMNT_END_DT >= SYSDATE 
+				]]>  
+				  AND A.BULLTN_FLG = '1'
+				  AND B.MAPPING_CD1 = #{mappingCd1}					 
+				  AND B.MAPPING_CD2 = #{mappingCd2}				     
+				  AND B.MAPPING_CD3 = #{mappingCd3}				     
+			)
+		WITH UR
+	</select> 
+	 
+</mapper>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.NfCnnctnTradInfoMgtDao">
+
+	<!-- 제휴처 거래 정보 등록 (asis : NF_CNNCTN_TRADINFO_MGT_I_01)-->
+	<insert id="insertPartnerTransactionInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.RegisterPartnerTradeInfoParameter" >
+		MERGE INTO NF_CNNCTN_TRADINFO_MGT X
+		USING (
+			<!--
+				SELECT COUNT(*) COUNT 
+				FROM NF_TRADINFO_MGT 
+				WHERE TRAD_NO = #{tradNo} AND PRGRSS_STS_CD = 'PRGS' 
+			-->	
+				SELECT COUNT(*) COUNT 
+				FROM NF_CNNCTN_TRADINFO_MGT 
+				WHERE TRAD_NO = #{tradNo} AND CNNCTN_TRAD_NO = #{cnnctnTradNo}
+		) Y 
+		ON (
+			Y.COUNT > 0
+			AND X.TRAD_NO = #{tradNo}
+			AND X.CNNCTN_TRAD_NO = #{cnnctnTradNo}
+		)
+		WHEN MATCHED THEN 
+			UPDATE SET 
+				X.LST_CHNG_DT = CURRENT TIMESTAMP,
+				X.CNNCTN_TRAD_NO = #{cnnctnTradNo}
+				<if test="cnnctnWayDynamic != null">
+					,CNNCTN_WAY = #{cnnctnWayDynamic}
+				</if>
+				<if test="cnnctnSignId != null">
+					,X.CNNCTN_SIGN_ID = #{cnnctnSignId}
+				</if>	
+		WHEN NOT MATCHED THEN 
+			INSERT( 
+					X.CNNCTN_WAY,
+					X.TRAD_NO,
+					X.CNNCTN_TRAD_NO,
+					X.CNNCTN_SND_YN,
+					X.LST_CHNG_DT,
+					X.INIT_REGIST_DT
+				<if test="cnnctnLoanLmtAmt != null and cnnctnLoanLmtAmt != ''">
+					,X.CNNCTN_LOAN_LMT_AMT
+				</if>
+				<if test="cnnctnSignId != null">
+					,X.CNNCTN_SIGN_ID
+				</if>	
+			) VALUES (
+					#{cnnctnWay},
+					#{tradNo}, <!--(SELECT MAX(TRAD_NO) AS TRAD_NO FROM NF_TRADINFO_MGT WHERE CUST_NO = #{custNo}), -->
+					#{cnnctnTradNo},
+					'N',
+					CURRENT TIMESTAMP,
+					CURRENT TIMESTAMP
+				<if test="cnnctnLoanLmtAmt != null and cnnctnLoanLmtAmt != ''">
+					,#{cnnctnLoanLmtAmt}
+				</if>
+				<if test="cnnctnSignId != null">
+					,#{cnnctnSignId}
+				</if>
+			)
+	</insert>
+
+    <!-- 제휴처 거래완료 업데이트  (asis : NF_CNNCTN_TRADINFO_MGT_U_01)-->
+	<update id="updatePartnerTransactionComplete" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.RegisterPartnerTradeInfoParameter">
+		UPDATE
+				NF_CNNCTN_TRADINFO_MGT 
+		SET
+				LST_CHNG_DT = CURRENT TIMESTAMP,
+				CNNCTN_SND_YN = 'Y' 
+		WHERE
+				TRAD_NO = ( 
+					SELECT
+							TRAD_NO 
+					  FROM
+							NF_TRADINFO_MGT 
+					 WHERE
+							TRAD_NO = #{tradNo}
+					   AND 	PRGRSS_STS_CD = 'DONE'
+			)
+	</update>
+</mapper>

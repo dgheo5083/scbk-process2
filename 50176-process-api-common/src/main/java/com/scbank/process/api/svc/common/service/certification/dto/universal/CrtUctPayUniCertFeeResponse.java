@@ -1,0 +1,26 @@
+package com.scbank.process.api.svc.common.service.certification.dto.universal;
+
+import com.scbank.process.api.fw.message.IMessageObject;
+import com.scbank.process.api.fw.message.annotation.IntegrationMessage;
+import com.scbank.process.api.fw.message.annotation.IntegrationMessage.Type;
+import com.scbank.process.api.fw.message.annotation.MessageField;
+
+import lombok.Data;
+
+
+
+/**
+ * CSL 서비스 응답 정보 클래스
+ * 범용인증서 발급 수수료 납부
+ */
+@Data
+@IntegrationMessage(id = "CrtUctPayUniCertFeeResponse", type = Type.RESPONSE)
+public class CrtUctPayUniCertFeeResponse implements IMessageObject {
+
+	@MessageField(id = "sgRefNo", name = "참조번호")
+	private String sgRefNo;
+
+	@MessageField(id = "sgAuthCode", name = "인가코드")
+	private String sgAuthCode;
+
+}

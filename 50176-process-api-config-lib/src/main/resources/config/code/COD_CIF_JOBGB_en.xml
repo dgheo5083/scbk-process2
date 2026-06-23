@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CIF_JOBGB" lang="en">
+  <code key="" order="0"><![CDATA[Select]]></code>
+  <code key="60" order="1"><![CDATA[Employeed]]></code>
+  <code key="91" order="2"><![CDATA[House wife]]></code>
+  <code key="92" order="3"><![CDATA[Student]]></code>
+  <code key="10" order="4"><![CDATA[Civil servant]]></code>
+  <code key="88" order="5"><![CDATA[Unemployeed]]></code>
+  <code key="99" order="6"><![CDATA[Others]]></code>
+</category>

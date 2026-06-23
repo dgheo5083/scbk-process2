@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<errorCodes lang="en">	
+	<errorCode code="PRCCRT30111">	
+		<msg><![CDATA[Sorry. Certificate registration institution's system inspection is underway. Please contact the administrator of authentication registration instituion for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20833">	
+		<msg><![CDATA[Error occurred during renewal. Please contact Customer Service Center(1588-1599) for further inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT30114">	
+		<msg><![CDATA[Your non-individual/indivisual client classification is unknown. Please contact the administrator for details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20136">	
+		<msg><![CDATA[You already have a valid certificate issued only for personal banking service.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20137">	
+		<msg><![CDATA[You already have a valid certificate issued only for personal banking service, but it is temporarily invalid now.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20138">	
+		<msg><![CDATA[You already have a valid certificate issued only for banking service for sole proprietors.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20139">	
+		<msg><![CDATA[You already have a valid certificate issued only for banking service for sole proprietors, but it is temporarily invalid now.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT201121">	
+		<msg><![CDATA[Certificate registration instition's system inspection is underway. Please contact the administrator of Certificate Registration Institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT201122">	
+		<msg><![CDATA[Certificate registration instition's system inspection is underway. Please contact the administrator of Certificate Registration Institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT201123">	
+		<msg><![CDATA[Certificate registration instition's system inspection is underway. Please contact the administrator of Certificate Registration Institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT201124">	
+		<msg><![CDATA[Certificate registration instition's system inspection is underway. Please contact the administrator of Certificate Registration Institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT201125">	
+		<msg><![CDATA[Certificate registration instition's system inspection is underway. Please contact the administrator of Certificate Registration Institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20142">	
+		<msg><![CDATA[KFTC general purpose certificate is not allowed to be issued due to applicable policies of Ministry of Information and Communication.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20118">	
+		<msg><![CDATA[Your certificate is {0}. Please get a digital certificate from the relevant bank's internet banking site to use. Please contact the administrator of Certificate Registration Institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20116">	
+		<msg><![CDATA[You have already received a digital certificate which is now temporarily suspended. Please make it valid again to use.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20114">	
+		<msg><![CDATA[{0} You can receive a KFTC-issued digital certificate from only one financial institution. 1. Please go to the reissuance menu if you have received one from SCBK, 2. Please go to the other institution-issued certificate registration menu if you have a certificate issued by other bank , or 3. Please void the existing certificate if you have received a new user number from branch.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20117">	
+		<msg><![CDATA[Subscriber registration failed. Please contact the administrator of certificate registration institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20111">	
+		<msg><![CDATA[Host system inspection is underway. Please contact the administrator of Authentication System for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20519">	
+		<msg><![CDATA[You can’t request to use a SCBK-issued private certificate as other institution's certificate. Please contact the administrator of certificate registration institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT9000">	
+		<msg><![CDATA[You can not register the the digital certificate you have submitted because it is not yours.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT9001">	
+		<msg><![CDATA[The digital certificate you have submitted has not been successfully validated. Please check the certificate again.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT9004">	
+		<msg><![CDATA[The digital certificate you have submitted has not been successfully verified.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20518">	
+		<msg><![CDATA[You can't use SCFBK certificate to apply for the use of other institution's digital certificate. Please contact the administrator of Certificate registration institution for further details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20520">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal banking purpose certificate. You can't register it as other bank certificate because you already have a valid SCBK-issued personal banking purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20521">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal banking purpose certificate. You can't register it other bank's certificate because you already have registered a valid other bank-issued personal banking purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20522">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal banking purpose certificate. You can't register it as other bank's certificate because you already have registered a SCBK-issued personal banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20523">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal banking purpose certificate. You can't register it other bank's certificate because you already have registered a other bank-issued personal banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20560">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal general purpose certificate. You can't register it as other bank's certificate because you already have a SCBK-issued personal general purpose certificate.]]></msg>	
+	</errorCode>
+	<errorCode code="PRCCRT20561">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal general purpose certificate. You can't register it other bank's  certificate because you already have registered a valid other bank -issued personal general purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20562">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal general purpose certificate. You can't register it as other bank's certificate because you already have a SCBK -issued personal general purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20563">	
+		<msg><![CDATA[The digital certificate you(individual client) wish to register is the personal general purpose certificate. You can't register it as other bank's certificate because you already have a other bank -issued personal general purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20524">	
+		<msg><![CDATA[You(individual client) can't register other bank-issued corporate banking purpose certificate . You can register a personal banking purpose certificate only.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20525">	
+		<msg><![CDATA[You(individual client) can't register other bank-issued corporate electronic payment purpose certificate . You can register a personal banking purpose certificate only. ]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20526">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal banking purpose certificate. You can't register it as other bank's certificate because you already have a valid SCBK -issued personal banking purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20527">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal banking purpose certificate. You can't register it other bank's certificate because you already have a valid other bank -issued personal banking purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20528">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal banking purpose certificate. You can't register it other bank's certificate because you already have a SCBK -issued personal banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20529">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal banking purpose certificate. You can't register it as other bank's certificate because you already have registered a other bank -issued personal banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20566">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal general purpose certificate. You can't register it as other bank's certificate because you already have a valid SCBK -issued personal general purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20567">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal general purpose certificate. You can't register it as other bank's certificate because you already have a valid other bank -issued personal general purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20568">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal general purpose certificate. You can't register it other bank's certificate because you already have a SCBK -issued personal general purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20569">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal general purpose certificate. You can't register it other bank's certificate because you already have a other bank -issued personal general purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20530">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate banking purpose certificate. You can't register it other bank's certificate because you already have a valid SCBK -issued corporate banking purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20531">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate banking purpose certificate. You can't register it as other bank's certificate because you already have registered a valid other bank -issued corporate banking purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20532">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate banking purpose certificate. You can't register it as other bank's certificate because you already have a SCBK -issued corporate banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20533">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate banking purpose certificate. You can't register it as other bank's certificate because you already have registered a other bank -issued corporate banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20534">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank's certificate because you already have a valid SCBK -issued corporate payment purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20535">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank's certificate because you already have a valid other bank -issued corporate payment purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20536">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank's certificate because you already have a SCBK -issued corporate payment purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20537">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank's certificate because you already have registered a other bank -issued corporate payment purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20538">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the personal banking purpose certificate. You can't register the personal banking purpose certificate because you are a corporate client.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20569">	
+		<msg><![CDATA[The digital certificate you(sole proprietor) wish to register is the personal general purpose certificate. You can't register it as other bank's certificate because you already have registered a other bank -issued personal general purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20570">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the personal general purpose certificate. You can't register the personal general purpose certificate because you are a corporate client.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20541">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the corporate banking purpose certificate. You can't register it as other bank certificate because you have a SCBK -issued corporate banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20542">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the corporate banking purpose certificate. you can't register it as other bank's certificate because you have registered a other bank -issued corporate banking purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20543">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank certificate because you have a valid SCBK -issued corporate electronic payment purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20544">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the corporate electronic purpose payment certificate. You can't register it as other bank certificate because you have registered a valid other bank -issued corporate electronic payment purpose certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20545">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank certificate because you have a SCBK -issued corporate electronic payment purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20546">	
+		<msg><![CDATA[The digital certificate you(corporate) wish to register is the corporate electronic payment purpose certificate. You can't register it as other bank certificate because you have a other bank-issued corporate electronic payment purpose certificate that is currently suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20513">	
+		<msg><![CDATA[Sorry for not being able to provide other institution certificate registration service because the certificate registration institution’s system inspection is underway. Please contact the administrator of certificate registration institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20514">	
+		<msg><![CDATA[The digital certificate you have requested is suspended. You have to make it valid again at the institution(bank) intially issued the certificate. Please contact the administrator of Digital Certificate Registration Insitution for further details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20547">	
+		<msg><![CDATA[The digital certificate you have submitted has expired. You can't register it with other bank.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20554">	
+		<msg><![CDATA[Can’t read/write from OCSPGD socket. Please contact the administrator of certificate registration institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20555">	
+		<msg><![CDATA[OCSPGD connection failed.[OCSPGD Connection Fail]. The requested transaction service is not available at the moment because of KFTC Authentication Center failure. Please try again later.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20556">	
+		<msg><![CDATA[OCSPGD server inspection is underway. Please contact the administrator of certificate registration institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20557">	
+		<msg><![CDATA[The message to OCSPGD is not correct. Please contact the administrator of Digital Certificate registration institution for details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20558">	
+		<msg><![CDATA[Unknown error occurred regarding OCSPGD. Please contact the administrator of Digital Certificate registration institution for details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20830">	
+		<msg><![CDATA[You can not extend the valid period because your certificate is suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20831">	
+		<msg><![CDATA[The valid period of SCBK private certificate can’t be extended at Authentication Center. Please get a new certificate from SCBK Authentication Center.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20711">	
+		<msg><![CDATA[Renewal of a certificate issued by other institution is possible only at issuer. Please renew the certificate at the issuer's internet banking website.]]></msg>	
+	</errorCode>
+	<errorCode code="PRCCRT20712">	
+		<msg><![CDATA[Your financial certificate can be renewed by your issued bank. Please visit your certificate issued bank to renew your certificate.]]></msg>	
+	</errorCode>		
+	<errorCode code="PRCCRT30113">	
+		<msg><![CDATA[The certificate you have submitted was issused by SC First Bank, but has expired or been suspended. Please contact the administrator of Authentication Center for details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20614">	
+		<msg><![CDATA[You can not renew the certificate you have submitted because it is not yours. Please check the certificate again.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20832">	
+		<msg><![CDATA[Subscriber renewal registration opens from 30 days beforehand.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20834">	
+		<msg><![CDATA[Your certificate can't be renewed because it is either void or suspended.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20835">	
+		<msg><![CDATA[Error occurred in processing the renewal request. Please contact Customer Contact Center(1588-1599) for details.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20218">	
+		<msg><![CDATA[Your joint certificate seems to be discarded. Please check your certificate status.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20219">	
+		<msg><![CDATA[You can not void a banking purpose certificate(individual client) because you don't have one.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20248">	
+		<msg><![CDATA[You(individual client) can not void your general purpose certificate because it has expired or is already void.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20249">	
+		<msg><![CDATA[You can not void a general purpose certificate(individual client) because you don't have one.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20221">	
+		<msg><![CDATA[You(sole proprietor) can not void a personal banking purpose certificate because there isn't one.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20222">	
+		<msg><![CDATA[Your(sole proprietor) personal banking purpose certificate can’t be made void because it has either expired or is already void.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20251">	
+		<msg><![CDATA[You(as a sole proprietor) can not void a personal general purpose certificate because there isn't one.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20252">	
+		<msg><![CDATA[You(sole proprietor) can not void your personal general purpose certificate because it has expired or is already void]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT20213">	
+		<msg><![CDATA[Your certificate can’t be made void because the certificate registration institution’s system inspection is underway. Please contact the administrator of certificate registration institution for inquiry.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT0001">	
+		<msg><![CDATA[Sole proprietor client can’t have a certificate issued on smart phone.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT0009">	
+		<msg><![CDATA[You haven't signed up for internet banking service.]]></msg>	
+	</errorCode>	
+	<errorCode code="PRCCRT0010">	
+		<msg><![CDATA[Sole proprietor client can’t register a other institution's certificate on smart phone.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI938">
+		<msg><![CDATA[Please check your cerficate status issued by SC First Bank.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI602">
+		<msg><![CDATA[Please check your certificate status issues by other bank.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI958">
+		<msg><![CDATA[Your certificate issued by SC First Bank seems to be suspended. This can be resolved by Internet Banking Certificate Centre.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI939">
+		<msg><![CDATA[Your certificate is not valid.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI603">
+		<msg><![CDATA[Your joint certificate is either not registered as other bank use or discarded. Please check again.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI800">
+		<msg><![CDATA[You need to register the certificate issued by other bank(institution).]]></msg>	
+	</errorCode>	
+	<errorCode code="INI968">
+		<msg><![CDATA[Certificate that you tried to login has either been issued by another institution or discarded. Please check your certificate status.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI969">
+		<msg><![CDATA[Certificate that you tried to login has either been issued by another institution or suspended. Please try again after restoring your certificate from issued institution.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI856">
+		<msg><![CDATA[Electronic signature authentication failed. Please log in using ID and PASSWORD.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI978">
+		<msg><![CDATA[Your certificate issued by other bank seems to be discarded. Please check your certificate status.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI979">
+		<msg><![CDATA[Your certificate issued by other bank seems to be suspended. This can be resolved by issued bank.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI120">
+		<msg><![CDATA[The certificate you submitted can't be used for banking service. Please check if it is a correct certificate. (Incorrect OID)]]></msg>	
+	</errorCode>	
+	<errorCode code="INI999">
+		<msg><![CDATA[Unknown error occured. Error code: {0} Certificate status{1}]]></msg>	
+	</errorCode>	
+	<errorCode code="INI856">
+		<msg><![CDATA[Electronic signature authentication failed. Please log in using ID and PASSWORD.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI923">
+		<msg><![CDATA[Serial number, holder and issuer information are not available from the submitted certificate.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI922">
+		<msg><![CDATA[You need a certificate to access this page.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI935">
+		<msg><![CDATA[Please use a banking purpose certificate. (Certificate for stock trading service not allowed)]]></msg>	
+	</errorCode>	
+	<errorCode code="INI101">
+		<msg><![CDATA[Personal identification failed. Login user is different from the user of certificate submitted.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI857">
+		<msg><![CDATA[Internet banking service is not available to WEBBANK service member. Please use WEBBANK for bankig service.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI604">
+		<msg><![CDATA[Login user doesn't match with the submitted user ID .]]></msg>	
+	</errorCode>	
+	<errorCode code="INI100">
+		<msg><![CDATA[Personal identification failed. Login user is different from the user of certificate submitted.]]></msg>	
+	</errorCode>	
+	<errorCode code="INI201">
+		<msg><![CDATA[Personal identification failed. Please submit your certificate.]]></msg>	
+	</errorCode>
+	<errorCode code="PRCSRP9000">
+		<msg><![CDATA[The submitted public certificate is not under your name. Scraping not allowed.]]></msg>
+	</errorCode>
+	<errorCode code="PRCSRP9001">
+		<msg><![CDATA[The submitted public certificate verification failed. Please check your certificate again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCSRP9004">
+		<msg><![CDATA[Failed to confirm the submitted certificate.]]></msg>
+	</errorCode>
+	<errorCode code="INI303">
+		<msg><![CDATA[Your financial certificate is either not registered as other bank use or discarded. Please check again.]]></msg>
+	</errorCode>
+	<errorCode code="INI310">
+		<msg><![CDATA[The financial certificate you selected will be available for use after other instituiton's certificate registration. Do you want to go to non-SCB certificate registration page?]]></msg>
+	</errorCode>
+	<!-- 금융인증서 발급/재발급 START-->
+	<errorCode code="PRCFCA01001">
+		<msg><![CDATA[We are unable to identify the client type (retail/business). Please make an inquiry to the administrator.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01002">
+		<msg><![CDATA[Business clients cannot have a certificate issued on their mobile phone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01003">
+		<msg><![CDATA[Business clients cannot have a certificate issued on their mobile phone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01004">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.[01]]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01005">
+		<msg><![CDATA[You already have a financial certificate. If you have a certificate newly issued/re-issued, the exisitng one will be discarded and not available for use in other institutions. Do you want to discard the existing financial certificate and have a new one issued?]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01006">
+		<msg><![CDATA[You already have been issued a valid financial certificate for personal use. It is currently suspended.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01007">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.[02]]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01008">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01009">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01010">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01011">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01012">
+		<msg><![CDATA[Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01013">
+		<msg><![CDATA[Your certificate is {0}. Please have a financial certificate issued through the Internet Banking website of the bank. Please make an inquity to the administrator of the certificate registration agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01014">
+		<msg><![CDATA[You already have a certificate issued, which is currently suspended. Please activiate the certificate.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01015">
+		<msg><![CDATA[You already have a financial certificate. Please register other institution's certificate first. Do you want to discard the existing financial certificate and have a new one issued?]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01016">
+		<msg><![CDATA[Member registration has failed. Please make an inquiry to the administrator of the certificate registration agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01017">
+		<msg><![CDATA[We are unable to identify the client type (retail/business). Please make an inquiry to the administrator.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01018">
+		<msg><![CDATA[Please try again[1].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01019">
+		<msg><![CDATA[Please try again[2].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01020">
+		<msg><![CDATA[Please try again[3].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01021">
+		<msg><![CDATA[Please try again[5].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01022">
+		<msg><![CDATA[Your certificate cannot be discarded. The registration agency is currently under system maintenance. Please make an inquiry to the administrator of the authentication agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA01023">
+		<msg><![CDATA[Your certificate cannot be discarded. The registration agency is currently under system maintenance. Please make an inquiry to the administrator of the authentication agency.]]></msg>
+	</errorCode>
+	<!-- 금융인증서 발급/재발급 END-->
+	
+	<!-- 금융인증서 타기관인증서 등록 START-->
+	<errorCode code="PRCFCA02001">
+		<msg><![CDATA[We are unable to identify the client type (retail/business). Please make an inquiry to the administrator.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02002">
+		<msg><![CDATA[Business clients cannot register a non-SCB certificate on their smartphone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02003">
+		<msg><![CDATA[Business clients cannot have a certificate issued on their smartphone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02004">
+		<msg><![CDATA[Business clients cannot have a certificate issued on their smartphone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02005">
+		<msg><![CDATA[We are unable to identify the client type (retail/business). Please make an inquiry to the administrator.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02006">
+		<msg><![CDATA[An error occurred during financial certificate data inquiry. Please try again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02007">
+		<msg><![CDATA[You cannot request to use the financial certificate issued by SCB as a non-SCB financial certificate. Please make an inquiry to the administrator of the certificate registration agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02008">
+		<msg><![CDATA[The client(retail) already has a valid financial certificate for personal financial transactions issued by SCB. The client is unable to register another financial certificate for personal financial transactions issued by another bank.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02009">
+		<msg><![CDATA[The client(retail) already has had a valid financial certificate for personal financial transactions issued by SCB registered. The client is unable to register another financial certificate for personal financial transactions issued by another bank.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02010">
+		<msg><![CDATA[The client (retail) already has a financial certificate for personal financial transactions issued by SCB, which is currently suspended. The client is unable to register another financial certificate for personal financial transactions issued by another bank.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02011">
+		<msg><![CDATA[The client (retail) already has a financial certificate for personal financial transactions issued by another bank, which is currently suspended. The client is unable to register another financial certificate for personal financial transactions issued by another bank.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02012">
+		<msg><![CDATA[The client (sole proprietor) already has a financial certificate for personal financial transactions issued by SCB, which is currently suspended. The client is unable to register another financial certificate for personal financial transactions issued by another bank.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02013">
+		<msg><![CDATA[The client (sole proprietor) already has had a financial certificate for personal financial transactions issued by another bank, which is currently suspended. The client is unable to register another financial certificate for personal financial transactions issued by another bank.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02014">
+		<msg><![CDATA[An error occurred during non-SCB financial certificate registration. Please try again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02015">
+		<msg><![CDATA[We're sorry. We arenot able to process your request for non-SCB certificate registration because the authentication agency is unders ystem maintenance. Please make an inquiry to the administrator of the authentication agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02016">
+		<msg><![CDATA[We're sorry. We arenot able to process your request for non-SCB joint certificate registration because the authentication agency is unders ystem maintenance. Please make an inquiry to the administrator of the authentication agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02017">
+		<msg><![CDATA[The financial certificate you submitted has been discarded. It cannot be registered to other banks.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA02018">
+		<msg><![CDATA[The financial certificate you requested has been suspended. It must be reactivated first by the issuing institute (bank). Please make an inquiry to the administrator of the authentication agency.]]></msg>
+	</errorCode>
+	<!-- 금융인증서 타기관인증서 등록 END-->
+	
+	<!-- 금융인증서 타기관인증서 해지 START-->
+	<errorCode code="PRCFCA03001">
+		<msg><![CDATA[Client has not signed up for Internet Banking.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03002">
+		<msg><![CDATA[Incorrect user]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03003">
+		<msg><![CDATA[Business clients cannot register a certificate on their smartphone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03004">
+		<msg><![CDATA[Business clients cannot have a certificate issued on their smartphone.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA03005">
+		<msg><![CDATA[Business clients cannot have a certificate issued on their smartphone.]]></msg>
+	</errorCode>
+	<!-- 금융인증서 타기관인증서 해지 END-->
+	
+	<!-- 금융인증서 폐기 START-->
+	<errorCode code="PRCFCA04001">
+		<msg><![CDATA[We are unable to identify the client type (retail/business). Please make an inquiry to the administrator.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04002">
+		<msg><![CDATA[Please try again[1].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04003">
+		<msg><![CDATA[Please try again[2].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04004">
+		<msg><![CDATA[Please try again[3].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04005">
+		<msg><![CDATA[Please try again[5].]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04006">
+		<msg><![CDATA[The financial certificate of the client (retail) cannot be discarded because it has expired or already been discarded.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04007">
+		<msg><![CDATA[The financial certificate of the client (retail) cannot be discarded because the client has not had the certificate issued.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04008">
+		<msg><![CDATA[The client(retail)'s multi-purpose certificate cannot be discarded because it has expired or already been discarded.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04009">
+		<msg><![CDATA[The client(retail)’s multi-purpose certificate cannot be discarded because the client has not had the certificate issued.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04010">
+		<msg><![CDATA[The client(sole proprietor)’s financial certificate for personal use cannot be discarded because the client doesn’t have the certificate.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04011">
+		<msg><![CDATA[The client(sole proprietor)'s financial certificate for personal use cannot be discarded because it has expired or already been discarded.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04012">
+		<msg><![CDATA[The client(sole proprietor)'s multi-purpose certificate for personal use cannot be discarded because it has expired or already been discarded.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04013">
+		<msg><![CDATA[We are unable to discard your certificate. Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFCA04014">
+		<msg><![CDATA[We are unable to discard your certificate. Certificate registration agency is under system maintenance. Please make an inquiry to the administrator of the agency.]]></msg>
+	</errorCode>
+	<!-- 금융인증서 폐기 END-->
+	
+	<errorCode code="PRCFTC0001">
+		<msg><![CDATA[An error occurred during 'Toss' registration. Please try again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0002">
+		<msg><![CDATA[An error occurred during 'Kakao Pay' registration. Please try again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0003">
+		<msg><![CDATA['Toss' authentication has failed. Please try again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0004">
+		<msg><![CDATA['Kakao Pay' authentication has failed. Please try again.]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0005">
+		<msg><![CDATA[An error occurred during registration]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0006">
+		<msg><![CDATA[An error occurred during registration]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0007">
+		<msg><![CDATA[An error occurred during registration]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0008">
+		<msg><![CDATA[An error occurred during cancellation]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0009">
+		<msg><![CDATA[An error occurred during cancellation]]></msg>
+	</errorCode>
+	<errorCode code="PRCFTC0010">
+		<msg><![CDATA[An error occurred during cancellation]]></msg>
+	</errorCode>
+	
+	<errorCode code="FINERR0604">
+		<msg><![CDATA[Logged in user information does not match with the user ID]]></msg>
+	</errorCode>
+</errorCodes>

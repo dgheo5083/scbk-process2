@@ -1,0 +1,103 @@
+spring:
+  application:
+    name: process-api-common
+    version: "1.0"
+  profiles:
+    include: >
+      market-kr,
+      gateway-kr,
+      security-kr,
+      redis-session,
+      config
+  cache:
+    type: simple # 추후 업데이트 예정
+  jmx:
+    enabled: false
+server:
+  port: 9101
+  servlet:
+    context-path: "/process/api/v1/common"
+  forward-headers-strategy: framework
+
+logging:
+  level:
+    root: INFO
+    #"[org.springframework]": INFO
+    "[org.apache]": ERROR
+    "[com.scbank.process.api.fw]": INFO
+    "[com.scbank.process.api.fw.base]": DEBUG
+    "[com.scbank.process.api.svc.shared]": DEBUG
+    "[com.scbank.process.api.svc.common]": DEBUG
+    "[org.springframework.session]": INFO
+    "[org.springframework.session.data.redis]": INFO
+    "[io.lettuce.core.protocol]": ERROR
+    "[net.nshc.nfilter]": "DEBUG"
+  pattern:
+    console: "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %-5level %pid --- [${spring.application.name}][%thread][%logger{40}]%X{logContext} : %msg%n"
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+springdoc:
+  cache:
+    disabled: true
+  enable-default-api-docs: true
+  api-docs:
+    enabled: true
+    groups:
+      enabled: false
+    path: /v3/api-docs
+  swagger-ui:
+    
+    enabled: true
+    operations-sorter: alpha
+    tags-sorter: alpha
+    syntax-highlight:
+      activated: true
+    try-it-out-enabled: true
+    display-request-duration: true
+    urls:
+    - name: default
+      display-name: 서비스 외 api
+      url: /v3/api-docs
+  packages-to-scan: com.scbank.process.api
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+
+# Jasypt 설정
+jasypt:
+  encryptor:
+    password: ${CSL_JASYPT_ENCRYPTION_KEY}
+    algorithm: PBEWITHMD5ANDTRIPLEDES
+    bean: jasyptEncryptor
+
+# nshc 설정
+nshc:
+  open-web:
+    enabled: true
+    config:
+      path: C:/jdk/TOBE/MobileBanking/workspace/50176-bsoi-common/src/main/resources/config/nfilter/nfilter-openweb.properties
+  nfilter:
+    enabled: true
+    config:
+      path: C:/jdk/TOBE/MobileBanking/workspace/50176-bsoi-common/src/main/resources/config/nfilter/nfilter.properties
+# wizvera delfino 설정
+delfino:
+  config:
+    path: C:/jdk/TOBE/MobileBanking/workspace/50176-bsoi-common/src/main/resources/config/wizvera/delfino.properties
+# ahnlab astx 설정
+astx:
+  config:
+    path: C:/jdk/TOBE/MobileBanking/workspace/50176-bsoi-common/src/main/resources/config/ahnlab/astx2.xml
+# ipinside 설정
+ipinside:
+  enabled: true
+  config: 
+    path: C:/jdk/TOBE/MobileBanking/workspace/50176-bsoi-common/src/main/resources/config/ipinside/

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<응답부>
+  <ScfbHeader>
+    <TotalLength>02154</TotalLength>
+    <ChannelType>I</ChannelType>
+    <WASTranNo>000368</WASTranNo>
+    <EGMSTranNo>000433</EGMSTranNo>
+    <UserIP>000.000.000.000</UserIP>
+    <AppVersion>1.8.0</AppVersion>
+    <VFDSDeviceKey>BbBu7K78cHUcF</VFDSDeviceKey>
+    <WASTYPE></WASTYPE>
+    <_DE2E123_EncSK></_DE2E123_EncSK>
+    <_DVKEY_EncSK></_DVKEY_EncSK>
+    <IMSTRANCD>TI1IBK03</IMSTRANCD>
+    <BLK></BLK>
+    <INCHANNEL>G</INCHANNEL>
+    <BRANCH>0998</BRANCH>
+    <LOTNO>000</LOTNO>
+    <TCNO>1</TCNO>
+    <INTERTYPE>3</INTERTYPE>
+    <INTERNO>6</INTERNO>
+    <COUNTERINFO1></COUNTERINFO1>
+    <COUNTERINFO2></COUNTERINFO2>
+    <BRANCHNO>860</BRANCHNO>
+    <CONVTERSCR></CONVTERSCR>
+    <RES>0</RES>
+    <MSGINFOBLK></MSGINFOBLK>
+    <MODEINFO></MODEINFO>
+    <DESTP></DESTP>
+    <JOBTP>GP</JOBTP>
+    <INCLASSCD>H031</INCLASSCD>
+    <CTRLCDNO></CTRLCDNO>
+    <RESCDNO></RESCDNO>
+    <STFLAG1></STFLAG1>
+    <STFLAG2></STFLAG2>
+    <STFLAG3></STFLAG3>
+    <STFLAG4></STFLAG4>
+    <INLINE></INLINE>
+    <PFKEY></PFKEY>
+    <RES1>02100</RES1>
+    <BRANCHSAV></BRANCHSAV>
+    <DEALSAV>998</DEALSAV>
+    <INTERSAV>AINTIB</INTERSAV>
+    <NEWFORMATTP>NEW</NEWFORMATTP>
+    <OUTERRCD></OUTERRCD>
+    <OUTLU></OUTLU>
+    <SOURCEOUTLU>DP</SOURCEOUTLU>
+    <INIJOBCLA>GP</INIJOBCLA>
+    <INIINCLA>H031</INIINCLA>
+    <FBTPROCESSTRNSNO></FBTPROCESSTRNSNO>
+    <RES2>38631</RES2>
+    <TRSTP>0210</TRSTP>
+    <TRSNO>000433</TRSNO>
+    <SVCCD>031</SVCCD>
+    <PROCESSTP>N</PROCESSTP>
+    <LOCALTP>P1</LOCALTP>
+    <VANTP>47</VANTP>
+    <VAPCNLNO>000</VAPCNLNO>
+    <FSPID>00000000</FSPID>
+    <INOUTCNLTP>W</INOUTCNLTP>
+    <SENDDATE>20260119</SENDDATE>
+    <SENDTIME>104351</SENDTIME>
+    <SENDSYSTEM>P</SENDSYSTEM>
+    <ERRORCODE>0000</ERRORCODE>
+    <RESPONSECODE>0</RESPONSECODE>
+    <DISPLAYTYPE></DISPLAYTYPE>
+    <ERRORLOCATION></ERRORLOCATION>
+    <FILLER></FILLER>
+  </ScfbHeader>
+  <RES_DATA_PART>
+    <UserID>JSTEST17</UserID>
+    <ContinueInfo>001001                                             000000000</ContinueInfo>
+    <TSPassword>99999999</TSPassword>
+    <DrawAcctNumListRecord>25</DrawAcctNumListRecord>
+    <LoyPoint>+000000000</LoyPoint>
+    <Dummy1></Dummy1>
+    <REC_01 type="list">
+      <DrawAcctNum>86020218725</DrawAcctNum>
+      <Assort>23</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>711288074</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20210610</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>ｔｅｓｔ　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020239613</DrawAcctNum>
+      <Assort>43</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>185006</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20221228</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>ｔｅｓｔｓ　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020241654</DrawAcctNum>
+      <Assort>23</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>10052804</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20230214</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020242199</DrawAcctNum>
+      <Assort>47</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>9999</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20230216</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020243979</DrawAcctNum>
+      <Assort>23</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>0</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20230316</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020250910</DrawAcctNum>
+      <Assort>48</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>10007545030</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20230727</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020257310</DrawAcctNum>
+      <Assort>29</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>9</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20231220</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020263601</DrawAcctNum>
+      <Assort>23</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>0</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20240417</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020268076</DrawAcctNum>
+      <Assort>51</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000780</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20240710</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020284403</DrawAcctNum>
+      <Assort>23</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>0</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250417</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86020289986</DrawAcctNum>
+      <Assort>23</Assort>
+      <DepKind>1</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>0</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250813</SavingStartDate>
+      <SavingEndDate>0</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080079011</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>30000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20230330</SavingStartDate>
+      <SavingEndDate>20240330</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080085539</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>5000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20240103</SavingStartDate>
+      <SavingEndDate>20250103</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080085937</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>5000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20240110</SavingStartDate>
+      <SavingEndDate>20241010</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080088980</DrawAcctNum>
+      <Assort>44</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20240611</SavingStartDate>
+      <SavingEndDate>20250611</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080088991</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20240611</SavingStartDate>
+      <SavingEndDate>20250611</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080094958</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250109</SavingStartDate>
+      <SavingEndDate>20260109</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080094969</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250109</SavingStartDate>
+      <SavingEndDate>20251109</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080095028</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250115</SavingStartDate>
+      <SavingEndDate>20260115</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080097752</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250701</SavingStartDate>
+      <SavingEndDate>20260101</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080098059</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250707</SavingStartDate>
+      <SavingEndDate>20260107</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080098189</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250711</SavingStartDate>
+      <SavingEndDate>20251111</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080098208</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250711</SavingStartDate>
+      <SavingEndDate>20260111</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080098219</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250711</SavingStartDate>
+      <SavingEndDate>20260111</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+    <REC_01 type="list">
+      <DrawAcctNum>86080098253</DrawAcctNum>
+      <Assort>42</Assort>
+      <DepKind>2</DepKind>
+      <BalSign>+</BalSign>
+      <Balance>1000000</Balance>
+      <Curcy></Curcy>
+      <SavingStartDate>20250716</SavingStartDate>
+      <SavingEndDate>20251016</SavingEndDate>
+      <DrawAcctNameAlias>　　　　　　　　　　</DrawAcctNameAlias>
+    </REC_01>
+  </RES_DATA_PART>
+  <REMNANTS_LENGTH>9</REMNANTS_LENGTH>
+  <REMNANTS>         </REMNANTS>
+</응답부>

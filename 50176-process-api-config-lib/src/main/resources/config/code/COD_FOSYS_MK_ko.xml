@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FOSYS_MK" lang="ko">
+  <code key="10" order="0"><![CDATA[인문계열]]></code>
+  <code key="20" order="1"><![CDATA[사회계역]]></code>
+  <code key="30" order="2"><![CDATA[교육계열]]></code>
+  <code key="40" order="3"><![CDATA[공학계열]]></code>
+  <code key="50" order="4"><![CDATA[자연계열]]></code>
+  <code key="60" order="5"><![CDATA[의,치,한의,수의학 계열]]></code>
+  <code key="70" order="6"><![CDATA[예체능계열]]></code>
+  <code key="99" order="7"><![CDATA[기타]]></code>
+</category>

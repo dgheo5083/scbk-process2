@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TEST_CODE" lang="ko">
+    <code key="ITEM1" order="1">Value 1</code>
+    <code key="ITEM2" order="2">Value 2</code>
+    <code key="ITEM3" order="3">Value 3</code>
+</category>

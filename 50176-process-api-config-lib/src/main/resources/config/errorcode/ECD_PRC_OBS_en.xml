@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="en">
+
+    <errorCode code="PRCOBS1001">
+        <msg><![CDATA[Impossible to transfer Reason for failure : {0}]]></msg>
+    </errorCode>
+    <errorCode code="PRCOBS1002">
+        <msg><![CDATA[Receiving accounts can only available for transaction account.]]></msg>
+    </errorCode>
+    <errorCode code="PRCOBS1003">
+        <msg><![CDATA[[Transfer failure]The transfer amount is re-deposited to the withdrawal bank or deposited into the your SC transaction account. It can take up to two business days, please refer to Customer Contact Center (1588-1599)<br/>{0}]]></msg>
+    </errorCode>
+    <errorCode code="PRCOBS1004">
+        <msg><![CDATA[Impossible to transfer Reason for failure : {0}]]></msg>
+    </errorCode>
+    <errorCode code="PRCOBS1005">
+        <msg><![CDATA[Impossible to transfer Reason for failure : {0} (Balance that can be withdrawal {1} won.)]]></msg>
+    </errorCode>
+    <errorCode code="PRCOBS1006">
+        <msg><![CDATA[Impossible to transfer from other banks' account. please check it's a normal account. {0}]]></msg>
+    </errorCode>
+    <errorCode code="PRCOBS1007">
+        <msg><![CDATA[The Receiving account can not use the service. Reason for failure : {0}]]></msg>
+    </errorCode>
+   
+</errorCodes>

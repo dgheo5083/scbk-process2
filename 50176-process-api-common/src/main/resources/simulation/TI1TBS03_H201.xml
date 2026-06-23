@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<응답부>
+  <ScfbHeader>
+    <TotalLength>00644</TotalLength>
+    <ChannelType>I</ChannelType>
+    <WASTranNo>000049</WASTranNo>
+    <EGMSTranNo>000958</EGMSTranNo>
+    <UserIP>000.000.000.000</UserIP>
+    <AppVersion>1.8.1</AppVersion>
+    <VFDSDeviceKey>BbBu9jKcQKMs0</VFDSDeviceKey>
+    <WASTYPE></WASTYPE>
+    <_DE2E123_EncSK></_DE2E123_EncSK>
+    <_DVKEY_EncSK></_DVKEY_EncSK>
+    <IMSTRANCD>TI1TBS03</IMSTRANCD>
+    <BLK></BLK>
+    <INCHANNEL>G</INCHANNEL>
+    <BRANCH>0998</BRANCH>
+    <LOTNO>000</LOTNO>
+    <TCNO>2</TCNO>
+    <INTERTYPE>7</INTERTYPE>
+    <INTERNO>1</INTERNO>
+    <COUNTERINFO1></COUNTERINFO1>
+    <COUNTERINFO2></COUNTERINFO2>
+    <BRANCHNO>860</BRANCHNO>
+    <CONVTERSCR></CONVTERSCR>
+    <RES>0</RES>
+    <MSGINFOBLK></MSGINFOBLK>
+    <MODEINFO></MODEINFO>
+    <DESTP></DESTP>
+    <JOBTP>GP</JOBTP>
+    <INCLASSCD>H201</INCLASSCD>
+    <CTRLCDNO></CTRLCDNO>
+    <RESCDNO></RESCDNO>
+    <STFLAG1></STFLAG1>
+    <STFLAG2></STFLAG2>
+    <STFLAG3></STFLAG3>
+    <STFLAG4></STFLAG4>
+    <INLINE></INLINE>
+    <PFKEY></PFKEY>
+    <RES1>00590</RES1>
+    <BRANCHSAV></BRANCHSAV>
+    <DEALSAV>998</DEALSAV>
+    <INTERSAV>AINTIB</INTERSAV>
+    <NEWFORMATTP>NEW</NEWFORMATTP>
+    <OUTERRCD></OUTERRCD>
+    <OUTLU></OUTLU>
+    <SOURCEOUTLU>DP</SOURCEOUTLU>
+    <INIJOBCLA>GP</INIJOBCLA>
+    <INIINCLA>H201</INIINCLA>
+    <FBTPROCESSTRNSNO></FBTPROCESSTRNSNO>
+    <RES2>53123</RES2>
+    <TRSTP>0210</TRSTP>
+    <TRSNO>000958</TRSNO>
+    <SVCCD>731</SVCCD>
+    <PROCESSTP>L</PROCESSTP>
+    <LOCALTP>P1</LOCALTP>
+    <VANTP>47</VANTP>
+    <VAPCNLNO>000</VAPCNLNO>
+    <FSPID>00000000</FSPID>
+    <INOUTCNLTP>W</INOUTCNLTP>
+    <SENDDATE>20260119</SENDDATE>
+    <SENDTIME>144523</SENDTIME>
+    <SENDSYSTEM>P</SENDSYSTEM>
+    <ERRORCODE>0000</ERRORCODE>
+    <RESPONSECODE>0</RESPONSECODE>
+    <DISPLAYTYPE></DISPLAYTYPE>
+    <ERRORLOCATION></ERRORLOCATION>
+    <FILLER></FILLER>
+  </ScfbHeader>
+  <RES_DATA_PART>
+    <UserID>280380</UserID>
+    <GrNumSyYN>0</GrNumSyYN>
+    <GrNumErrCnt>0</GrNumErrCnt>
+    <SafeCardKind>1</SafeCardKind>
+    <SafeCardINDEX>000006</SafeCardINDEX>
+    <REC_01 type="list">
+      <BankCode>000</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>중계</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>002</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>산업</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>003</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>기업</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>004</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>국민</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>005</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>하나</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>007</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>수협</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>009</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>수협</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>011</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>농협</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>012</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>지농</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>018</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>지농</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>020</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>우리</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>021</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>신한</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>026</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>신한</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>027</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>씨티</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>030</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>수중</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>031</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>ｉＭ</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>032</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>부산</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>034</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>광주</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>035</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>제주</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>037</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>전북</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>039</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>경남</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>043</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>기업</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>045</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>마을</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>047</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>신협</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>048</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>신협</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>050</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>저축</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>053</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>씨티</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>054</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>홍콩</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>055</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>도이</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>056</BankCode>
+      <ErrorState>1</ErrorState>
+      <BankName>암로</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>057</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>ＪＰ</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>058</BankCode>
+      <ErrorState>1</ErrorState>
+      <BankName>ＭＨ</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>059</BankCode>
+      <ErrorState>1</ErrorState>
+      <BankName>도쿄</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>060</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>아메</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>061</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>비엔</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>062</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>중국</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>063</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>중은</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>064</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>산림</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>067</BankCode>
+      <ErrorState>0</ErrorState>
+      <BankName>ＣＣ</BankName>
+    </REC_01>
+    <REC_01 type="list">
+      <BankCode>069</BankCode>
+      <ErrorState>2</ErrorState>
+      <BankName>수중</BankName>
+    </REC_01>
+    <FileGB></FileGB>
+    <SafeCardINDEX2>000026</SafeCardINDEX2>
+  </RES_DATA_PART>
+  <REMNANTS_LENGTH>4</REMNANTS_LENGTH>
+  <REMNANTS>    </REMNANTS>
+</응답부>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CIBGIRO" lang="ko">
+  <code key="0" order="0"><![CDATA[보험료선택]]></code>
+  <code key="498" order="1"><![CDATA[고용보험료]]></code>
+  <code key="499" order="2"><![CDATA[산재보험료]]></code>
+</category>

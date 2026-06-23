@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ERROR" lang="ko">
+  <code key="00" order="0"><![CDATA[정상적으로 처리되었습니다.]]></code>
+  <code key="001" order="0"><![CDATA[잠시후 거래하여 주십시요.]]></code>
+  <code key="002" order="0"><![CDATA[법인고객의 펀드상품 신규업무는 가까운 영업점을 이용해 주시기 바랍니다.]]></code>
+  <code key="003" order="0"><![CDATA[70세 이상 고객님은 영업점 방문하시어 보다 상세한 안내를 받으신 후 가입하시기 바랍니다.]]></code>
+  <code key="851" order="0"><![CDATA[보안모듈의 SEED값이 유효하지 않습니다. 잠시후 다시 거래하여 주십시요.]]></code>
+  <code key="855" order="0"><![CDATA[암호화 모듈의 복호화과정에서 오류가 발생하였습니다. 잠시후 다시 거래하여 주십시요.]]></code>
+  <code key="856" order="0"><![CDATA[전자서명 인증과정에서 실패하였습니다. ID, PASSWORD 방식으로 로그인하여 주십시요.]]></code>
+  <code key="APPL_0089" order="0"><![CDATA[신용대출신청 내역이 없습니다.(serNo 조회 실패)]]></code>
+  <code key="E001" order="0"><![CDATA[Packet이 올바르지 않습니다.]]></code>
+  <code key="E002" order="0"><![CDATA[은행코드가 올바르지 않습니다.]]></code>
+  <code key="E003" order="0"><![CDATA[전문코드가 올바르지 않습니다.]]></code>
+  <code key="E010" order="0"><![CDATA[Cozy Bill 회원으로 등록되어 있지 않습니다.]]></code>
+  <code key="E011" order="0"><![CDATA[Bill/서비스 정보가 등록되어 있지 않습니다.]]></code>
+  <code key="E012" order="0"><![CDATA[수납정보가 등록되어 있지 않습니다.]]></code>
+  <code key="E013" order="0"><![CDATA[법인/복수 고객 ID가 존재합니다.]]></code>
+  <code key="E014" order="0"><![CDATA[아파트 정보가 등록되어 있지 않습니다.]]></code>
+  <code key="E015" order="0"><![CDATA[동호수 정보가 등록되어 있지 않습니다.]]></code>
+  <code key="E017" order="0"><![CDATA[총건수 정보가 일치하지 않습니다.]]></code>
+  <code key="E018" order="0"><![CDATA[총금액 정보가 일치하지 않습니다.]]></code>
+  <code key="E019" order="0"><![CDATA[이미 납부했거나 지불금액에 오류가 있습니다.]]></code>
+  <code key="E020" order="0"><![CDATA[이미 CozyBill 회원으로 등록되어 있습니다.]]></code>
+  <code key="E021" order="0"><![CDATA[이미 사용중인 회원 ID입니다.]]></code>
+  <code key="E022" order="0"><![CDATA[비밀번호가 모두 숫자이거나 6자리 미만입니다.]]></code>
+  <code key="E023" order="0"><![CDATA[수정할 ID가 존재하지 않습니다.]]></code>
+  <code key="E031" order="0"><![CDATA[이미 등록된 청구기관 입니다.]]></code>
+  <code key="E032" order="0"><![CDATA[이미 해지된 청구기관 입니다.]]></code>
+  <code key="E034" order="0"><![CDATA[고객번호가 존재하지 않습니다.]]></code>
+  <code key="E041" order="0"><![CDATA[이미 납부했습니다.]]></code>
+  <code key="E061" order="0"><![CDATA[납부내역 정보가 없습니다.]]></code>
+  <code key="E081" order="0"><![CDATA[이미 자동이체가 등록되 있습니다.]]></code>
+  <code key="E082" order="0"><![CDATA[이체일 오류입니다.]]></code>
+  <code key="E100" order="0"><![CDATA[해당 아파트는 처리중입니다.]]></code>
+  <code key="E999" order="0"><![CDATA[Cozy Bill System 오류입니다.]]></code>
+  <code key="EC00" order="0"><![CDATA[아파트 리스트 조회시 오류가 발생했습니다.]]></code>
+  <code key="EC01" order="0"><![CDATA[청구기관을 등록하는중 오류가 발생했습니다.]]></code>
+  <code key="EC02" order="0"><![CDATA[청구서 조회/납부 중 오류가 발생했습니다.]]></code>
+  <code key="EE00" order="0"><![CDATA[등록된 청구기관이 없습니다.]]></code>
+  <code key="EE01" order="0"><![CDATA[납부확인증 조회하는중 오류가 발생했습니다.]]></code>
+  <code key="FWERR1S03" order="0"><![CDATA[해당 타스크를 Load중에 에러가 발생하였습니다.]]></code>
+  <code key="FWERR1S09" order="0"><![CDATA[타스크 실행시 에러가 발생하였습니다. 타스크 실행모듈을 확인하세요.]]></code>
+  <code key="FWERR1U01" order="0"><![CDATA[출력 전문변환시 에러가 발생 했습니다.]]></code>
+  <code key="FWERR1U02" order="0"><![CDATA[입력하신 항목의 유형이 일치하지 않습니다.]]></code>
+  <code key="FWERR1X12" order="0"><![CDATA[단건으로 지정되었으나 다건으로 전달되었습니다.]]></code>
+  <code key="FWERR1X37" order="0"><![CDATA[단건으로 지정되었으나 다건으로 전달되었습니다.]]></code>
+  <code key="SA01" order="0"><![CDATA[SA 산출식 처리중 오류가 발생하였습니다.(SA01)]]></code>
+  <code key="SA02" order="0"><![CDATA[일치하는 SA코드값이 없습니다.(SA02)]]></code>
+  <code key="SA03" order="0"><![CDATA[일치하는 SA결과 구분값이 없습니다.(SA03)]]></code>
+  <code key="SA04" order="0"><![CDATA[일치하는 SA코드값이 없습니다.(SA04)]]></code>
+  <code key="SA05" order="0"><![CDATA[일치하는 SA결과 구분값이 없습니다.(SA05)]]></code>
+  <code key="SA06" order="0"><![CDATA[조회된 내역이 없습니다.(SA06)]]></code>
+  <code key="COMM_0001" order="1"><![CDATA[죄송합니다. 요청하신 거래를 정상적으로 완료하지 못했습니다. 잠시후 다시 거래하여 주십시요.]]></code>
+  <code key="COMM_0002" order="2"><![CDATA[COMM_0002]]></code>
+  <code key="COMM_0003" order="3"><![CDATA[동일작업 에러]]></code>
+  <code key="COMM_0004" order="4"><![CDATA[이미 로그인 되어있으나 다른 아이디로 다시 로그인 하였습니다. 처음부터 다시 로그인해주십시오]]></code>
+  <code key="COMM_0005" order="5"><![CDATA[[HostService.service] 공통부 헤더 정보[CapHeader]에  사용될 [IMS_TRAN_CODE] 값이 8자리가 아닙니다.]]></code>
+  <code key="COMM_0006" order="6"><![CDATA[[HostService.service] 공통부 헤더 정보[CapHeader]에  사용될 [BRANCH_NO] 값이 3자리가 아닙니다.]]></code>
+  <code key="COMM_0007" order="7"><![CDATA[Proworks의 TASK가 존재하지 않습니다.]]></code>
+  <code key="COMM_0008" order="8"><![CDATA[Action정보가 없음]]></code>
+  <code key="COMM_0009" order="9"><![CDATA[처리결과가 존재하지 않습니다.]]></code>
+  <code key="COMM_0010" order="10"><![CDATA[다음과 같은 에러가 발생하였습니다.]]></code>
+  <code key="COMM_0011" order="11"><![CDATA[Exception이 발생하였습니다.]]></code>
+  <code key="COMM_0012" order="12"><![CDATA[죄송합니다. 타시스템연동중 오류가 발생하였습니다. 잠시후 다시 이용해 주십시요.]]></code>
+  <code key="COMM_0014" order="14"><![CDATA[DB처리 오류]]></code>
+  <code key="COMM_0015" order="15"><![CDATA[로그인이 되어 있지 않습니다. 로그인을 먼저 해주십시요]]></code>
+  <code key="COMM_0016" order="16"><![CDATA[세션이 종료되어 로그아웃 되었습니다. 다시 로그인하여 주십시요.]]></code>
+  <code key="COMM_0017" order="17"><![CDATA[해당 서비스에 대한 권한이 없습니다.]]></code>
+  <code key="COMM_0018" order="21"><![CDATA[타시스템 연동중에 에러가 발생하였습니다.]]></code>
+  <code key="COMM_0021" order="21"><![CDATA[[GenericServiceTask.executeEgmsService] 전문 전송에  사용될 [SCFB_MESSAGE_ID] 이름이 올바르지 않습니다.]]></code>
+  <code key="COMM_0020" order="22"><![CDATA[응답전문에 에러내용이 포함되었습니다.]]></code>
+  <code key="COMM_0022" order="22"><![CDATA[[GenericServiceTask.executeEgmsService] 공통부 헤더 정보[CapHeader]에  사용될 [IN_CLASS_CODE] 값이 4자리가 아닙니다.]]></code>
+  <code key="COMM_0023" order="23"><![CDATA[[GenericServiceTask.executeEgmsService] WAS Config에  [stage] 값이 설정 되지 않았습니다.]]></code>
+  <code key="COMM_0024" order="24"><![CDATA[[GenericServiceTask.executeEgmsService] 공통부 헤더 정보[ScfbHeader]가 들어있지 않습니다.]]></code>
+  <code key="COMM_0025" order="25"><![CDATA[[GenericServiceTask.executeEgmsService] 공통부 헤더 정보[CapHeader]가 들어있지 않습니다.]]></code>
+  <code key="GG_COMM_0023" order="26"><![CDATA[[GenericServiceTask.executeEgmsService] 공통부 헤더 정보[CommonTrxHead]에  사용될 [SERVICE_CODE] 값이 3자리가 아닙니다.]]></code>
+  <code key="COMM_0027" order="27"><![CDATA[[GenericServiceTask.executeEgmsService] 공통부 헤더 정보[CommonTrxHead]가 들어있지 않습니다."]]></code>
+  <code key="COMM_0028" order="28"><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다. 계좌입출금거래의 경우 반드시 처리결과 여부를 확인 후 거래하여 주시기 바랍니다. 이용에 불편을 드려 죄송합니다]]></code>
+  <code key="COMM_0029" order="29"><![CDATA[입력 데이터 누락  다시 입력하여 주십시오.]]></code>
+  <code key="COMM_0030" order="30"><![CDATA[SSO의 사용자 정보가 유효하지 않습니다.]]></code>
+  <code key="COMM_0031" order="31"><![CDATA[해당 서비스는 로그인을 하셔야 사용이 가능합니다.]]></code>
+  <code key="COMM_0032" order="32"><![CDATA[[EAIService.service] 전문 전송에  사용될 [SCFB_MESSAGE_ID]값이 존재 하지 않습니다.]]></code>
+  <code key="COMM_0033" order="33"><![CDATA[[EAIService.service] 전문 전송에  사용될 [BUSINESS_FUNCTION_ID]값이 존재 하지 않습니다.]]></code>
+  <code key="COMM_0034" order="34"><![CDATA[[EAIService.service] 전문 전송에  사용될 [EAI SS Header 필수 입력(HOMEBRANCH,IPADDRESS1,AGENTBRANCH,SUBTASKCODE)] 항목이 입력 되지 않았습니다.]]></code>
+  <code key="COMM_0035" order="35"><![CDATA[[EAISocketClientHandler.handle] EAI return 전문Spec이 정의되어 있지않습니다.]]></code>
+  <code key="COMM_0036" order="36"><![CDATA[현재 SC제일은행에서는 업무당 1개의 웹 브라우저만 허용합니다.]]></code>
+  <code key="COMM_0037" order="37"><![CDATA[요청하신 서비스의 접근 권한이 없습니다.]]></code>
+  <code key="COMM_0038" order="38"><![CDATA[접속경로 IP가 존재하지 않습니다.]]></code>
+  <code key="COMM_0039" order="39"><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다. 계좌입출금거래의 경우 반드시 처리결과 여부를 확인 후 거래하여 주시기 바랍니다. 이용에 불편을 드려 죄송합니다]]></code>
+  <code key="COMM_0040" order="40"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="COMM_0041" order="41"><![CDATA[모바일뱅킹 사용 중 접속 네트워크가 변경되어 접속이 종료되었습니다.고객님의 안전한 거래를 위해 앱을 재 실행하여 주시기 바랍니다.]]></code>
+  <code key="COMM_0042" order="42"><![CDATA[전달된 보안키의 값이 유효하지 않습니다.]]></code>
+  <code key="COMM_0043" order="43"><![CDATA[외환서비스는 외국인은 사용하실 수 없습니다]]></code>
+  <code key="COMM_0044" order="44"><![CDATA[필수 입력항목 VAN_TYPE의 값이 입력되지 않았습니다.]]></code>
+  <code key="COMM_0045" order="45"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="COMM_0046" order="46"><![CDATA[세션이 초기화 되어 로그아웃 되었습니다. 다시 로그인하여 주십시요.]]></code>
+  <code key="COMM_0047" order="47"><![CDATA[입력하신 비밀번호는 유효하지 않은 비밀번호 유형입니다.]]></code>
+  <code key="COMM_0048" order="48"><![CDATA[유효하지 않은 서비스 접근입니다. 해당 서비스를 사용하실 수 없습니다.]]></code>
+  <code key="COMM_0049" order="49"><![CDATA[기업/외환 사용자는 인터넷 뱅킹을 사용하실수 없습니다.]]></code>
+  <code key="COMM_0050" order="50"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="COMM_0051" order="51"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="COMM_0052" order="52"><![CDATA[타 PC에서 로그인되어 로그아웃 처리되었습니다. 정상적인 거래가 아니시면 고객센터(1588-1599)로 문의하여 주시기 바랍니다.]]></code>
+  <code key="COMM_0053" order="53"><![CDATA[외국인 비거주자는 환전서비스를 이용하실 수 없습니다.]]></code>
+  <code key="COMM_0054" order="54"><![CDATA[공동인증서 로그인이 필요한 메뉴입니다. 공동인증서 로그인 하시겠습니까? 전자금융사기예방서비스의 단말 지정 서비스를 이용하시는 경우 본 기기를 먼저 등록하셔야 이체가 가능합니다.]]></code>
+  <code key="COMM_0055" order="55"><![CDATA[로그인이 필요한 메뉴 입니다._로그인 하시겠습니까?]]></code>
+  <code key="COMM_0056" order="56"><![CDATA[서비스 신청 후에 정상적으로 이용 가능합니다.]]></code>
+  <code key="COMM_0057" order="57"><![CDATA[서비스 이용을 정지하셨습니다. 신청변경 후에 사용하세요.]]></code>
+  <code key="COMM_0058" order="58"><![CDATA[서비스 이용을 해지하셨습니다. 신청변경 후에 사용하세요.]]></code>
+  <code key="COMM_0059" order="59"><![CDATA[고객님께서 요청하신 거래를 처리하는중 통신이 불안정하여 오류가 발생하였습니다. 계좌입출금거래의 경우 반드시 처리결과 여부를 확인 후 거래하여 주시기 바랍니다. 확인을 누르시면 이체결과조회 페이지로 이동합니다. 이용에 불편을 드려 죄송합니다.]]></code>
+  <code key="COMM_0060" order="60"><![CDATA[안정적인 사용을 위하여 모바일뱅킹 앱 업데이트가 필요합니다.확인을 누르시면 앱 스토어로 이동합니다.]]></code>
+  <code key="COMM_5001" order="1"><![CDATA[해당 IP/MAC은 블랙리스트로 등록된 IP/MAC로 SC제일은행 인터넷 뱅킹 접속이 제한됩니다.(문의사항이 있으시면 SC제일은행 고객컨택센터 1588-1599로 문의하시기 바랍니다.)]]></code>
+  <code key="PAYF_0001" order="1"><![CDATA[해당 IP는 해외IP 차단 대상 IP로 SC제일은행 키보드 뱅킹 접속이 제한됩니다.(문의사항이 있으시면 SC제일은행 고객컨택센터 1588-1599로 문의하시기 바랍니다.)]]></code>
+  <code key="PAYF_0002" order="1"><![CDATA[해당 IP/MAC은 블랙리스트로 등록된 IP/MAC로 SC제일은행 키보드 뱅킹 접속이 제한됩니다.(문의사항이 있으시면 SC제일은행 고객컨택센터 1588-1599로 문의하시기 바랍니다.)]]></code>
+  <code key="PAYF_0003" order="1"><![CDATA[고객님께서는 현재 키보드뱅킹 서비스 사용이 불가합니다. SC제일은행 모바일뱅킹(또는 인터넷뱅킹)으로 이체거래를 최소 1회 진행하신 후 사용하실 수 있습니다.]]></code>
+  <code key="PAYF_0004" order="1"><![CDATA[고객님께서는 현재 키보드뱅킹 서비스 사용이 불가합니다. 고객컨택센터(1588-1599)로 문의하시기 바랍니다.]]></code>
+  <code key="BLCH_0001" order="1"><![CDATA[ 뱅크사인 인증서 로그인시도중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0002" order="1"><![CDATA[ 뱅크사인 인증서 로그인시도중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0003" order="1"><![CDATA[ 뱅크사인 인증서 로그인시도중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0004" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0005" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0006" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0007" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0008" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0009" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0010" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0011" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0012" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0013" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0014" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0015" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0016" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0017" order="1"><![CDATA[ 뱅크사인 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0018" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0019" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0020" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0021" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0022" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0023" order="1"><![CDATA[ 뱅크사인 로그인중 에러가 발생했습니다.]]></code>
+  <code key="BLCH_0024" order="1"><![CDATA[ 뱅크사인 로그인중 에러가 발생했습니다.]]></code>
+  <code key="BLCH_0025" order="1"><![CDATA[ 뱅크사인 로그인중 에러가 발생했습니다.]]></code>
+  <code key="BLCH_0026" order="1"><![CDATA[ 뱅크사인 로그인중 에러가 발생했습니다.]]></code>
+  <code key="BLCH_0027" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0028" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0029" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0030" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0031" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0032" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0033" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0034" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0035" order="1"><![CDATA[ 뱅크사인 인증서 거래중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0036" order="1"><![CDATA[ 본인확인에 실패했습니다. 로그인 사용자와 뱅크사인 인증서를 제출한 사용자가 다릅니다]]></code>
+  <code key="BLCH_0037" order="1"><![CDATA[ 블록체인 인증서 발급 중 오류가 발생했습니다.]]></code>
+  <code key="BLCH_0038" order="1"><![CDATA[ 본인확인에 실패했습니다. 로그인 사용자와 뱅크사인 인증서를 제출한 사용자가 다릅니다]]></code>
+  <code key="BLCH_0039" order="1"><![CDATA[ 블록체인 인증서 발급 중 오류가 발생했습니다.]]></code>
+  <code key="601" order="601"><![CDATA[기업인증서인 경우에는 빠른 조회로그인은 거래할 수 없습니다.]]></code>
+  <code key="602" order="602"><![CDATA[고객의 공동인증서는 타기관 인증서 사용등록이 되지 않았거나 폐기된 상태입니다. 먼저 공동인증서를 등록해 주시기 바랍니다.]]></code>
+  <code key="603" order="603"><![CDATA[계좌감추기 고객은 빠른조회를 이용하실수 없습니다.]]></code>
+  <code key="604" order="604"><![CDATA[로그인한 사용자의 아이디와 인증서로 제출된 사용자의 아이디가 일치하지 않습니다.]]></code>
+  <code key="800" order="800"><![CDATA[타행 타기관 인증서 등록이 필요합니다.]]></code>
+  <code key="808" order="808"><![CDATA[제출된 인증서 관련 정보가 존재하지 않습니다.]]></code>
+  <code key="809" order="809"><![CDATA[로그인에 사용된 인증서와 제출된 인증서가 서로 일치하지 않습니다.]]></code>
+  <code key="850" order="850"><![CDATA[암호화 생성 세션 시간이 초과되었습니다. 화면 갱신 후에 다시 거래하여 주십시요.]]></code>
+  <code key="857" order="857"><![CDATA[Straight2Bank가입고객은 인터넷뱅킹에서 거래 불가, Straight2Bank 를 통해 거래해 주시기 바랍니다.]]></code>
+  <code key="900" order="900"><![CDATA[세션이 초기화되어 Master Secret을 찾을 수 없습니다. 다시 Full 보안 핸드쉐이킹을 수행하여 주십시요.]]></code>
+  <code key="901" order="901"><![CDATA[암호화된 Master Secret이 도착하지 않았습니다.]]></code>
+  <code key="902" order="902"><![CDATA[암호화된 Master Secret을 복호화 하는 도중 오류가 발생했습니다.]]></code>
+  <code key="903" order="903"><![CDATA[보안 시퀀스가 존재하지 ㅇ낳아 페이지를 표시할 수 없습니다.]]></code>
+  <code key="904" order="904"><![CDATA[보안 시퀀스가 일치하지 않아 페이지를 표시할 수 없습니다.]]></code>
+  <code key="905" order="905"><![CDATA[서버에서 메시지 복호화 도중 오류가 발생하였습니다. 다시 Half 보안 핸드쉐이킹을 수행하십시요.]]></code>
+  <code key="906" order="906"><![CDATA[요청하고자 하는 데이터의 길이가 한계치를 넘어섰습니다.]]></code>
+  <code key="907" order="907"><![CDATA[메시지 복호화를 위한 Cipher-Parity헤더가 도착하지 않았습니다.]]></code>
+  <code key="908" order="908"><![CDATA[잘못된 파라미터 입니다.]]></code>
+  <code key="909" order="909"><![CDATA[서버에 등록되지 않은 호스트 주소입니다.]]></code>
+  <code key="910" order="910"><![CDATA[보안 세션과 WAS세션의 동기화 확인에 실패했습니다.]]></code>
+  <code key="911" order="911"><![CDATA[인증서 목록에 존재하지 않는 호스트 입니다.]]></code>
+  <code key="921" order="921"><![CDATA[인증서 정책이 존재하지 않는 페이지 입니다.]]></code>
+  <code key="922" order="922"><![CDATA[인증서 제출이 필요한 페이지 입니다.]]></code>
+  <code key="923" order="923"><![CDATA[올바른 형식의 인증서가 아닙니다. X.509 표준 인증서만 사용 가능합니다.]]></code>
+  <code key="924" order="924"><![CDATA[개인키 소유여부 확인을 위한 서명 데이터가 들어오지 않았습니다.]]></code>
+  <code key="925" order="925"><![CDATA[개인키 소유여부 확인(서명 검증)에 실패했습니다.]]></code>
+  <code key="926" order="926"><![CDATA[인증서 본인 확인에 필요한 VID Random값이 들어오지 않았습니다.]]></code>
+  <code key="927" order="927"><![CDATA[인증서 본인 확인 기능을 제공하지 않는 인증서 입니다.]]></code>
+  <code key="928" order="928"><![CDATA[인증서 본인 확인(Match)에 실패했습니다.]]></code>
+  <code key="929" order="929"><![CDATA[낮은 버전의 인증서는 허용하지 않습니다.]]></code>
+  <code key="930" order="930"><![CDATA[인증서가 아직 유효하지 않습니다.]]></code>
+  <code key="931" order="931"><![CDATA[인증서가 만료되어 더이상 사용할 수 없습니다.]]></code>
+  <code key="932" order="932"><![CDATA[신뢰된 CA 에서 발급한 인증서가 아닙니다.]]></code>
+  <code key="933" order="933"><![CDATA[인증서 서명 검증에 실패했습니다.]]></code>
+  <code key="934" order="934"><![CDATA[인증서 경로 검증에 실패했습니다.]]></code>
+  <code key="935" order="935"><![CDATA[인증서 상호 연동 정책(OID)에 부합하지 않는 인증서 입니다.]]></code>
+  <code key="936" order="936"><![CDATA[인증서 상호 연동 정책(OID)검증에 실패했습니다.]]></code>
+  <code key="937" order="937"><![CDATA[본 페이지 사용에 적합한 용도(Key Usage)의 인증서가 아닙니다.]]></code>
+  <code key="938" order="938"><![CDATA[고객께서 제출하신 공동인증서는 SC제일은행에서 발급받으셨으나 현재 폐기되었거나 효력정지 중인 인증서 입니다. 자세한 내용은 인증센터 관리자에게 문의하시기 바랍니다.]]></code>
+  <code key="939" order="939"><![CDATA[인증서가 효력정지되어 현재는 사용할 수 없습니다. 효력 회복 후 사용가능합니다.]]></code>
+  <code key="940" order="940"><![CDATA[인증서 상태(폐기 여부) 확인에 실패했습니다.]]></code>
+  <code key="949" order="949"><![CDATA[인증서 검증 과정 중에 내부 서버 오류가 발생했습니다.]]></code>
+  <code key="951" order="951"><![CDATA[전자서명 데이터 제출이 필요한 페이지 입니다.]]></code>
+  <code key="952" order="952"><![CDATA[클라이언트에서 보낸 전자서명 검증에 실패했습니다.]]></code>
+  <code key="953" order="953"><![CDATA[서버 측 전자서명에 실패했습니다.]]></code>
+  <code key="954" order="954"><![CDATA[전자서명 값을 저장하는 도중 오류가 발생했습니다.]]></code>
+  <code key="997" order="997"><![CDATA[Plug-in Gateway와의 통신에 실패했습니다.]]></code>
+  <code key="998" order="998"><![CDATA[S-HTTP를 지원하지 않는 서버입니다.]]></code>
+  <code key="999" order="999"><![CDATA[보안 처리 도중 오류가 발생했습니다. 관리자에게 문의하여 주십시요,]]></code>
+  <code key="APPL_0001" order="1001"><![CDATA[인증서 정보가 존재하지 않음.]]></code>
+  <code key="APPL_0002" order="1002"><![CDATA[인증서 발급 기관 코드가 유효하지 않습니다.]]></code>
+  <code key="APPL_0003" order="1003"><![CDATA[타행인증서 오류]]></code>
+  <code key="APPL_0004" order="1004"><![CDATA[전자서명 저장중에 오류가 발생하였습니다.]]></code>
+  <code key="APPL_0005" order="1005"><![CDATA[전자서명 변환중 오류가 발생하였습니다. 확인하여 주십시요.]]></code>
+  <code key="APPL_0006" order="1006"><![CDATA[필요한 전처리 작업이 수행되지 않았습니다. 확인하여 주십시요.]]></code>
+  <code key="APPL_0007" order="1007"><![CDATA[보안카드 체크발생중에 에러가 발생하였습니다.]]></code>
+  <code key="APPL_0008" order="1008"><![CDATA[11시 50분 부터 12시 30분까지는 시스템 점검 시간입니다. 이 시간에는 거래를 하실수 없습니다.]]></code>
+  <code key="APPL_0009" order="1009"><![CDATA[해당 거래의 거래가능 시간이 아닙니다. 자세한 거래시간을 확인하시려면 인터넷 뱅킹 이용시간을 확인하여 주십시요.]]></code>
+  <code key="APPL_0010" order="1010"><![CDATA[전자서명 데이터 처리중 에러가 발생하였습니다.]]></code>
+  <code key="APPL_0011" order="1011"><![CDATA[전자서명 데이터 저장 구분이 없습니다.]]></code>
+  <code key="APPL_0012" order="1012"><![CDATA[UserTransaction에 허용되지 않은 Key값입니다.]]></code>
+  <code key="APPL_0013" order="1013"><![CDATA[해당 JSP페이지 생성중에 에러가 발생하였습니다.]]></code>
+  <code key="APPL_0014" order="1014"><![CDATA[쿠키 생성중에 에러가 발생하였습니다.]]></code>
+  <code key="APPL_0015" order="1015"><![CDATA[고객님께서는 이미 보증서를 발급받으셨습니다. 취소후 재거래 하십시요.]]></code>
+  <code key="APPL_0016" order="1016"><![CDATA[납부구분이 다릅니다. 확인후 다시 거래하시기 바랍니다.]]></code>
+  <code key="APPL_0017" order="1017"><![CDATA[해외IP차단에 설정된 IP는 거래할 수 없습니다.]]></code>
+  <code key="APPL_0018" order="1018"><![CDATA[해당 주민번호는 이미 가입된 사용자 입니다.]]></code>
+  <code key="APPL_0019" order="1019"><![CDATA[실명확인이 되질 않았습니다. 본인의 주민등록번호를 입력하여 주십시오.]]></code>
+  <code key="APPL_0020" order="1020"><![CDATA[입력하신 주민등록번호와 성명의 자료가 없습니다. 미성년자 혹은 외국인은 등록하실수 없습니다.]]></code>
+  <code key="APPL_0021" order="1021"><![CDATA[실명확인 시스템 장애중입니다. 잠시후 사용하시기 바랍니다.]]></code>
+  <code key="APPL_0022" order="1022"><![CDATA[올바르지 않는 주민번호 입니다. 다시 입력하여 주십시오."]]></code>
+  <code key="APPL_0023" order="1023"><![CDATA[실명확인 서비스 중지됨 담당자에게 연락하시어 조치 받으십시오.]]></code>
+  <code key="APPL_0024" order="1024"><![CDATA[올바르지 않는 주민번호 입니다. 다시 입력하여 주십시오.]]></code>
+  <code key="APPL_0025" order="1025"><![CDATA[데이터 전송중 오류입니다. 다시 입력하여 주십시오.]]></code>
+  <code key="APPL_0026" order="1026"><![CDATA[실명확인 시스템 문제입니다. 담당자에게 연락하시어 조치 받으십시오.]]></code>
+  <code key="APPL_0027" order="1027"><![CDATA[주민등록번호와 성명 입력이 바르게 되지 않았습니다. 다시한번 입력해 주십시오.]]></code>
+  <code key="APPL_0028" order="1028"><![CDATA[자주쓰는 입금계좌에서 선택하거나 입금계좌를 직접 입력하십시오.]]></code>
+  <code key="APPL_0029" order="1029"><![CDATA[SSO서버의 상태가 비정상적입니다. 잠시후 다시 거래하여 주십시요.]]></code>
+  <code key="APPL_0030" order="1030"><![CDATA[입력하신 비밀번호가 일치하지 않습니다.]]></code>
+  <code key="APPL_0031" order="1031"><![CDATA[입력하신 아이디는 웹회원 사용자가 아닙니다.]]></code>
+  <code key="APPL_0032" order="1032"><![CDATA[입력하신 비밀번호가 일치하지 않습니다.]]></code>
+  <code key="APPL_0033" order="1033"><![CDATA[입력된 계좌값이 동일하지 않습니다. 셀렉트 박스와 텍스트 박스의 계좌번호를 확인하여 주십시요.]]></code>
+  <code key="APPL_0034" order="1034"><![CDATA[웹 회원만이 사용가능한 페이지 입니다. 메뉴를 확인하세요.]]></code>
+  <code key="APPL_0035" order="1035"><![CDATA[입력하신 보안카드 번호가 일치하지 않습니다.]]></code>
+  <code key="APPL_0036" order="1036"><![CDATA[웹 회원 고객구분값 에러]]></code>
+  <code key="APPL_0037" order="1037"><![CDATA[조회 회원 고객구분값 에러 입니다.]]></code>
+  <code key="APPL_0038" order="1038"><![CDATA[고객님은 이미 웹회원 또는 IB회원이십니다.]]></code>
+  <code key="APPL_0039" order="1039"><![CDATA[전달된 전자서명 데이터 검증에 실패하였습니다.]]></code>
+  <code key="APPL_0040" order="1040"><![CDATA[아파트 청구기관 해지 업무 수행중에 오류가 발생하였습니다.]]></code>
+  <code key="APPL_0041" order="1041"><![CDATA[청구기관이 삭제되지 않았습니다. 먼저 청구기관 삭제를 하여 주십시요.]]></code>
+  <code key="APPL_0042" order="1042"><![CDATA[이체 비밀번호 초기화 상태입니다. 이체비밀번호를 등록하신후에 거래하여 주십시요.]]></code>
+  <code key="APPL_0043" order="1043"><![CDATA[고객님은 이체비밀번호 영업점 등록후 3일 경과 대상입니다.]]></code>
+  <code key="APPL_0044" order="1044"><![CDATA[고객님은 장기 미사용 고객이십니다.]]></code>
+  <code key="APPL_0045" order="1045"><![CDATA[고객님은 이체비밀번호 오류횟수 초과 상태입니다.]]></code>
+  <code key="APPL_0046" order="1046"><![CDATA[고객님은 현재 수수료 연체중 이십니다.]]></code>
+  <code key="APPL_0047" order="1047"><![CDATA[고객님은 PC 사전등록상태 대상자 이십니다.]]></code>
+  <code key="APPL_0048" order="1048"><![CDATA[고객님은 인터넷 뱅킹 해지 고객이십니다.]]></code>
+  <code key="APPL_0049" order="1049"><![CDATA[입력된 사용자 주민번호와 로그인된 사용자 주민번호가 틀립니다.]]></code>
+  <code key="APPL_0050" order="1050"><![CDATA[입력하신 주민번호와 조회된 주민번호가 일치하지 않습니다.]]></code>
+  <code key="APPL_0051" order="1050"><![CDATA[입력하신 이름과 조회된 이름이 일치하지 않습니다.]]></code>
+  <code key="APPL_0052" order="1052"><![CDATA[입력하신 회원의 아이디가 존재하지 않습니다.]]></code>
+  <code key="APPL_0053" order="1053"><![CDATA[비밀번호 초기화 메일을 전송하다가 에러가 발생하였습니다.]]></code>
+  <code key="APPL_0060" order="1053"><![CDATA[이미 주채무실행을 하신 고객님은 보증서발급취소가 불가능합니다.]]></code>
+  <code key="APPL_0054" order="1054"><![CDATA[아파트 관리비 청구등록중에 에러가 발생하였습니다.]]></code>
+  <code key="APPL_0061" order="1054"><![CDATA[이미 발급된 보증서가 존재하지 않습니다. 보증서발급신청을 먼저해주시기 바랍니다.]]></code>
+  <code key="APPL_0062" order="1055"><![CDATA[당일발급된 보증서로만 대출실행이 가능합니다. 보증서를 다시 발급하십시요.]]></code>
+  <code key="APPL_0063" order="1056"><![CDATA[이미 주채무실행을 하신 고객님은 중복 주채무실행이 불가능합니다.]]></code>
+  <code key="APPL_0064" order="1057"><![CDATA[연체정보가 존재합니다. 연체정보 삭제후 대출실행 하십시요.]]></code>
+  <code key="APPL_0065" order="1065"><![CDATA[나의공과금 등록이 중복됩니다.확인후 다시 등록하세요.]]></code>
+  <code key="APPL_0066" order="1066"><![CDATA[나의공과금 등록은 최대 5개 까지 가능합니다.]]></code>
+  <code key="APPL_0067" order="1068"><![CDATA[지로 번호가  중복됩니다.확인후 다시 등록하세요.]]></code>
+  <code key="APPL_0068" order="1068"><![CDATA[자주쓰는 지로  등록은 최대 50개 까지 가능합니다.]]></code>
+  <code key="APPL_0069" order="1069"><![CDATA[입력된 전화번호3번째 자리가 유효하지 않습니다.]]></code>
+  <code key="APPL_0070" order="1070"><![CDATA[기업회원은 아이디, 비밀번호를 이용한 로그인을 수행할 수 없습니다. 인증서를 이용하여 로그인하여 주십시요.]]></code>
+  <code key="APPL_0071" order="1071"><![CDATA[보내는 분 성명은 이미 등록되어 있습니다. 확인 후 다시 입력하십시오.]]></code>
+  <code key="APPL_0072" order="1072"><![CDATA[받는 분 성명은 이미 등록되어 있습니다. 확인 후 다시 입력하십시오.]]></code>
+  <code key="APPL_0073" order="1073"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="APPL_0074" order="1074"><![CDATA[요청하신 서비스 진행중 중요 데이터가 존재하지 않습니다. 관리자에게 문의하십시오.]]></code>
+  <code key="APPL_0075" order="1075"><![CDATA[이중암호화 변환에 필요한 데이터가 필요합니다. DE2E 데이터 오류]]></code>
+  <code key="APPL_0077" order="1077"><![CDATA[로그인에 사용될 사용자 아이디가 존재하지 않습니다.]]></code>
+  <code key="APPL_0078" order="1078"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="APPL_0079" order="1079"><![CDATA[이미 SC제일은행 인터넷 뱅킹을 사용중인 브라우져가 존재 하거나 잘못된 접근 입니다. 모든 브라우져를 닫고 다시 시도하여 주십시요.]]></code>
+  <code key="APPL_0080" order="1080"><![CDATA[본인인증 확인에 실패하였습니다. 인증서를 확인하여 주십시요.]]></code>
+  <code key="APPL_0081" order="1081"><![CDATA[고객님의 이메일 주소 정보가 없습니다.]]></code>
+  <code key="APPL_0082" order="1082"><![CDATA[웹회원 정보 테이블 조회 오류가 발생하였습니다.]]></code>
+  <code key="APPL_0083" order="1083"><![CDATA[대출신청 가능일이 경과하였습니다. 대출상담 영업점 또는 고객컨택센터로  문의하시기 바랍니다 고객컨택센터 ☎1588-1599]]></code>
+  <code key="APPL_0084" order="1084"><![CDATA[본 대출은 두드림통장, 두드림2U통장, 내지갑 통장 보유 개인고객에게 제공하는 상품으로 영업점 또는 고객컨택센터에서 상담이 필요합니다. 자세한 상품내용은 거래하시는 영업점 또는 고객컨택센터로 문의하시기 바랍니다. 고객컨택센터 ☎1588-1599]]></code>
+  <code key="APPL_0085" order="1085"><![CDATA[대출상담이 진행중인건입니다. 대출 상담하신 영업점 또는 고객컨택센터로 문의해주시기 바랍니다. 고객컨택센터 ☎1588-1599]]></code>
+  <code key="APPL_0086" order="1086"><![CDATA[상담하신 드림결제론이 승인되지 않았습니다. 상담하신 영업점 또는 고객컨택센터로 문의해주시기 바랍니다. 고객컨택센터 ☎1588-1599]]></code>
+  <code key="APPL_0087" order="1087"><![CDATA[대출상담이 진행중인건입니다. 대출 상담하신 영업점 또는 고객컨택센터로 문의해주시기 바랍니다. 고객컨택센터 ☎1588-1599]]></code>
+  <code key="APPL_0088" order="1088"><![CDATA[당일 기준금리가 등록되지 않았습니다.]]></code>
+  <code key="APPL_0099" order="1099"><![CDATA[신용카드 신규발급은 평일 08:00 ~ 22:00 사이에만 가능합니다. 자세한 거래시간을 확인하시려면 인터넷 뱅킹 이용시간을 확인하여 주십시요.]]></code>
+  <code key="APPL_0100" order="1100"><![CDATA[거래명세 로그추가 수행중에 오류가 발생하였습니다.]]></code>
+  <code key="APPL_0101" order="1101"><![CDATA[네트워크 및 PC환경의 영향에 따라 세션과 관련된 부분에 문제가 있습니다. 모든 브라우져를 닫고 다시 거래를 해주세요. 계속 발생시에는 고객컨택센터로 문의해주시기 바랍니다. 고객컨택센터 ☎1588-1599]]></code>
+  <code key="APPL_0102" order="1102"><![CDATA[정당한 입금계좌를 선택하여 주세요.]]></code>
+  <code key="APPL_0103" order="1103"><![CDATA[이체금액 버튼을 클릭하거나 이체금액을 직접 입력하십시오.]]></code>
+  <code key="APPL_0104" order="1104"><![CDATA[이체비밀번호 사용자는 생체인증서비스를 이용 하실 수 없습니다. '인터넷뱅킹 > 서비스 및 설정'메뉴에서 이체비밀번호 사용 해지 후 거래하시기 바랍니다.]]></code>
+  <code key="FDSERR00" order="1"><![CDATA[]]></code>
+  <code key="TEL_AUTH_ERR1" order="1"><![CDATA[전화인증  인증번호가 잘못 되었습니다.]]></code>
+  <code key="TEL_AUTH_ERR2" order="1"><![CDATA[전화인증 유효시간이 초과되었습니다.]]></code>
+  <code key="CIINFO_ERR" order="1"><![CDATA[고객정보가 일치 하지 않습니다.(CI불일치)]]></code>
+  
+  <code key="MSC_EVT_001" order="1"><![CDATA[로그인 후 참여가 가능합니다. 로그인 후 이용 부탁드립니다.]]></code>
+  <code key="MSC_EVT_002" order="2"><![CDATA[이벤트 대상 고객이 아닙니다.]]></code>
+</category>

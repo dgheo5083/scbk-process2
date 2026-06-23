@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FICDMNTYPE" lang="en">
+  <code key="001" order="1"><![CDATA[Loan payment]]></code>
+  <code key="002" order="2"><![CDATA[Purchase of daily goods]]></code>
+  <code key="003" order="3"><![CDATA[Real estate]]></code> 
+  <code key="004" order="4"><![CDATA[Investment capital]]></code>
+  <code key="005" order="5"><![CDATA[Utility and tax payment]]></code>
+  <code key="006" order="6"><![CDATA[Pay for monthly rent]]></code>
+  <code key="007" order="7"><![CDATA[Life expenses]]></code>
+  <code key="008" order="8"><![CDATA[Rent for housing]]></code>
+  <code key="009" order="9"><![CDATA[Build/rebuidling houses]]></code>
+  <code key="010" order="10"><![CDATA[Tuition]]></code>
+  <code key="011" order="11"><![CDATA[Business funding]]></code>
+  <code key="012" order="12"><![CDATA[Fund for wedding]]></code>
+  <code key="013" order="13"><![CDATA[Medical expense]]></code>
+  <code key="014" order="14"><![CDATA[Others]]></code>
+</category>

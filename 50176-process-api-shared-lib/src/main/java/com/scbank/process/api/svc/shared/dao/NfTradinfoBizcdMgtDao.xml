@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.dao.NfTradinfoBizcdMgtDao">
+
+	<delete id="deleteTradInfoBizCd" parameterType="com.scbank.process.api.svc.shared.dao.dto.TradInfoBizCdMgtParam">
+	 	DELETE FROM 
+	 		NF_TRADINFO_BIZCD_MGT
+	 	WHERE
+	 		CUST_NO = #{custNo}
+	 	AND 
+	 		TRAD_NO = #{tradNo}
+	 	AND
+	 		CODE_TYPE = #{codeType}
+	</delete>
+
+	<insert id="insertTradInfoBizCd" parameterType="com.scbank.process.api.svc.shared.dao.dto.TradInfoBizCdMgtParam">
+	 	INSERT INTO NF_TRADINFO_BIZCD_MGT
+		(
+			REGISTTIME,
+			UPDATETIME,
+			CUST_NO, 
+			TRAD_NO, 
+			CODE, 
+			CODE_NAME, 
+			CODE_TYPE, 
+			GRP_CODE, 
+			GRP_CODE_NAME, 
+			<if test="codeType == 1">
+				TRAD_CNT,
+			</if>
+			ORDER_NUM
+		) VALUES
+		<foreach collection="gaesaCodeList" item="item" index="index" separator=","> 
+		(
+			CURRENT TIMESTAMP,
+			CURRENT TIMESTAMP,
+			#{custNo},
+			#{tradNo},
+			#{item.code},
+			#{item.codeNm},
+			#{codeType},
+			#{grpCode},
+			#{grpCodeName},
+			<if test="codeType == 1">
+				#{item.cnt},
+			</if>
+			#{index}+1
+		)
+		</foreach>
+	</insert>
+</mapper>

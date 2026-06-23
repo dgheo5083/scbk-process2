@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 업무구분(BIZ_TYPE)|제휴코드(CNNCTN_WAY)|소개자행번(CLERK_NO) -->
+<category name="ALLIANCE_EVENT" lang="ko">
+  <!-- 페이코(000002) -->
+  <code key="000002" order="0">
+  <![CDATA[{
+  	"DEFAULT" : {
+		"CNNCTN_WAY" : "000002",
+		"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+		"CLERK" : { "NUMBER" : "" },
+	  	"BRANCH" : { "NUMBER" : "694", "NAME" : "분당중앙" }
+	},
+	"162264" : {
+		"DEFAULT" : {
+			"CNNCTN_WAY" : "000002",
+			"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+			"CLERK" : { "NUMBER" : "" },
+		  	"BRANCH" : { "NUMBER" : "694", "NAME" : "분당중앙" }
+		},
+		"TDSV" : {
+			"CNNCTN_WAY" : "000002",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "N", "AGREEMENT" : "Y", "MESSAGE" : "N" },
+		  	"CLERK" : { "NUMBER" : "162264" },
+		  	"BRANCH" : { "NUMBER" : "694", "NAME" : "분당중앙" },
+		  	"AGREEMENT" : { "CODE" : [ "PRVCMM002044" ], "TITLE" : [ "MA3PRDPRD001001" ] },
+		  	"PRODUCT" : { "PERIOD" : "6", "INSTALL_TYPE" : "1", "JOIN_AMOUNT" : "100000" },
+		  	"MESSAGE" : { "BENEFIT1" : "MA3PRDPRD001003", "BENEFIT2" : "MA3PRDPRD001004" },
+	  		"START_DATE" : "20190916",
+		  	"END_DATE" : "20190927"
+		}
+	},
+	"0000303" : {  
+		"BCCD" : {
+			"CNNCTN_WAY" : "000002",
+			"DISPLAY" : { "CLERK" : "N", "AGREEMENT" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000303" },
+			"BRANCH" : { "NUMBER" : "694", "NAME" : "분당중앙" },
+			"AGREEMENT" : { "CODE" : [ "PRVCMM002024" ], "TITLE" : [ "MA3PRDPRD002001" ] }
+		}
+	}
+  }]]>
+  </code>
+   <!-- 가유커넥트 (000196) -->
+  <code key="000196" order="0">  
+  <![CDATA[{
+  	"PRDACT0000045" : {
+		"CNNCTN_WAY" : "000196"
+		,"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" }
+		,"CLERK" : { "NUMBER" : "" }
+	  	,"BRANCH" : { "NUMBER" : "716", "NAME" : "둔산중앙" }
+	}
+  }]]>
+  </code>
+  <!-- 롯데카드적금 (000194) -->
+  <code key="000194" order="0">  
+  <![CDATA[{
+  	"PRDACT0000036" : {
+		"CNNCTN_WAY" : "000194"
+		,"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "Y" }
+		,"CLERK" : { "NUMBER" : "" }
+	  	,"BRANCH" : { "NUMBER" : "", "NAME" : "" }
+	  	,"PRODUCT" : { "PERIOD" : "6", "INSTALL_TYPE" : "1", "JOIN_AMOUNT" : "100000" }
+	}
+  }]]>
+  </code>
+  <!-- 티몬몰(000078) -->
+  <code key="000078" order="0">
+  <![CDATA[{
+  	"DEFAULT" : {
+		"CNNCTN_WAY" : "000078",
+		"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+		"CLERK" : { "NUMBER" : "" },
+	  	"BRANCH" : { "NUMBER" : "191", "NAME" : "도곡스위트" }
+	}
+  }]]>
+  </code>
+  <!-- 티몬페이(000019) -->
+  <code key="000019" order="0">
+  <![CDATA[{
+  	"DEFAULT" : {
+		"CNNCTN_WAY" : "000019",
+		"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+		"CLERK" : { "NUMBER" : "" },
+	  	"BRANCH" : { "NUMBER" : "214", "NAME" : "무역센터" }
+	}
+  }]]>
+  </code>
+  <!-- 삼성카드(000003) -->
+  <code key="000003" order="0">
+  <![CDATA[{
+  	"DEFAULT" : {
+		"CNNCTN_WAY" : "000003",
+		"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+		"CLERK" : { "NUMBER" : "" },
+	  	"BRANCH" : { "NUMBER" : "127", "NAME" : "장사동" }
+	},
+	"827665" : {
+		"DEFAULT" : {
+			"CNNCTN_WAY" : "000003",
+			"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+			"CLERK" : { "NUMBER" : "827665" },
+		  	"BRANCH" : { "NUMBER" : "102", "NAME" : "명동역" }
+		}
+	},
+	"829471" : {
+		"DEFAULT" : {
+			"CNNCTN_WAY" : "000003",
+			"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+			"CLERK" : { "NUMBER" : "829471" },
+		  	"BRANCH" : { "NUMBER" : "127", "NAME" : "장사동" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- 카드고릴라(000022) -->
+  <code key="000022" order="0">
+  <![CDATA[{
+	"DEFAULT" : {
+		"CNNCTN_WAY" : "000022",
+		"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+		"CLERK" : { "NUMBER" : "" },
+	  	"BRANCH" : { "NUMBER" : "130", "NAME" : "광화문" }
+	},
+	"0000701" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000022",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000701" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	},
+	"0000707" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000022",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y", "AGREEMENT" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000707" },
+		  	"BRANCH" : { "NUMBER" : "" },
+			"AGREEMENT" : { "CODE" : "PRVCMM002040" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- 토스(000036) -->
+  <code key="000036" order="0">
+  <![CDATA[{
+  	"0000101" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000036",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000101" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	},
+  	"0000102" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000036",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y", "AGREEMENT" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000102" },
+		  	"BRANCH" : { "NUMBER" : "" },
+			"AGREEMENT" : { "CODE" : "" }
+		}
+	}
+  }]]>
+  </code>
+   <!-- 토스(000124) -->
+  <code key="000124" order="0">
+  <![CDATA[{
+	"167843" : {
+		"CASA" : {
+			"CNNCTN_WAY" : "000124",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "N" },
+			"CLERK" : { "NUMBER" : "167843" },
+		  	"BRANCH" : { "NUMBER" : "191", "NAME" : "도곡스위트" }
+	  	}  	
+	}
+  }]]>
+  </code>
+  <!-- 티몬(000011) -->
+  <code key="000011" order="0">
+  <![CDATA[{
+  	"0000202" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000011",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000202" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	},
+  	"0000210" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000011",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000210" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- SSG Pay(000052) -->
+  <code key="000052" order="0">
+  <![CDATA[{
+  	"0000401" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000052",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000401" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- Samsung Pay(000053) -->
+  <code key="000053" order="0">
+  <![CDATA[{
+  	"0000501" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000053",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000501" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- 11번가(000054) -->
+  <code key="000054" order="0">
+  <![CDATA[{
+  	"0000601" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000054",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000601" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- 위메프(000055) -->
+  <code key="000055" order="0">
+  <![CDATA[{
+  	"0000801" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000054",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000801" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- 브로콜리(000063) -->
+  <code key="000063" order="0">
+  <![CDATA[{
+  	"0000808" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000063",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y", "AGREEMENT" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000808" },
+		  	"BRANCH" : { "NUMBER" : "" },
+		  	"AGREEMENT" : { "CODE" : "PRVCMM002042" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- BC임직원(000064) -->
+  <code key="000064" order="0">
+  <![CDATA[{
+  	"0000404" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000064",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "0000404" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- 골팡(000100) -->
+  <code key="000100" order="0">
+  <![CDATA[{
+  	"164330" : {
+		"BCCD" : {
+			"CNNCTN_WAY" : "000100",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "Y" },
+		  	"CLERK" : { "NUMBER" : "164330" },
+		  	"BRANCH" : { "NUMBER" : "" }
+		}
+	}
+  }]]>
+  </code>
+  <!-- CP 사업부 제휴(000008) -->
+  <code key="000008" order="0">
+  <![CDATA[{
+  	"DEFAULT" : {
+		"CNNCTN_WAY" : "000008",
+		"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+		"CLERK" : { "NUMBER" : "" },
+	  	"BRANCH" : { "NUMBER" : "127", "NAME" : "장사동" }
+	},
+  	"103098" : {
+		"DEFAULT" : {
+			"CNNCTN_WAY" : "000008",
+			"DISPLAY" : { "CLERK" : "Y", "BRANCH" : "N" },
+			"CLERK" : { "NUMBER" : "103098" },
+		  	"BRANCH" : { "NUMBER" : "127", "NAME" : "장사동" }
+		}
+	}
+  }]]>
+  </code>
+  
+  <!-- 서울교통공사(000106)  -->
+  <code key="000106" order="0">
+  <![CDATA[{
+	"149349" : {
+		"DEFAULT" : {
+			"CNNCTN_WAY" : "000106",
+			"DISPLAY" : { "CLERK" : "N", "BRANCH" : "N" },
+			"CLERK" : { "NUMBER" : "149349" },
+		  	"BRANCH" : { "NUMBER" : "154", "NAME" : "답십리" }
+		}
+	}
+  }]]>
+  </code>
+</category>

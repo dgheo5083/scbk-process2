@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.TmbCampContentDao">
+  
+  <select id="selectTmbObjUsrMgtInfo" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.SelectTmbObjUsrMgtInfoResult">
+        SELECT 
+            SERNO AS serno,
+            OPERTYPE AS operType,
+            BNKING_ID AS bnkingId,
+            CNFRM_NO AS cnfrmNo,
+            TRIM(PUSH_SRVC_APPRVL_FLG) AS pushSrvcApprvlFlg,
+            TRIM(BENEFIT_FLAG) AS benefitFlag,
+            TRIM(FINANCE_FLAG) AS financeFlag,
+            TRIM(WMLOUNGE_FLAG) AS wmloungeFlag,
+            TRIM(IOTRANLIST_FLAG) AS iotranlistFlag,
+            TRIM(NOTY_EXRATE_FLG) AS notyExrateFlg
+        FROM TMB_OBJ_USR_MGT
+        WHERE BNKING_ID = #{bnkingId}
+  </select>
+
+  <select id="selectTmbCampContentSeq" resultType="java.lang.String">
+        SELECT TMB_CAMP_CONTENTS_SEQ.NEXTVAL CNT_SEQNO FROM DUAL
+  </select> 
+
+  <insert id="insertTmbCampContents01" parameterType="com.scbank.process.api.svc.common.dao.dto.InsertTmbCampContents01Parameter">
+		INSERT INTO
+			TMB_CAMP_CONTENTS (
+		   	CAMP_SEQ,
+		   	TITLE, 
+		   	CNTS,
+		   	WEB_URL, 
+		   	IMG_URL,
+		   	STS_URL, 
+		   	POPUP_YN,
+		   	STS_YN, 
+		   	CONTENTS_MSG
+		) VALUES (
+			#{campSeq},
+			#{title},
+			#{cnts},
+			#{webUrl},
+			#{imgUrl},
+			#{stsUrl},
+			#{popupYn},
+			#{stsYn},
+			#{contentsMsg}
+		)
+	</insert>
+    
+    <insert id="insertTmbPushmsgCamp01" parameterType="com.scbank.process.api.svc.common.dao.dto.InsertTmbPushMsgCamp01Parameter">
+        INSERT INTO TMB_PUSHMSG_CAMP (
+               MSG_SEQ
+             , CAMP_SEQ
+             , PUSH_TYPE
+             , PUSH_TOKEN
+             , MSG_TYPE
+             , APP_NO
+             , RECV_YN
+             , RESV_DT
+             , RETRY_CNT
+             , TEST_YN
+             , STS_CD
+             , REG_ID
+             , REG_DT
+             , KIND
+             , SVR_ID
+             , SEND_DEPARTMENT
+             , BNKING_ID
+             , BAND_SEQNO
+        ) VALUES (
+               TMB_PUSHMSG_CAMP_SEQ.NEXTVAL
+             , #{ campSeq }
+             ,(SELECT (CASE WHEN OPERTYPE = '1' THEN 'A' ELSE  'G' END) AS PUSH_TYPE FROM TMB_OBJ_USR_MGT WHERE BNKING_ID = #{bnkingId})
+            , (SELECT CNFRM_NO FROM TMB_OBJ_USR_MGT WHERE BNKING_ID = #{bnkingId})
+             , #{ msgType }
+             , '3'
+             , #{ recvYN }
+             , TO_DATE(#{ resvDt }, 'YYYYMMDDhh24miss')
+             , #{ retryCnt }
+             , #{ testYN }
+             , #{ stsCd }
+             , #{ regId }
+             , CURRENT_DATE
+             , #{ kind }
+             , (SELECT SVR_ID FROM TMB_SVR)
+             , #{ sendDepartment }
+             , #{ bnkingId }
+             , #{ bandSeqNo }
+        )
+    </insert>
+
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays useYn="Y">
+    <holiday date="20250101" description="신정"/>
+    <holiday date="20250129" description="설날"/>
+    <holiday date="20250301" description="삼일절"/>
+    <holiday date="20250505" description="어린이날"/>
+    <holiday date="20250606" description="현충일"/>
+    <holiday date="20250815" description="광복절"/>
+    <holiday date="20251003" description="개천절"/>
+    <holiday date="20251009" description="한글날"/>
+    <holiday date="20251225" description="크리스마스"/>
+</holidays>

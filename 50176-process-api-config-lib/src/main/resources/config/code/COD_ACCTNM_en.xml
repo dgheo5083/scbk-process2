@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ACCTNM" lang="en">
+  <code key="10" order="0"><![CDATA[Passbook Deposit]]></code>
+  <code key="2029" order="0"><![CDATA[My Wallet]]></code>
+  <code key="202A" order="0"><![CDATA[High Run]]></code>
+  <code key="202B" order="0"><![CDATA[High Run]]></code>
+  <code key="202C" order="0"><![CDATA[High Run]]></code>
+  <code key="202D" order="0"><![CDATA[High Run]]></code>
+  <code key="202E" order="0"><![CDATA[High Run]]></code>
+  <code key="202F" order="0"><![CDATA[High Run]]></code>
+  <code key="202G" order="0"><![CDATA[High Run]]></code>
+  <code key="202H" order="0"><![CDATA[High Run]]></code>
+  <code key="202I" order="0"><![CDATA[High Run]]></code>
+  <code key="2033" order="0"><![CDATA[SC Happiness Keeper]]></code>
+  <code key="2034" order="0"><![CDATA[MoA Savings]]></code>
+  <code key="2036" order="0"><![CDATA[High End Savings]]></code>
+  <code key="2037" order="0"><![CDATA[My Premium]]></code>	
+  <code key="2041" order="0"><![CDATA[My Plus]]></code>
+  <code key="2043" order="0"><![CDATA[First EZ Savings]]></code>
+  <code key="2046" order="2046"><![CDATA[My Wealth Account]]></code>
+  <code key="2047" order="2047"><![CDATA[My Signature]]></code>
+  <code key="2048" order="2048"><![CDATA[My 100]]></code>
+  <code key="2049" order="2049"><![CDATA[SC First My Payroll Account]]></code>
+  <code key="2051" order="2051"><![CDATA[Hi Account]]></code>
+  <code key="2053" order="2053"><![CDATA[SC First Wealth Saver Account]]></code>
+  <code key="2054" order="2054"><![CDATA[SC First Smart Box Account]]></code>
+  <code key="20FF" order="0"><![CDATA[Savings Deposits]]></code>
+  <code key="5922" order="0"><![CDATA[ISA]]></code>
+  <code key="5961" order="0"><![CDATA[Retirement Pension Trust-DB]]></code>
+  <code key="5962" order="0"><![CDATA[Retirement Pension Trust-DC]]></code>
+  <code key="5963" order="0"><![CDATA[Retirement Pension Trust-IRA]]></code>
+  <code key="5964" order="0"><![CDATA[Retirement Pension Trust-IRA]]></code>
+  <code key="61" order="0"><![CDATA[Beneficiary Certificate]]></code>
+  <code key="9067" order="0"><![CDATA[Multi-Save Installment Deposit]]></code>
+  <code key="9068" order="0"><![CDATA[Multi-Save Installment Deposit]]></code>
+  <code key="90FF" order="0"><![CDATA[Installment Saving Deposits]]></code>
+  <code key="15" order="15"><![CDATA[Virtual Account]]></code>
+  <code key="16" order="16"><![CDATA[Virtual Account]]></code>
+  <code key="26" order="26"><![CDATA[Subordinated Term Bond]]></code>
+  <code key="29" order="29"><![CDATA[Bill In Custody]]></code>
+  <code key="45" order="45"><![CDATA[Government & Public Bonds]]></code>
+  <code key="47" order="47"><![CDATA[Cover Bills Sold]]></code>
+  <code key="51" order="51"><![CDATA[Development Trust]]></code>
+  <code key="52" order="52"><![CDATA[General Unspecified Money Trust]]></code>
+  <code key="53" order="53"><![CDATA[Reserving Objective Trust]]></code>
+  <code key="55" order="55"><![CDATA[House Money Trust]]></code>
+  <code key="56" order="56"><![CDATA[Business Money Trust]]></code>
+  <code key="57" order="57"><![CDATA[National Stock Trust]]></code>
+  <code key="59" order="59"><![CDATA[Unit Type Money Trust]]></code>
+  <code key="60" order="60"><![CDATA[Property Formation Savings]]></code>
+  <code key="66" order="66"><![CDATA[Trade Bills]]></code>
+  <code key="67" order="67"><![CDATA[Trade Bills Discounted]]></code>
+  <code key="71" order="71"><![CDATA[Bills Discounted]]></code>
+  <code key="72" order="72"><![CDATA[Loans On Bills]]></code>
+  <code key="73" order="73"><![CDATA[Loans On Deeds]]></code>
+  <code key="74" order="74"><![CDATA[Guaranteed Loans]]></code>
+  <code key="75" order="75"><![CDATA[Trust Loans]]></code>
+  <code key="76" order="76"><![CDATA[First Convenient Loans]]></code>
+  <code key="77" order="77"><![CDATA[Consumer Receivable Purched]]></code>
+  <code key="79" order="79"><![CDATA[Installment Receivable]]></code>
+  <code key="85" order="85"><![CDATA[FCY Demand Deposit]]></code>
+  <code key="86" order="86"><![CDATA[FCY Current Deposit]]></code>
+  <code key="87" order="87"><![CDATA[FCY Temporary Deposit]]></code>
+  <code key="88" order="88"><![CDATA[FCY Time Deposit]]></code>
+  <code key="89" order="89"><![CDATA[Notice Deposits In Foreign Currency]]></code>
+  <code key="94" order="94"><![CDATA[Bonds On Repurchase Agreement]]></code>
+  <code key="1001" order="1001"><![CDATA[New Era Integrated]]></code>
+  <code key="1005" order="1005"><![CDATA[National Savings]]></code>
+  <code key="10FF" order="1099"><![CDATA[Passbook Deposits]]></code>
+  <code key="2000" order="2000"><![CDATA[Safe Savings]]></code>
+  <code key="2002" order="2002"><![CDATA[Mmda For Individual]]></code>
+  <code key="2003" order="2003"><![CDATA[Short-term Tax-deductable Savings Deposit]]></code>
+  <code key="2004" order="2004"><![CDATA[Dream-youth]]></code>
+  <code key="2005" order="2005"><![CDATA[Safe Savings]]></code>
+  <code key="2006" order="2006"><![CDATA[Free Savings]]></code>
+  <code key="2007" order="2007"><![CDATA[E-click]]></code>
+  <code key="2008" order="2008"><![CDATA[Company Free]]></code>
+  <code key="2009" order="2009"><![CDATA[Mmda For Corporate]]></code>
+  <code key="2011" order="2011"><![CDATA[Dodream Wealth]]></code>
+  <code key="2012" order="2012"><![CDATA[Executive+ Passbook]]></code>
+  <code key="2013" order="2013"><![CDATA[Business Plus-Interest Type]]></code>
+  <code key="2014" order="2014"><![CDATA[SC Marathon Savings]]></code>
+  <code key="2015" order="2015"><![CDATA[First Payroll]]></code>
+  <code key="2016" order="2016"><![CDATA[First Payroll]]></code>
+  <code key="2017" order="2017"><![CDATA[123Saver]]></code>
+  <code key="2018" order="2018"><![CDATA[Global Plus]]></code>
+  <code key="2019" order="2019"><![CDATA[Business Plus-Fee Type]]></code>
+  <code key="2021" order="2021"><![CDATA[Lady First]]></code>
+  <code key="2022" order="2022"><![CDATA[New Corp Savings]]></code>
+  <code key="2023" order="2023"><![CDATA[Do Dream]]></code>
+  <code key="2024" order="2024"><![CDATA[High Run]]></code>
+  <code key="2025" order="2025"><![CDATA[Da-More Biz]]></code>
+  <code key="2026" order="2026"><![CDATA[+Alpha Passbook]]></code>
+  <code key="2027" order="2027"><![CDATA[Notice Deposit]]></code>
+  <code key="2028" order="2028"><![CDATA[Free-up Corporate Deposit]]></code>
+  <code key="2030" order="2030"><![CDATA[DoDream 2U]]></code>
+  <code key="2038" order="2038"><![CDATA[My Simple]]></code>
+  <code key="2039" order="2039"><![CDATA[SC National Pension]]></code>
+  <code key="2044" order="2031"><![CDATA[SC first My Zoom]]></code>
+  <code key="2045" order="2045"><![CDATA[SC Myrun]]></code>
+  <code key="3001" order="3001"><![CDATA[Checking Deposits]]></code>
+  <code key="3002" order="3002"><![CDATA[Household Checking]]></code>
+  <code key="30FF" order="3099"><![CDATA[Checking Deposits]]></code>
+  <code key="4601" order="4601"><![CDATA[Workers Saving For Housing]]></code>
+  <code key="4602" order="4602"><![CDATA[Long-term Savings Deposit For Housing]]></code>
+  <code key="4603" order="4603"><![CDATA[Tax-free New household Installment Deposit]]></code>
+  <code key="4604" order="4604"><![CDATA[Lifetime Tax-free Installment Savings]]></code>
+  <code key="4605" order="4605"><![CDATA[Asset Building deposit]]></code>
+  <code key="46FF" order="4699"><![CDATA[Savings Deposits For Housing]]></code>
+  <code key="4801" order="4801"><![CDATA[Worker's Preferential Saving Deposits]]></code>
+  <code key="4802" order="4802"><![CDATA[Long Term Saving Deposit For Worker]]></code>
+  <code key="48FF" order="4899"><![CDATA[Deposit For Worker]]></code>
+  <code key="4901" order="4901"><![CDATA[Long Term Saving For Household]]></code>
+  <code key="4902" order="4902"><![CDATA[Long Term Saving For Household]]></code>
+  <code key="5401" order="5401"><![CDATA[Pension Trust]]></code>
+  <code key="5402" order="5402"><![CDATA[Pension Trust]]></code>
+  <code key="5403" order="5403"><![CDATA[Pension Trust]]></code>
+  <code key="5405" order="5405"><![CDATA[Pension Trust]]></code>
+  <code key="5421" order="5421"><![CDATA[Personal Pension Trust]]></code>
+  <code key="5423" order="5423"><![CDATA[Personal Pension Trust]]></code>
+  <code key="5425" order="5425"><![CDATA[New Personal Pension Trust]]></code>
+  <code key="5426" order="5426"><![CDATA[New Personal Pension Trust]]></code>
+  <code key="5431" order="5431"><![CDATA[Long-term House Trust]]></code>
+  <code key="5432" order="5432"><![CDATA[Long-term House Trust]]></code>
+  <code key="5441" order="5441"><![CDATA[Workers Preferential Trust]]></code>
+  <code key="5471" order="5471"><![CDATA[Pension Trust]]></code>
+  <code key="5472" order="5472"><![CDATA[Pension Trust]]></code>
+  <code key="5473" order="5473"><![CDATA[Pension Trust]]></code>
+  <code key="5475" order="5475"><![CDATA[Pension Trust]]></code>
+  <code key="54FF" order="5499"><![CDATA[General Pension Trust]]></code>
+  <code key="5801" order="5801"><![CDATA[Free Reserving Trust]]></code>
+  <code key="5802" order="5802"><![CDATA[Free Reserving Trust]]></code>
+  <code key="5806" order="5806"><![CDATA[New Reserving Trust]]></code>
+  <code key="5807" order="5807"><![CDATA[New Reserving Trust]]></code>
+  <code key="5871" order="5871"><![CDATA[Free Reserving Trust]]></code>
+  <code key="5872" order="5872"><![CDATA[Free Reserving Trust]]></code>
+  <code key="58FF" order="5899"><![CDATA[Reserving Trust]]></code>
+  <code key="5901" order="5901"><![CDATA[Unit Money Trust]]></code>
+  <code key="5902" order="5902"><![CDATA[Open type Money Trust]]></code>
+  <code key="5903" order="5903"><![CDATA[Open type Money Trust]]></code>
+  <code key="5904" order="5904"><![CDATA[Specified Money Trust]]></code>
+  <code key="5905" order="5905"><![CDATA[Open type Money Trust]]></code>
+  <code key="5906" order="5906"><![CDATA[Open type Money Trust]]></code>
+  <code key="5907" order="5907"><![CDATA[First Separate Taxation Trust]]></code>
+  <code key="5912" order="5912"><![CDATA[Specified Money Trust]]></code>
+  <code key="5914" order="5914"><![CDATA[Specified Money Trust]]></code>
+  <code key="5924" order="5924"><![CDATA[Specified Money Trust]]></code>
+  <code key="5931" order="5931"><![CDATA[Specified Money Trust]]></code>
+  <code key="5932" order="5932"><![CDATA[Specified Money Trust]]></code>
+  <code key="5933" order="5933"><![CDATA[Specified Money Trust]]></code>
+  <code key="5934" order="5934"><![CDATA[Specified Money Trust]]></code>
+  <code key="5935" order="5935"><![CDATA[Foreign Currency Specified Money Trust]]></code>
+  <code key="5941" order="5941"><![CDATA[Specified Money Trust]]></code>
+  <code key="5942" order="5942"><![CDATA[Specified Money Trust]]></code>
+  <code key="5943" order="5943"><![CDATA[Specified Money Trust]]></code>
+  <code key="5945" order="5945"><![CDATA[Foreign Currency Specified Money Trust]]></code>
+  <code key="5951" order="5951"><![CDATA[Retirement Trust]]></code>
+  <code key="5952" order="5952"><![CDATA[Retirement Trust]]></code>
+  <code key="5971" order="5971"><![CDATA[Unit Money Trust]]></code>
+  <code key="5972" order="5972"><![CDATA[Open Type Money Trust]]></code>
+  <code key="5973" order="5973"><![CDATA[Open Type Money Trust]]></code>
+  <code key="5977" order="5977"><![CDATA[First Separate Taxation Trust]]></code>
+  <code key="59FF" order="5999"><![CDATA[Unit Type Money Trust]]></code>
+  <code key="7064" order="7064"><![CDATA[Mutual Installment Deposits for Housing]]></code>
+  <code key="7065" order="7065"><![CDATA[Mutual Installment Deposits for Housing]]></code>
+  <code key="70FF" order="7099"><![CDATA[Mutual Savings Deposits]]></code>
+  <code key="8001" order="8001"><![CDATA[Home&Save Deposit]]></code>
+  <code key="8002" order="8002"><![CDATA[Home&Save Deposit]]></code>
+  <code key="8003" order="8003"><![CDATA[Home&Save Deposit]]></code>
+  <code key="8012" order="8012"><![CDATA[Special Property Formation Time Deposit]]></code>
+  <code key="8016" order="8016"><![CDATA[Special Property Formation Time Deposit]]></code>
+  <code key="8022" order="8022"><![CDATA[Special Property Formation Time Deposit]]></code>
+  <code key="8023" order="8023"><![CDATA[First Property Forming Time Deposit]]></code>
+  <code key="8024" order="8024"><![CDATA[First Property Forming Time Deposit]]></code>
+  <code key="8026" order="8026"><![CDATA[Special Property Formation Time Deposit]]></code>
+  <code key="8028" order="8028"><![CDATA[First Property Forming Time Deposit]]></code>
+  <code key="8029" order="8029"><![CDATA[First Property Forming Time Deposit]]></code>
+  <code key="8035" order="8035"><![CDATA[First Time Deposit]]></code>
+  <code key="8036" order="8036"><![CDATA[First Time Deposit]]></code>
+  <code key="8038" order="8038"><![CDATA[First Time Deposit]]></code>
+  <code key="8039" order="8039"><![CDATA[First Time Deposit]]></code>
+  <code key="8042" order="8042"><![CDATA[E-green Save]]></code>
+  <code key="8043" order="8043"><![CDATA[E-green Save]]></code>
+  <code key="8044" order="8044"><![CDATA[SC First Net Zero Time Deposit]]></code>
+  <code key="8048" order="8048"><![CDATA[E-green Save]]></code>
+  <code key="8049" order="8049"><![CDATA[E-green Save]]></code>
+  <code key="8055" order="8055"><![CDATA[First Time Deposit]]></code>
+  <code key="8056" order="8056"><![CDATA[First Time Deposit]]></code>
+  <code key="8057" order="8057"><![CDATA[First Time Deposit]]></code>
+  <code key="8058" order="8058"><![CDATA[First Time Deposit]]></code>
+  <code key="8062" order="8062"><![CDATA[Dream Time Deposit]]></code>
+  <code key="8063" order="8063"><![CDATA[Dream Time Deposit]]></code>
+  <code key="8064" order="8064"><![CDATA[Time Deposit For Housing]]></code>
+  <code key="8065" order="8065"><![CDATA[Time Deposit For Housing]]></code>
+  <code key="8067" order="8067"><![CDATA[Time Deposit For Housing]]></code>
+  <code key="8068" order="8068"><![CDATA[Time Deposit For Housing]]></code>
+  <code key="8070" order="8070"><![CDATA[First Time Deposit]]></code>
+  <code key="8071" order="8071"><![CDATA[First Floating Rate Time Deposit]]></code>
+  <code key="8072" order="8072"><![CDATA[First Floating Rate Time Deposit]]></code>
+  <code key="8081" order="8081"><![CDATA[Time Deposit]]></code>
+  <code key="8082" order="8082"><![CDATA[Time Deposit]]></code>
+  <code key="8083" order="8083"><![CDATA[Time Deposit]]></code>
+  <code key="8084" order="8084"><![CDATA[Time Deposit]]></code>
+  <code key="8085" order="8085"><![CDATA[Time Deposit]]></code>
+  <code key="8086" order="8086"><![CDATA[Time Deposit]]></code>
+  <code key="8088" order="8088"><![CDATA[Time Deposit]]></code>
+  <code key="8089" order="8089"><![CDATA[Time Deposit]]></code>
+  <code key="8091" order="8091"><![CDATA[Negotiable Certificate Deposit]]></code>
+  <code key="8092" order="8092"><![CDATA[Time Deposit]]></code>
+  <code key="8093" order="8093"><![CDATA[Time Deposit]]></code>
+  <code key="8094" order="8094"><![CDATA[First Time Deposit]]></code>
+  <code key="8095" order="8095"><![CDATA[First Time Deposit]]></code>
+  <code key="8096" order="8096"><![CDATA[First Time Deposit]]></code>
+  <code key="8097" order="8097"><![CDATA[First Time Deposit]]></code>
+  <code key="80FF" order="8099"><![CDATA[Time Deposits]]></code>
+  <code key="8553" order="8553"><![CDATA[FCY Choice Demand]]></code>
+  <code key="8554" order="8554"><![CDATA[FCY First MMDA]]></code>
+  <code key="8557" order="8557"><![CDATA[FCY Point Deposit]]></code>
+  <code key="8558" order="8558"><![CDATA[FCY Prime Deposit]]></code>
+  <code key="8885" order="8885"><![CDATA[3+ FCY Deposit]]></code>
+  <code key="8886" order="8886"><![CDATA[3+ FCY Deposit]]></code>
+  <code key="9009" order="9009"><![CDATA[Home & Save Savings]]></code>
+  <code key="9010" order="9010"><![CDATA[Home & Save Savings]]></code>
+  <code key="9021" order="9021"><![CDATA[Floating Rate Savings]]></code>
+  <code key="9027" order="9027"><![CDATA[Floating Rate Savings]]></code>
+  <code key="9041" order="9041"><![CDATA[New Household Savings]]></code>
+  <code key="9048" order="9048"><![CDATA[New Household Savings]]></code>
+  <code key="9051" order="9051"><![CDATA[First  Household Savings]]></code>
+  <code key="9052" order="9052"><![CDATA[First  Household Savings]]></code>
+  <code key="9053" order="9053"><![CDATA[First  Household Savings]]></code>
+  <code key="9054" order="9053"><![CDATA[First  Household Savings]]></code>
+  <code key="9055" order="9053"><![CDATA[First Corporate Savings]]></code>
+  <code key="9056" order="9056"><![CDATA[Mobile Preferential Instalment Savings]]></code>
+  <code key="9058" order="9058"><![CDATA[Youth Hope Savings]]></code>
+  <code key="9059" order="9059"><![CDATA[Youth Leap Account]]></code>
+  <code key="9063" order="9063"><![CDATA[Do Dream Savings]]></code>
+  <code key="9064" order="9064"><![CDATA[Do Dream Savings]]></code>
+  <code key="9072" order="9072"><![CDATA[SC Happiness Installment Deposit]]></code>
+  <code key="9073" order="9073"><![CDATA[SC Happiness Installment Deposit]]></code>
+  <code key="9079" order="9079"><![CDATA[Installment Deposit (Over  5 years)]]></code>
+  <code key="9080" order="9080"><![CDATA[Free Savings]]></code>
+  <code key="9081" order="9081"><![CDATA[Free Savings]]></code>
+  <code key="9087" order="9087"><![CDATA[Free Savings]]></code>
+  <code key="9088" order="9088"><![CDATA[Free Savings]]></code>
+  <code key="9091" order="9091"><![CDATA[Wow! Weekend Savings]]></code>
+  <code key="9092" order="9092"><![CDATA[Wow! Weekend Savings]]></code>
+  <code key="9097" order="9097"><![CDATA[Student's Special Preferential Savings]]></code>
+  <code key="9098" order="9098"><![CDATA[Student's Special Preferential Savings]]></code>
+  <code key="9090" order="9099"><![CDATA[Student's Special Preferential Savings]]></code>
+  <code key="9099" order="9099"><![CDATA[Installment Deposit (Over  5 years)]]></code> 
+  <code key="03067" order="03067"><![CDATA[SC제일은행-현대카드 Zero Edition2 (할인형)]]></code>   
+  <code key="03068" order="03068"><![CDATA[SC제일은행-현대카드 Zero Edition2 (할인형) 하이패스]]></code> 
+  <code key="03069" order="03069"><![CDATA[SC제일은행-현대카드 Zero Edition2 (포인트형)]]></code>
+  <code key="03070" order="03070"><![CDATA[SC제일은행-현대카드 Zero Edition2 (포인트형)]]></code>  
+  <code key="03071" order="03071"><![CDATA[SC제일은행-현대카드 M Check]]></code>
+  <code key="03072" order="03072"><![CDATA[SC제일은행-현대카드 X Check]]></code>  
+  <code key="03073" order="03073"><![CDATA[SC제일은행-현대카드 M 복지 Check]]></code>    
+  <code key="03074" order="03074"><![CDATA[SC제일은행-M Boost]]></code>  
+  <code key="03075" order="03075"><![CDATA[SC제일은행-M Boost 하이패스]]></code>   
+  <code key="03076" order="03076"><![CDATA[SC제일은행-대한항공카드 030]]></code> 
+  <code key="03077" order="03077"><![CDATA[SC제일은행-대한항공카드 030 하이패스]]></code>   
+  <code key="03084" order="03084"><![CDATA[SC - 현대카드 MY BUSINESS ZERO Food&Drink]]></code>
+  <code key="03085" order="03085"><![CDATA[SC - 현대카드 MY BUSINESS ZERO Retail&Service]]></code>
+  <code key="03086" order="03086"><![CDATA[SC - 현대카드 MY BUSINESS ZERO Online Seller]]></code>    
+  <code key="03087" order="03087"><![CDATA[SC - 현대카드 MY BUSINESS ZERO Food&Drink 하이패스]]></code>
+  <code key="03088" order="03088"><![CDATA[SC - 현대카드 MY BUSINESS ZERO Retail&Service 하이패스]]></code>
+  <code key="03089" order="03089"><![CDATA[SC - 현대카드 MY BUSINESS ZERO Online Seller 하이패스]]></code> 
+  <code key="03094" order="03094"><![CDATA[SC제일은행-the Red Edition5 by Hyundai Card]]></code>
+  <code key="03095" order="03095"><![CDATA[SC제일은행-the Red Edition5 by Hyundai Card 하이패스]]></code>
+  <code key="03142" order="03142"><![CDATA[SC제일은행-the Red Stripe]]></code>
+  <code key="03130" order="03130"><![CDATA[SC제일은행-현대카드 M Check]]></code> 
+  <code key="03131" order="03131"><![CDATA[SC제일은행-현대카드 X Check]]></code>
+  <code key="03254" order="03254"><![CDATA[SC제일은행-현대카드 ZERO Edition3 (할인형)]]></code>
+  <code key="03255" order="03255"><![CDATA[SC제일은행-현대카드 ZERO Edition3 (포인트형)]]></code> 
+  <code key="03262" order="03262"><![CDATA[SC제일은행-대한항공카드 060]]></code>
+  <code key="03288" order="03288"><![CDATA[SC제일은행-현대카드 M]]></code>
+  <code key="03299" order="03299"><![CDATA[SC제일은행-the Red Stripe Edition2]]></code>
+  <code key="03301" order="03301"><![CDATA[SC제일은행-the Red]]></code>
+  <code key="03303" order="03303"><![CDATA[SC제일은행-현대카드 MY BUSINESS ZERO Edition3(포인트형)]]></code>
+  <code key="03306" order="03306"><![CDATA[SC제일은행-현대카드 MY BUSINESS ZERO Edition3(할인형)]]></code>
+</category>

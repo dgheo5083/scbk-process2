@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scbank.process.api.svc.shared.dao.OpenBankApiStscDao">
+
+	<!-- 오픈배킹 API LOG 상태 통계 등록. -->
+	<insert id="insertApiLogStsc">
+		INSERT INTO MA3_OPEN_BANK_API_STSC (
+			  TRAD_DATE
+			, API_URL
+			, API_DETAIL_CLS
+			, SUCCESS_CNT
+			, ERROR_CNT
+			, RETRY_CNT
+		) (
+			SELECT 
+				value(TB1.TRAD_DATE, value(TB2.TRAD_DATE, TB3.TRAD_DATE)) TRAD_DATE
+				, value(TB1.API_URL, value(TB2.API_URL, TB3.API_URL)) API_URL
+				, value(TB1.API_DETAIL_CLS, value(TB2.API_DETAIL_CLS, TB3.API_DETAIL_CLS)) API_DETAIL_CLS
+				, value(SUCCESS_CNT, 0) SUCCESS_CNT
+				, value(ERROR_CNT, 0) ERROR_CNT 
+				, value(RETRY_CNT, 0) RETRY_CNT 
+			FROM 
+				(
+					<!-- 정상 -->
+					SELECT TRAD_DATE, API_URL, API_DETAIL_CLS, COUNT(TRAD_DATE) SUCCESS_CNT
+					FROM MA3_OPEN_BANK_API_LOG
+					WHERE TRAD_CLS = 'R' AND TRAD_DATE = #{tradDate}
+					AND RES_CODE = 'A0000' AND (BANK_RSP_CODE = '-' OR BANK_RSP_CODE = '000')
+					GROUP BY TRAD_DATE, API_URL, API_DETAIL_CLS
+				) TB1
+				FULL OUTER JOIN 
+				(
+					<!-- 에러 -->
+					SELECT TRAD_DATE, API_URL, API_DETAIL_CLS, COUNT(TRAD_DATE) ERROR_CNT
+					FROM MA3_OPEN_BANK_API_LOG
+					WHERE TRAD_CLS = 'R' AND TRAD_DATE = #{tradDate}
+					AND RES_CODE &lt;&gt; 'A0000' AND (BANK_RSP_CODE &lt;&gt; '400')
+					GROUP BY TRAD_DATE, API_URL, API_DETAIL_CLS
+				)
+				TB2
+				ON TB1.TRAD_DATE = TB2.TRAD_DATE AND TB1.API_URL = TB2.API_URL AND TB1.API_DETAIL_CLS = TB2.API_DETAIL_CLS
+				FULL OUTER JOIN 
+				(
+					<!-- 처리중 -->
+					SELECT TRAD_DATE, API_URL, API_DETAIL_CLS, COUNT(TRAD_DATE) RETRY_CNT
+					FROM MA3_OPEN_BANK_API_LOG
+					WHERE TRAD_CLS = 'R' AND TRAD_DATE = #{tradDate}
+					AND RES_CODE &lt;&gt; 'A0000' AND (BANK_RSP_CODE = '400')
+					GROUP BY TRAD_DATE, API_URL, API_DETAIL_CLS
+				)TB3
+				ON TB1.TRAD_DATE = TB3.TRAD_DATE AND TB1.API_URL = TB3.API_URL AND TB1.API_DETAIL_CLS = TB3.API_DETAIL_CLS
+				WITH UR
+		)
+	</insert>
+	
+	<!-- 오픈배킹 API LOG 상태 통계 삭제. -->
+	<delete id="deleteApiLogStsc">
+		DELETE FROM MA3_OPEN_BANK_API_STSC
+		WHERE TRAD_DATE = #{tradDate}
+	</delete>
+</mapper>

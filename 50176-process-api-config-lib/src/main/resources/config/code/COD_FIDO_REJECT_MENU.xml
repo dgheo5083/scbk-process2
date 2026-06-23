@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FIDO_REJECT_MENU">
+  <code key="REJECT" order="0"><![CDATA[CRTATH001|CRTDCT001|CRTDCT002|TRNMGT100]]></code>
+</category>
+
+<!-- ASIS 메뉴ID -> TOBE 메뉴ID로 변경 -->
+<!-- MA3CRTMNG003 : OTP 등록/해제 > CRTATH001 -->
+<!-- MA3CRTMNG001 : 디지털인증서 발급/재발급 > CRTDCT001 -->
+<!-- MA3CRTMNG002 : 디지털인증서 해지 > CRTDCT002 -->
+<!-- MA3TRNLUC001 : 장기미사용 해제 > TRNMGT100 -->

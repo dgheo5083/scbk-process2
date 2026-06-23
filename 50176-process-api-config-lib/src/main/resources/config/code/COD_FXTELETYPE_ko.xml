@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FXTELTYPE">
+  <code key="home" order="1"><![CDATA[자택]]></code>
+  <code key="job" order="2"><![CDATA[직장]]></code>
+  <code key="hp" order="3"><![CDATA[휴대전화]]></code>
+</category>

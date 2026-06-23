@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.scbank.process.api.svc.shared.dao.DeviceAuthUserDao">
+
+    <!-- 단말기 지정 서비스 등록건수 조회 -->
+	<select id="selectDeviceAuthCount" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter" resultType="int">
+		SELECT 
+			COUNT(*) CNT
+		FROM DEVICE_AUTH_SVC D, DEVICE_AUTH_USER U
+		WHERE D.SERVICE_NO = U.SERVICE_NO
+		    AND D.USER_ID = U.USER_ID
+		    AND D.END_DT = U.END_DT
+		    AND U.SERVICE_NO = '1016020500'::bigint
+		    AND U.USER_ID = #{userId}
+		    AND U.END_DT = '99991231000000'
+	</select>
+
+	<!-- 전자금융사기예방 등록 단말 조회 -->
+	<select id="selectDeviceAuthInfo" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter" resultType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserResult">
+		SELECT DISTINCT DEVICE_ALIAS, 
+			   MAC_ADDR, 
+			   SUBSTR(REG_DT,0,8) REG_DT,
+			   IP_ADDR, 
+			   HDD_SRL_NO
+		  FROM DEVICE_AUTH_SVC 
+		 WHERE END_DT = '99991231000000'
+		   AND USER_ID = #{userId} 
+		   AND SERVICE_NO = '1016020500'::bigint
+	</select>
+
+	<!-- 단말기 지정 서비스 등록 + 다른 단말 허용여부 조회-->
+    <select id="selectDeviceAuthUserInfo" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter" resultType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserResult">
+		SELECT 
+			USER_ID,
+            OTHERPC_YES,
+			OTHERPC_STDT,
+			OTHERPC_ENDT
+		FROM DEVICE_AUTH_USER
+		WHERE SERVICE_NO = '1016020500'::bigint
+		AND USER_ID = #{userId}
+		AND END_DT = '99991231000000'
+	</select>
+
+	<!-- 전자금융사기예방 단말 등록 -->
+	<insert id="insertDeviceAuthSvc" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter">
+		INSERT INTO DEVICE_AUTH_SVC (
+		   SERVICE_NO, 
+		   USER_ID, 
+		   END_DT, 
+		   START_DT, 
+		   MAC_ADDR, 
+		   IP_ADDR, 
+		   HDD_SRL_NO, 
+		   DEVICE_ALIAS, 
+		   PHONE_NO, 
+		   REG_GUBUN, 
+		   REG_DT, 
+		   REG_ID, 
+		   MOD_DT, 
+		   MOD_ID, 
+		   DEVICE_CLASS
+		) 
+		VALUES ( 
+		 '1016020500',
+		 #{userId},
+		 '99991231000000',
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{macAddress},
+		 0,
+		 #{hddSrlNo},
+		 #{deviceAlias},
+		 #{phoneNo},
+		 #{regGubun},
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userId},
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userId},
+		 #{deviceClass}
+		)
+	</insert>
+
+	<!-- 전자금융사기예방 미지정 단말 거래 허용으로 변경 -->
+	<update id="updateAllowOtherDeviceAuthUser" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter">
+		UPDATE DEVICE_AUTH_USER
+		SET  MOD_DT = TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		     MOD_ID = #{userId},
+		     OTHERPC_YES = 'Y',
+		     OTHERPC_STDT = TO_CHAR(NOW(),'YYYYMMDDHH24MISS')
+		WHERE SERVICE_NO = '1016020500'
+		    AND USER_ID = #{userId}
+		    AND END_DT = '99991231000000'
+	</update>
+	
+	<!-- 전자금융사기예방 미지정 단말 거래 허용불가로 변경 -->
+	<update id="updateBlockOtherDeviceAuthUser" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter">
+		UPDATE DEVICE_AUTH_USER
+		SET  MOD_DT = TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		     MOD_ID = #{userId},
+		     OTHERPC_YES = NULL,
+		     OTHERPC_ENDT = TO_CHAR(NOW(),'YYYYMMDDHH24MISS')
+		WHERE SERVICE_NO = '1016020500'
+		    AND USER_ID = #{userId}
+		    AND END_DT = '99991231000000'
+	</update>
+
+	<!--  전자금융사기예방 사용자정보 등록(미지정단말 허용)-->
+	<insert id="insertAllowOtherDeviceAuthUser" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter">
+		INSERT INTO DEVICE_AUTH_USER (
+		   SERVICE_NO, 
+		   USER_ID, 
+		   END_DT, 
+		   START_DT, 
+		   USER_NM, 
+		   REG_DT, 
+		   REG_ID, 
+		   MOD_DT, 
+		   MOD_ID,
+		   OTHERPC_YES,
+		   OTHERPC_STDT, 
+		   OTHERPC_ENDT
+		) 
+		VALUES ( 
+		 '1016020500',
+		 #{userId},
+		 '99991231000000',
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userNm},
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userId},
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userId},
+		 'Y',
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 NULL
+		)
+	</insert>
+	
+	<!-- 전자금융사기예방 사용자정보 등록(미지정단말 허용불가) -->
+	<insert id="insertBlockOtherDeviceAuthUser" parameterType="com.scbank.process.api.svc.shared.dao.dto.DeviceAuthUserParameter">
+		INSERT INTO DEVICE_AUTH_USER (
+		   SERVICE_NO, 
+		   USER_ID, 
+		   END_DT, 
+		   START_DT, 
+		   USER_NM, 
+		   REG_DT, 
+		   REG_ID, 
+		   MOD_DT, 
+		   MOD_ID,
+		   OTHERPC_YES,
+		   OTHERPC_STDT, 
+		   OTHERPC_ENDT
+		) 
+		VALUES ( 
+		 '1016020500',
+		 #{userId},
+		 '99991231000000',
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userNm},
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userId},
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS'),
+		 #{userId},
+		 NULL,
+		 NULL,
+		 TO_CHAR(NOW(),'YYYYMMDDHH24MISS')
+		)
+	</insert>
+
+
+</mapper>

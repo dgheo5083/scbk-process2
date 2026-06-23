@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ACCTTY" lang="ko">
+  <code key="01" order="1"><![CDATA[입출금식예금]]></code>
+  <code key="02" order="2"><![CDATA[정기예금/적금]]></code>
+  <code key="03" order="3"><![CDATA[주택청약예부금]]></code>
+  <code key="04" order="4"><![CDATA[외화정기예금]]></code>
+</category>

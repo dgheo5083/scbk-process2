@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="OTPVDCODE" lang="ko">
+  <code key="001" order="1"><![CDATA[(001)한국정보인증(주)]]></code>
+  <code key="002" order="2"><![CDATA[(002)코마스(RSA)]]></code>
+  <code key="003" order="3"><![CDATA[(003)인터넷시큐리티]]></code>
+  <code key="004" order="4"><![CDATA[(004)바스코]]></code>
+  <code key="005" order="5"><![CDATA[(005)인카드]]></code>
+  <code key="006" order="6"><![CDATA[(006)시큐어컴퓨팅]]></code>
+  <code key="007" order="7"><![CDATA[(007)액티브아이덴티티]]></code>
+  <code key="008" order="8"><![CDATA[(008)아이덴티타]]></code>
+  <code key="009" order="9"><![CDATA[(009)베스타이이엔티(토판)]]></code>
+  <code key="010" order="10"><![CDATA[(010)스마트크리에이티브]]></code>
+  <code key="011" order="11"><![CDATA[(011)㈜스마트이노베이션]]></code>
+  <code key="012" order="12"><![CDATA[(012)에이티솔루션즈]]></code>
+  <code key="016" order="13"><![CDATA[(016)코나씨]]></code>
+  <code key="018" order="14"><![CDATA[(018)이트리즈시스템]]></code>
+  <code key="019" order="15"><![CDATA[(019)엠파이브]]></code>
+  <code key="301" order="16"><![CDATA[(301)[스마트]한국정보인증(주)]]></code>
+  <code key="310" order="17"><![CDATA[(310)[스마트]스마트크리에이티브]]></code>
+  <code key="312" order="18"><![CDATA[(312)[스마트]에이티솔루션즈]]></code>
+  <code key="401" order="19"><![CDATA[(401)[스마트]미래테크놀로지 TZOTP]]></code>
+</category>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MALL" lang="ko">
+	<!-- 쇼핑몰 --> 
+	<code key='031' order='1'><![CDATA[티몬]]></code>
+	<code key='053' order='2'><![CDATA[위메프]]></code>
+	<code key='011' order='3'><![CDATA[SSG]]></code>
+	<code key='018' order='4'><![CDATA[GS SHOP]]></code>
+	<code key='010' order='5'><![CDATA[CJ오쇼핑]]></code>
+	<code key='006' order='6'><![CDATA[인터파크(MD)]]></code>
+	<code key='026' order='7'><![CDATA[롯데닷컴]]></code>
+	<code key='030' order='8'><![CDATA[쿠팡]]></code>
+	<code key='052' order='9'><![CDATA[쿠팡매입]]></code>
+	<code key='046' order='10'><![CDATA[네이버]]></code>
+	<code key='008' order='11'><![CDATA[스마트스토어]]></code>
+	<code key='003' order='12'><![CDATA[11번가]]></code>
+	<code key='002' order='13'><![CDATA[옥션]]></code>
+	<code key='001' order='14'><![CDATA[G마켓]]></code>
+</category>

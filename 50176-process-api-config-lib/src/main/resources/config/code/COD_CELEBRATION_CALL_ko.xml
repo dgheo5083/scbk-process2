@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="CELEBRATION_CALL" lang="ko">
+  <code key="000" order="1"><![CDATA[----- 받는 분 통장에 표시될 경조금 문구(조문)를 선택하세요 -----]]></code>
+  <code key="022" order="2"><![CDATA[삼가 조의를 표하오며, 고인의 명복을 빕니다.]]></code>
+  <code key="023" order="3"><![CDATA[고인의 명복을 비오며. 장례에 참석하지 못하여 죄송합니다.]]></code>
+  <code key="024" order="4"><![CDATA[큰 슬픔을 위로하며, 삼가 고인의 명복을 빕니다.]]></code>
+  <code key="025" order="5"><![CDATA[삼가 조의를 표하오며, 찾아뵙지 못해 죄송합니다.]]></code>
+</category>

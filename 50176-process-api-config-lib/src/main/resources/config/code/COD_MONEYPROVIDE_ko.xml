@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MONEYPROVIDE" lang="ko">
+  <code key="" order="1"><![CDATA[선택]]></code>
+  <code key="01" order="2"><![CDATA[금융소득]]></code>
+  <code key="02" order="3"><![CDATA[급여/생활비(용돈)]]></code>
+  <code key="03" order="4"><![CDATA[상속/증여]]></code>
+  <code key="04" order="5"><![CDATA[투자소득]]></code>
+  <code key="05" order="6"><![CDATA[사업소득]]></code>
+  <code key="07" order="7"><![CDATA[연금소득/퇴직금]]></code>
+  <code key="08" order="8"><![CDATA[부동산관련소득/양도소득]]></code>
+</category>

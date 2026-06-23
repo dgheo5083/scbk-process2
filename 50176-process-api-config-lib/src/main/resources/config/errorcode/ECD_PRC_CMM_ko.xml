@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="ko">  
+	<errorCode code="PRCCMMAPPL_0070"><msg><![CDATA[기업회원은 아이디, 비밀번호를 이용한 로그인을 수행할 수 없습니다. 인증서를 이용하여 로그인하여 주십시요.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0001"><msg><![CDATA[뱅크사인 인증서 로그인시도중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0002"><msg><![CDATA[뱅크사인 인증서 로그인시도중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0003"><msg><![CDATA[뱅크사인 인증서 로그인시도중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0004"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0005"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0006"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0007"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0008"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0009"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0010"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0011"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0012"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0013"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0014"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0015"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0016"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0017"><msg><![CDATA[뱅크사인 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0018"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0019"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0020"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0021"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0022"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0023"><msg><![CDATA[뱅크사인 로그인중 에러가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0024"><msg><![CDATA[뱅크사인 로그인중 에러가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0025"><msg><![CDATA[뱅크사인 로그인중 에러가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0026"><msg><![CDATA[뱅크사인 로그인중 에러가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0027"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0028"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0029"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0030"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0031"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0032"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0033"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0034"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0035"><msg><![CDATA[뱅크사인 인증서 거래중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0036"><msg><![CDATA[본인확인에 실패했습니다. 로그인 사용자와 뱅크사인 인증서를 제출한 사용자가 다릅니다]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0037"><msg><![CDATA[블록체인 인증서 발급 중 오류가 발생했습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0038"><msg><![CDATA[본인확인에 실패했습니다. 로그인 사용자와 뱅크사인 인증서를 제출한 사용자가 다릅니다]]></msg></errorCode>
+	<errorCode code="PRCCMMBLCH_0039"><msg><![CDATA[블록체인 인증서 발급 중 오류가 발생했습니다.]]></msg></errorCode>
+    
+    <!-- [CDD자동화] 문구변경 -->
+    <errorCode code="PRCCMMCDD_0001"><msg><![CDATA[고객정보 업데이트가 필요합니다.</br>고객확인제도 완료 후 다시 시도해 주세요.]]></msg></errorCode>
+    
+    <errorCode code="PRCCMMVPCG_0001"><msg><![CDATA[핀테크인증 요청 정보가 잘못되었습니다. 다시 거래해 주시기 바랍니다.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0002"><msg><![CDATA[핀테크인증 전자서명 데이터가 존재하지 않습니다. 다시 거래해 주시기 바랍니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0003"><msg><![CDATA[본인인증이 정상적으로 처리되지 않았습니다. 처음부터 다시 신청해주시길 바랍니다.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0004"><msg><![CDATA[본인인증에 실패했습니다. 고객님의 CI 정보가 미등록 또는 비활성화 상태입니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0005"><msg><![CDATA[본인인증에 실패했습니다. 본인인증 사용자와 핀테크 인증서를 제출한 사용자가 다릅니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0006"><msg><![CDATA[본인인증에 실패했습니다. 로그인 사용자와 핀테크 인증서를 제출한 사용자가 다릅니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0007"><msg><![CDATA[핀테크인증 전자서명 요청 정보가 잘못되었습니다. 다시 거래해 주시기 바랍니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0008"><msg><![CDATA[핀테크인증 전자서명에 사용될 사용자 아이디가 존재하지 않습니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0009"><msg><![CDATA[핀테크인증 미등록 사용자 입니다. 핀테크인증 이용등록 후 다시 거래해 주시기 바랍니다.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0010"><msg><![CDATA[전달된 핀테크인증 전자서명 데이터 검증에 실패하였습니다.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0011"><msg><![CDATA[핀테크 이용등록 거래중 오류가 발생했습니다.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0012"><msg><![CDATA[인증서 정보가 변경되어 인증에 실패했습니다.<br />“인증센터 > 핀테크인증서 이용 등록” 메뉴에서 인증서를 재등록 하시거나, 다른 방식으로 로그인 후 이용할 수 있습니다.<br />확인을 누르시면 로그인 화면으로 이동합니다.]]></msg></errorCode>
+    
+    <errorCode code="PRCCMM0001">
+        <msg><![CDATA[전달된 전자서명 데이터 검증에 실패하였습니다.]]></msg>
+        <addMsgList>
+            <addMsg order="1"><![CDATA[추가 메시지 0001-1]]></addMsg>
+            <addMsg order="2"><![CDATA[추가 메시지 0001-2]]></addMsg>
+        </addMsgList>
+    </errorCode>
+    <errorCode code="PRCCMM0002">
+        <msg><![CDATA[전자서명 데이터 저장 구분이 없습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0003">
+        <msg><![CDATA[전자서명 데이터 처리중 에러가 발생하였습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0004">
+        <msg><![CDATA[전자서명 데이터가 존재하지 않습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0005">
+        <msg><![CDATA[전자서명 데이터 처리중 에러가 발생하였습니다]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0006">
+        <msg><![CDATA[전달된 전자서명 데이터 검증에 실패하였습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0007">
+        <msg><![CDATA[전달된 전자서명 데이터 검증에 실패하였습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0008">
+        <msg><![CDATA[전달된 전자서명 데이터 검증에 실패하였습니다.]]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0009">
+        <msg><![CDATA[interezen Error]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0010">
+        <msg><![CDATA[메뉴가 존재하지 않습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0011">
+        <msg><![CDATA[안전한 인터넷뱅킹 거래를 위해 이체거래가 제한되었습니다. 고객센터로 문의하여 주시기 바랍니다.(1588-1599)]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0012">
+        <msg><![CDATA[2013년 12월 23일 부로 인터넷뱅킹에서 시행되던 전자금융사기예방 서비스가 전 은행 공통으로 모바일뱅킹에도 확대 적용되었습니다.<br />고객님께서는 단말기 지정 서비스에 이미 가입 하셨으며 지금 사용 중인 기기는 미등록 기기로서 조회 기능만 제공됩니다. 모바일에서 이체 거래 추가를 원하실 경우는 1) [전자금융사기 예방서비스] - [단말기 지정/해제] 메뉴에서 해당 모바일 기기를 지정기기로 “등록”해 주시거나, 2) [전자금융사기 예방서비스] - [미지정 단말기 거래 허용/금지] 메뉴에서 미지정 단말기 (추가인증) 거래 허용 여부를 “예(허용)”상태로 변경하시면 됩니다.<br />[전자금융사기 예방서비스] 메뉴는 좌측 상단 메뉴 버튼(석 삼자 버튼)을 클릭하시면 열리는 전체 메뉴의 중앙 하단 부에서 찾으실 수 있습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0013">
+        <msg><![CDATA[추가인증을 진행해 주세요.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0014">
+        <msg><![CDATA[이체비밀번호 사용자는 생체인증서비스를 이용 하실 수 없습니다. '인터넷뱅킹 &gt; 서비스 및 설정'메뉴에서 이체비밀번호 사용 해지 후 거래하시기 바랍니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0015">
+        <msg><![CDATA[요청하신 서비스 진행중 중요 데이터가 존재하지 않습니다. 관리자에게 문의하십시오.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0016">
+        <msg><![CDATA[입력하신 보안카드 번호가 일치하지 않습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0017">
+        <msg><![CDATA[올바르지 않은 요청데이터 입니다[send data is null]]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0018">
+        <msg><![CDATA[올바르지 않은 요청데이터 입니다[서비스코드 = null]]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0019">
+        <msg><![CDATA[올바르지 않은 요청데이터 입니다[전문식별자 = null]]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0020">
+        <msg><![CDATA[올바르지 않은 요청데이터 입니다[중복거래 발생]]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0021">
+        <msg><![CDATA[[MCICommDataBuilder] 전문 전송에  사용될 [SCFB_MESSAGE_ID] 이름이 올바르지 않아 전문을 가져올 수 없습니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0022">
+        <msg><![CDATA[[ScfbCommDataBuilder] [IMS_TRAN_CODE] 값이 8자리가 아닙니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0023">
+        <msg><![CDATA[[ScfbCommDataBuilder] 사용될 [IN_CLASS_CODE] 값이 4자리가 아닙니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0024">
+        <msg><![CDATA[[ScfbCommDataBuilder] [SERVICE_CODE] 값이 3자리가 아닙니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0025">
+        <msg><![CDATA[[ScfbCommDataBuilder] [BRANCH_NO] 값이 3자리가 아닙니다.]]></msg>
+    </errorCode>
+    <errorCode code="PRCCMM0026">
+        <msg><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다. 계좌입출금거래의 경우 반드시 처리결과 여부를 확인 후 거래하여 주시기 바랍니다. 이용에 불편을 드려 죄송합니다]]></msg>
+    </errorCode>
+	<errorCode code="PRCCMM0027">
+		<msg><![CDATA[아쉽지만, 지금은 이용할 수 없어요.<br/>이용 가능한 시간을 확인해보세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0028"> 
+		<msg><![CDATA[아쉽지만, 지금은 이용할 수 없어요.<br/>이용 가능한 시간을 확인해보세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0029">
+		<msg><![CDATA[현재 시스템 장애중입니다. 잠시 후 다시 이용해주세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0030">
+		<msg><![CDATA[처리중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0031">
+		<msg><![CDATA[접속이 끊겼습니다. 서비스를 다시 이용해 주세요. 일정시간 거래가 없었거나 통신상태가 불안정한 경우 또는 다른 기기로 동시 접속 시 종료됩니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0032">
+		<msg><![CDATA[뱅크사인 서명 처리중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0033">
+		<msg><![CDATA[공동인증서 로그인이 필요한 메뉴입니다. 공동인증서 로그인 하시겠습니까? 전자금융사기예방서비스의 단말 지정 서비스를 이용하시는 경우 본 기기를 먼저 등록하셔야 이체가 가능합니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0034">
+		<msg><![CDATA[단말기 지정 서비스 등록 후 사용 가능합니다.<br />단말기 지정 서비스 메뉴로 이동합니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0035">
+		<msg><![CDATA[등록된 약관이 없습니다. 약관정보를 확인해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0036">
+		<msg><![CDATA[접근이 허용되지 않은 매체입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0037">
+		<msg><![CDATA[보안카드 지시번호가 누락되었습니다]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0038">
+		<msg><![CDATA[암호화 세션이 만료되었습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0039">
+		<msg><![CDATA[암호화 세션이 만료되었습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0040">
+		<msg><![CDATA[FIDO SERVER 통신에러가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0041">
+		<msg><![CDATA[FIDO SERVER 통신중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0042">
+		<msg><![CDATA[등록허용 인증장치 목록 조회중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0043">
+		<msg><![CDATA[등록 상태 조회 조회중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0044">
+		<msg><![CDATA[바이오 인증서 서명중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0045">
+		<msg><![CDATA["단말기 지정 서비스에 가입되어 있어요.<br/>새로운 단말기에서 이용하려면 단말기 지정/해제를 해야 해요.<br/><br/>단말기 지정메뉴로 이동할까요?"]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0046">
+		<msg><![CDATA[단말기 지정 서비스에 가입되어 있어요. 새로운 단말기에서 이용하려면 단말기 지정/해제가 필요해요.<br/>모바일뱅킹 또는 가까운 영업점에서 단말기 지정/해제 후 이용해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0047">
+		<msg><![CDATA[FIDO 처리중 오류가 발생하였습니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0048">
+		<msg><![CDATA[{0}]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0049">
+		<msg><![CDATA[조회 사용자는 사용할 수 없는 서비스입니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0050">
+		<msg><![CDATA[거래를 위해 금융인증서 발급이 필요해요.<br/> 인증센터로 이동할까요?]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0051">
+		<msg><![CDATA[고객님의 보안카드(혹은 OTP)는 폐기된 상태로, 조회 메뉴만 사용 가능합니다. 돈보내기 등 거래 메뉴를 사용하시기 위해서는 가까운 영업점을 방문하시어 보안카드를 재발급 받으시기 바랍니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0052">
+		<msg><![CDATA[인증서 로그인이 필요한 메뉴입니다.<br/>로그인 페이지로 이동하시겠습니까?]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0053">
+		<msg><![CDATA[긴급한 장애가 발생해서 서비스를 이용할 수 없습니다.<br/>잠시 후 다시 시도해 주세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0054">
+		<msg><![CDATA[아쉽지만, 지금은 이용할 수 없어요.<br/>이용 가능한 시간을 확인해보세요.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0055">
+		<msg><![CDATA[{0}]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0056">
+		<msg><![CDATA[앱 재설치로 인하여 모바일OTP 정보가 초기화 되었습니다.<br/>모바일OTP를 재발급 받으시기 바랍니다.<br/>※ 기존 모바일OTP 발급시 설정한 비밀번호(PIN) 확인 후 별도의 인증 절차 없이 재발급 가능합니다.]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0057">
+		<msg><![CDATA[변경된 기기에 모바일OTP 정보가 없어요.<br/>다시 한번 모바일 OTP를 발급해주세요]]></msg> <!-- [고령자] 문구변경 -->
+	</errorCode>
+	<errorCode code="PRCCMM0058">
+		<msg><![CDATA[모바일뱅킹 앱에서 이용 가능한 서비스입니다. 앱 실행 안내 페이지로 이동하시겠습니까?]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0059">
+		<msg><![CDATA[모바일뱅킹 앱에서 이용 가능한 서비스입니다. 앱 실행 안내 페이지로 이동하시겠습니까?]]></msg>
+	</errorCode>
+    
+    <errorCode code="PRCCMM0060">
+        <msg><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다.<br />(간편인증)]]></msg>
+    </errorCode>    
+    <errorCode code="PRCCMM0061">
+        <msg><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다.<br />(전화승인)]]></msg>
+    </errorCode>    
+    <errorCode code="PRCCMM0062">
+        <msg><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다.<br />(SMS발송)]]></msg>
+    </errorCode>    
+    <errorCode code="PRCCMM0063">
+        <msg><![CDATA[고객님께서 요청하신 거래를 처리하는중 오류가 발생하였습니다.<br />(LMS발송)]]></msg>
+    </errorCode>   
+    
+    <errorCode code="PRCCMM0064">
+        <msg><![CDATA[올바른 경로가 아닙니다. 다시 시도해 주세요.]]></msg>
+    </errorCode>
+    
+    <errorCode code="PRCCMM0065">
+        <msg><![CDATA[고객정보가 일치하지 않습니다. 다시 확인해 주세요.]]></msg>
+    </errorCode>
+      
+    <errorCode code="PRCCMM0066">
+        <msg><![CDATA[E2E필드 복호화 처리 중 오류 발생 errno={0}]]></msg>
+    </errorCode>
+      
+    <errorCode code="PRCCMM0067">
+        <msg><![CDATA[복호화 실패({0})]]></msg>
+    </errorCode>
+    
+    <errorCode code="PRCCMM0068"><msg><![CDATA[이미지 파일 변환시 오류가 발생하였습니다. 확인 후 다시 시도해주세요.]]></msg></errorCode>
+    <errorCode code="PRCCMM0069"><msg><![CDATA[안면인식이 완료되지 않았습니다.]]></msg></errorCode>
+    <errorCode code="PRCCMM0070"><msg><![CDATA[제휴처코드가 정상적이지 않아 처리중 오류가 발생하였습니다.]]></msg></errorCode>
+    <errorCode code="PRCCMM0071"><msg><![CDATA[REA코드가 정상적이지 않아 처리중 오류가 발생하였습니다.]]></msg></errorCode>
+    
+	<errorCode code="PRCCMMFRN001">
+        <msg><![CDATA[5천불 이하 소액송금은 오후 4:30까지만 이용 가능해요. 다음 영업일 오전 9시 이후에 다시 이용해 주세요.]]></msg>
+    </errorCode>
+    
+	<errorCode code="GOERROR0001">
+		<msg><![CDATA[지금은 공공기관 정보 조회가 원활하지 않아<br/>모바일뱅킹에서 금리인하요구권 신청이 어려워요.<br/>잠시 후 다시 시도해주세요.<br/><br/>금리인하요구권은<br/>가까운 영업점, 고객컨택센터 또는 홈페이지를 통해 신청할 수 있어요.<br/><br/>문의사항: SC제일은행 고객컨텍센터(1588-1599)]]></msg>
+	</errorCode>
+	
+	<errorCode code="GOERROR0002">
+		<msg><![CDATA[지금은 공공기관 정보 조회가 원활하지 않아<br/>모바일뱅킹에서 비대면 한도제한해제가 어려워요.<br/>잠시 후 다시 시도해주세요.<br/><br/>비대면 한도제한해제는<br/>가까운 영업점을 통해 신청할 수 있어요.<br/><br/>문의사항: SC제일은행 고객컨텍센터(1588-1599)]]></msg>
+	</errorCode>
+	
+	<errorCode code="PRCACTOPN001519"><msg><![CDATA[미성년자(19세 미만)는 서비스 이용이 불가합니다.]]></msg></errorCode>
+	<errorCode code="PRCAAT001072"><msg><![CDATA[등록되어 있는 고객정보와 일치하지 않아<br>서비스를 이용하실 수 없어요.]]></msg></errorCode>
+	<errorCode code="PRCAAT001073"><msg><![CDATA[한국에 거주하고 계셔야 <br>서비스를 이용하실 수 있어요.]]></msg></errorCode>
+	<errorCode code="PRCAAT001074"><msg><![CDATA[외국인 및 재외국민은 서비스를 이용하실 수 없어요.]]></msg></errorCode>
+</errorCodes>

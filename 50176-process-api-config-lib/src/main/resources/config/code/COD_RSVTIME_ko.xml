@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="RSVTIME" lang="ko">
+  <code key="0" order="1"><![CDATA[시간선택(평일:09시~16시)]]></code>
+  <code key="09" order="2"><![CDATA[09시]]></code>
+  <code key="10" order="3"><![CDATA[10시]]></code>
+  <code key="11" order="4"><![CDATA[11시]]></code>
+  <code key="12" order="5"><![CDATA[12시]]></code>
+  <code key="13" order="6"><![CDATA[13시]]></code>
+  <code key="14" order="7"><![CDATA[14시]]></code>
+  <code key="15" order="8"><![CDATA[15시]]></code>
+  <code key="16" order="9"><![CDATA[16시]]></code>
+</category>

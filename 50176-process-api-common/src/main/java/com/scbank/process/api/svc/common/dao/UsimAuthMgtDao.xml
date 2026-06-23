@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.UsimAuthMgtDao">
+  <select id="selectTokenAuth" parameterType="com.scbank.process.api.svc.common.dao.dto.TokenAuthParameter" resultType="com.scbank.process.api.svc.common.dao.dto.TokenAuthResult">
+    SELECT CTN as ctn,
+           DEVICE_TOKEN as deviceToken,
+           MO_MSG as moMsg,
+           MO_NUMBER as moNumber,
+           MO_RCV_DATE as moRcvDate
+      FROM USIM_AUTH_MGT
+     WHERE CTN           = #{ctn}
+       AND DEVICE_TOKEN  = #{deviceToken}	
+      WITH UR
+  </select>
+
+  <insert id="insertTokenAuth" parameterType="com.scbank.process.api.svc.common.dao.dto.TokenAuthParameter">
+		INSERT INTO USIM_AUTH_MGT
+			(CTN, DEVICE_TOKEN, MO_MSG, MO_NUMBER, MO_RCV_DATE)
+		VALUES
+		(
+			#{ctn},
+			#{deviceToken},
+			#{moMsg},
+			#{moNumber},
+			#{moRcvDate}
+		)
+	</insert>
+</mapper>

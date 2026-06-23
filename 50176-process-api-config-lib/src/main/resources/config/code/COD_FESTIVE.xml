@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FESTIVE">
+  <code key="TYPE01" order="0"><![CDATA[new,new_minnight,new_night#20130101]]></code>
+  <code key="TYPE02" order="0"><![CDATA[lunarnew,lunarnew_minnight,lunarnew_night#20130209,20130210,20130211]]></code>
+  <code key="TYPE03" order="0"><![CDATA[samiljeol,samiljeol_minnight,samiljeol_night#20130301]]></code>
+  <code key="TYPE04" order="0"><![CDATA[buddha,buddha_minnight,buddha_night#20130517]]></code>
+  <code key="TYPE05" order="0"><![CDATA[family,family_minnight,family_night#20130501,20130502,20130503,20130504,20130505,20130506,20130507,20130508,20130509,20130510,20130511,20130512,20130513,20130514,20130515,20130516,20130518,20130519,20130520,20130521,20130522,20130523,20130524,20130525,20130526,20130527,20130528,20130529,20130530,20130531]]></code>
+  <code key="TYPE06" order="0"><![CDATA[chuseok,chuseok_minnight,chuseok_night#20130918,20130919,20130920]]></code>
+  <code key="TYPE07" order="0"><![CDATA[hangul,hangul_minnight,hangul_night#20131009]]></code>
+  <code key="TYPE08" order="0"><![CDATA[chis,chis_minnight,chis_night#20131225]]></code>
+</category>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.NfEdocRcvryMgtDao">
+
+	<!-- edoc upsert [MA3_CMM_EDC.MERGE_RCVRY_EDOC_DATA] -->
+	<insert id="insertEdocRecoveryInfo" parameterType="hashmap">
+        MERGE INTO
+            NF_EDOC_RCVRY_MGT AS RCVRY
+            USING (
+                VALUES(
+                    #{custNo},
+                    #{tradNo},
+                    #{edocCd},
+                    #{rcvryMk}
+                )
+            ) AS MRG (CUST_NO, TRAD_NO, EDOC_CD, RCVRY_MK)
+            ON (
+                RCVRY.CUST_NO = MRG.CUST_NO
+                AND
+                    RCVRY.TRAD_NO = MRG.TRAD_NO
+                AND
+                    RCVRY.EDOC_CD = MRG.EDOC_CD
+                AND
+                    RCVRY.RCVRY_MK = MRG.RCVRY_MK
+            )
+        WHEN MATCHED THEN 
+            UPDATE
+            SET
+                RCVRY_DATA = #{rcvryData, jdbcType=CLOB},
+                UPD_DT = CURRENT TIMESTAMP
+        WHEN NOT MATCHED THEN 
+            INSERT (
+                CUST_NO
+                , TRAD_NO
+                , EDOC_CD
+                , RCVRY_DATA
+                , RCVRY_MK
+                , UPD_DT
+            ) VALUES (
+                MRG.CUST_NO
+                , MRG.TRAD_NO
+                , MRG.EDOC_CD
+                , #{rcvryData,jdbcType=CLOB}
+                , MRG.RCVRY_MK
+                , CURRENT TIMESTAMP
+            )
+	</insert>
+	
+</mapper>

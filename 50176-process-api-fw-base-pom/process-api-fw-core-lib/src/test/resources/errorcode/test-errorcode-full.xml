@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors lang="ko">
+    <errorCode code="ERR001">
+        <msg>일반 에러가 발생했습니다.</msg>
+        <addMsgList>
+            <addMsg order="1">첫 번째 가이드 메시지</addMsg>
+            <addMsg order="2">두 번째 가이드 메시지</addMsg>
+        </addMsgList>
+    </errorCode>
+    <errorCode code="ERR002">
+        <msg>시스템 에러가 발생했습니다.</msg>
+    </errorCode>
+</errors>

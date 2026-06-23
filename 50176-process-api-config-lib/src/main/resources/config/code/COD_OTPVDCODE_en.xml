@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="OTPVDCODE" lang="en">
+  <code key="001" order="1"><![CDATA[(001)Signgate(KICA)]]></code>
+  <code key="002" order="2"><![CDATA[(002)Comas(RSA)]]></code>
+  <code key="003" order="3"><![CDATA[(003)Internet security]]></code>
+  <code key="004" order="4"><![CDATA[(004)Vasco]]></code>
+  <code key="005" order="5"><![CDATA[(005)Incard]]></code>
+  <code key="006" order="6"><![CDATA[(006)Secure computing]]></code>
+  <code key="007" order="7"><![CDATA[(007)Active identity]]></code>
+  <code key="008" order="8"><![CDATA[(008)Identita]]></code>
+  <code key="009" order="9"><![CDATA[(009)Woonam solutions(Topan)]]></code>
+  <code key="010" order="10"><![CDATA[(010)Smart Creative]]></code>
+  <code key="011" order="11"><![CDATA[(011)Smart Innovation]]></code>
+  <code key="012" order="12"><![CDATA[(012)AT solutions]]></code>
+  <code key="016" order="13"><![CDATA[(016)KONA C]]></code>
+  <code key="018" order="14"><![CDATA[(018)etrees System]]></code>
+  <code key="019" order="15"><![CDATA[(019)Mfive]]></code>
+  <code key="301" order="16"><![CDATA[(301)Signgate(KICA)(Smart)]]></code>
+  <code key="310" order="17"><![CDATA[(310)[Smart]Smart Creative]]></code>
+  <code key="312" order="18"><![CDATA[(312)[Smart]AT solutions]]></code>
+  <code key="401" order="19"><![CDATA[(401)[Smart]Mirae technology TZOTP]]></code>
+</category>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30BbsEventEntDao">
+
+	<!--  이벤트 응모 중복검사 -->
+ 	<select id="selectEventApplyCount" parameterType="com.scbank.process.api.svc.common.dao.dto.EventApplyCountParameter" resultType="int">
+ 		SELECT COUNT(*) AS CNT
+		FROM MA30_BBS_EVENT_ENT
+		WHERE USER_HP = #{user_hp}
+		AND EVNT_ID = #{evnt_id}
+		AND BBS_MK_CD = #{bbs_mk_cd}
+		WITH UR
+ 	</select>
+
+	<!--  이벤트 응모 하기 -->
+	<insert id="insertEventApply" parameterType="com.scbank.process.api.svc.common.dao.dto.EventApplyCountParameter" >
+		INSERT INTO MA30_BBS_EVENT_ENT(
+			  BBS_MK_CD	
+			, SEQNO	
+			, EVNT_ID
+			, USER_ID
+			, USER_NM
+			, USER_BDAY 
+			, USER_SEX
+			, USER_HP
+			, USER_TEL
+			, USER_EMAIL
+			, USER_POST
+			, USER_ADDR1
+			, USER_ADDR2
+			, ENT_DATE
+			<if test='user_cifno != null and user_cifno != ""'>
+			, USER_CIFNO
+			</if>
+		)VALUES(
+			  #{bbs_mk_cd}
+			, (SELECT MAX(SEQNO) FROM MA30_BBS_EVENT_ENT) + 1
+			, #{evnt_id}
+			, #{user_id}
+			, #{user_nm}
+			, #{user_bday}
+			, #{user_sex}
+			, #{user_hp}
+			, #{user_tel}
+			, #{user_email}
+			, #{user_post}
+			, #{user_addr1}
+			, #{user_addr2}
+			, CURRENT TIMESTAMP
+			<if test='user_cifno != null and user_cifno != ""'>
+			, #{user_cifno}
+			</if>
+		)
+	</insert>
+
+</mapper>

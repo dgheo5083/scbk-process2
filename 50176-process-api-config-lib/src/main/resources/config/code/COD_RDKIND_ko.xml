@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="RDKIND" lang="kr">
+  <code key="59" order="0"><![CDATA[주거종류선택]]></code>
+  <code key="40" order="1"><![CDATA[APT]]></code>
+  <code key="41" order="2"><![CDATA[단독주택]]></code>
+  <code key="42" order="3"><![CDATA[빌라/연립/다세대]]></code>
+  <code key="43" order="4"><![CDATA[오피스텔]]></code>
+  <code key="44" order="5"><![CDATA[기타]]></code>
+</category>

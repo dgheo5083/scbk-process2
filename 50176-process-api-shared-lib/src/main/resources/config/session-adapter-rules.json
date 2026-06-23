@@ -1,0 +1,236 @@
+{
+	"ma30.fw.session": {
+		"v3": "com.scbank.ma30.common.session.Ma30Session",
+		"v4": "com.scbank.process.api.fw.session.impl.DefaultSessionContext",
+		"children": [
+			{
+				"globalSession": {
+					"v3": "com.scbank.ma30.common.session.Ma30GlobalSession",
+					"v4": "com.scbank.process.api.fw.session.impl.GlobalSessionObject",
+					"children": [
+						{
+							"ACCT_LIST": {
+								"v3": "com.scbank.cmm.extension.data.record.RecordList",
+								"v4": "java.util.ArrayList",
+								"element": {
+									"v3": "com.scbank.cmm.extension.data.record.Record",
+									"v4": "com.scbank.process.api.edmi.dto.oltp.CbIbk03H03500Res$CbIbk03H03500ResGrid"
+								}
+							}
+						}
+					]
+				},
+				"loginSession": {
+					"v3": "com.scbank.ma30.common.session.Ma30LoginSession",
+					"v4": "com.scbank.process.api.fw.session.impl.LoginSessionObject",
+					"children": [
+						{
+							"loginData": {
+								"v3": "com.scbank.ma30.common.session.Ma30LoginData",
+								"v4": "com.scbank.process.api.fw.session.impl.LoginSessionData",
+								"children": [
+									{
+										"ALL_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.AllAccountInfoSession"
+											}
+										}
+									},
+									{
+										"PAYMENT_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.PaymentAccountInfoSession"
+											}
+										}
+									},
+									{
+										"PAYMENT_NORMAL_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.PaymentNormalAccountInfoSession"
+											}
+										}
+									},
+									{
+										"DEMAND_DEPOSIT_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.DemandDepositAccountInfoSession"
+											}
+										}
+									},
+									{
+										"REPRESENT_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.RepresentAccountInfoSession"
+											}
+										}
+									},
+									{
+										"PROTECTED_NATIONLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.edmi.dto.oltp.CbIbk01H96100Res$ComNameReqRltDto"
+											}
+										}
+									},
+									{
+										"LOAN_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.LoanAccountInfoSession"
+											}
+										}
+									},
+									{
+										"FUND_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.FundAccountInfoSession"
+											}
+										}
+									},
+									{
+										"DEPOSIT_TRUST_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.DepositTrustAccountInfoSession"
+											}
+										}
+									},
+									{
+										"DEPOSIT_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.DepositAccountInfoSession"
+											}
+										}
+									},
+									{
+										"DEPOSIT_SAVING_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.DepositSavingAccountInfoSession"
+											}
+										}
+									},
+									{
+										"FX_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.FxAccountInfoSession"
+											}
+										}
+									},
+									{
+										"CARD_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.CardAccountInfoSession"
+											}
+										}
+									},
+									{
+										"MTS_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.MtsAccountInfoSession"
+											}
+										}
+									},
+									{
+										"ISA_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.IsaAccountInfoSession"
+											}
+										}
+									},
+									{
+										"MORTAGE_LOAN_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.MortgageLoanAccountInfoSession"
+											}
+										}
+									},
+									{
+										"OBS_ALL_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.OpenbankingAccountInfoSession"
+											}
+										}
+									},
+									{
+										"PENSION_TRUST_ACCOUNTLIST": {
+											"v3": "com.scbank.cmm.extension.data.record.RecordList",
+											"v4": "java.util.ArrayList",
+											"element": {
+												"v3": "com.scbank.cmm.extension.data.record.Record",
+												"v4": "com.scbank.process.api.svc.shared.components.account.dto.session.PensionTrustAccountInfoSession"
+											}
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+	"nshc_keypad_ses_num": {
+		"v3": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession",
+		"v4": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession"
+	},
+	"nshc_keypad_ses_char_s": {
+		"v3": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession",
+		"v4": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession"
+	},
+	"nshc_keypad_ses_char_u": {
+		"v3": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession",
+		"v4": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession"
+	},
+	"nshc_keypad_ses_char_l": {
+		"v3": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession",
+		"v4": "net.nshc.nfilter.openweb.keypad.keymap.KeyMapSession"
+	}
+}

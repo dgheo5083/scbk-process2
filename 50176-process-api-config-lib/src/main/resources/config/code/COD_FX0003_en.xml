@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FX0003" lang="en">
+  <code key="001" order="0"><![CDATA[USD UNITEDSTATES]]></code>
+  <code key="002" order="1"><![CDATA[JPY JAPAN]]></code>
+  <code key="003" order="2"><![CDATA[GBP UNITEDKINGDOM]]></code>
+  <code key="005" order="3"><![CDATA[CAD CANADA]]></code>
+  <code key="009" order="4"><![CDATA[HKD HONGKONG]]></code>
+  <code key="011" order="5"><![CDATA[AUD AUSTRALIA]]></code>
+  <code key="021" order="8"><![CDATA[SGD SINGAPORE]]></code>
+  <code key="023" order="9"><![CDATA[NZD NEWZEALAND]]></code>
+  <code key="144" order="10"><![CDATA[THB THAILAND]]></code>
+  <code key="161" order="11"><![CDATA[EUR EUROPE]]></code>
+  <code key="008" order="12"><![CDATA[CHF SWISS]]></code>
+  <code key="017" order="13"><![CDATA[SAR SAUDI ARABIA]]></code>
+  <code key="020" order="14"><![CDATA[AED UAE]]></code>
+</category>

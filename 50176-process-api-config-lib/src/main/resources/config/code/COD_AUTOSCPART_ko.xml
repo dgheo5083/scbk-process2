@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="AUTOSCPART" lang="ko">
+  <code key="0" order="1"><![CDATA[신청구분]]></code>
+  <code key="1" order="2"><![CDATA[신규]]></code>
+  <code key="3" order="3"><![CDATA[해지]]></code>
+  <code key="5" order="4"><![CDATA[변경]]></code>
+</category>

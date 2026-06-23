@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="BKCODE_KW" lang="en">
+	<!-- 기웅 타은행 스크래핑 은행 코드 리스트 (구분자:;;)-->
+	<!--<code key='MBSCPM' order='1'><![CDATA[SC은행;;/resource/images/cmm/icon_bank_023.png]]></code>-->
+	<code key='MBKBPM' order='2'><![CDATA[Kookmin Bank;;/resource/images/cmm/icon_bank_004.png]]></code>
+	<code key='MBSHPM' order='3'><![CDATA[Shinhan Bank;;/resource/images/cmm/icon_bank_088.png]]></code>
+	<code key='MBNHPM' order='4'><![CDATA[NH Bank;;/resource/images/cmm/icon_bank_011.png]]></code>
+	<code key='MBHNPM' order='5'><![CDATA[KEB HANA BANK;;/resource/images/cmm/icon_bank_081.png]]></code>
+	<code key='MBWRPM' order='6'><![CDATA[Woori Bank;;/resource/images/cmm/icon_bank_020.png]]></code>
+	<code key='MBKFPM' order='7'><![CDATA[KFCC;;/resource/images/cmm/icon_bank_045.png]]></code>
+	<code key='MBDBPM' order='8'><![CDATA[iM Bank (Daegu Bank);;/resource/images/cmm/icon_bank_031.png]]></code>
+	<code key='MBPSPM' order='9'><![CDATA[Busan Bank;;/resource/images/cmm/icon_bank_032.png]]></code>
+	<code key='MBKDPM' order='10'><![CDATA[Korea Development Bank;;/resource/images/cmm/icon_bank_002.png]]></code>
+	<code key='MBSUPM' order='11'><![CDATA[Suhyup;;/resource/images/cmm/icon_bank_048-35.png]]></code>
+	<code key='MBKNPM' order='12'><![CDATA[Kyongnam Bank;;/resource/images/cmm/icon_bank_039.png]]></code>
+	<code key='MBCUPM' order='13'><![CDATA[Credit Union;;/resource/images/cmm/icon_bank_048.png]]></code>
+	<code key='MBCTPM' order='14'><![CDATA[Citi Korea;;/resource/images/cmm/icon_bank_027.png]]></code>
+	<code key='MBKJPM' order='15'><![CDATA[Kwangju Bank;;/resource/images/cmm/icon_bank_034.png]]></code>
+	<code key='MBEPPM' order='16'><![CDATA[Korea Post;;/resource/images/cmm/icon_bank_048-37.png]]></code>
+	<code key='MBJBPM' order='17'><![CDATA[Jeonbuk Bank;;/resource/images/cmm/icon_bank_048-39.png]]></code>
+	<code key='MBIBPM' order='18'><![CDATA[Industrial Bank of Korea;;/resource/images/cmm/icon_bank_003.png]]></code>
+	<code key='MBJJPM' order='19'><![CDATA[Jeju Bank;;/resource/images/cmm/icon_bank_035.png]]></code>
+	<code key='MBKKPM' order='20'><![CDATA[K bank;;/resource/images/cmm/icon_bank_089.png]]></code>
+</category>

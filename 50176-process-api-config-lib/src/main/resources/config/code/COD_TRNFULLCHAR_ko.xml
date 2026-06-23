@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="TRNFULLCHAR" lang="ko">
+  <code key="TI1TBS03_H211" order="0"><![CDATA[Y]]></code> <!-- 즉시이체/여러계좌이체 -->
+  <code key="TI1TBS07_H421" order="0"><![CDATA[Y]]></code> <!-- 자동이체 신청/변경 -->
+  <code key="TI1TBS07_H422" order="0"><![CDATA[Y]]></code> <!-- 자동이체 조회 -->
+  <code key="TI1TBS03_H216" order="0"><![CDATA[Y]]></code> <!-- 키보드,전화번호이체 통합전문 -->
+  <code key="TI1IBK01_H229" order="0"><![CDATA[Y]]></code> <!-- 지연이체 상세조회 -->
+  <code key="TI1TBS03_H293" order="0"><![CDATA[Y]]></code> <!-- 이체결과조회 -->
+  <code key="TI1IBK01_H11F" order="0"><![CDATA[Y]]></code> <!-- 요구불계좌거래명세조회 -->
+  <code key="TI1IBK01_H920" order="0"><![CDATA[Y]]></code> <!-- 고객정보조회 -->
+</category>

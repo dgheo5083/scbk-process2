@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="HOPEIN" lang="ko">
+  <code key="2008" order="1"><![CDATA[2008]]></code>
+  <code key="2009" order="2"><![CDATA[2009]]></code>
+  <code key="2010" order="3"><![CDATA[2010]]></code>
+  <code key="2011" order="4"><![CDATA[2011]]></code>
+  <code key="2012" order="5"><![CDATA[2012]]></code>
+  <code key="2013" order="6"><![CDATA[2013]]></code>
+  <code key="2014" order="7"><![CDATA[2014]]></code>
+  <code key="2015" order="8"><![CDATA[2015]]></code>
+  <code key="2016" order="9"><![CDATA[2016]]></code>
+  <code key="2017" order="10"><![CDATA[2017]]></code>
+  <code key="2018" order="11"><![CDATA[2018]]></code>
+  <code key="2019" order="12"><![CDATA[2019]]></code>
+  <code key="2020" order="13"><![CDATA[2020]]></code>
+</category>

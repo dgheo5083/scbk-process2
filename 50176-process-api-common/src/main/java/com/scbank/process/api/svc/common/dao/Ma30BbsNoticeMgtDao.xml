@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30BbsNoticeMgtDao">
+
+	<sql id="COMM_PAGING_HEADER">
+		SELECT R1.* FROM (
+	</sql>
+	<sql id="COMM_PAGING_TAIL">
+		) R1
+		WHERE R1.RN <![CDATA[>=]]> (((#{paging} - 1) * #{pageSize}) + 1)
+		   AND  R1.RN <![CDATA[<=]]> (#{paging} * #{pageSize})
+	</sql>
+
+	<!-- Notice 조회 [MA3_MAN.MA30_BBS_NOTICE_MGT_S_01] -->
+	<select id="selectNoticeList" parameterType="com.scbank.process.api.svc.common.dao.dto.NoticeParameter" resultType="com.scbank.process.api.svc.common.dao.dto.NoticeResult">
+		SELECT
+			A.SEQNO,
+			A.OFFCL_ITM_CTGRY,
+			B.CD_NM AS OFFCL_ITM_CTGRY_NM,
+			A.TITLE,
+			CAST(A.W_DATE AS VARCHAR(10)) AS W_DATE
+		FROM MA30_BBS_NOTICE_MGT A
+			INNER JOIN SUB_CD B
+				ON A.OFFCL_ITM_CTGRY = B.CMMN_CD||B.SUB_CD
+			LEFT OUTER JOIN (
+				SELECT
+					SEQNO,
+					CTGRY_CD
+				FROM (
+					SELECT SEQNO, REPLACE(CTGRY_CD,'|','') AS CTGRY_CD, NVL(LENGTH(CTGRY_CD)-LENGTH(REPLACE(CTGRY_CD,'|','')),0)+1 AS CNT
+					FROM MA30_BBS_CTGRY_MGT
+					WHERE BBS_MK_CD='BBS001'
+				)C
+			) C
+				ON A.SEQNO = C.SEQNO
+		WHERE LOCTN_CD= #{loctnCd}
+		AND D_FLAG='Z00001'
+		AND C.CTGRY_CD LIKE '%'||#{ctgryCd}||'%'
+		AND APP_STATUS = 'PF4005'
+		AND B.CMMN_CD = 'Z02'
+		AND (CONCAT(REPLACE(S_DATE,'-',''), S_TIME) <![CDATA[<=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24'))
+		AND (CONCAT(REPLACE(E_DATE,'-',''), E_TIME) <![CDATA[>=]]> VARCHAR_FORMAT(CURRENT TIMESTAMP, 'YYYYMMDDHH24'))
+		AND UPPER(TITLE) LIKE UPPER('%'||#{searchWord}||'%')
+		ORDER BY A.SEQNO DESC
+		WITH UR
+	</select>
+
+	<!--  공지사항 레코드 갯수 조회 -->
+	<select id="selectRecordCount" parameterType="com.scbank.process.api.svc.common.dao.dto.RecordCountParameter" resultType="com.scbank.process.api.svc.common.dao.dto.RecordCountResult">
+        SELECT COUNT(*) AS CNT
+		FROM MA30_BBS_NOTICE_MGT A
+		LEFT OUTER JOIN (
+			SELECT SEQNO, CTGRY_CD
+			FROM (
+				SELECT SEQNO, REPLACE(CTGRY_CD,'|','') AS CTGRY_CD, NVL(LENGTH(CTGRY_CD)-LENGTH(REPLACE(CTGRY_CD,'|','')),0)+1 AS CNT
+				FROM MA30_BBS_CTGRY_MGT
+				WHERE BBS_MK_CD='BBS001'
+			)C
+		) C
+		ON A.SEQNO = C.SEQNO
+		WHERE 1=1
+			AND A.LOCTN_CD		= #{language}
+			AND C.CTGRY_CD LIKE '%'||#{ctgry_cd}||'%'
+			AND A.D_FLAG 			= 'Z00001'
+			AND A.APP_STATUS 		= 'PF4005'
+			AND (CONCAT(REPLACE(A.S_DATE,'-',''), A.S_TIME) <![CDATA[<=]]> CONCAT(REPLACE(CURRENT DATE, '-',''), HOUR(CURRENT TIME)))
+			AND (CONCAT(REPLACE(A.E_DATE,'-',''), A.E_TIME) <![CDATA[>=]]> CONCAT(REPLACE(CURRENT DATE, '-',''), HOUR(CURRENT TIME)))
+		WITH UR
+    </select>
+
+    <!-- 공지사항 리스트 조회 -->
+	<select id="selectListNoticeRecord" parameterType = "com.scbank.process.api.svc.common.dao.dto.ListNoticeRecordParameter" resultType = "com.scbank.process.api.svc.common.dao.dto.ListNoticeRecordResult">
+		<include refid="COMM_PAGING_HEADER"/>
+			SELECT A.SEQNO
+				, VARCHAR_FORMAT(A.W_DATE,'YYYY-MM-DD') AS W_DATE
+				, A.TITLE
+				, ROW_NUMBER() OVER(ORDER BY A.FXD_BULLTN_FLG DESC, A.W_DATE DESC) RN 
+				, A.FXD_BULLTN_FLG
+			FROM MA30_BBS_NOTICE_MGT A 
+			LEFT OUTER JOIN (
+				SELECT SEQNO, CTGRY_CD
+				FROM (
+					SELECT SEQNO, REPLACE(CTGRY_CD,'|','') AS CTGRY_CD, NVL(LENGTH(CTGRY_CD)-LENGTH(REPLACE(CTGRY_CD,'|','')),0)+1 AS CNT
+					FROM MA30_BBS_CTGRY_MGT
+					WHERE BBS_MK_CD='BBS001'
+				)C
+			) C
+			ON A.SEQNO = C.SEQNO
+			WHERE 1=1
+				AND A.LOCTN_CD		= #{language}
+				AND C.CTGRY_CD LIKE '%'||#{ctgry_cd}||'%'
+				AND A.D_FLAG 			= 'Z00001'
+				AND A.APP_STATUS 		= 'PF4005'
+				AND (CONCAT(REPLACE(A.S_DATE,'-',''), A.S_TIME) <![CDATA[<=]]> CONCAT(REPLACE(CURRENT DATE, '-',''), HOUR(CURRENT TIME)))
+				AND (CONCAT(REPLACE(A.E_DATE,'-',''), A.E_TIME) <![CDATA[>=]]> CONCAT(REPLACE(CURRENT DATE, '-',''), HOUR(CURRENT TIME)))
+		<include refid="COMM_PAGING_TAIL"/>
+		WITH UR
+	</select>
+
+	<!--  공지사항 상세 조회 -->
+	<select id="selectDetailNoticeRecord" parameterType="com.scbank.process.api.svc.common.dao.dto.DetailNoticeRecordParameter" resultType="com.scbank.process.api.svc.common.dao.dto.DetailNoticeRecordResult">
+		SELECT A.SEQNO
+			, A.TITLE
+			, A.CONTENTS
+			, VARCHAR_FORMAT(A.W_DATE,'YYYY-MM-DD') AS W_DATE
+			, ROW_NUMBER() OVER(ORDER BY A.FXD_BULLTN_FLG DESC, A.W_DATE DESC) RN
+			, A.FXD_BULLTN_FLG
+		FROM MA30_BBS_NOTICE_MGT A
+		LEFT OUTER JOIN (
+			SELECT SEQNO, CTGRY_CD
+			FROM (
+				SELECT SEQNO, REPLACE(CTGRY_CD,'|','') AS CTGRY_CD, NVL(LENGTH(CTGRY_CD)-LENGTH(REPLACE(CTGRY_CD,'|','')),0)+1 AS CNT
+				FROM MA30_BBS_CTGRY_MGT
+				WHERE BBS_MK_CD='BBS001'
+			)C
+		) C
+		ON A.SEQNO = C.SEQNO
+		WHERE 1=1
+			AND A.LOCTN_CD		= #{language}
+			AND C.CTGRY_CD LIKE '%'||#{ctgry_cd}||'%'
+			AND A.D_FLAG 			= 'Z00001'
+			AND A.APP_STATUS 		= 'PF4005'
+			AND (CONCAT(REPLACE(A.S_DATE,'-',''), A.S_TIME) <![CDATA[<=]]> CONCAT(REPLACE(CURRENT DATE, '-',''), HOUR(CURRENT TIME)))
+			AND (CONCAT(REPLACE(A.E_DATE,'-',''), A.E_TIME) <![CDATA[>=]]> CONCAT(REPLACE(CURRENT DATE, '-',''), HOUR(CURRENT TIME)))
+		WITH UR
+	</select>
+
+	<!-- 공지사항 조회시 조회수 카운트 -->
+	<update id="updateNoticeCount" parameterType="com.scbank.process.api.svc.common.dao.dto.DetailNoticeRecordParameter">
+		UPDATE MA30_BBS_NOTICE_MGT 
+		   SET R_COUNT = R_COUNT +1 
+		WHERE SEQNO = #{seqno}
+	</update>
+
+</mapper>

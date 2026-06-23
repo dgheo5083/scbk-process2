@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="ABROAD_LOGIN_MESSAGE">
+  <code key="PUSH_MSG0" order="0"><![CDATA[BREEZE 뱅킹]]></code>
+  <code key="PUSH_MSG1" order="0"><![CDATA[고객님 해외IP로 로그인이 감지되었습니다.]]></code>
+  <code key="PUSH_MSG2" order="0"><![CDATA[[SC제일은행]]]></code>
+  <code key="PUSH_MSG3" order="0"><![CDATA[고객님 해외IP를 사용한 모바일뱅킹 로그인이 감지되었습니다.]]></code>
+  <code key="PUSH_MSG4" order="0"><![CDATA[Breeze login via overseas IP detected.]]></code>
+  <code key="PUSH_MSG5" order="0"><![CDATA[불법 로그인이 의심될 경우 고객센터(1588-1599)로 신고해주시기 바랍니다. ]]></code>
+  <code key="PUSH_MSG6" order="0"><![CDATA[Please call contact center (1588-1599) if illegal login suspected.]]></code>
+  <code key="PUSH_MSG7" order="0"><![CDATA[ 접속국가 코드 : ]]></code>
+  <code key="PUSH_MSG8" order="0"><![CDATA[ 접속IP : ]]></code>
+  <code key="PUSH_MSG9" order="0"><![CDATA[ 접속시간 : ]]></code>
+</category>

@@ -1,0 +1,38 @@
+--- 
+# This playbook deploys the whole application stack in this site.
+
+- name: Deployment Artifact
+  hosts: all
+  gather_facts: false
+  vars:
+    artifact_dir: "{{ base_dir }}/drop" # ADO Artifact의 임시 폴더 - 고정
+    ado_playbooks_dir: "{{ base_dir }}/ado-playbooks" #ADO상 ado-playbooks 의 폴더 (다운로드 용도)
+    
+  tasks:
+    - debug:
+        var: hostvars
+      tags:
+        - test
+
+    - name: "Step 1 - ado-playbooks 다운로드"
+      copy:
+        src: "{{ ado_playbooks_dir }}"
+        dest: "{{ download_dir }}"
+        mode: 0744
+        directory_mode: 0755
+          
+    - name: Artifact 찾기(process-api-common)
+      find:
+        path: "{{ artifact_dir }}/com/scbank/process-api-common/{{ pkg_version }}/"
+        patterns: "*.jar"
+        file_type: "file"
+      register: find_jar_result
+      delegate_to: localhost        
+    - name: Artifact 다운로드(process-api-common)
+      copy: 
+        src: "{{ find_jar_result.files[0].path }}"
+        dest: "{{ download_dir }}/process-api-common-{{ pkg_version }}.jar"
+        
+    - name: "Step 2 - WEB 배포"
+      shell: |
+        {{ deploy2webShell }} --artifact=process-api-common-{{ pkg_version }}.jar

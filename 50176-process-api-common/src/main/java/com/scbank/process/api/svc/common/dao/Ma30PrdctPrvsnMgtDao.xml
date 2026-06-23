@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30PrdctPrvsnMgtDao">
+	
+	<!-- 약관정보 가져오기 [MA3_CMM.MA30_PRDCT_PRVSN_MGT_S_01] -->
+	<select id="selectTermsInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.TermsInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.TermsInfoResult">
+		SELECT
+			ATT_FILE_NM,
+			ATT_FILE_URL,
+		    LOCTN_CD,
+		    OLD_PRVSN_CD,
+		    PRDCT_ID,
+		    PRDCT_MK_CD,
+		    PRVSN_BTN_NM,
+		    PRVSN_CD,
+		    PRVSN_LONG_EXPLN,
+		    PRVSN_MK,
+		    PRVSN_NM,
+			PRVSN_SHORT_EXPLN,
+			REGIST_DT,
+			REGIST_ID,
+			SORT_ORD,
+			UPD_DT,
+			UPD_ID,
+			USE_YN 
+		FROM  (
+			SELECT
+				ATT_FILE_NM,
+				ATT_FILE_URL,
+				LOCTN_CD,
+				OLD_PRVSN_CD,
+				PRDCT_ID,
+				PRDCT_MK_CD,
+				PRVSN_BTN_NM,
+				PRVSN_CD,
+				PRVSN_LONG_EXPLN,
+				PRVSN_MK,
+				PRVSN_NM,
+				PRVSN_SHORT_EXPLN,
+				REGIST_DT,
+				REGIST_ID,
+				SORT_ORD,
+				UPD_DT,
+				UPD_ID,
+				USE_YN,
+				ROW_NUMBER() OVER(PARTITION BY PRVSN_CD ORDER BY LOCTN_CD DESC) RN
+			FROM  MA30_PRDCT_PRVSN_MGT
+				WHERE  USE_YN = 'Y'
+				AND  LOCTN_CD IN 
+				    <foreach collection="loctnCdList" item="loctnCdItem" open="(" close=")" separator=",">
+					   	#{loctnCdItem}
+				    </foreach>		 
+		<choose>
+			<when test="actionType == 'htmlExplain' or actionType == 'pdfDownload' or actionType == 'termsPop'">
+				AND  PRVSN_CD = #{prvsnCd}
+			</when>
+			<when test="actionType == 'pdfViewer'">
+				AND  PRVSN_CD IN 
+					<foreach collection="prvsnCdList" item="prvsnCdItem" open="(" close=")" separator=",">
+						#{prvsnCdItem}
+					</foreach>
+			</when>
+		</choose>
+		)
+		WHERE RN = 1
+		WITH UR	 
+	</select>
+
+</mapper>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MCI_LOG_TARGET" lang="ko">
+  <!-- key=전문명, 내용=BUSINESS_FUNCTION_ID 형태로 작성하며, 내용에 해당하는 값이 여러개인 경우 "|"를 구분자로 연결 --> 
+  <code key="MCI_MIS_T_CLCL63" order="0"><![CDATA[MIS_T_CLCL63]]></code> <!-- 신용대출상담 -->
+  <code key="MCI_MIS_T_CLCL64" order="0"><![CDATA[MIS_T_CLCL64]]></code> <!-- 신용대출신청 -->
+  <code key="MCI_IB_CEBI_001" order="0"><![CDATA[IB_CEBI_001]]></code> <!-- 해당고객 등급조회(BC카드) -->
+  <code key="MCI_IB_BCR01_003" order="0"><![CDATA[IB_BCR01_003]]></code> <!-- 상담조회 후불체크카드 -->
+  <code key="MCI_IB_BCR01_004" order="0"><![CDATA[IB_BCR01_004]]></code> <!-- 상담조회 신용카드 -->
+  <code key="MCI_IB_BCR01_001" order="0"><![CDATA[IB_BCR01_001]]></code> <!-- 신용카드만들기 -->
+  <code key="MCI_DY0000250001" order="0"><![CDATA[DY0000250001]]></code> <!-- NiceHunter -->
+  <code key="MCI_IB_IMSGG_047" order="0"><![CDATA[IB_IMSGG_047]]></code> <!-- 1558 약관등록 -->
+  <code key="MCI_YP0087010001" order="0"><![CDATA[IB_CLCL_001]]></code> <!-- 업체조회 -->
+  <code key="MCI_YP0046020001" order="0"><![CDATA[YP0046020001]]></code> <!-- 업체조회 상세 조회 -->
+  <code key="MCI_DY0000060001" order="0"><![CDATA[DY0000060001]]></code> <!-- 접수분조회 이율조회 -->
+  <code key="MCI_SM7109020001" order="0"><![CDATA[SM7109020001]]></code> <!-- 접수분조회 - 드림론순수 -->
+  <code key="MCI_DB0000010001_AOBCJH03" order="0"><![CDATA[DB00AOBCJH03]]></code> <!-- BC사고자조회(사고) -->
+  <code key="MCI_DB0000010001_AOBCJH07" order="0"><![CDATA[DB00AOBCJH07]]></code> <!-- BC사고자조회(연체) -->
+  <code key="MCI_TM1030020002" order="0"><![CDATA[TM1030020002]]></code> <!-- 기업 일보 / 월보 -->
+  <code key="MCI_SM7102010003" order="0"><![CDATA[SM7102YSJA14]]></code> <!-- 판정결과 조회 -->
+  <code key="MCI_YP0033010001" order="0"><![CDATA[YP0033010001]]></code> <!-- 판정결과조회 - 거절사유 조회 -->
+  <code key="MCI_DY0000380001" order="0"><![CDATA[DY0000380001]]></code> <!-- 연소득/산출 - 가계신용대출상품별 연소득 산출 조회 및 등록 (AMS시스템) -->
+  <code key="MCI_SM7101010003" order="0"><![CDATA[SM7101YSJA13]]></code> <!-- 판정결과조회 - 드림론순수 -->
+  <code key="MCI_MIS_T_CLCL1H" order="0"><![CDATA[MIS_T_CLCL1H]]></code> <!-- 카드론 소득스크래핑 -->
+  <code key="MCI_DY0000270001" order="0"><![CDATA[DY0000270001]]></code> <!-- 대출/채무보증 정보조회 -->
+  <code key="MCI_DY0000050001" order="0"><![CDATA[DY0000050001]]></code> <!-- 대출 채무보증 정보조회 -->
+  <code key="MCI_TM1027020003" order="0"><![CDATA[TM1027020003]]></code> <!-- 당행 대출계좌조회 -->
+  <code key="MCI_SM7102010001" order="0"><![CDATA[SM7102010001]]></code> <!-- 상담등록 - 드림론우대 -->
+  <code key="MCI_SM7101010001" order="0"><![CDATA[SM7101010001]]></code> <!-- 상담등록 - 드림론 순수 -->
+  <code key="MCI_DY0000230001" order="0"><![CDATA[DY0000230001]]></code> <!-- 상담등록 - 핸드폰인증 공통 -->
+  <code key="MCI_DM7251010001" order="0"><![CDATA[DM7251010001]]></code> <!-- 접수분조회 - 드림론순수 -->
+  <code key="MCI_TM1517020007" order="0"><![CDATA[TM1517020007]]></code> <!-- 급여통장해지 -->
+  <code key="MCI_DY7200040003" order="0"><![CDATA[DY7200YSJA09]]></code> <!-- 차입신청서 등록 -->
+  <code key="MCI_DY7200190001" order="0"><![CDATA[DY7200190001]]></code> <!-- 개인정보동의 조회 - 우대금리조회 -->
+  <code key="MCI_TM1557010001" order="0"><![CDATA[TM1557010001]]></code> <!-- 제일편한,가계당좌,집단대출신청 -->
+  <code key="MCI_IB_YNL04_001" order="0"><![CDATA[IB_YNL04_001]]></code> <!-- 가산금리상세내용 -->
+  <code key="MCI_IB7223210001" order="0"><![CDATA[IB7223210001]]></code> <!-- 대출신청 - LPC송부 -->
+  <code key="MCI_IB0000210001" order="0"><![CDATA[IB0000210001]]></code> <!-- LPC추가송부 -->
+  <code key="MCI_HP_CU_CUS_COS" order="0"><![CDATA[CB677311CI]]></code> <!-- 전화상담(MCI) -->
+  <code key="MCI_DY0000090001" order="0"><![CDATA[DY0000090001]]></code> <!-- 접수분조회 (중소기업마이너스대출 상담) -->
+  <code key="MCI_SM7181020001" order="0"><![CDATA[SM7181020001]]></code> <!-- 접수분조회 -->
+  <code key="MCI_YP0089010001" order="0"><![CDATA[YP0089010001]]></code> <!-- 상담용고객정보등록 -->
+  <code key="MCI_YP0090010001" order="0"><![CDATA[YP0090010001]]></code> <!-- 평가모델조회 -->
+  <code key="MCI_YP0090020001" order="0"><![CDATA[YP0090020001]]></code> <!-- SCORE조회 -->
+  <code key="MCI_DY0000050002" order="0"><![CDATA[DY0000050002]]></code> <!-- 기업정보조회 -->
+  <code key="MCI_DB0000010001" order="0"><![CDATA[DB00AOBCJH07|DB00AOBCJH03]]></code> <!-- 기업정보조회 -->
+  <code key="MCI_SM7181010003" order="0"><![CDATA[SM7181YSJA92]]></code> <!-- BIL 상담등록 -->
+  <!-- <code key="MCI_YP0028010001" order="0"><![CDATA[YP0028010001]]></code> --> <!-- KB시세조회 AS-IS에서 제외대상인데, 원인은 모르지만 동일하게 제외 처리 -->
+  <code key="MCI_SM7141020001" order="0"><![CDATA[SM7141020001]]></code> <!-- 홈론 QUICKSCREEN 상담 -->
+  <code key="MCI_IB_YNL01_013" order="0"><![CDATA[IB_YNL01_013]]></code> <!-- 사전승인 추천상품조회 -->
+  <code key="MCI_IB_YNL01_002" order="0"><![CDATA[IB_YNL01_002]]></code> <!-- 무서류 인터넷 신청등록 -->
+  <code key="MCI_IB_YNL01_004" order="0"><![CDATA[IB_YNL01_004]]></code> <!-- 무서류 인터넷 실행등록 -->
+  <code key="MCI_SM7142010001" order="0"><![CDATA[SM7142010001]]></code> <!-- 전세론 접수분조회 -->
+  <code key="MCI_TM1030020001" order="0"><![CDATA[TM1030020001]]></code> <!-- 기업정보 조회-대상 기업체 정보조회 -->
+  <code key="MCI_DM7217070001" order="0"><![CDATA[DM7217070001]]></code> <!-- 전세보증론 보증적격조회 및 청약 -->
+  <code key="MCI_SM7142020001" order="0"><![CDATA[SM7142020001]]></code> <!-- 전세론상담등록 -->
+  <code key="MCI_MIS_T_CLML6L" order="0"><![CDATA[MIS_T_CLML6L]]></code> <!-- 주택보유수 확인을 위한 비대면 동의 -->
+  <code key="MCI_DM7217010001" order="0"><![CDATA[DM7217010001]]></code> <!-- 전세론 신청(계산/등록/해지) -->
+  <code key="MCI_DY7200130001" order="0"><![CDATA[DY7200130001]]></code> <!-- 당행시가추정 등록/조회 -->
+  <code key="MCI_TM1784010001" order="0"><![CDATA[TM1784010001]]></code> <!-- 스크래핑 등본 -->
+  <code key="MCI_TM1784020001" order="0"><![CDATA[TM1784020001]]></code> <!-- 스크래핑 초본 -->
+  <code key="MCI_YP0052010001" order="0"><![CDATA[YP0052010001]]></code> <!-- 저소득,무주택자(무주택등록) -->
+  <code key="MCI_DM7223210001" order="0"><![CDATA[DM7223210001]]></code> <!-- 담보대출 LPC송부 -->
+  
+  <code key="MCI_MIS_T_CLCL66" order="0"><![CDATA[MIS_T_CLCL66]]></code> <!-- 토스 지정대리인송금 상담신청 -->
+  <code key="MCI_MIS_T_CLCL67" order="0"><![CDATA[MIS_T_CLCL67]]></code> <!-- 토스 지정대리인송금 신청 -->
+  <code key="MCI_YP0049010001" order="0"><![CDATA[YP0049010001]]></code> <!-- 대출신청조회 및 취소(신용대출) -->
+  <code key="MCI_YP0049020001" order="0"><![CDATA[YP0049020001]]></code> <!-- 대출신청조회 및 취소(새희망홀씨) -->
+  <code key="MCI_DY7200170001" order="0"><![CDATA[DY7200170001]]></code> <!-- 담보대출(전세론) 대출취소 -->
+  <code key="MCI_MIS_T_CLCL73" order="0"><![CDATA[MIS_T_CLCL73]]></code> <!-- 모바일통합상담 상담/신청 -->
+  <code key="MCI_MIS_T_CLCL74" order="0"><![CDATA[MIS_T_CLCL74]]></code> <!-- 모바일통합상담 신용대출신청 -->
+  <code key="MCI_MIS_T_CLCL75" order="0"><![CDATA[MIS_T_CLCL75]]></code> <!-- 모바일통합상담 대외계 KEY 생성 -->
+  <code key="MCI_MIS_T_CLCL76" order="0"><![CDATA[MIS_T_CLCL76]]></code> <!-- 모바일통합상담 대외계 거래 -->
+  <code key="MCI_MIS_T_CLCL77" order="0"><![CDATA[MIS_T_CLCL77]]></code> <!-- 모바일통합상담 소금원 스크래핑 저장 -->
+  <code key="MCI_MIS_T_CLCL78" order="0"><![CDATA[MIS_T_CLCL78]]></code> <!-- 모바일통합상담 LPC정보 조회 -->
+  <code key="MCI_IB_YNL01_001_01" order="0"><![CDATA[IB_YNL01_052]]></code> <!-- 모바일 사전승인대출 대상자조회 -->
+  <code key="MCI_IB_YNL01_002_01" order="0"><![CDATA[IB_YNL01_002]]></code> <!-- 모바일 사전승인대출 신청 -->
+  <code key="MCI_IB_YNL01_003_01" order="0"><![CDATA[IB_YNL01_003]]></code> <!-- 모바일 사전승인대출 고객등록 -->
+  <code key="MCI_IB_YNL01_004_01" order="0"><![CDATA[IB_YNL01_005]]></code> <!-- 모바일 사전승인대출 실행 -->
+  
+  <code key="MCI_IDENTIFY_DACOM" order="0"><![CDATA[HUB_SMS_002]]></code> <!-- 휴대폰인증 -->
+  <code key="MCI_IB_CIDI_001" order="0"><![CDATA[IB_CIDI_001]]></code> <!-- CI 조회/등록 -->
+  
+  <code key="MCI_IB_LPC_001" order="0"><![CDATA[IB_LPC_001]]></code> <!-- 대출계좌번호LPC전송 체크 -->
+  
+  <code key="MCI_IB_ADDR01_06" order="0"><![CDATA[IB_ADDR01_06]]></code> <!-- 통합주소검색(카이네스) -->
+  <code key="MCI_IB_LN_NICESH" order="0"><![CDATA[IB_LN_NICESH]]></code> <!-- 등기고유번호조회(NICE) -->
+  <code key="MCI_IB_LN_EXT" order="0"><![CDATA[IB_LN_EXT]]></code> <!-- 주택담보대출 대외계거래 -->
+  <code key="MCI_IB_LN_CNSLT" order="0"><![CDATA[IB_LN_CNSLT]]></code> <!-- 주택담보대출 통합상담 -->
+  
+  <code key="MCI_MIS_T_CLCL83" order="0"><![CDATA[MIS_T_CLCL83]]></code> <!-- 신용대출 연기(갱신) NBSM(상담)  -->
+  <code key="MCI_MIS_T_CLCL84" order="0"><![CDATA[MIS_T_CLCL84]]></code> <!-- 신용대출 연기(갱신) 신청  -->
+  <code key="MCI_TM1028020003" order="0"><![CDATA[TM1028020003]]></code> <!-- 신용대출 연기(갱신) 여신계좌조회 (개별) -->
+  <code key="MCI_TM1028020006" order="0"><![CDATA[TM1028020006]]></code> <!-- 신용대출 연기(갱신) 여신계좌조회 (한도) -->
+  
+  <code key="MCI_IB_MGLOAN_01" order="0"><![CDATA[IB_MGLOAN_01]]></code> <!-- NBSM 신청 -->
+  <code key="MCI_IB_LPC_002" order="0"><![CDATA[IB_LPC_002]]></code> <!-- 퍼스트홈론 담보대출 LPC송부 -->
+  
+  <code key="MCI_IB_IMS_002" order="0"><![CDATA[IB_IMS_002]]></code> <!--여신안심차단신청 -->
+  <code key="MCI_IB_IMS_003" order="0"><![CDATA[IB_IMS_003]]></code> <!--여신안심차단조회 -->
+  <code key="MCI_IB_IMS_004" order="0"><![CDATA[IB_IMS_004]]></code> <!--계좌안심차단조회 -->
+  <code key="MCI_IB_IMS_005" order="0"><![CDATA[IB_IMS_005]]></code> <!--계좌안심차단신청 -->
+  
+</category>

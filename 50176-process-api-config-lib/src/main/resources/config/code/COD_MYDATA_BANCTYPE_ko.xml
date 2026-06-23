@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="MYDATA_BANCTYPE" lang="ko">
+  <code key="01" order="01"><![CDATA[만기일시상환]]></code>
+  <code key="02" order="02"><![CDATA[원금균등분할상환]]></code>
+  <code key="03" order="03"><![CDATA[거치식-원금균등분할상환]]></code>
+  <code key="04" order="04"><![CDATA[원리금균등분할상환]]></code>
+  <code key="05" order="05"><![CDATA[거치식-원리금균등분할상환]]></code>
+  <code key="06" order="06"><![CDATA[만기지정상환-원금균등분할상환]]></code>
+  <code key="07" order="07"><![CDATA[만기지정상환-원리금균등분할상환]]></code>
+  <code key="08" order="08"><![CDATA[한도거래]]></code>
+  <code key="09" order="09"><![CDATA[기타(직접산정)]]></code>
+  <code key="10" order="10"><![CDATA[거치식 만기지정상환-원금균등분할상환]]></code>
+  <code key="11" order="11"><![CDATA[거치식 만기지정상환-원리금균등분할상환]]></code>
+</category>

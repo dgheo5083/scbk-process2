@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="RCODE_REJECT" lang="ko">
+  <code key="R911" order="0"><![CDATA[R911]]></code>
+  <code key="R919" order="1"><![CDATA[R919]]></code>
+  <code key="R967" order="2"><![CDATA[R967]]></code>
+  <code key="R644" order="3"><![CDATA[R967]]></code>
+  <code key="R209R911" order="4"><![CDATA[R209,R911]]></code>
+  <code key="R911R919" order="5"><![CDATA[R911,R919]]></code>
+  <code key="R911R967" order="6"><![CDATA[R911,R967]]></code>
+  <code key="R919R967" order="7"><![CDATA[R919,R967]]></code>
+  <code key="R911R919R967" order="8"><![CDATA[R911,R919,R967]]></code>
+  <code key="R911R644" order="9"><![CDATA[R911,R644]]></code>
+  <code key="R919R644" order="10"><![CDATA[R919,R644]]></code>
+  <code key="R967R644" order="11"><![CDATA[R967,R644]]></code>
+  <code key="R911R919R644" order="12"><![CDATA[R911,R919,R644]]></code>
+  <code key="R911R967R644" order="13"><![CDATA[R911,R967,R644]]></code>
+  <code key="R919R967R644" order="14"><![CDATA[R919,R967,R644]]></code>
+  <code key="R911R919R967R644" order="15"><![CDATA[R911,R919,R967,R644]]></code>
+</category>

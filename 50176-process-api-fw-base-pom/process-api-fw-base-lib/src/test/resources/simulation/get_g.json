@@ -1,0 +1,12 @@
+{
+  "success": {
+    "payload": {
+      "k": "v"
+    }
+  },
+  "error": {
+    "type": "HTTP_ERROR",
+    "status": 500,
+    "payload": "error-body"
+  }
+}

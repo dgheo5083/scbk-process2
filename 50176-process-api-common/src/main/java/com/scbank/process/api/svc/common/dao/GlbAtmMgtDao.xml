@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.GlbAtmMgtDao">
+	<sql id="COMM_PAGING_HEADER">
+		SELECT R1.* FROM (
+	</sql>
+	<sql id="COMM_PAGING_TAIL">
+		) R1
+		WHERE R1.RN <![CDATA[>=]]> (((#{paging} - 1) * #{pageSize}) + 1)
+		   AND  R1.RN <![CDATA[<=]]> (#{paging} * #{pageSize})
+	</sql>
+	
+	<!-- 국가 검색 -->
+	<select id="selectSearchNation" resultType="com.scbank.process.api.svc.common.dao.dto.SearchNationResult">
+       SELECT NTNL COUNTRY
+	   FROM GLB_ATM_MGT
+	   GROUP BY NTNL
+	   ORDER BY NTNL
+	   WITH UR
+    </select>
+    
+	<!-- 도시 검색 -->
+    <select id="selectSearchCity" parameterType="com.scbank.process.api.svc.common.dao.dto.SearchCityParameter" resultType="com.scbank.process.api.svc.common.dao.dto.SearchCityResult">
+       SELECT NTNL COUNTRY
+ 			, CITY REGION 
+	   FROM GLB_ATM_MGT 
+	   GROUP BY NTNL, CITY 
+	   HAVING NTNL = #{ntnl}
+	   ORDER BY CITY
+	   WITH UR
+    </select>
+    
+	<!-- 지역 검색 -->
+    <select id="selectSearchLocal" parameterType="com.scbank.process.api.svc.common.dao.dto.SearchLocalParameter" resultType="com.scbank.process.api.svc.common.dao.dto.SearchLocalResult">
+       SELECT NTNL COUNTRY
+   			, CITY REGION
+    		, LOCAL AS AREA 
+	   FROM GLB_ATM_MGT 
+	   GROUP BY NTNL, CITY, LOCAL 
+	   HAVING NTNL = #{ntnl}
+	   AND CITY = #{city}
+	   ORDER BY AREA
+	   WITH UR
+    </select>
+
+	<!-- 해외영업점/ATM 데이터 수 -->
+	<select id="selectGetForeignBranchAtmCount" parameterType="com.scbank.process.api.svc.common.dao.dto.GetForeignBranchAtmCountParameter"  resultType="int">
+    	SELECT COUNT(*) AS CNT
+		FROM GLB_ATM_MGT G
+		WHERE 1 = 1
+	    <if test="keyWord != ''">
+	     	AND UPPER(G.CHNNL_ADDR) LIKE UPPER('%' || #{keyWord} || '%')
+	    </if>
+	    <if test="ntnl != ''">
+	     	AND G.NTNL LIKE #{ntnl}
+	    </if>
+	    <if test="city != ''">
+	     	AND G.CITY LIKE #{city}
+	    </if>
+	    <if test="local != ''">
+	     	AND G.LOCAL LIKE #{local}
+	    </if>
+	    WITH UR
+    </select>
+
+	<!-- 해외 영업점 검색 -->
+    <select id="selectListForeignBranchAtm" parameterType="com.scbank.process.api.svc.common.dao.dto.ListForeignBranchAtmParameter" resultType="com.scbank.process.api.svc.common.dao.dto.ListForeignBranchAtmResult">
+    	<include refid="COMM_PAGING_HEADER"/>
+       SELECT SERNO
+			, ACCT_TBL
+			, CHNNL_MK
+			, CHNNL_NM
+			, CHNNL_ADDR
+			, CNTCT_PLCE
+			, OP_TM
+			, ROW_NUMBER() OVER(ORDER BY SERNO ASC) RN
+		 FROM GLB_ATM_MGT G
+	    WHERE 1 = 1
+	    <if test="keyWord != ''">
+	     	AND UPPER(G.CHNNL_ADDR) LIKE UPPER('%' || #{keyWord} || '%')
+	    </if>
+	    <if test="ntnl != ''">
+	     	AND G.NTNL LIKE #{ntnl}
+	    </if>
+	    <if test="city != ''">
+	     	AND G.CITY LIKE #{city}
+	    </if>
+	    <if test="local != ''">
+	     	AND G.LOCAL LIKE #{local}
+	    </if>
+		<include refid="COMM_PAGING_TAIL"/>
+		WITH UR
+    </select>
+	
+	
+</mapper>

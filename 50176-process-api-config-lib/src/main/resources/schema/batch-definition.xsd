@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	
+	<!-- 최상위 요소: batch-definition -->
+  <xs:element name="batch-definition">
+    <xs:complexType>
+      <xs:sequence>
+      	<xs:element name="batch" maxOccurs="unbounded">
+	      	<xs:complexType>
+            	<xs:sequence>
+      				<xs:element name="job" type="JobType"/>
+        			<xs:element name="trigger" type="TriggerType"/>
+      			</xs:sequence>
+	      	  <xs:attribute name="id" type="xs:string" use="required"/>
+		      <xs:attribute name="description" type="xs:string"/>
+		      <xs:attribute name="targetNode" type="xs:string" default="all"/>
+	      	</xs:complexType>
+      	</xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- job element -->
+  <xs:complexType name="JobType">
+    <xs:sequence>
+      <xs:element name="component" type="ComponentType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="properties" type="PropertiesType" minOccurs="0"/>
+      <xs:element name="parameters" type="ParametersType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- component -->
+  <xs:complexType name="ComponentType">
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- parameters -->
+  <xs:complexType name="ParametersType">
+    <xs:sequence>
+      <xs:element name="parameter" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="name" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- properties -->
+  <xs:complexType name="PropertiesType">
+    <xs:sequence>
+      <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="name" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- trigger -->
+  <xs:complexType name="TriggerType">
+    <xs:sequence>
+      <xs:element name="properties" type="PropertiesType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="simple"/>
+          <xs:enumeration value="cron"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+</xs:schema>

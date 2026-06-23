@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<holidays useYn="Y">
+    <holiday date="" description="Empty Date Holiday"/>
+    <holiday description="No Date Holiday"/>
+    <holiday date="20250101" description="Valid Holiday"/>
+</holidays>

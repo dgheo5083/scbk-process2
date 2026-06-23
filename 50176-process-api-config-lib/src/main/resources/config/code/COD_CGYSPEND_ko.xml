@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 고정지출 -->
+<category name="CGYSPEND" lang="ko">
+  <code key="11" order="1"><![CDATA[연간소득의 50% 이하]]></code>
+  <code key="12" order="2"><![CDATA[연간소득의 50% 초과 ~ 70% 이하]]></code>
+  <code key="13" order="3"><![CDATA[연간소득의 70% 초과 ~ 90% 이하]]></code>
+  <code key="14" order="4"><![CDATA[연간소득의 90% 초과 ~ 100% 이하]]></code>
+  <code key="15" order="5"><![CDATA[연간소득의 100% 초과]]></code>
+</category>

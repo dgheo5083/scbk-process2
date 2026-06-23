@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="FUNDTY" lang="ko">
+  <code key="0" order="0"><![CDATA[펀드유형 선택]]></code>
+  <code key="JC0301010000000" order="1"><![CDATA[MMF]]></code>
+  <code key="JC0301020000000" order="2"><![CDATA[주식형]]></code>
+  <code key="JC0301030000000" order="3"><![CDATA[주식혼합형]]></code>
+  <code key="JC0301040000000" order="4"><![CDATA[채권형]]></code>
+  <code key="JC0301050000000" order="5"><![CDATA[채권혼합형]]></code>
+  <code key="JC0301060000000" order="6"><![CDATA[파생상품]]></code>
+  <code key="JC0301070000000" order="7"><![CDATA[재간접형]]></code>
+</category>

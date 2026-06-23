@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.Ma30BbsMyDataItemDao">
+
+	<!-- 홈 슬라이드 긴급조회 팝업 조회-->
+	<select id="selectNoticeForPopup" resultType="com.scbank.process.api.svc.common.dao.dto.NoticeForPopupResult">
+		SELECT 
+            SEQNO AS ID,
+            TITLE,
+            SUB_TITLE,
+            TARGET_VERSION,
+            TARGET_URL,            
+            TARGET_MENU_ID,
+            TARGET_PARAMS, 
+            PRODUCT_GB
+        FROM MA30_BBS_MYDATA_ITEM
+        WHERE 1=1
+        AND COMP_CD='MYDPOP'
+        AND TIMESTAMP(S_DATE, S_TIME || ':00:00') <![CDATA[<=]]> CURRENT TIMESTAMP
+        AND TIMESTAMP(E_DATE, E_TIME || ':59:59') <![CDATA[>=]]> CURRENT TIMESTAMP
+        AND D_FLAG='Y'
+        AND PRODUCT_GB LIKE('%chk12%')
+	</select>
+
+</mapper>

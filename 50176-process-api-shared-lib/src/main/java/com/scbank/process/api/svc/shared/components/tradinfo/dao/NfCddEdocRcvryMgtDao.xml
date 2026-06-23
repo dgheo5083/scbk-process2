@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.shared.components.tradinfo.dao.NfCddEdocRcvryMgtDao">
+	<!-- CDD전자문서 정보 등록 (asis : NF_EDOC_RCVRY_MGT_I_01)-->
+	<insert id="insertCddElectronicDocumentInfo" parameterType="com.scbank.process.api.svc.shared.components.tradinfo.dao.dto.CddElectronicDocumentParameter" >
+		MERGE INTO NF_EDOC_RCVRY_MGT X
+		USING (
+			SELECT
+				COUNT(*) COUNT
+			FROM
+				NF_EDOC_RCVRY_MGT
+			WHERE
+				RCVRY_MK = #{rcvryMk} AND EDOC_CD = #{edocCd}
+				AND CUST_NO = #{custNo}
+				AND TRAD_NO = #{tradNo}
+		) Y
+		ON (
+			Y.COUNT > 0
+			AND X.CUST_NO = #{custNo}
+			AND X.TRAD_NO = #{tradNo}
+			AND X.RCVRY_MK = #{rcvryMk} 
+			AND X.EDOC_CD = #{edocCd}
+		)
+		WHEN MATCHED THEN
+			UPDATE 
+			SET X.RCVRY_DATA = #{rcvryData, jdbcType=CLOB}
+			, X.UPD_DT = CURRENT TIMESTAMP
+		WHEN NOT MATCHED THEN
+			INSERT (
+				X.CUST_NO,
+				X.TRAD_NO,
+				X.RCVRY_MK,
+				X.EDOC_CD,
+				X.RCVRY_DATA,
+				X.UPD_DT
+			) VALUES (
+				#{custNo},
+				#{tradNo},
+				#{rcvryMk},
+				#{edocCd},
+				#{rcvryData, jdbcType=CLOB},
+				CURRENT TIMESTAMP
+			)
+	</insert>
+	
+</mapper>

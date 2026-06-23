@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 변제방법 -->
+<category name="CGYRPYGB" lang="en">
+  <code key="11" order="1"><![CDATA[근로소득]]></code>
+  <code key="12" order="2"><![CDATA[사업소득]]></code>
+  <code key="13" order="3"><![CDATA[임대소득]]></code>
+  <code key="14" order="4"><![CDATA[연금소득]]></code>
+  <code key="15" order="5"><![CDATA[기타소득]]></code>
+</category>

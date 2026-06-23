@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="GENDER" lang="ko">
+    <code key="M" order="1">Male</code>
+    <code key="F" order="2">Female</code>
+</category>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <!-- 최상위 요소: ruleset -->
+    <xs:element name="ruleset">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rule" type="ruleType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- 개별 룰: rule -->
+    <xs:complexType name="ruleType">
+        <xs:sequence>
+            <!-- 치환 대상 -->
+            <xs:element name="target" type="xs:string"/>
+            <!-- 치환 결과 (비어있을 수도 있음) -->
+            <xs:element name="replacement" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

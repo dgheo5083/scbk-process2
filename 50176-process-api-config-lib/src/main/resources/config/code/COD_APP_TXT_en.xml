@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="APP_TXT" lang="en">
+  <code key="ATS_001" order="0"><![CDATA[You can use only 'Inquiry' service since you have not registered a transfer password in 3 business days. If you want to use transfer service, please visit one of near branches with documents.]]></code>
+  <code key="ATS_002" order="0"><![CDATA[You can use only 'Inquiry' service since you have not used a transfer password for a long period of time. You can turn it off from the menu below.<br/>More> Transfer/payment> Unrestrictions on long-term unused transfers]]></code>
+  <code key="ATS_003" order="0"><![CDATA[You can use only 'Inquiry' service since you entered your transfer password incorrectly more than 5 times. If you want to use transfer service, please visit one of near branches with documents.]]></code>
+  <code key="ATS_004" order="0"><![CDATA[You can only use inquiry service since you haven't payed service charges. If you want to use transfer service, please visit one of near branches with designated documents.]]></code>
+  <code key="ATS_005" order="0"><![CDATA[You can use only inquiry service. If you want to use transfer service, please visit one of near branches with designated documents.]]></code>
+  <code key="ATS_006" order="0"><![CDATA[Only inquiry service is available since transfer password registration has not successfully completed.]]></code>
+  <code key="ATS_007" order="0"><![CDATA[Only inquiry service is available now because transfer service is ceased temporarily.]]></code>
+  <code key="ATS_008" order="0"><![CDATA[You can only use inquiry service since you have not registered transfer service. If you want to use transfer service, please visit one of near branches with designated documents.]]></code>
+  <code key="ATS_009" order="0"><![CDATA[You can only use inquiry service since you suspended use of transfer password. If you want to use transfer service, please visit one of near branches with designated documents.]]></code>
+  <code key="BALNK_CARD_TXT" order="0"><![CDATA[You have no card]]></code>
+  <code key="BALNK_TXT" order="0"><![CDATA[You have no account]]></code>
+  <code key="CARD_001" order="0"><![CDATA[You can use only 'Inquiry' service since your security card has been reported as lost. If you want to withdrawal your lost report, please visit one ofnear branches with your ID and a passbook.]]></code>
+  <code key="CARD_002" order="0"><![CDATA[Only some services are available because the number of  OTP/Security card  input errors has been exceeded. Do you want to move to clear the error?]]></code>
+  <code key="CARD_003" order="0"><![CDATA[You can use only 'Inquiry' service since you input security card cod incorrectly more than 3 times. If you want to withdrawal your errored input, please visit one of near branches with documents.]]></code>
+  <code key="IP_PRT" order="0"><![CDATA[You can only use inquiry service since you have blocked to be accessed from overseas IP address. If you want to use transfer service, please visit one of near branches with documents.]]></code>
+  <code key="MAC_PRT" order="0"><![CDATA[Access from yout current PC is not previously registered in the User PC designation service. Unregistered access from your current PC only allows &apos;Inquiry-Only&apos; service for the internet b]]></code>
+  <code key="OLY_SEARCH" order="0"><![CDATA[At present, you are accessible to 'Inquiry' menu only.]]></code>
+  <code key="OPTION_TXT" order="0"><![CDATA[- SELECT -]]></code>
+  <code key="OTP_001" order="0"><![CDATA[Only the inquiry service is available because your OTP status is reported as lost/stolen. If you want to recover your OTP status, please access to menu as below Contact us > Incident report > OTP Recovery]]></code>
+  <code key="OTP_002" order="0"><![CDATA[Only some services are available because the number of  OTP/Security card  input errors has been exceeded. Do you want to move to clear the error?]]></code>
+  <code key="OTP_003" order="0"><![CDATA[You can use only 'Inquiry' service since your OTP number has been input incorrectly. If you want to withdrawal your incorrect input,please visit one of near branches with documents.]]></code>
+  <code key="OTP_004" order="0"><![CDATA[You are required to reissue your Mobile OTP if you have input 5 errors.<br><br>Please press 'Reissue' to issue your new Mobile OTP.]]></code>
+  <code key="BALNK_OTP_CARD" order="0"><![CDATA[You have no security card (or OTP).]]></code>
+  <code key="TITLE_TXT" order="0"><![CDATA[SC Bank]]></code>
+</category>

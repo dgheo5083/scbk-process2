@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category name="INSRCD" lang="ko">
+  <code key="1" order="1"><![CDATA[입금]]></code>
+  <code key="2" order="2"><![CDATA[출금]]></code>
+  <code key="3" order="3"><![CDATA[입출금명세조회]]></code>
+  <code key="4" order="4"><![CDATA[무통장명세조회]]></code>
+</category>

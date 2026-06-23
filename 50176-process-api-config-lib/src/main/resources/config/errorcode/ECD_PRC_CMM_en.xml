@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?> 	
+<errorCodes lang="en">		
+	<errorCode code="PRCCMMAPPL_0070"><msg><![CDATA[Corporate member can't log in with ID and password. Please use the digital key certificate to log in.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0001"><msg><![CDATA[Error occurred while logging in using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0002"><msg><![CDATA[Error occurred while logging in using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0003"><msg><![CDATA[Error occurred while logging in using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0004"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0005"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0006"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0007"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0008"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0009"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0010"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0011"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0012"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0013"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0014"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0015"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0016"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0017"><msg><![CDATA[Error occurred while processing transaction using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0018"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0019"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0020"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0021"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0022"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0023"><msg><![CDATA[Error occurred while logging in using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0024"><msg><![CDATA[Error occurred while logging in using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0025"><msg><![CDATA[Error occurred while logging in using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0026"><msg><![CDATA[Error occurred while logging in using Bank Sign.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0027"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0028"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0029"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0030"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0031"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0032"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0033"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0034"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0035"><msg><![CDATA[Error occurred while processing transaction using Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0036"><msg><![CDATA[Authentication failed. Login user is different from the user who submitted Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0037"><msg><![CDATA[Error occurred during Block Chain Certificate issuance.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0038"><msg><![CDATA[Authentication failed. Login user is different from the user who submitted Bank Sign Certificate.]]></msg></errorCode>	
+	<errorCode code="PRCCMMBLCH_0039"><msg><![CDATA[Error occurred during Block Chain Certificate issuance.]]></msg></errorCode>	
+    		
+    <errorCode code="PRCCMMCDD_0001"><msg><![CDATA[Authentication was not successful. Please start the application process again.]]></msg></errorCode>		
+
+	<errorCode code="PRCCMMVPCG_0001"><msg><![CDATA[Invalid fintech authentication request. Please try again.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0002"><msg><![CDATA[No electronic signature data for fintech authentication. Please try again. ]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0003"><msg><![CDATA[Self-verification processing has failed. Please go back and try again.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0004"><msg><![CDATA[Self-verification has failed. Yoru CI information has not been registered or is inactive.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0005"><msg><![CDATA[Self-verification has failed. The user who did self-verification is not the same as the user who submitted fintech certificate.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0006"><msg><![CDATA[Self-verification has failed. The user who logged in is not the same as the user who submitted fintech certificate.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0007"><msg><![CDATA[Error in electronic signature request for fintech authentication. Please try again.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0008"><msg><![CDATA[No user ID to be used for electronic signature for fintech authentication]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0009"><msg><![CDATA[User has not registered fintech authentication. Please register fintech authentication and try again.]]></msg></errorCode>
+	<errorCode code="PRCCMMVPCG_0010"><msg><![CDATA[Validation of electronic signature data for fintech authentication has failed.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0011"><msg><![CDATA[An error occurred during fintech registration.]]></msg></errorCode>
+    <errorCode code="PRCCMMVPCG_0012"><msg><![CDATA[Authenticaion has failed due to changes in certificate data. Please re-register your certificate using the "Authentication center > Register fintech certificate" menu, or log-in via other methods. If you click confirm, you will be directed to log-in page.]]></msg></errorCode>
+
+    <errorCode code="PRCCMM0001">		
+        <msg><![CDATA[Digital signature data provided has not been successfully validated.]]></msg>		
+        <addMsgList>		
+            <addMsg order="1"><![CDATA[Additional message 0001-1]]></addMsg>		
+            <addMsg order="2"><![CDATA[Additional message 0001-2]]></addMsg>		
+        </addMsgList>		
+    </errorCode>		
+    <errorCode code="PRCCMM0002">		
+        <msg><![CDATA[There is no digital signature data storage classification.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0003">		
+        <msg><![CDATA[Error occurred while processing electronic signature data.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0004">		
+        <msg><![CDATA[There was no electronic signature data.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0005">		
+        <msg><![CDATA[There was an error while processing digital signature data.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0006">		
+        <msg><![CDATA[Digital signature data provided has not been successfully validated.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0007">		
+        <msg><![CDATA[Digital signature data provided has not been successfully validated.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0008">		
+        <msg><![CDATA[Digital signature data provided has not been successfully validated.]]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0009">		
+        <msg><![CDATA[interezen Error]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0010">		
+        <msg><![CDATA[There is no menu.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0011">		
+        <msg><![CDATA[For safe mobile banking, transfer service is limited. Please contact SC call center.(1588-1599)]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0012">		
+        <msg><![CDATA[Electronic financial fraud prevention service has been expanded from internet banking service to mobile banking service across all banks as of Dec. 23 2013.<br />You have signed up for device designation service already. The device you are using is not registered, thus only inquiry service available. If you want to use money transfer service on mobile phone, please 1) go to [electronic financial fraud prevention service] - [device designation/un-designation] menu and register that particular mobile device as a designated device, or 2] go to [electronic financial fraud prevention service] - [Allow/ban transactions on undesignated device] menu and select “Yes (allow)” to allow transactions on undesignated device (additional authentication).<br />You can find [electronic financial fraud prevention service] menu at the center bottom of the master menu that opens when you click the left top menu button(the one with number 3).]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0013">		
+        <msg><![CDATA[Please proceed with additional authentication.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0014">		
+        <msg><![CDATA[Money transfer PIN user can’t use biometric authentication service. Please go to ‘internet banking &gt; service and setting’ menu and unregister the use of money transfer PIN  to conduct transactions.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0015">		
+        <msg><![CDATA[There is no important data found in the process of processing the requested service. Please contact the administrator for inquiry. .]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0016">		
+        <msg><![CDATA[You have entered an incorrect security card number.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0017">		
+        <msg><![CDATA[You have requested incorrect data [send data is null]]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0018">		
+        <msg><![CDATA[You have requested incorrect data [service code = null]]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0019">		
+        <msg><![CDATA[You have requested incorrect data[message identifier = null]]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0020">		
+        <msg><![CDATA[You have requested incorrect data[duplicate transaction]]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0021">		
+        <msg><![CDATA[[MCICommDataBuilder] The message can’t be brought up because [SCFB_MESSAGE_ID] name to be used to send the message is not correct.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0022">		
+        <msg><![CDATA[[ScfbCommDataBuilder] [IMS_TRAN_CODE] value is not an 8 digit number.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0023">		
+        <msg><![CDATA[[ScfbCommDataBuilder] [IN_CLASS_CODE] value to be used is not a 4 digit number.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0024">		
+        <msg><![CDATA[[ScfbCommDataBuilder] [SERVICE_CODE] value is not a 3 digit number.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0025">		
+        <msg><![CDATA[[ScfbCommDataBuilder] [BRANCH_NO] value is not a 3 digit number.]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0026">		
+        <msg><![CDATA[Error occurred while processing the transaction you have requested. Please confirm whether your request has been successfully processed in case of deposit/withdrawal transaction. Sorry for the inconvenience.]]></msg>		
+    </errorCode>		
+	<errorCode code="PRCCMM0027">	
+		<msg><![CDATA[Sorry, the service is unavailable at this time. Please try again later.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0028">	
+		<msg><![CDATA[Sorry, the service is unavailable at this time. Please try again later.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0029">	
+		<msg><![CDATA[There is a system failure. Please try again later.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0030">	
+		<msg><![CDATA[Error occurred during processing.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0031">	
+		<msg><![CDATA[Connection was lost. Please try again later. Service is closed if service is not used for a certain period of time, communication is unstable or service is accessed simultaneously on other device.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0032">	
+		<msg><![CDATA[Error occurred while processing Bank Sign signature.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0033">	
+		<msg><![CDATA[This menu requires login using digital certificate. Do you want to log in using digital certificate? If you use the device designation service of electronic financial fraud prevention service, please register this device first to make money transfer.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0034">	
+		<msg><![CDATA[You can use after registering the device designation service.<br />You are directed to device designation service menu.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0035">	
+		<msg><![CDATA[There is no registered standard agreement. Please check the standard agreement information.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0036">	
+		<msg><![CDATA[This device is not allowed to access.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0037">	
+		<msg><![CDATA[Security card number was not entered. ]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0038">	
+		<msg><![CDATA[Encryption session has expired.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0039">	
+		<msg><![CDATA[Encryption session has expired.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0040">	
+		<msg><![CDATA[FIDO SERVER communication error occurerd.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0041">	
+		<msg><![CDATA[Error occurned during FIDO SERVER communication.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0042">	
+		<msg><![CDATA[Error occurred while viewing the list of authentication devices allowed for registration.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0043">	
+		<msg><![CDATA[Registration status inquiry. Error occurred during inquiry.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0044">	
+		<msg><![CDATA[Error occurred in the process of signing biometric certificate.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0045">	
+		<msg><![CDATA[You are currently using device register service and for new device registeration, you need to add device. If you press OK, you will be relocated to "Register device" menu.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0046">	
+		<msg><![CDATA[This menu requires login using digital certificate. Do you want to log in using digital certificate? If you use the device designation service of electronic financial fraud prevention service, please register this device first to make money transfer.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0047">	
+		<msg><![CDATA[There was an error in processing FIDO.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0048">	
+		<msg><![CDATA[{0}]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0049">	
+		<msg><![CDATA[This service is not available to an inquiry service subscriber.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0050">	
+		<msg><![CDATA[This transaction requires the issuance of a Financial certificate. Do you want to go to the Certificate center?]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0051">	
+		<msg><![CDATA[Your security card(or OTP) has expired. You can access the inquiry menu only. Please visit a nearest branch and get a new security card issued to access the transaction menu such as money transfer.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0052">	
+		<msg><![CDATA[This menu requires login using certificate.<br/>Do you want to move to login page?]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0053">	
+		<msg><![CDATA[Service is not available due to emergent failure.<br/>Please try again later.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0054">	
+		<msg><![CDATA[Sorry, the service is unavailable at this time. Please try again later.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0055">	
+		<msg><![CDATA[{0}]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0056">	
+		<msg><![CDATA[Mobile OTP information is initialized upon app re-installation.<br/>Please reissue mobile OTP.<br/>※ No separate authentication procedure is necessary when previous password(PIN) set upon issuance of existing mobile OTP is confirmed.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0057">	
+		<msg><![CDATA[Mobile OTP related service is only available in Korean. Please switch to Korean if wish to use the service.]]></msg>
+	</errorCode>	
+	<errorCode code="PRCCMM0058">
+		<msg><![CDATA[This service is available in the mobile banking app. Are you sure you want to go to the app Execution Guidance page?]]></msg>
+	</errorCode>
+	<errorCode code="PRCCMM0059">
+		<msg><![CDATA[This service is available in the mobile banking app. Are you sure you want to go to the app Execution Guidance page?]]></msg>
+	</errorCode>    		
+		
+    <errorCode code="PRCCMM0060">		
+        <msg><![CDATA[Error occurred while processing the transaction you have requested.<br />(Simple authentication)]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0061">		
+        <msg><![CDATA[Error occurred while processing the transaction you have requested.<br />(Phone approval)]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0062">		
+        <msg><![CDATA[Error occurred while processing the transaction you have requested.<br />(Send SMS)]]></msg>		
+    </errorCode>		
+    <errorCode code="PRCCMM0063">		
+        <msg><![CDATA[Error occurred while processing the transaction you have requested.<br />(Send LMS)]]></msg>		
+    </errorCode>
+
+    <errorCode code="PRCCMM0064">
+        <msg><![CDATA[올바른 경로가 아닙니다. 다시 시도해 주세요.]]></msg>
+    </errorCode>
+    
+    <errorCode code="PRCCMM0065">
+        <msg><![CDATA[고객정보가 일치하지 않습니다. 다시 확인해 주세요.]]></msg>
+    </errorCode>
+    
+     <errorCode code="PRCCMM0066">
+        <msg><![CDATA[(en)E2E필드 복호화 처리 중 오류 발생 errno={0}]]></msg>
+    </errorCode>
+      
+    <errorCode code="PRCCMM0067">
+        <msg><![CDATA[(en)복호화 실패({0})]]></msg>
+    </errorCode>  
+    
+    <errorCode code="PRCCMM0068"><msg><![CDATA[(en)이미지 파일 변환시 오류가 발생하였습니다. 확인 후 다시 시도해주세요.]]></msg></errorCode>
+    <errorCode code="PRCCMM0069"><msg><![CDATA[(en)안면인식이 완료되지 않았습니다.]]></msg></errorCode>
+    <errorCode code="PRCCMM0070"><msg><![CDATA[(en)제휴처코드가 정상적이지 않아 처리중 오류가 발생하였습니다.]]></msg></errorCode>
+    <errorCode code="PRCCMM0071"><msg><![CDATA[(en)REA코드가 정상적이지 않아 처리중 오류가 발생하였습니다.]]></msg></errorCode>
+    
+    <errorCode code="PRCCMMFRN001">
+        <msg><![CDATA[Small Amount Remittance for USD 5,000 and under are only available during 9:00-16:30.]]></msg>
+    </errorCode>
+    
+    <errorCode code="GOERROR0001">
+		<msg><![CDATA[지금은 공공기관 정보 조회가 원활하지 않아<br/>모바일뱅킹에서 금리인하요구권 신청이 어려워요.<br/>잠시 후 다시 시도해주세요.<br/><br/>금리인하요구권은<br/>가까운 영업점, 고객컨택센터 또는 홈페이지를 통해 신청할 수 있어요.<br/><br/>문의사항: SC제일은행 고객컨텍센터(1588-1599)]]></msg>
+	</errorCode>
+	
+	<errorCode code="GOERROR0002">
+		<msg><![CDATA[지금은 공공기관 정보 조회가 원활하지 않아<br/>모바일뱅킹에서 비대면 한도제한해제가 어려워요.<br/>잠시 후 다시 시도해주세요.<br/><br/>비대면 한도제한해제는<br/>가까운 영업점을 통해 신청할 수 있어요.<br/><br/>문의사항: SC제일은행 고객컨텍센터(1588-1599)]]></msg>
+	</errorCode>
+	
+	<errorCode code="PRCACTOPN001519"><msg><![CDATA[(en)미성년자(19세 미만)는 서비스 이용이 불가합니다.]]></msg></errorCode>
+	<errorCode code="PRCAAT001072"><msg><![CDATA[(en)등록되어 있는 고객정보와 일치하지 않아<br>서비스를 이용하실 수 없어요.]]></msg></errorCode>
+	<errorCode code="PRCAAT001073"><msg><![CDATA[(en)한국에 거주하고 계셔야 <br>서비스를 이용하실 수 있어요.]]></msg></errorCode>
+	<errorCode code="PRCAAT001074"><msg><![CDATA[Non-Koreans and oversea Koreans cannot use the service.]]></msg></errorCode>
+</errorCodes>		

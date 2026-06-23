@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.PinUsrMgtDao">
+
+	<select id="selectCountPinUsrMgtByDeviceId" parameterType="java.lang.String" resultType="int">
+	SELECT COUNT(*) AS CNT
+	FROM PIN_USR_MGT
+	WHERE 1 = 1
+	  AND DEVICE_ID = #{deviceId}
+	WITH UR
+	</select>
+	
+	<update id="updatePinUsrMgt" parameterType="com.scbank.process.api.svc.common.dao.dto.PinUsrMgtParameter">
+	UPDATE PIN_USR_MGT
+	SET LAST_UPDATE_DT    = CURRENT TIMESTAMP
+	  , USER_BANKING_ID   = #{userBankingId}
+	WHERE 1 = 1
+	  AND DEVICE_ID   = #{deviceId}
+	<if test='targetUserId != null and targetUserId != ""'>
+	  AND USER_BANKING_ID = #{targetUserId}
+	</if>
+	</update>
+	
+	<insert id="insertPinUsrMgt" parameterType="com.scbank.process.api.svc.common.dao.dto.PinUsrMgtParameter">
+	INSERT INTO PIN_USR_MGT (
+	  USER_BANKING_ID    /* 사용자 뱅킹 id */
+    , DEVICE_ID          /* 사용자 기기 id (PK) */
+    , DEVICE_TYPE        /* 사용자 기기 type */
+    , JOIN_FLAG          /* 가입 유무 */
+    , DEVICE_ID_UPDATE   /* 사용자 기기 id update여부 */
+    , POPUP_STATUS       /* 가입 팝업 유무 */
+    , JOIN_DT            /* 최초가입일자 */
+    , LAST_UPDATE_DT     /* 최근 업데이트 날짜 */
+    , NICK_NAME          /* 사용자 닉네임 */
+	) 
+	VALUES (
+      #{userBankingId}  
+    , #{deviceId}
+    , #{deviceType}
+    , #{joinFlag}
+    , #{deviceIdUpdate}
+    , #{popupStatus}
+    , CURRENT TIMESTAMP
+    , CURRENT TIMESTAMP
+    , #{nickName}
+	)
+	</insert>
+	
+	<!-- PIN사용자 기기이름으로 검색 -->
+	<select id="selectPinUsrMgtByDeviceId" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.PinUsrMgtByDeviceResult">
+		SELECT 
+			USER_BANKING_ID 
+			,DEVICE_ID
+			,DEVICE_TYPE
+			,JOIN_FLAG
+			,USE_PIN_FLAG
+			,DEVICE_ID_UPDATE 
+			,POPUP_STATUS 
+			,NICK_NAME
+			,FINGER_LOGIN_FLAG 
+		FROM PIN_USR_MGT 
+		WHERE DEVICE_ID = #{deviceId}
+		WITH UR
+	</select>
+
+    <!-- deviceId AndroidID로 업데이트 (Android 10 WidevineID 이슈로 인한) [MA3_LGN.PIN_USR_MGT_U_02"] -->
+	<select id="updatePinUsrMgtDeviceId" parameterType="com.scbank.process.api.svc.common.dao.dto.PinUsrMgtUpdateParameter">
+		UPDATE PIN_USR_MGT
+		SET
+			DEVICE_ID        = #{afterDeviceId},
+			USER_BANKING_ID  = #{userBankingId},
+			LAST_UPDATE_DT   = CURRENT TIMESTAMP
+		WHERE 1 = 1
+			AND DEVICE_ID = #{beforeDeviceId}
+			AND USER_BANKING_ID = #{userBankingId}
+	</select>
+	
+</mapper>

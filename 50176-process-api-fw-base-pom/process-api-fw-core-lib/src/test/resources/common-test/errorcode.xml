@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorCodes lang="ko">
+    <errorCode code="E001">
+        <msg>error message {0}</msg>
+        <addMsgList>
+            <addMsg order="2">guide2</addMsg>
+            <addMsg order="1">guide1</addMsg>
+        </addMsgList>
+    </errorCode>
+</errorCodes>

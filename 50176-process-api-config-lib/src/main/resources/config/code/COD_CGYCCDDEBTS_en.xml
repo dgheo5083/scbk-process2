@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 카드론부채 -->
+<category name="CGYCCDDEBTS" lang="en">
+  <code key="61" order="1"><![CDATA[1천만원 이하]]></code>
+  <code key="62" order="2"><![CDATA[1천만원 초과 ~ 1억원 이하]]></code>
+  <code key="63" order="3"><![CDATA[1억원 초과]]></code>
+</category>

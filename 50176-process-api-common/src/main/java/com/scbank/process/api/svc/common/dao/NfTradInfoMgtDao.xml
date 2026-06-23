@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scbank.process.api.svc.common.dao.NfTradInfoMgtDao">
+	
+	<!-- 상품아이디 / 비즈니스 유형 조회 [MA3_CMM_EDC.NF_TRADINFO_MGT_S_01] -->
+	<select id="selectEdocTradInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.EdocTradInfoParameter" resultType = "com.scbank.process.api.svc.common.dao.dto.EdocTradInfoResult">
+		SELECT
+			PRDCT_ID,
+		    BIZ_TYPE,
+		    KFB_ACCT_NO,
+		    LOAN_REQ_NO,
+		    LOAN_ACCPT_NO,
+			PRDCT_CD,
+			LOAN_DOC_INVSTGT_FLG
+		FROM
+			NF_TRADINFO_MGT
+		WHERE 
+			CUST_NO=#{custNo}
+		AND
+			TRAD_NO=#{tradNo}
+		WITH UR
+	</select>
+	
+	<select id="selectIdCardShotInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.IdCardShotInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.IdCardShotInfoResult">
+		SELECT
+			A.ALLIANC_CD,
+			A.APPRVER_CLERK_NO,
+			A.APPRVL_DT,
+			A.AUTHNT_IND,
+			A.AUTHNT_IND_CD,
+			A.AUTHNT_REQ_CMPLTN_DT,
+			A.AUTHNT_REQ_DT,
+			A.AUTHNT_REQ_EXPIRE_DT,
+			A.BIZ_TYPE,
+			A.BLK_CLERK_NO,
+			A.BRNCH_NO,
+			A.CALL_CNTR_STS_CD,
+			A.CDD_CNFRM_DT,
+			A.CDD_REQ_CD,
+			A.CLERK_NO,
+			A.CMPLTN_DT,
+			A.CNCL_DT,
+			A.CNNCTN_WAY,
+			A.CUST_NO,
+			A.DEL_OBJ_FLG,
+			A.ID_CARD_CD,
+			A.ID_CARD_CMPLTN_DT,
+			A.ID_CARD_CNT,
+			A.ID_CARD_REQ_DT,
+			A.INIT_REGIST_DT,
+			A.KFB_ACCT_NO,
+			VARCHAR_FORMAT(A.LST_CHNG_DT, 'YYYY-MM-DD HH24:MI:SS') LST_CHNG_DT,
+			A.NEW_USER_FLG,
+			A.PRDCT_CD,
+			A.PRDCT_ID,
+			A.PRDCT_NM,
+			A.PRGRSS_STS_CD,
+			A.REQ_AMT,
+			A.TRAD_NO,
+			A.SEQ_NO AS SEQNO
+		FROM
+			NF_TRADINFO_MGT A
+		WHERE
+			A.CUST_NO = #{custNo}
+			AND A.ID_CARD_CD = #{idCardCd}
+			AND A.PRGRSS_STS_CD IN ('PRGS', 'DONE')
+			AND A.TRAD_REG_GB = #{tradRegGb} <!-- TRAD_REG_GB = 0 : MA3.0, 1:OpenAPI -->
+		WITH UR
+	</select>
+	
+	<update id="updateSSATruthInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.SsaTruthInfoParameter">
+		UPDATE
+				NF_TRADINFO_MGT
+		   SET 
+				SSA_TRUTH = #{ssaTruth},
+				SSA_CONFIDENCE = #{ssaConfidence}
+		WHERE
+				CUST_NO = #{custNo}
+		AND 	TRAD_NO = #{tradNo}
+	</update>
+	 
+	<update id="updateNonFaceAuthTradInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.NonFaceAuthTradInfoParameter">
+		UPDATE
+			NF_TRADINFO_MGT
+		SET
+			ID_CARD_CD = #{idCardCd}
+			<if test="callCntrStsCd != null and callCntrStsCd != ''">
+				,CALL_CNTR_STS_CD = #{callCntrStsCd}
+			</if>
+			<if test="prgrssStsCd != null and prgrssStsCd != ''">
+				,PRGRSS_STS_CD = #{prgrssStsCd}
+			</if>
+			<if test="seqNo != null">
+				,SEQ_NO = #{seqNo}
+			</if>
+			<if test="cnnctnWayDynamic != null">
+				,CNNCTN_WAY = #{cnnctnWayDynamic}
+			</if>
+		WHERE
+			CUST_NO = #{custNo} 
+			AND TRAD_NO = #{tradNo}
+	</update>
+	
+	<insert id="insertCnnctnTradInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.CnnctnTradInfoParameter">
+		MERGE INTO NF_CNNCTN_TRADINFO_MGT X
+		USING (
+			SELECT COUNT(*) COUNT 
+			FROM NF_TRADINFO_MGT 
+			WHERE TRAD_NO = #{tradNo} AND PRGRSS_STS_CD = 'PRGS' 
+		) Y 
+		ON (
+			Y.COUNT > 0
+			AND X.TRAD_NO = #{tradNo}
+		)
+		WHEN MATCHED THEN 
+			UPDATE SET 
+				X.LST_CHNG_DT = CURRENT TIMESTAMP,
+				X.CNNCTN_TRAD_NO = #{cnnctnTradNo}
+				<if test="cnnctnWayDynamic != null">
+					,CNNCTN_WAY = #{cnnctnWayDynamic}
+				</if>
+				<if test="cnnctnSignId != null">
+					,X.CNNCTN_SIGN_ID = #{cnnctnSignId}
+				</if>	
+		WHEN NOT MATCHED THEN 
+			INSERT( 
+				X.CNNCTN_WAY,
+				X.TRAD_NO,
+				X.CNNCTN_TRAD_NO,
+				X.CNNCTN_SND_YN,
+				X.LST_CHNG_DT,
+				X.INIT_REGIST_DT
+				<if test="cnnctnLoanLmtAmt != null and cnnctnLoanLmtAmt != ''">
+					,X.CNNCTN_LOAN_LMT_AMT
+				</if>
+				<if test="cnnctnSignId != null">
+					,X.CNNCTN_SIGN_ID
+				</if>	
+			) VALUES (
+				#{cnnctnWay},
+				(SELECT MAX(TRAD_NO) AS TRAD_NO FROM NF_TRADINFO_MGT WHERE CUST_NO = #{custNo}),
+				#{cnnctnTradNo},
+				'N',
+				CURRENT TIMESTAMP,
+				CURRENT TIMESTAMP
+				<if test="cnnctnLoanLmtAmt != null and cnnctnLoanLmtAmt != ''">
+					,#{cnnctnLoanLmtAmt}
+				</if>
+				<if test="cnnctnSignId != null">
+					,#{cnnctnSignId}
+				</if>
+			)
+	</insert>
+	
+	<select id="selectNonFaceTradInfo" parameterType="java.lang.String" resultType="com.scbank.process.api.svc.common.dao.dto.NonFaceTradInfoResult">
+		SELECT
+			 PRDCT_ID
+			,PRDCT_NM
+			,BIZ_TYPE
+			,BRNCH_NO
+			,TO_CHAR(INIT_REGIST_DT,'yyyyMMdd') AS INIT_REGIST_DT
+		FROM
+			NF_TRADINFO_MGT
+		WHERE			
+			TRAD_NO = #{tradNo}
+		WITH UR
+	</select>
+	
+	<update id="updateIdVerificationCount" parameterType="com.scbank.process.api.svc.common.dao.dto.IdVerificationCountParameter">
+		UPDATE
+			NF_TRADINFO_MGT 
+		SET 
+			ID_CARD_CNT = #{idCardCnt}
+			<if test="idCardReqDt != null">
+				,ID_CARD_REQ_DT = #{idCardReqDt}
+			</if>
+		WHERE
+			CUST_NO = #{custNo}
+			AND TRAD_NO = #{tradNo}
+	</update>
+	
+	<select id="selectNonFaceAuthInfo" parameterType="com.scbank.process.api.svc.common.dao.dto.NonFaceAuthInfoParameter" resultType="com.scbank.process.api.svc.common.dao.dto.NonFaceAuthInfoResult">
+		SELECT
+			ID_CARD_CD,
+			AUTHNT_IND_CD,
+			CDD_REQ_CD
+		FROM
+			NF_TRADINFO_MGT
+		WHERE
+			CUST_NO = #{custNo}
+			AND TRAD_NO = #{tradNo}
+		WITH UR
+	</select>
+	
+</mapper>
